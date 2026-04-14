@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ======= ADVANCED SEO TAGS ======= -->
+  <title>Best Maths and Science Coaching in Noida | CBSE & ICSE Tuition Classes</title>
+  <meta name="description" content="Top mathematics teacher for Class 10 in Delhi NCR. Get personalized online tuition for Class 10 CBSE, ICSE science tutor near me, and Class 12 board exam preparation coaching in Noida." />
+  <meta name="keywords" content="Best maths and science coaching in Noida, CBSE tuition classes in Noida, Top mathematics teacher for Class 10 in Delhi NCR, ICSE science tutor near me, Class 12 board exam preparation coaching in Noida, Personalized online tuition for Class 10 CBSE, One-on-one maths tutor for ICSE Class 12, Live interactive science classes for Class 9, Best online coaching for JEE Mains in Noida" />
+  
+  <!-- ======= FONTS ======= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #0ea5e9;
+      --primary-dark: #0369a1;
+      --ink: #0f172a;
+      --slate: #64748b;
+      --bg-light: #f8fafc;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: var(--ink); line-height: 1.8; background: #fff; }
+    
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ---- SEO HEADER ---- */
+    .seo-header { padding: 4rem 0 2rem; border-bottom: 1px solid #e2e8f0; margin-bottom: 3rem; }
+    .badge { 
+      display: inline-block; background: var(--primary); color: #fff; 
+      padding: 5px 15px; border-radius: 50px; font-size: 0.75rem; font-weight: 700; 
+      text-transform: uppercase; margin-bottom: 1rem;
+    }
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1.2; margin-bottom: 1.5rem; color: var(--ink); }
+    .sub-h1 { font-size: 1.1rem; color: var(--slate); font-weight: 500; }
+
+    /* ---- CONTENT STYLING ---- */
+    .blog-content h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin: 3rem 0 1rem; color: var(--ink); }
+    .blog-content p { margin-bottom: 1.5rem; font-size: 1.1rem; color: #334155; }
+    .keyword-highlight { color: var(--primary-dark); font-weight: 700; }
+
+    /* ---- BATCH CARDS SECTION ---- */
+    .batch-section { background: var(--bg-light); padding: 3rem; border-radius: 30px; margin: 4rem 0; border: 1px solid #e2e8f0; }
+    .batch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    
+    .batch-card {
+      background: #fff; border-radius: 20px; padding: 2rem; border: 1px solid #e2e8f0;
+      transition: all 0.3s ease; display: flex; flex-direction: column;
+    }
+    .batch-card:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    
+    .card-tag { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; color: var(--primary); margin-bottom: 0.5rem; }
+    .batch-card h3 { font-size: 1.4rem; margin-bottom: 1rem; }
+    
+    .meta-list { list-style: none; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--slate); }
+    .meta-list li { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .ico { width: 16px; height: 16px; stroke: var(--primary); fill: none; stroke-width: 2; }
+
+    .btn {
+      width: 100%; padding: 12px; border-radius: 10px; font-weight: 700; cursor: pointer;
+      text-decoration: none; display: inline-block; text-align: center; transition: 0.3s;
+      font-size: 0.9rem;
+    }
+    .btn-solid { background: var(--primary); color: white; border: none; }
+    .btn-solid:hover { background: var(--primary-dark); }
+    .btn-outline { border: 2px solid var(--primary); color: var(--primary); margin-top: 10px; }
+
+    /* ---- CALL TO ACTION ---- */
+    .cta-banner { 
+      background: var(--ink); color: #fff; padding: 4rem 2rem; border-radius: 30px; 
+      text-align: center; margin: 4rem 0;
+    }
+    .cta-banner h2 { color: #fff; margin-bottom: 1rem; font-family: 'Inter', sans-serif; font-weight: 700; }
+    .cta-link { 
+      background: var(--primary); color: white; padding: 15px 40px; border-radius: 50px; 
+      text-decoration: none; font-weight: 700; display: inline-block; margin-top: 1.5rem;
+    }
+    .cta-link:hover { background: var(--primary-dark); }
+
+    /* ---- FOOTER ---- */
+    footer { text-align: center; padding: 4rem 0; border-top: 1px solid #e2e8f0; color: var(--slate); font-size: 0.85rem; }
+
+    @media (max-width: 600px) {
+      .batch-section { padding: 1.5rem; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header class="seo-header">
+      <span class="badge">Top Rated Coaching in Noida</span>
+      <h1>Best Maths and Science Coaching in Noida for CBSE & ICSE</h1>
+      <p class="sub-h1">Expert-led <span class="keyword-highlight">CBSE tuition classes in Noida</span> catering to students from Class 6 to 12.</p>
+    </header>
+
+    <article class="blog-content">
+      <p class="lead">Finding a <span class="keyword-highlight">top mathematics teacher for Class 10 in Delhi NCR</span> can be the difference between a good score and a great career. At M² Learning Hub, we specialize in bridging the gap between classroom learning and competitive excellence.</p>
+      
+      <h2>Why Choose Our CBSE Tuition Classes in Noida?</h2>
+      <p>Our center provides the most comprehensive <span class="keyword-highlight">Class 12 board exam preparation coaching in Noida</span>. We understand the pressure of final years, which is why our pedagogy is designed to simplify complex concepts in Physics, Chemistry, and Mathematics.</p>
+      
+      <p>If you are searching for an <span class="keyword-highlight">ICSE science tutor near me</span>, our faculty offers specialized attention to the ICSE curriculum, ensuring deep conceptual clarity that school classrooms often miss.</p>
+
+      <!-- BATCH SECTION -->
+      <section class="batch-section">
+        <h2 style="margin-top:0; text-align:center;">Our Specialized Programs</h2>
+        <div class="batch-grid">
+          
+          <!-- Card 1 -->
+          <div class="batch-card">
+            <span class="card-tag">Foundation</span>
+            <h3>Class 6–8</h3>
+            <ul class="meta-list">
+              <li><svg class="ico" viewBox="0 0 24 24"><path d="M12 2v20m10-10H2"/></svg> Personalized online tuition</li>
+              <li><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg> Concepts for Class 6-8</li>
+            </ul>
+            <a href="https://m2learninghub.com/#" class="btn btn-solid">Select Course</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="batch-card" style="border-color: var(--primary);">
+            <span class="card-tag">Board Toppers</span>
+            <h3>Class 9–10</h3>
+            <ul class="meta-list">
+              <li><svg class="ico" viewBox="0 0 24 24"><path d="M12 2v20m10-10H2"/></svg> Live interactive classes</li>
+              <li><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg> CBSE/ICSE Focus</li>
+            </ul>
+            <a href="https://m2learninghub.com/#" class="btn btn-solid">Select Course</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="batch-card">
+            <span class="card-tag">Senior Secondary</span>
+            <h3>Class 11–12</h3>
+            <ul class="meta-list">
+              <li><svg class="ico" viewBox="0 0 24 24"><path d="M12 2v20m10-10H2"/></svg> One-on-one maths tutor</li>
+              <li><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg> JEE/NEET Foundation</li>
+            </ul>
+            <a href="https://m2learninghub.com/#" class="btn btn-solid">Select Course</a>
+          </div>
+
+        </div>
+      </section>
+
+      <h2>Advanced Coaching for Competitive Exams</h2>
+      <p>For engineering aspirants, we offer the <span class="keyword-highlight">best online coaching for JEE Mains in Noida</span>. Our curriculum doesn't just cover the basics; we provide <span class="keyword-highlight">one-on-one maths tutor for ICSE Class 12</span> and <span class="keyword-highlight">personalized online tuition for Class 10 CBSE</span> to ensure no student is left behind.</p>
+      
+      <p>Our <span class="keyword-highlight">live interactive science classes for Class 9</span> are designed to spark curiosity and build a strong foundation for future competitive exams like NEET and JEE.</p>
+
+      <div class="cta-banner">
+        <h2>Boost Your Academic Journey</h2>
+        <p>Expert guidance from Noida's top-rated faculty is just a click away.</p>
+        <!-- Updated Official Website Link -->
+        <a href="https://m2learninghub.com/#" class="cta-link">Visit Official Website</a>
+      </div>
+
+    </article>
+
+    <footer>
+      <p>&copy; 2024 M² Learning Hub Noida. Specialized Coaching for CBSE, ICSE & Olympiads.</p>
+      <p style="margin-top:10px;">Serving students across Noida Sector 62, 15, 18, 50, and Greater Noida.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
