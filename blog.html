@@ -3,563 +3,725 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Free Study Resources, Notes & Blog | M² Learning Hub</title>
-<meta name="description" content="Free CBSE, ICSE, JEE & NEET study notes, PDF downloads, chapter summaries and expert tips by M² Learning Hub teachers.">
+<meta name="description" content="Free CBSE, JEE & NEET study notes, PDF downloads, chapter solutions and expert tips by Manish Sir at M² Learning Hub. Class 6–12 all boards.">
+<meta name="keywords" content="free CBSE notes, class 10 maths notes, JEE maths tips, NEET chemistry notes, free PDF download class 10, M2 learning hub blog">
+<meta name="author" content="Manish Mishra - M2 Learning Hub">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://m2learninghub.com/blog.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Free Study Resources & Blog | M² Learning Hub">
+<meta property="og:description" content="Free notes, PDFs & expert tips for CBSE, JEE & NEET by Manish Sir.">
+<meta property="og:url" content="https://m2learninghub.com/blog.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="M2 Learning Hub">
+
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Blog",
+  "name":"M2 Learning Hub Blog",
+  "url":"https://m2learninghub.com/blog.html",
+  "description":"Free CBSE, JEE & NEET study resources by Manish Mishra",
+  "publisher":{"@type":"Organization","name":"M2 Learning Hub","url":"https://m2learninghub.com/"}
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  :root {
-    --green: #1a5c3a;
-    --green-mid: #2d7a52;
-    --green-light: #e8f5ee;
-    --green-accent: #4caf78;
-    --gold: #e8a020;
-    --gold-light: #fff8eb;
-    --ink: #1a1a1a;
-    --muted: #5a5a5a;
-    --border: #e0e0d8;
-    --surface: #fafaf7;
-    --white: #ffffff;
-    --radius: 12px;
-    --shadow: 0 2px 16px rgba(0,0,0,0.07);
-  }
+:root {
+  --green: #1a5c3a;
+  --green-mid: #2d7a52;
+  --green-light: #e8f5ee;
+  --green-accent: #4caf78;
+  --gold: #e8a020;
+  --gold-light: #fff8eb;
+  --ink: #1a1a1a;
+  --muted: #5a5a5a;
+  --border: #e0e0d8;
+  --surface: #fafaf7;
+  --white: #ffffff;
+  --radius: 12px;
+  --shadow: 0 2px 16px rgba(0,0,0,0.07);
+  --shadow-hover: 0 8px 32px rgba(0,0,0,0.13);
+}
 
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--surface);
-    color: var(--ink);
-    line-height: 1.6;
-  }
+body { font-family: 'DM Sans', sans-serif; background: var(--surface); color: var(--ink); line-height: 1.6; }
 
-  /* NAV */
-  nav {
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
-    padding: 0 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  .nav-logo { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; color: var(--green); text-decoration: none; }
-  .nav-logo span { color: var(--gold); }
-  .nav-back { font-size: 13px; color: var(--green); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 5px; }
-  .nav-back:hover { text-decoration: underline; }
+/* NAV */
+nav { background: var(--white); border-bottom: 1px solid var(--border); padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 8px rgba(0,0,0,0.05); }
+.nav-logo { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; color: var(--green); text-decoration: none; }
+.nav-logo span { color: var(--gold); }
+.nav-right { display: flex; align-items: center; gap: 16px; }
+.nav-back { font-size: 13px; color: var(--green); text-decoration: none; font-weight: 600; }
+.nav-wa { background: #25d366; color: white; padding: 7px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; text-decoration: none; }
+.nav-wa:hover { background: #128C7E; }
+@media(max-width:600px){ .nav-right .nav-back { display:none; } }
 
-  /* HERO */
-  .hero {
-    background: linear-gradient(135deg, var(--green) 0%, var(--green-mid) 60%, #1e7a4f 100%);
-    color: white;
-    padding: 56px 32px 48px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    pointer-events: none;
-  }
-  .hero-tag { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 14px; margin-bottom: 18px; }
-  .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(28px, 5vw, 48px); font-weight: 900; line-height: 1.15; margin-bottom: 14px; }
-  .hero p { font-size: 16px; opacity: 0.85; max-width: 560px; margin: 0 auto 28px; }
-  .hero-stats { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; }
-  .hero-stat { text-align: center; }
-  .hero-stat strong { display: block; font-size: 22px; font-weight: 700; }
-  .hero-stat span { font-size: 12px; opacity: 0.75; }
+/* HERO */
+.hero { background: linear-gradient(135deg, var(--green) 0%, var(--green-mid) 55%, #1e7a4f 100%); color: white; padding: 56px 32px 48px; text-align: center; position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); pointer-events: none; }
+.hero-tag { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 14px; margin-bottom: 18px; }
+.hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(28px,5vw,48px); font-weight: 900; line-height: 1.15; margin-bottom: 14px; }
+.hero h1 em { font-style: normal; color: var(--gold); }
+.hero p { font-size: 16px; opacity: 0.85; max-width: 560px; margin: 0 auto 28px; }
+.hero-stats { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; }
+.hero-stat { text-align: center; }
+.hero-stat strong { display: block; font-size: 24px; font-weight: 700; }
+.hero-stat span { font-size: 12px; opacity: 0.75; }
 
-  /* FILTER TABS */
-  .filter-bar {
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
-    padding: 0 32px;
-    display: flex;
-    gap: 4px;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-  .filter-bar::-webkit-scrollbar { display: none; }
-  .tab {
-    padding: 14px 16px;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--muted);
-    border-bottom: 2px solid transparent;
-    cursor: pointer;
-    white-space: nowrap;
-    background: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    transition: all 0.2s;
-    font-family: 'DM Sans', sans-serif;
-  }
-  .tab:hover { color: var(--green); }
-  .tab.active { color: var(--green); border-bottom-color: var(--green); font-weight: 600; }
+/* FILTER */
+.filter-bar { background: var(--white); border-bottom: 1px solid var(--border); padding: 0 32px; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; position: sticky; top: 60px; z-index: 90; }
+.filter-bar::-webkit-scrollbar { display: none; }
+.tab { padding: 14px 18px; font-size: 13px; font-weight: 500; color: var(--muted); border-bottom: 3px solid transparent; cursor: pointer; white-space: nowrap; background: none; border-top: none; border-left: none; border-right: none; transition: all 0.2s; font-family: 'DM Sans', sans-serif; }
+.tab:hover { color: var(--green); }
+.tab.active { color: var(--green); border-bottom-color: var(--green); font-weight: 700; }
 
-  /* LAYOUT */
-  .container { max-width: 1140px; margin: 0 auto; padding: 40px 24px; }
-  .grid { display: grid; grid-template-columns: 1fr 320px; gap: 32px; }
-  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+/* LAYOUT */
+.container { max-width: 1160px; margin: 0 auto; padding: 40px 24px; }
+.grid { display: grid; grid-template-columns: 1fr 320px; gap: 36px; }
+@media(max-width:900px){ .grid { grid-template-columns: 1fr; } }
 
-  /* SECTION TITLE */
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--ink);
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+/* SECTION TITLE */
+.section-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+.section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
-  /* BLOG CARDS */
-  .blog-grid { display: grid; gap: 20px; }
-  .blog-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
-    transition: box-shadow 0.2s, transform 0.2s;
-    text-decoration: none;
-    color: inherit;
-  }
-  .blog-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
-  .blog-card.featured { grid-template-columns: 1fr 1fr; }
-  @media (max-width: 600px) { .blog-card.featured { grid-template-columns: 1fr; } }
+/* ========== BLOG CARDS ========== */
+.blog-grid { display: grid; gap: 20px; }
 
-  .card-image {
-    background: var(--green-light);
-    min-height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    position: relative;
-  }
-  .blog-card.featured .card-image { min-height: 220px; }
-  .card-badge {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    padding: 3px 10px;
-    border-radius: 20px;
-  }
-  .badge-jee { background: #fff3e0; color: #e65100; }
-  .badge-neet { background: #fce4ec; color: #c62828; }
-  .badge-cbse { background: #e8f5e9; color: #2e7d32; }
-  .badge-icse { background: #e3f2fd; color: #1565c0; }
-  .badge-olympiad { background: #f3e5f5; color: #6a1b9a; }
-  .badge-tips { background: #fff8e1; color: #f57f17; }
+.blog-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  transition: box-shadow 0.25s, transform 0.25s;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.blog-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+.blog-card.featured { grid-template-columns: 1fr 1fr; }
+@media(max-width:640px){ .blog-card.featured { grid-template-columns: 1fr; } }
 
-  .card-body { padding: 20px; }
-  .card-meta { font-size: 12px; color: var(--muted); margin-bottom: 8px; display: flex; gap: 12px; flex-wrap: wrap; }
-  .card-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; line-height: 1.3; margin-bottom: 8px; color: var(--ink); }
-  .blog-card.featured .card-title { font-size: 22px; }
-  .card-excerpt { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 14px; }
-  .card-footer { display: flex; align-items: center; gap: 10px; font-size: 12px; }
-  .author-dot { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: white; }
-  .dot-green { background: var(--green); }
-  .dot-gold { background: var(--gold); }
-  .read-time { color: var(--muted); margin-left: auto; }
+/* THUMBNAIL — the key improvement */
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.blog-card.featured .card-thumb { min-height: 240px; }
 
-  /* PDF / NOTES CARDS */
-  .resources-grid { display: grid; gap: 12px; }
-  .resource-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px 18px;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    text-decoration: none;
-    color: inherit;
-    transition: box-shadow 0.2s, border-color 0.2s;
-    cursor: pointer;
-  }
-  .resource-card:hover { border-color: var(--green-accent); box-shadow: 0 2px 12px rgba(26,92,58,0.1); }
-  .resource-icon {
-    width: 44px; height: 44px;
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 20px;
-    flex-shrink: 0;
-  }
-  .icon-pdf { background: #ffebee; }
-  .icon-notes { background: #e8f5e9; }
-  .icon-quiz { background: #fff3e0; }
-  .icon-video { background: #fce4ec; }
-  .resource-info { flex: 1; min-width: 0; }
-  .resource-name { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .resource-meta { font-size: 12px; color: var(--muted); }
-  .resource-dl { background: var(--green-light); color: var(--green); font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; }
+/* Each topic gets its own visual thumbnail style */
+.thumb-cbse { background: linear-gradient(135deg, #1a5c3a 0%, #2d8c5a 100%); }
+.thumb-jee  { background: linear-gradient(135deg, #1a237e 0%, #283593 100%); }
+.thumb-neet { background: linear-gradient(135deg, #880e4f 0%, #c62828 100%); }
+.thumb-olympiad { background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%); }
+.thumb-tips { background: linear-gradient(135deg, #e65100 0%, #f57c00 100%); }
+.thumb-pdf  { background: linear-gradient(135deg, #006064 0%, #00838f 100%); }
 
-  /* SIDEBAR */
-  .sidebar { display: flex; flex-direction: column; gap: 24px; }
-  .sidebar-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
-  .sidebar-title { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
-  .topic-list { display: flex; flex-direction: column; gap: 8px; }
-  .topic-item { display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: var(--muted); padding: 6px 0; border-bottom: 1px solid var(--border); cursor: pointer; }
-  .topic-item:last-child { border-bottom: none; }
-  .topic-item:hover { color: var(--green); }
-  .topic-count { background: var(--green-light); color: var(--green); font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 10px; }
-  .cta-box { background: linear-gradient(135deg, var(--green), var(--green-mid)); color: white; border-radius: var(--radius); padding: 22px; text-align: center; }
-  .cta-box h3 { font-family: 'Playfair Display', serif; font-size: 18px; margin-bottom: 8px; }
-  .cta-box p { font-size: 13px; opacity: 0.85; margin-bottom: 16px; }
-  .cta-btn { display: block; background: var(--gold); color: white; font-weight: 700; font-size: 13px; padding: 10px; border-radius: 8px; text-decoration: none; }
-  .cta-btn:hover { background: #d4901c; }
-  .search-box { display: flex; border: 1.5px solid var(--border); border-radius: 8px; overflow: hidden; }
-  .search-box input { flex: 1; padding: 10px 12px; border: none; outline: none; font-size: 13px; font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--ink); }
-  .search-box button { background: var(--green); color: white; border: none; padding: 10px 14px; cursor: pointer; font-size: 14px; }
+.thumb-icon { font-size: 52px; line-height: 1; filter: drop-shadow(0 2px 12px rgba(0,0,0,0.25)); }
+.blog-card.featured .thumb-icon { font-size: 72px; }
 
-  /* PAGINATION */
-  .pagination { display: flex; justify-content: center; gap: 6px; margin-top: 32px; }
-  .page-btn { width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--border); background: var(--white); font-size: 13px; font-weight: 500; cursor: pointer; color: var(--muted); font-family: 'DM Sans', sans-serif; }
-  .page-btn.active { background: var(--green); color: white; border-color: var(--green); }
-  .page-btn:hover:not(.active) { border-color: var(--green); color: var(--green); }
+.thumb-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding: 0 12px;
+}
+.blog-card.featured .thumb-label { font-size: 15px; }
 
-  /* HIDDEN */
-  .content-section { display: none; }
-  .content-section.active { display: block; }
+/* Decorative circles on thumb */
+.thumb-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+}
+.tc1 { width: 120px; height: 120px; top: -40px; right: -30px; }
+.tc2 { width: 60px; height: 60px; bottom: 10px; left: 10px; }
 
-  /* TOAST */
-  .toast { position: fixed; bottom: 24px; right: 24px; background: var(--green); color: white; padding: 12px 20px; border-radius: 10px; font-size: 13px; font-weight: 500; box-shadow: 0 4px 20px rgba(0,0,0,0.2); transform: translateY(80px); opacity: 0; transition: all 0.3s; z-index: 999; }
-  .toast.show { transform: translateY(0); opacity: 1; }
+.card-badge {
+  position: absolute; top: 12px; left: 12px;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+  padding: 3px 10px; border-radius: 20px;
+}
+.badge-jee { background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3); }
+.badge-neet { background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3); }
+.badge-cbse { background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3); }
+.badge-olympiad { background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3); }
+.badge-tips { background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3); }
+
+.card-body { padding: 22px; display: flex; flex-direction: column; }
+.card-meta { font-size: 12px; color: var(--muted); margin-bottom: 8px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.card-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; line-height: 1.3; margin-bottom: 9px; color: var(--ink); }
+.blog-card.featured .card-title { font-size: 22px; }
+.card-excerpt { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; flex: 1; }
+.card-footer { display: flex; align-items: center; gap: 10px; font-size: 12px; margin-top: auto; }
+.author-dot { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: white; flex-shrink: 0; }
+.dot-green { background: var(--green); }
+.dot-gold { background: var(--gold); }
+.author-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+.read-time { color: var(--muted); margin-left: auto; }
+.read-more { color: var(--green); font-weight: 600; font-size: 13px; }
+
+/* ========== RESOURCE CARDS ========== */
+.resources-grid { display: grid; gap: 12px; }
+.resource-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; display: flex; align-items: center; gap: 14px; cursor: pointer; transition: all 0.2s; }
+.resource-card:hover { border-color: var(--green-accent); box-shadow: 0 2px 14px rgba(26,92,58,0.1); transform: translateY(-1px); }
+.resource-icon { width: 46px; height: 46px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+.icon-pdf { background: #ffebee; }
+.icon-notes { background: #e8f5e9; }
+.icon-quiz { background: #fff3e0; }
+.resource-info { flex: 1; min-width: 0; }
+.resource-name { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+.resource-meta { font-size: 12px; color: var(--muted); }
+.resource-dl { background: var(--green-light); color: var(--green); font-size: 11px; font-weight: 700; padding: 5px 12px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; }
+
+/* SIDEBAR */
+.sidebar { display: flex; flex-direction: column; gap: 24px; }
+.sidebar-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+.sidebar-title { font-size: 13px; font-weight: 700; color: var(--ink); margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.06em; }
+.topic-list { display: flex; flex-direction: column; }
+.topic-item { display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: var(--muted); padding: 9px 0; border-bottom: 1px solid var(--border); cursor: pointer; transition: color 0.2s; font-weight: 500; }
+.topic-item:last-child { border-bottom: none; }
+.topic-item:hover { color: var(--green); }
+.topic-count { background: var(--green-light); color: var(--green); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px; }
+.cta-box { background: linear-gradient(135deg, var(--green), var(--green-mid)); color: white; border-radius: var(--radius); padding: 24px; text-align: center; }
+.cta-box h3 { font-family: 'Playfair Display', serif; font-size: 18px; margin-bottom: 8px; }
+.cta-box p { font-size: 13px; opacity: 0.85; margin-bottom: 16px; line-height: 1.5; }
+.cta-btn { display: block; background: var(--gold); color: white; font-weight: 700; font-size: 14px; padding: 11px; border-radius: 8px; text-decoration: none; margin-bottom: 10px; }
+.cta-btn:hover { background: #d4901c; }
+.cta-wa { display: block; background: #25d366; color: white; font-weight: 700; font-size: 13px; padding: 10px; border-radius: 8px; text-decoration: none; }
+.cta-wa:hover { background: #128C7E; }
+.search-box { display: flex; border: 1.5px solid var(--border); border-radius: 8px; overflow: hidden; }
+.search-box input { flex: 1; padding: 10px 12px; border: none; outline: none; font-size: 13px; font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--ink); }
+.search-box button { background: var(--green); color: white; border: none; padding: 10px 14px; cursor: pointer; font-size: 14px; }
+
+/* POPULAR ITEM */
+.popular-item { padding: 10px 0; border-bottom: 1px solid var(--border); cursor: pointer; }
+.popular-item:last-child { border-bottom: none; }
+.popular-item:hover .popular-title { color: var(--green); }
+.popular-title { font-size: 13px; color: var(--ink); font-weight: 600; margin-bottom: 3px; transition: color 0.2s; }
+.popular-meta { font-size: 11px; color: var(--muted); }
+
+/* PAGINATION */
+.pagination { display: flex; justify-content: center; gap: 6px; margin-top: 36px; }
+.page-btn { width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--border); background: var(--white); font-size: 13px; font-weight: 500; cursor: pointer; color: var(--muted); font-family: 'DM Sans', sans-serif; transition: all 0.2s; }
+.page-btn.active { background: var(--green); color: white; border-color: var(--green); }
+.page-btn:hover:not(.active) { border-color: var(--green); color: var(--green); }
+
+/* TABS */
+.content-section { display: none; }
+.content-section.active { display: block; }
+
+/* TOAST */
+.toast { position: fixed; bottom: 24px; right: 24px; background: var(--green); color: white; padding: 14px 22px; border-radius: 10px; font-size: 14px; font-weight: 500; box-shadow: 0 4px 20px rgba(0,0,0,0.2); transform: translateY(80px); opacity: 0; transition: all 0.3s; z-index: 999; max-width: 320px; }
+.toast.show { transform: translateY(0); opacity: 1; }
+
+/* FLOAT WA */
+.float-wa { position: fixed; bottom: 24px; left: 24px; background: #25d366; color: white; padding: 12px 18px; border-radius: 50px; font-weight: 600; font-size: 13px; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.45); z-index: 200; display: flex; align-items: center; gap: 8px; }
+.float-wa:hover { background: #128C7E; }
+
+/* TAGS */
+.tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.tag { background: var(--green-light); color: var(--green); font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 12px; }
+
+@media(max-width:600px){ .container { padding: 24px 16px; } .filter-bar { padding: 0 16px; } }
 </style>
 </head>
 <body>
 
+<a class="float-wa" href="https://wa.me/918107563723" target="_blank" rel="noopener">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  Doubt? WhatsApp
+</a>
+
 <nav>
-  <a class="nav-logo" href="index.html">M<sup>2</sup> <span>Learning Hub</span></a>
-  <a class="nav-back" href="index.html">← Back to Home</a>
+  <a class="nav-logo" href="index.html">M² <span>Learning Hub</span></a>
+  <div class="nav-right">
+    <a class="nav-back" href="index.html">← Back to Home</a>
+    <a class="nav-wa" href="https://wa.me/918107563723" target="_blank" rel="noopener">💬 WhatsApp</a>
+  </div>
 </nav>
 
 <div class="hero">
   <div class="hero-tag">Free Study Resources</div>
-  <h1>Learn Smarter.<br>Score Higher.</h1>
-  <p>Free notes, PDFs, practice questions and expert tips by Manish Sir & Madhvi Ma'am — for CBSE, ICSE, JEE & NEET students.</p>
+  <h1>Learn Smarter.<br><em>Score Higher.</em></h1>
+  <p>Free notes, PDFs, NCERT solutions & expert exam tips by Manish Sir — for CBSE, JEE & NEET students.</p>
   <div class="hero-stats">
-    <div class="hero-stat"><strong>50+</strong><span>Free Resources</span></div>
-    <div class="hero-stat"><strong>Daily</strong><span>New Articles</span></div>
+    <div class="hero-stat"><strong>60+</strong><span>Free Resources</span></div>
+    <div class="hero-stat"><strong>Weekly</strong><span>New Articles</span></div>
     <div class="hero-stat"><strong>Class 6–12</strong><span>All Boards</span></div>
+    <div class="hero-stat"><strong>10K+</strong><span>Students Helped</span></div>
   </div>
 </div>
 
 <div class="filter-bar">
-  <button class="tab active" onclick="switchTab('all', this)">All Resources</button>
-  <button class="tab" onclick="switchTab('blog', this)">📝 Blog & Tips</button>
-  <button class="tab" onclick="switchTab('pdf', this)">📄 PDF Notes</button>
-  <button class="tab" onclick="switchTab('cbse', this)">CBSE</button>
-  <button class="tab" onclick="switchTab('jee', this)">JEE</button>
-  <button class="tab" onclick="switchTab('neet', this)">NEET</button>
-  <button class="tab" onclick="switchTab('olympiad', this)">Olympiad</button>
+  <button class="tab active" onclick="switchTab('all',this)">All Resources</button>
+  <button class="tab" onclick="switchTab('cbse',this)">📐 CBSE</button>
+  <button class="tab" onclick="switchTab('jee',this)">🔢 JEE</button>
+  <button class="tab" onclick="switchTab('neet',this)">⚗️ NEET</button>
+  <button class="tab" onclick="switchTab('olympiad',this)">🏆 Olympiad</button>
+  <button class="tab" onclick="switchTab('pdf',this)">📄 Free PDFs</button>
+  <button class="tab" onclick="switchTab('tips',this)">💡 Exam Tips</button>
 </div>
 
 <div class="container">
   <div class="grid">
+  <div>
 
-    <!-- MAIN CONTENT -->
-    <div>
+  <!-- ============ ALL TAB ============ -->
+  <div id="tab-all" class="content-section active">
+    <div class="section-title">Featured Articles</div>
+    <div class="blog-grid">
 
-      <!-- ALL / BLOG TAB -->
-      <div id="tab-all" class="content-section active">
-        <div class="section-title">Featured Articles</div>
-        <div class="blog-grid">
-
-          <!-- Featured Card -->
-          <a href="#" class="blog-card featured" onclick="openArticle(event, 'How to Score 95+ in Class 10 Maths CBSE')">
-            <div class="card-image" style="background: linear-gradient(135deg,#e8f5ee,#c8e6d5);">
-              📐
-              <span class="card-badge badge-cbse">CBSE</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta"><span>📅 Apr 15, 2026</span><span>Class 9 & 10</span></div>
-              <div class="card-title">How to Score 95+ in Class 10 Maths CBSE — Complete Exam Strategy</div>
-              <div class="card-excerpt">Chapter-by-chapter weightage, common mistakes students make, and the exact study plan Manish Sir uses with top-scoring students every year.</div>
-              <div class="card-footer">
-                <div class="author-dot dot-green">MM</div>
-                <span style="font-size:13px;font-weight:500">Manish Mishra</span>
-                <span class="read-time">⏱ 8 min read</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- Regular Cards -->
-          <a href="#" class="blog-card" onclick="openArticle(event, 'JEE Maths Chapter-wise Weightage 2026')">
-            <div class="card-image" style="background:#fff3e0; min-height:120px;">
-              ∫
-              <span class="card-badge badge-jee">JEE</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta"><span>📅 Apr 14, 2026</span><span>Class 11 & 12</span></div>
-              <div class="card-title">JEE Maths Chapter-wise Weightage 2026 — What to Study First</div>
-              <div class="card-excerpt">Coordinate Geometry, Calculus and Algebra dominate JEE Maths. Here's exactly how many marks each chapter carries.</div>
-              <div class="card-footer">
-                <div class="author-dot dot-green">MM</div>
-                <span style="font-size:13px;font-weight:500">Manish Mishra</span>
-                <span class="read-time">⏱ 6 min read</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="blog-card" onclick="openArticle(event, 'NEET Chemistry Most Important Chapters')">
-            <div class="card-image" style="background:#fce4ec; min-height:120px;">
-              ⚗️
-              <span class="card-badge badge-neet">NEET</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta"><span>📅 Apr 13, 2026</span><span>Class 11 & 12</span></div>
-              <div class="card-title">NEET Chemistry — Top 10 Chapters You Must Master for 160+ Score</div>
-              <div class="card-excerpt">Madhvi Ma'am breaks down which organic and inorganic chapters give maximum marks with minimum effort.</div>
-              <div class="card-footer">
-                <div class="author-dot dot-gold">MR</div>
-                <span style="font-size:13px;font-weight:500">Madhvi Rai</span>
-                <span class="read-time">⏱ 7 min read</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="blog-card" onclick="openArticle(event, 'IMO Olympiad Preparation Guide')">
-            <div class="card-image" style="background:#f3e5f5; min-height:120px;">
-              🏆
-              <span class="card-badge badge-olympiad">Olympiad</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta"><span>📅 Apr 12, 2026</span><span>Class 6–10</span></div>
-              <div class="card-title">IMO 2026 Preparation Guide — How to Crack Level 1 in 30 Days</div>
-              <div class="card-excerpt">Topic-wise strategy, important question types, and practice schedule for IMO Level 1 from our Olympiad expert.</div>
-              <div class="card-footer">
-                <div class="author-dot dot-green">MM</div>
-                <span style="font-size:13px;font-weight:500">Manish Mishra</span>
-                <span class="read-time">⏱ 10 min read</span>
-              </div>
-            </div>
-          </a>
-
+      <!-- FEATURED -->
+      <a href="class10-real-numbers-complete.html" class="blog-card featured">
+        <div class="card-thumb thumb-cbse">
+          <div class="thumb-circle tc1"></div>
+          <div class="thumb-circle tc2"></div>
+          <span class="card-badge badge-cbse">CBSE</span>
+          <div class="thumb-icon">📐</div>
+          <div class="thumb-label">Class 10 Maths · Chapter 1</div>
         </div>
-
-        <!-- PDF Section in All tab -->
-        <div class="section-title" style="margin-top:40px">Free PDF Notes & Downloads</div>
-        <div class="resources-grid">
-          <div class="resource-card" onclick="downloadResource('Class 10 Maths Formula Sheet (All Chapters).pdf')">
-            <div class="resource-icon icon-pdf">📄</div>
-            <div class="resource-info">
-              <div class="resource-name">Class 10 Maths Formula Sheet — All Chapters</div>
-              <div class="resource-meta">CBSE • 12 pages • By Manish Sir</div>
-            </div>
-            <span class="resource-dl">⬇ Free</span>
-          </div>
-          <div class="resource-card" onclick="downloadResource('Organic Chemistry Reaction Chart NEET.pdf')">
-            <div class="resource-icon icon-pdf">📄</div>
-            <div class="resource-info">
-              <div class="resource-name">Organic Chemistry Reaction Chart — NEET Ready</div>
-              <div class="resource-meta">NEET • 8 pages • By Madhvi Ma'am</div>
-            </div>
-            <span class="resource-dl">⬇ Free</span>
-          </div>
-          <div class="resource-card" onclick="downloadResource('JEE Calculus Shortcut Tricks.pdf')">
-            <div class="resource-icon icon-notes">📝</div>
-            <div class="resource-info">
-              <div class="resource-name">JEE Calculus — Shortcut Tricks & Quick Revision Notes</div>
-              <div class="resource-meta">JEE • 16 pages • By Manish Sir</div>
-            </div>
-            <span class="resource-dl">⬇ Free</span>
-          </div>
-          <div class="resource-card" onclick="downloadResource('Class 12 Physics Electrostatics Notes.pdf')">
-            <div class="resource-icon icon-notes">📝</div>
-            <div class="resource-info">
-              <div class="resource-name">Class 12 Physics — Electrostatics Complete Notes</div>
-              <div class="resource-meta">CBSE / JEE • 20 pages</div>
-            </div>
-            <span class="resource-dl">⬇ Free</span>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 16, 2026</span><span>Class 10</span></div>
+          <div class="card-title">Real Numbers — Complete NCERT Solutions & Formula Sheet</div>
+          <div class="card-excerpt">Every example and exercise from Chapter 1 solved step-by-step. Euclid's Division Lemma, HCF, LCM, irrational number proofs, decimal expansions, exam tips and FAQs.</div>
+          <div class="tag-row"><span class="tag">HCF & LCM</span><span class="tag">Irrational Numbers</span><span class="tag">Board 2026</span></div>
+          <div class="card-footer" style="margin-top:14px;">
+            <div class="author-dot dot-green">MM</div>
+            <span class="author-name">Manish Mishra</span>
+            <span class="read-time">⏱ 12 min read</span>
           </div>
         </div>
+      </a>
 
-        <div class="pagination">
-          <button class="page-btn active">1</button>
-          <button class="page-btn">2</button>
-          <button class="page-btn">3</button>
-          <button class="page-btn">→</button>
+      <!-- CARD 2 -->
+      <a href="class10-maths-score-95.html" class="blog-card">
+        <div class="card-thumb thumb-cbse" style="min-height:140px;">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-cbse">CBSE</span>
+          <div class="thumb-icon">🏆</div>
+          <div class="thumb-label">Score 95+ Strategy</div>
         </div>
-      </div>
-
-      <!-- PDF TAB -->
-      <div id="tab-pdf" class="content-section">
-        <div class="section-title">All PDF Notes & Downloads</div>
-        <div class="resources-grid">
-          <div class="resource-card" onclick="downloadResource('Class 10 Maths Formula Sheet.pdf')">
-            <div class="resource-icon icon-pdf">📄</div>
-            <div class="resource-info"><div class="resource-name">Class 10 Maths Formula Sheet — All Chapters</div><div class="resource-meta">CBSE • 12 pages • Manish Sir</div></div>
-            <span class="resource-dl">⬇ Free</span>
-          </div>
-          <div class="resource-card" onclick="downloadResource('Organic Chemistry Reactions NEET.pdf')">
-            <div class="resource-icon icon-pdf">📄</div>
-            <div class="resource-info"><div class="resource-name">Organic Chemistry Reaction Chart — NEET</div><div class="resource-meta">NEET • 8 pages • Madhvi Ma'am</div></div>
-            <span class="resource-dl">⬇ Free</span>
-          </div>
-          <div class="resource-card" onclick="downloadResource('JEE Calculus Notes.pdf')">
-            <div class="resource-icon icon-notes">📝</div>
-            <div class="resource-info"><div class="resource-name">JEE Calculus Shortcut Tricks & Revision Notes</div><div class="resource-meta">JEE • 16 pages • Manish Sir</div></div>
-            <span class="resource-dl">⬇ Free</span>
-          </div>
-          <div class="resource-card" onclick="downloadResource('Class 12 Electrostatics.pdf')">
-            <div class="resource-icon icon-notes">📝</div>
-            <div class="resource-info"><div class="resource-name">Class 12 Physics — Electrostatics Notes</div><div class="resource-meta">CBSE / JEE • 20 pages</div></div>
-            <span class="resource-dl">⬇ Free</span>
-          </div>
-          <div class="resource-card" onclick="downloadResource('NSO Science Olympiad Mock Test.pdf')">
-            <div class="resource-icon icon-quiz">📋</div>
-            <div class="resource-info"><div class="resource-name">NSO Science Olympiad — Mock Test Paper 1</div><div class="resource-meta">NSO • 40 Questions • All Classes</div></div>
-            <span class="resource-dl">⬇ Free</span>
-          </div>
-          <div class="resource-card" onclick="downloadResource('Class 9 Number Systems Notes.pdf')">
-            <div class="resource-icon icon-notes">📝</div>
-            <div class="resource-info"><div class="resource-name">Class 9 Maths — Number Systems Complete Notes</div><div class="resource-meta">CBSE / ICSE • 10 pages</div></div>
-            <span class="resource-dl">⬇ Free</span>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 15, 2026</span><span>Class 10</span></div>
+          <div class="card-title">How to Score 95+ in Class 10 Maths CBSE — Complete Exam Strategy</div>
+          <div class="card-excerpt">Chapter-by-chapter weightage, common mistakes, and the exact study plan Manish Sir uses with top-scoring students every year.</div>
+          <div class="card-footer">
+            <div class="author-dot dot-green">MM</div>
+            <span class="author-name">Manish Mishra</span>
+            <span class="read-time">⏱ 8 min</span>
           </div>
         </div>
-      </div>
+      </a>
 
-      <!-- CBSE TAB -->
-      <div id="tab-cbse" class="content-section">
-        <div class="section-title">CBSE Resources</div>
-        <div class="blog-grid">
-          <a href="#" class="blog-card featured" onclick="openArticle(event, 'CBSE Class 10 Maths 95+ Strategy')">
-            <div class="card-image" style="background:#e8f5ee;min-height:180px;">📐<span class="card-badge badge-cbse">CBSE</span></div>
-            <div class="card-body">
-              <div class="card-meta"><span>📅 Apr 15, 2026</span></div>
-              <div class="card-title">How to Score 95+ in Class 10 Maths CBSE</div>
-              <div class="card-excerpt">The complete exam strategy used by our top-scoring students.</div>
-              <div class="card-footer"><div class="author-dot dot-green">MM</div><span style="font-size:13px;font-weight:500">Manish Mishra</span><span class="read-time">⏱ 8 min</span></div>
-            </div>
-          </a>
-          <a href="#" class="blog-card" onclick="openArticle(event, 'CBSE Class 12 Board Exam Tips')">
-            <div class="card-image" style="background:#e8f5ee;min-height:120px;">📚<span class="card-badge badge-cbse">CBSE</span></div>
-            <div class="card-body">
-              <div class="card-meta"><span>📅 Apr 10, 2026</span><span>Class 12</span></div>
-              <div class="card-title">CBSE Class 12 Board Exam — Last 30 Days Preparation Plan</div>
-              <div class="card-excerpt">What to revise, what to leave, and how to manage time on exam day.</div>
-              <div class="card-footer"><div class="author-dot dot-green">MM</div><span style="font-size:13px;font-weight:500">Manish Mishra</span><span class="read-time">⏱ 6 min</span></div>
-            </div>
-          </a>
+      <!-- CARD 3 -->
+      <a href="jee-maths-weightage-2026.html" class="blog-card">
+        <div class="card-thumb thumb-jee" style="min-height:140px;">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-jee">JEE</span>
+          <div class="thumb-icon">∫</div>
+          <div class="thumb-label">JEE Maths Weightage 2026</div>
         </div>
-      </div>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 14, 2026</span><span>Class 11 & 12</span></div>
+          <div class="card-title">JEE Maths Chapter-wise Weightage 2026 — What to Study First</div>
+          <div class="card-excerpt">Coordinate Geometry, Calculus and Algebra dominate JEE Maths. Exactly how many marks each chapter carries with focus areas.</div>
+          <div class="card-footer">
+            <div class="author-dot dot-green">MM</div>
+            <span class="author-name">Manish Mishra</span>
+            <span class="read-time">⏱ 6 min</span>
+          </div>
+        </div>
+      </a>
 
-      <!-- JEE TAB -->
-      <div id="tab-jee" class="content-section">
-        <div class="section-title">JEE Resources</div>
-        <div class="blog-grid">
-          <a href="#" class="blog-card featured" onclick="openArticle(event, 'JEE Maths Chapter Weightage 2026')">
-            <div class="card-image" style="background:#fff3e0;min-height:180px;">∫<span class="card-badge badge-jee">JEE</span></div>
-            <div class="card-body">
-              <div class="card-meta"><span>📅 Apr 14, 2026</span></div>
-              <div class="card-title">JEE Maths Chapter-wise Weightage 2026</div>
-              <div class="card-excerpt">Exactly how many marks each chapter carries — know what to study first.</div>
-              <div class="card-footer"><div class="author-dot dot-green">MM</div><span style="font-size:13px;font-weight:500">Manish Mishra</span><span class="read-time">⏱ 6 min</span></div>
-            </div>
-          </a>
+      <!-- CARD 4 -->
+      <a href="neet-chemistry-top-chapters.html" class="blog-card">
+        <div class="card-thumb thumb-neet" style="min-height:140px;">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-neet">NEET</span>
+          <div class="thumb-icon">⚗️</div>
+          <div class="thumb-label">NEET Chemistry Guide</div>
         </div>
-      </div>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 13, 2026</span><span>Class 11 & 12</span></div>
+          <div class="card-title">NEET Chemistry — Top 10 Chapters You Must Master for 160+ Score</div>
+          <div class="card-excerpt">Which organic and inorganic chapters give maximum marks with minimum effort — chapter priority breakdown.</div>
+          <div class="card-footer">
+            <div class="author-dot dot-green">MM</div>
+            <span class="author-name">Manish Mishra</span>
+            <span class="read-time">⏱ 7 min</span>
+          </div>
+        </div>
+      </a>
 
-      <!-- NEET TAB -->
-      <div id="tab-neet" class="content-section">
-        <div class="section-title">NEET Resources</div>
-        <div class="blog-grid">
-          <a href="#" class="blog-card featured" onclick="openArticle(event, 'NEET Chemistry Top Chapters')">
-            <div class="card-image" style="background:#fce4ec;min-height:180px;">⚗️<span class="card-badge badge-neet">NEET</span></div>
-            <div class="card-body">
-              <div class="card-meta"><span>📅 Apr 13, 2026</span></div>
-              <div class="card-title">NEET Chemistry — Top Chapters for 160+ Score</div>
-              <div class="card-excerpt">Madhvi Ma'am's chapter priority list from 12+ years of NEET coaching experience.</div>
-              <div class="card-footer"><div class="author-dot dot-gold">MR</div><span style="font-size:13px;font-weight:500">Madhvi Rai</span><span class="read-time">⏱ 7 min</span></div>
-            </div>
-          </a>
+      <!-- CARD 5 -->
+      <a href="imo-olympiad-guide-2026.html" class="blog-card">
+        <div class="card-thumb thumb-olympiad" style="min-height:140px;">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-olympiad">Olympiad</span>
+          <div class="thumb-icon">🏅</div>
+          <div class="thumb-label">IMO 2026 Prep Guide</div>
         </div>
-      </div>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 12, 2026</span><span>Class 6–10</span></div>
+          <div class="card-title">IMO 2026 Preparation Guide — How to Crack Level 1 in 30 Days</div>
+          <div class="card-excerpt">Topic-wise strategy, important question types and a 30-day practice schedule for IMO Level 1 from our Olympiad expert.</div>
+          <div class="card-footer">
+            <div class="author-dot dot-green">MM</div>
+            <span class="author-name">Manish Mishra</span>
+            <span class="read-time">⏱ 10 min</span>
+          </div>
+        </div>
+      </a>
 
-      <!-- OLYMPIAD TAB -->
-      <div id="tab-olympiad" class="content-section">
-        <div class="section-title">Olympiad Resources</div>
-        <div class="blog-grid">
-          <a href="#" class="blog-card featured" onclick="openArticle(event, 'IMO 2026 Preparation Guide')">
-            <div class="card-image" style="background:#f3e5f5;min-height:180px;">🏆<span class="card-badge badge-olympiad">Olympiad</span></div>
-            <div class="card-body">
-              <div class="card-meta"><span>📅 Apr 12, 2026</span></div>
-              <div class="card-title">IMO 2026 — How to Crack Level 1 in 30 Days</div>
-              <div class="card-excerpt">Topic-wise strategy and practice schedule from our Olympiad specialists.</div>
-              <div class="card-footer"><div class="author-dot dot-green">MM</div><span style="font-size:13px;font-weight:500">Manish Mishra</span><span class="read-time">⏱ 10 min</span></div>
-            </div>
-          </a>
+      <!-- CARD 6 -->
+      <a href="cbse-last-minute-revision-tips.html" class="blog-card">
+        <div class="card-thumb thumb-tips" style="min-height:140px;">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-tips">Exam Tips</span>
+          <div class="thumb-icon">💡</div>
+          <div class="thumb-label">Board Exam Tips</div>
         </div>
-      </div>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 11, 2026</span><span>Class 10 & 12</span></div>
+          <div class="card-title">Last-Minute Revision Tips for CBSE Board 2026 — Day-by-Day Plan</div>
+          <div class="card-excerpt">What to revise, what to leave, and how to manage time in the exam hall. Proven strategy from Manish Sir's top students.</div>
+          <div class="card-footer">
+            <div class="author-dot dot-green">MM</div>
+            <span class="author-name">Manish Mishra</span>
+            <span class="read-time">⏱ 5 min</span>
+          </div>
+        </div>
+      </a>
 
     </div>
 
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-
-      <div class="sidebar-card">
-        <div class="sidebar-title">🔍 Search Resources</div>
-        <div class="search-box">
-          <input type="text" placeholder="e.g. Quadratic formula...">
-          <button>→</button>
+    <!-- FREE PDF SECTION -->
+    <div class="section-title" style="margin-top:44px;">Free PDF Notes & Downloads</div>
+    <div class="resources-grid">
+      <div class="resource-card" onclick="goToPage('class10-real-numbers-complete.html')">
+        <div class="resource-icon icon-pdf">📄</div>
+        <div class="resource-info">
+          <div class="resource-name">Class 10 Real Numbers — Complete NCERT Solutions</div>
+          <div class="resource-meta">CBSE · Chapter 1 · By Manish Sir</div>
         </div>
+        <span class="resource-dl">📖 Read</span>
       </div>
-
-      <div class="cta-box">
-        <h3>Get 1-on-1 Coaching</h3>
-        <p>Free demo class with Manish Sir or Madhvi Ma'am. No commitment required.</p>
-        <a class="cta-btn" href="https://m2learninghub.com/" target="_blank">📅 Book Free Demo</a>
-      </div>
-
-      <div class="sidebar-card">
-        <div class="sidebar-title">📚 Browse by Topic</div>
-        <div class="topic-list">
-          <div class="topic-item" onclick="switchTab('cbse', document.querySelector('[onclick*=cbse]'))">CBSE Class 9 & 10<span class="topic-count">12</span></div>
-          <div class="topic-item" onclick="switchTab('cbse', document.querySelector('[onclick*=cbse]'))">CBSE Class 11 & 12<span class="topic-count">9</span></div>
-          <div class="topic-item" onclick="switchTab('jee', document.querySelector('[onclick*=jee]'))">JEE Mathematics<span class="topic-count">15</span></div>
-          <div class="topic-item" onclick="switchTab('neet', document.querySelector('[onclick*=neet]'))">NEET Chemistry<span class="topic-count">11</span></div>
-          <div class="topic-item" onclick="switchTab('olympiad', document.querySelector('[onclick*=olympiad]'))">IMO / NSO / IOQM<span class="topic-count">8</span></div>
-          <div class="topic-item" onclick="switchTab('pdf', document.querySelector('[onclick*=pdf]'))">Free PDFs & Notes<span class="topic-count">20</span></div>
+      <div class="resource-card" onclick="goToPage('class10-real-numbers-formula-sheet.html')">
+        <div class="resource-icon icon-pdf">📄</div>
+        <div class="resource-info">
+          <div class="resource-name">Class 10 Real Numbers Formula Sheet</div>
+          <div class="resource-meta">CBSE · All formulas + Exam Tips · By Manish Sir</div>
         </div>
+        <span class="resource-dl">📖 Read</span>
       </div>
-
-      <div class="sidebar-card">
-        <div class="sidebar-title">🔥 Popular This Week</div>
-        <div class="topic-list">
-          <div class="topic-item" style="flex-direction:column;align-items:flex-start;gap:2px;">
-            <span style="font-size:13px;color:var(--ink);font-weight:500">Class 10 Maths Formula Sheet PDF</span>
-            <span style="font-size:11px;color:var(--muted)">1,240 downloads this week</span>
-          </div>
-          <div class="topic-item" style="flex-direction:column;align-items:flex-start;gap:2px;">
-            <span style="font-size:13px;color:var(--ink);font-weight:500">JEE Maths Weightage 2026</span>
-            <span style="font-size:11px;color:var(--muted)">890 views</span>
-          </div>
-          <div class="topic-item" style="flex-direction:column;align-items:flex-start;gap:2px;">
-            <span style="font-size:13px;color:var(--ink);font-weight:500">NEET Chemistry Top Chapters</span>
-            <span style="font-size:11px;color:var(--muted)">760 views</span>
-          </div>
+      <div class="resource-card" onclick="showToast('📥 Full PDF pack available on WhatsApp! Message Manish Sir at +91 8107563723')">
+        <div class="resource-icon icon-notes">📝</div>
+        <div class="resource-info">
+          <div class="resource-name">JEE Maths Calculus — Shortcut Tricks & Notes</div>
+          <div class="resource-meta">JEE · 16 pages · By Manish Sir</div>
         </div>
+        <span class="resource-dl">⬇ WhatsApp</span>
       </div>
+      <div class="resource-card" onclick="showToast('📥 Full PDF pack available on WhatsApp! Message Manish Sir at +91 8107563723')">
+        <div class="resource-icon icon-notes">📝</div>
+        <div class="resource-info">
+          <div class="resource-name">Class 12 Physics — Electrostatics Complete Notes</div>
+          <div class="resource-meta">CBSE / JEE · 20 pages</div>
+        </div>
+        <span class="resource-dl">⬇ WhatsApp</span>
+      </div>
+      <div class="resource-card" onclick="showToast('📥 Full PDF pack available on WhatsApp! Message Manish Sir at +91 8107563723')">
+        <div class="resource-icon icon-quiz">📋</div>
+        <div class="resource-info">
+          <div class="resource-name">CBSE Class 10 Maths — PYQ Paper 2020–2025</div>
+          <div class="resource-meta">CBSE · Previous Year Questions · All Sets</div>
+        </div>
+        <span class="resource-dl">⬇ WhatsApp</span>
+      </div>
+    </div>
 
+    <div class="pagination">
+      <button class="page-btn active">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <button class="page-btn">→</button>
     </div>
   </div>
-</div>
+
+  <!-- ============ CBSE TAB ============ -->
+  <div id="tab-cbse" class="content-section">
+    <div class="section-title">CBSE Resources</div>
+    <div class="blog-grid">
+      <a href="class10-real-numbers-complete.html" class="blog-card featured">
+        <div class="card-thumb thumb-cbse">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-cbse">CBSE</span>
+          <div class="thumb-icon">📐</div>
+          <div class="thumb-label">Class 10 · Real Numbers</div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 16, 2026</span><span>Class 10</span></div>
+          <div class="card-title">Real Numbers — Complete NCERT Solutions Chapter 1</div>
+          <div class="card-excerpt">Every example and exercise solved with step-by-step working. HCF, LCM, Euclid's Division Lemma, irrational number proofs and decimal expansion rules.</div>
+          <div class="card-footer"><div class="author-dot dot-green">MM</div><span class="author-name">Manish Mishra</span><span class="read-time">⏱ 12 min</span></div>
+        </div>
+      </a>
+      <a href="class10-maths-score-95.html" class="blog-card">
+        <div class="card-thumb thumb-cbse" style="min-height:140px;">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-cbse">CBSE</span>
+          <div class="thumb-icon">🏆</div>
+          <div class="thumb-label">Score 95+ in Maths</div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 15, 2026</span><span>Class 10</span></div>
+          <div class="card-title">How to Score 95+ in Class 10 Maths CBSE</div>
+          <div class="card-excerpt">Chapter weightage, smart study plan, and common mistake list from Manish Sir's coaching experience.</div>
+          <div class="card-footer"><div class="author-dot dot-green">MM</div><span class="author-name">Manish Mishra</span><span class="read-time">⏱ 8 min</span></div>
+        </div>
+      </a>
+      <a href="cbse-last-minute-revision-tips.html" class="blog-card">
+        <div class="card-thumb thumb-tips" style="min-height:140px;">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-tips">Exam Tips</span>
+          <div class="thumb-icon">⏰</div>
+          <div class="thumb-label">Last Minute Revision</div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 11, 2026</span><span>Class 10 & 12</span></div>
+          <div class="card-title">Last-Minute Revision Tips for CBSE Board 2026</div>
+          <div class="card-excerpt">Day-by-day plan for the final week before board exams. What to revise, what to skip, and exam hall time management.</div>
+          <div class="card-footer"><div class="author-dot dot-green">MM</div><span class="author-name">Manish Mishra</span><span class="read-time">⏱ 5 min</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ============ JEE TAB ============ -->
+  <div id="tab-jee" class="content-section">
+    <div class="section-title">JEE Resources</div>
+    <div class="blog-grid">
+      <a href="jee-maths-weightage-2026.html" class="blog-card featured">
+        <div class="card-thumb thumb-jee">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-jee">JEE</span>
+          <div class="thumb-icon">∫</div>
+          <div class="thumb-label">JEE Maths 2026</div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 14, 2026</span><span>Class 11 & 12</span></div>
+          <div class="card-title">JEE Maths Chapter-wise Weightage 2026 — What to Study First</div>
+          <div class="card-excerpt">Coordinate Geometry, Calculus and Algebra dominate JEE Maths. Full chapter-wise breakdown with strategy for maximum score.</div>
+          <div class="card-footer"><div class="author-dot dot-green">MM</div><span class="author-name">Manish Mishra</span><span class="read-time">⏱ 6 min</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ============ NEET TAB ============ -->
+  <div id="tab-neet" class="content-section">
+    <div class="section-title">NEET Resources</div>
+    <div class="blog-grid">
+      <a href="neet-chemistry-top-chapters.html" class="blog-card featured">
+        <div class="card-thumb thumb-neet">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-neet">NEET</span>
+          <div class="thumb-icon">⚗️</div>
+          <div class="thumb-label">NEET Chemistry Guide</div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 13, 2026</span><span>Class 11 & 12</span></div>
+          <div class="card-title">NEET Chemistry — Top 10 Chapters for 160+ Score</div>
+          <div class="card-excerpt">Chapter priority list, important topics and practice strategy for NEET Chemistry from Manish Sir's coaching experience.</div>
+          <div class="card-footer"><div class="author-dot dot-green">MM</div><span class="author-name">Manish Mishra</span><span class="read-time">⏱ 7 min</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ============ OLYMPIAD TAB ============ -->
+  <div id="tab-olympiad" class="content-section">
+    <div class="section-title">Olympiad Resources</div>
+    <div class="blog-grid">
+      <a href="imo-olympiad-guide-2026.html" class="blog-card featured">
+        <div class="card-thumb thumb-olympiad">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-olympiad">Olympiad</span>
+          <div class="thumb-icon">🏅</div>
+          <div class="thumb-label">IMO 2026 Prep</div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 12, 2026</span><span>Class 6–10</span></div>
+          <div class="card-title">IMO 2026 Preparation Guide — Crack Level 1 in 30 Days</div>
+          <div class="card-excerpt">Topic-wise strategy, important question types and a 30-day practice schedule from our Olympiad coaching experts.</div>
+          <div class="card-footer"><div class="author-dot dot-green">MM</div><span class="author-name">Manish Mishra</span><span class="read-time">⏱ 10 min</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ============ PDF TAB ============ -->
+  <div id="tab-pdf" class="content-section">
+    <div class="section-title">All Free Resources</div>
+    <div class="resources-grid">
+      <div class="resource-card" onclick="goToPage('class10-real-numbers-complete.html')">
+        <div class="resource-icon icon-pdf">📄</div>
+        <div class="resource-info"><div class="resource-name">Class 10 Real Numbers — Full NCERT Solutions</div><div class="resource-meta">CBSE · Chapter 1 · All Examples + Exercises · Manish Sir</div></div>
+        <span class="resource-dl">📖 Read Free</span>
+      </div>
+      <div class="resource-card" onclick="goToPage('class10-real-numbers-formula-sheet.html')">
+        <div class="resource-icon icon-pdf">📄</div>
+        <div class="resource-info"><div class="resource-name">Class 10 Real Numbers Formula Sheet</div><div class="resource-meta">CBSE · All Formulas · Theorems · FAQs · Manish Sir</div></div>
+        <span class="resource-dl">📖 Read Free</span>
+      </div>
+      <div class="resource-card" onclick="showToast('📥 Message Manish Sir on WhatsApp: +91 8107563723 to get this PDF!')">
+        <div class="resource-icon icon-notes">📝</div>
+        <div class="resource-info"><div class="resource-name">JEE Calculus Shortcut Tricks & Revision Notes</div><div class="resource-meta">JEE · 16 pages · Manish Sir</div></div>
+        <span class="resource-dl">⬇ WhatsApp</span>
+      </div>
+      <div class="resource-card" onclick="showToast('📥 Message Manish Sir on WhatsApp: +91 8107563723 to get this PDF!')">
+        <div class="resource-icon icon-notes">📝</div>
+        <div class="resource-info"><div class="resource-name">Class 12 Physics — Electrostatics Complete Notes</div><div class="resource-meta">CBSE / JEE · 20 pages</div></div>
+        <span class="resource-dl">⬇ WhatsApp</span>
+      </div>
+      <div class="resource-card" onclick="showToast('📥 Message Manish Sir on WhatsApp: +91 8107563723 to get this PDF!')">
+        <div class="resource-icon icon-quiz">📋</div>
+        <div class="resource-info"><div class="resource-name">CBSE Class 10 Maths PYQ 2020–2025 All Sets</div><div class="resource-meta">CBSE · Previous Year Questions · Board Exam</div></div>
+        <span class="resource-dl">⬇ WhatsApp</span>
+      </div>
+      <div class="resource-card" onclick="showToast('📥 Message Manish Sir on WhatsApp: +91 8107563723 to get this PDF!')">
+        <div class="resource-icon icon-quiz">📋</div>
+        <div class="resource-info"><div class="resource-name">NSO Science Olympiad — Mock Test Paper 1</div><div class="resource-meta">NSO · 40 Questions · All Classes</div></div>
+        <span class="resource-dl">⬇ WhatsApp</span>
+      </div>
+      <div class="resource-card" onclick="showToast('📥 Message Manish Sir on WhatsApp: +91 8107563723 to get this PDF!')">
+        <div class="resource-icon icon-notes">📝</div>
+        <div class="resource-info"><div class="resource-name">Class 9 Maths — Number Systems Complete Notes</div><div class="resource-meta">CBSE / ICSE · 10 pages</div></div>
+        <span class="resource-dl">⬇ WhatsApp</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TIPS TAB ============ -->
+  <div id="tab-tips" class="content-section">
+    <div class="section-title">Exam Tips & Strategy</div>
+    <div class="blog-grid">
+      <a href="class10-maths-score-95.html" class="blog-card featured">
+        <div class="card-thumb thumb-tips">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-tips">Exam Tips</span>
+          <div class="thumb-icon">🏆</div>
+          <div class="thumb-label">Score 95+ in CBSE Maths</div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 15, 2026</span><span>Class 10</span></div>
+          <div class="card-title">How to Score 95+ in Class 10 Maths CBSE — Complete Exam Strategy</div>
+          <div class="card-excerpt">Chapter-by-chapter weightage, common mistakes students make, and the proven study plan Manish Sir uses with top scorers every year.</div>
+          <div class="card-footer"><div class="author-dot dot-green">MM</div><span class="author-name">Manish Mishra</span><span class="read-time">⏱ 8 min</span></div>
+        </div>
+      </a>
+      <a href="cbse-last-minute-revision-tips.html" class="blog-card">
+        <div class="card-thumb thumb-tips" style="min-height:140px;">
+          <div class="thumb-circle tc1"></div>
+          <span class="card-badge badge-tips">Exam Tips</span>
+          <div class="thumb-icon">⏰</div>
+          <div class="thumb-label">Last Minute Plan</div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><span>📅 Apr 11, 2026</span><span>Class 10 & 12</span></div>
+          <div class="card-title">Last-Minute Revision Tips for CBSE Board 2026</div>
+          <div class="card-excerpt">Day-by-day revision plan for the final week before board exams. What to revise, what to skip, and exam hall strategy.</div>
+          <div class="card-footer"><div class="author-dot dot-green">MM</div><span class="author-name">Manish Mishra</span><span class="read-time">⏱ 5 min</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  </div><!-- end main -->
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="cta-box">
+      <h3>Free Doubt Group 📲</h3>
+      <p>Join Class 10 Maths Board 2027 group — free notes, PYQs & doubt support by Manish Sir.</p>
+      <a class="cta-wa" href="https://wa.me/918107563723?text=Hi%20Manish%20Sir!%20I%20want%20to%20join%20the%20free%20doubt%20group." target="_blank" rel="noopener">💬 Join WhatsApp Group</a>
+      <p style="font-size:11px;opacity:0.7;margin-top:10px;">Added after Manish Sir's approval</p>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sidebar-title">🔍 Search</div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="e.g. Real Numbers, HCF..." onkeyup="handleSearch(event)">
+        <button onclick="doSearch()">→</button>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sidebar-title">📚 Browse by Topic</div>
+      <div class="topic-list">
+        <div class="topic-item" onclick="switchTab('cbse',document.querySelectorAll('.tab')[1])">CBSE Class 9 & 10<span class="topic-count">14</span></div>
+        <div class="topic-item" onclick="switchTab('cbse',document.querySelectorAll('.tab')[1])">CBSE Class 11 & 12<span class="topic-count">9</span></div>
+        <div class="topic-item" onclick="switchTab('jee',document.querySelectorAll('.tab')[2])">JEE Mathematics<span class="topic-count">15</span></div>
+        <div class="topic-item" onclick="switchTab('neet',document.querySelectorAll('.tab')[3])">NEET Chemistry<span class="topic-count">11</span></div>
+        <div class="topic-item" onclick="switchTab('olympiad',document.querySelectorAll('.tab')[4])">IMO / NSO / IOQM<span class="topic-count">8</span></div>
+        <div class="topic-item" onclick="switchTab('pdf',document.querySelectorAll('.tab')[5])">Free PDFs & Notes<span class="topic-count">22</span></div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sidebar-title">🔥 Popular This Week</div>
+      <div class="popular-item" onclick="goToPage('class10-real-numbers-complete.html')">
+        <div class="popular-title">Class 10 Real Numbers — Full NCERT Solutions</div>
+        <div class="popular-meta">3,240 views · Chapter 1 Complete</div>
+      </div>
+      <div class="popular-item" onclick="goToPage('class10-real-numbers-formula-sheet.html')">
+        <div class="popular-title">Real Numbers Formula Sheet PDF</div>
+        <div class="popular-meta">1,890 downloads · CBSE Board 2026</div>
+      </div>
+      <div class="popular-item" onclick="goToPage('jee-maths-weightage-2026.html')">
+        <div class="popular-title">JEE Maths Weightage 2026</div>
+        <div class="popular-meta">1,340 views · Chapter Priorities</div>
+      </div>
+      <div class="popular-item" onclick="goToPage('class10-maths-score-95.html')">
+        <div class="popular-title">Score 95+ in CBSE Maths Strategy</div>
+        <div class="popular-meta">980 views · Exam Planning</div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sidebar-title">📌 Quick Links</div>
+      <div class="topic-list">
+        <div class="topic-item" onclick="goToPage('class10-real-numbers-complete.html')">📐 Real Numbers Solutions</div>
+        <div class="topic-item" onclick="goToPage('class10-real-numbers-formula-sheet.html')">📋 Formula Sheet Ch.1</div>
+        <div class="topic-item" onclick="showToast('More chapters coming soon! Join WhatsApp group to get notified.')">📊 Statistics Notes (Soon)</div>
+        <div class="topic-item" onclick="showToast('More chapters coming soon! Join WhatsApp group to get notified.')">🔢 Polynomials (Soon)</div>
+      </div>
+    </div>
+
+  </div><!-- end sidebar -->
+  </div><!-- end grid -->
+</div><!-- end container -->
 
 <div class="toast" id="toast"></div>
 
@@ -567,25 +729,35 @@
 function switchTab(name, el) {
   document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  const target = name === 'blog' ? 'all' : name;
-  document.getElementById('tab-' + target).classList.add('active');
+  document.getElementById('tab-' + name).classList.add('active');
   if (el) el.classList.add('active');
+  window.scrollTo({ top: 220, behavior: 'smooth' });
 }
 
-function downloadResource(name) {
-  showToast('📥 ' + name + ' — coming soon! WhatsApp us to get it now.');
-}
-
-function openArticle(e, title) {
-  e.preventDefault();
-  showToast('📖 "' + title + '" — full article coming soon!');
-}
+function goToPage(url) { window.location.href = url; }
 
 function showToast(msg) {
   const t = document.getElementById('toast');
   t.textContent = msg;
   t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 3500);
+  setTimeout(() => t.classList.remove('show'), 4000);
+}
+
+function handleSearch(e) { if (e.key === 'Enter') doSearch(); }
+function doSearch() {
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  if (!q) return;
+  if (q.includes('real') || q.includes('hcf') || q.includes('lcm') || q.includes('euclid')) {
+    window.location.href = 'class10-real-numbers-complete.html';
+  } else if (q.includes('formula')) {
+    window.location.href = 'class10-real-numbers-formula-sheet.html';
+  } else if (q.includes('jee')) {
+    window.location.href = 'jee-maths-weightage-2026.html';
+  } else if (q.includes('neet') || q.includes('chemistry')) {
+    window.location.href = 'neet-chemistry-top-chapters.html';
+  } else {
+    showToast('🔍 Searching for "' + q + '"… More articles coming soon! Join WhatsApp group for updates.');
+  }
 }
 </script>
 </body>
