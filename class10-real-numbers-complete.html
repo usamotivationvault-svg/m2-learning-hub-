@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 10 Maths Real Numbers – Complete NCERT Solutions | M2 Learning Hub</title>
+<meta name="description" content="Complete NCERT solutions for Class 10 Maths Chapter 1 Real Numbers. All examples & exercises solved step-by-step. Free formula sheet, exam tips, FAQs by M2 Learning Hub.">
+<meta name="keywords" content="class 10 maths real numbers NCERT solutions, chapter 1 real numbers class 10, euclid division lemma, HCF LCM class 10, irrational numbers proof, CBSE class 10 maths 2025-26">
+<meta name="author" content="Manish Mishra - M2 Learning Hub">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://m2learninghub.com/class10-real-numbers">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* VIBRANT NEW PALETTE */
+  --primary: #6c11f5;        /* electric violet */
+  --primary-dark: #4a0ab5;
+  --primary-light: #f0e9ff;
+  --accent: #ff6b00;         /* blazing orange */
+  --accent-light: #fff3ea;
+  --teal: #00b4a6;           /* energetic teal */
+  --teal-light: #e0f8f6;
+  --pink: #e91e8c;           /* hot pink */
+  --pink-light: #fde8f4;
+  --yellow: #f5c100;
+  --yellow-light: #fffbea;
+  --green: #1cb87e;
+  --green-light: #e4faf3;
+  --red: #e53935;
+  --red-light: #fdecea;
+  --ink: #1a1035;
+  --muted: #5c5a72;
+  --border: #e2dff5;
+  --surface: #fafafe;
+  --white: #ffffff;
+  --radius: 14px;
+  --shadow: 0 4px 20px rgba(108,17,245,0.10);
+  --shadow-lg: 0 8px 40px rgba(108,17,245,0.18);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--surface);
+  color: var(--ink);
+  line-height: 1.75;
+  font-size: 17px;
+}
+
+/* ===== NAV ===== */
+nav {
+  background: var(--white);
+  border-bottom: 2px solid var(--border);
+  padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px; position: sticky; top: 0; z-index: 100;
+  box-shadow: 0 2px 12px rgba(108,17,245,0.08);
+}
+.nav-logo { font-family: 'Nunito', sans-serif; font-size: 22px; font-weight: 900; color: var(--primary); text-decoration: none; }
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 16px; align-items: center; }
+.nav-links a { font-size: 14px; font-weight: 600; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--primary); }
+.nav-wa { background: #25d366 !important; color: white !important; padding: 8px 16px; border-radius: 20px; }
+.nav-wa:hover { background: #128C7E !important; }
+@media(max-width:600px){.nav-links{display:none;}}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb { background: var(--primary-light); padding: 10px 24px; font-size: 14px; color: var(--muted); }
+.breadcrumb a { color: var(--primary); text-decoration: none; font-weight: 600; }
+
+/* ===== WATERMARK BAR ===== */
+.wm-bar {
+  background: linear-gradient(90deg, var(--primary), var(--pink), var(--accent));
+  color: white; text-align: center; padding: 8px;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.06em;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #1a0060 0%, var(--primary) 50%, #c011a0 100%);
+  color: white; padding: 64px 24px 56px; text-align: center; position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(255,107,0,0.15) 0%, transparent 60%),
+              radial-gradient(circle at 80% 20%, rgba(0,180,166,0.12) 0%, transparent 50%);
+  pointer-events: none;
+}
+.hero-dots {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.hero-tag {
+  display: inline-block; background: rgba(255,255,255,0.15);
+  border: 1.5px solid rgba(255,255,255,0.35); border-radius: 20px;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 18px; margin-bottom: 20px; position: relative;
+}
+.hero h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(28px, 5.5vw, 54px); font-weight: 900; line-height: 1.15; margin-bottom: 16px; position: relative;
+}
+.hero h1 em { font-style: normal; color: var(--yellow); }
+.hero-sub { font-size: 17px; opacity: 0.88; max-width: 620px; margin: 0 auto 30px; position: relative; }
+.hero-pills { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; position: relative; }
+.hero-pill { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 5px 14px; font-size: 13px; font-weight: 600; }
+.hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; }
+.btn-gold { background: var(--yellow); color: var(--ink); padding: 14px 32px; border-radius: 40px; font-weight: 800; font-size: 16px; text-decoration: none; transition: all 0.2s; font-family: 'Nunito', sans-serif; }
+.btn-gold:hover { background: #e0ad00; transform: translateY(-3px); box-shadow: 0 8px 24px rgba(245,193,0,0.5); }
+.btn-outline { background: rgba(255,255,255,0.1); color: white; border: 2px solid rgba(255,255,255,0.4); padding: 12px 26px; border-radius: 40px; font-weight: 700; font-size: 15px; text-decoration: none; transition: all 0.2s; }
+.btn-outline:hover { background: rgba(255,255,255,0.2); }
+
+/* ===== FRONT PAGE CTA (from Image 1) ===== */
+.cta-front {
+  background: linear-gradient(135deg, #1a0060, var(--primary));
+  border-radius: 20px; padding: 32px; color: white; margin: 36px 0;
+  position: relative; overflow: hidden;
+}
+.cta-front::after { content: '🎓'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 72px; opacity: 0.12; }
+.cta-front-title { font-family: 'Nunito', sans-serif; font-size: 20px; font-weight: 900; margin-bottom: 14px; }
+.cta-front ul { list-style: none; display: grid; gap: 6px; margin-bottom: 18px; }
+.cta-front ul li { font-size: 15px; display: flex; align-items: center; gap: 8px; }
+.cta-front ul li::before { content: '✅'; }
+.wa-join-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #25d366; color: white; padding: 13px 28px;
+  border-radius: 40px; font-weight: 800; font-size: 16px; text-decoration: none;
+  transition: all 0.2s; font-family: 'Nunito', sans-serif;
+}
+.wa-join-btn:hover { background: #128C7E; transform: translateY(-2px); }
+
+/* ===== MID PAGE CTA (from Image 2) ===== */
+.cta-mid {
+  background: linear-gradient(90deg, var(--accent-light), #fff8ea);
+  border: 2px solid var(--accent); border-radius: 16px;
+  padding: 20px 24px; margin: 32px 0;
+  display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+}
+.cta-mid-text { font-family: 'Nunito', sans-serif; font-size: 18px; font-weight: 800; color: var(--accent); flex: 1; }
+.cta-mid a { background: var(--accent); color: white; padding: 11px 22px; border-radius: 30px; font-weight: 700; text-decoration: none; font-size: 15px; white-space: nowrap; }
+.cta-mid a:hover { background: #d45800; }
+
+/* ===== LAST PAGE CTA (from Image 3) ===== */
+.cta-last {
+  background: linear-gradient(135deg, #0d0030, #3a0090, #6c11f5);
+  border-radius: 20px; padding: 40px 32px; color: white;
+  text-align: center; margin: 40px 0; position: relative; overflow: hidden;
+}
+.cta-last::before { content: '🎯'; position: absolute; top: -10px; right: 20px; font-size: 80px; opacity: 0.1; }
+.cta-last-title { font-family: 'Nunito', sans-serif; font-size: 26px; font-weight: 900; margin-bottom: 10px; }
+.cta-last-title span { color: var(--yellow); }
+.cta-checklist { list-style: none; display: inline-grid; text-align: left; gap: 8px; margin: 16px auto; }
+.cta-checklist li { font-size: 15px; display: flex; align-items: center; gap: 10px; }
+.cta-checklist li::before { content: '💜'; }
+.cta-fire { font-size: 15px; margin: 14px 0; opacity: 0.9; }
+.cta-last .wa-join-btn { font-size: 17px; padding: 15px 36px; box-shadow: 0 6px 24px rgba(37,211,102,0.5); }
+
+/* ===== LAYOUT ===== */
+.page-wrap { max-width: 1100px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 300px; gap: 36px; }
+@media(max-width:900px){ .page-wrap { grid-template-columns: 1fr; } }
+
+/* ===== SECTION ===== */
+.section { margin-bottom: 48px; }
+.section-heading {
+  font-family: 'Nunito', sans-serif; font-size: 26px; font-weight: 900; color: var(--primary);
+  margin-bottom: 22px; padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary-light);
+  display: flex; align-items: center; gap: 10px;
+}
+
+/* ===== INTRO ===== */
+.intro-box {
+  background: linear-gradient(135deg, var(--primary-light), #e8f0ff);
+  border-left: 6px solid var(--primary);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 22px 24px; font-size: 17px; margin-bottom: 20px;
+}
+.intro-box strong { color: var(--primary); }
+
+/* ===== FORMULA CARDS ===== */
+.formula-grid { display: grid; gap: 20px; }
+.formula-card { background: var(--white); border: 2px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: transform 0.2s, box-shadow 0.2s; }
+.formula-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.fc-header { padding: 12px 20px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 16px; color: white; display: flex; align-items: center; gap: 8px; }
+.fc-h1 { background: linear-gradient(90deg, var(--primary), #9c40ff); }
+.fc-h2 { background: linear-gradient(90deg, var(--teal), #00d4c8); }
+.fc-h3 { background: linear-gradient(90deg, var(--accent), #ff9240); }
+.fc-h4 { background: linear-gradient(90deg, var(--pink), #ff5fb0); }
+.fc-h5 { background: linear-gradient(90deg, #1565c0, #2196f3); }
+.fc-h6 { background: linear-gradient(90deg, var(--green), #00e096); }
+.fc-body { padding: 20px 22px; }
+.formula-box {
+  background: var(--primary-light); border: 2px dashed var(--primary);
+  border-radius: 10px; padding: 14px 20px;
+  font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 700;
+  color: var(--primary-dark); text-align: center; margin: 12px 0;
+}
+.formula-explain { font-size: 16px; color: var(--muted); margin-top: 10px; line-height: 1.75; }
+.formula-explain strong { color: var(--ink); }
+.formula-example {
+  background: var(--yellow-light); border: 1px solid #e8c800; border-radius: 8px;
+  padding: 10px 14px; font-size: 15px; margin-top: 10px;
+  font-family: 'JetBrains Mono', monospace; color: #7a5900;
+}
+
+/* ===== THEOREM CARDS ===== */
+.theorem-card {
+  background: var(--white); border: 2px solid var(--border); border-radius: var(--radius);
+  padding: 22px; margin-bottom: 18px; position: relative; overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.theorem-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: var(--accent); }
+.thm-num { font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+.thm-title { font-family: 'Nunito', sans-serif; font-size: 19px; font-weight: 800; color: var(--ink); margin-bottom: 10px; }
+.thm-body { font-size: 16px; color: var(--muted); }
+.thm-formula { background: var(--accent-light); border: 1.5px solid var(--accent); border-radius: 8px; padding: 12px 18px; font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 700; color: var(--accent); margin: 12px 0; text-align: center; }
+
+/* ===== NCERT SOLUTIONS ===== */
+.ncert-section { margin-bottom: 36px; }
+.ncert-label {
+  display: inline-block; font-size: 12px; font-weight: 800; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 18px;
+}
+.label-example { background: var(--teal-light); color: var(--teal); border: 1px solid var(--teal); }
+.label-exercise { background: var(--pink-light); color: var(--pink); border: 1px solid var(--pink); }
+
+.sol-card {
+  background: var(--white); border: 2px solid var(--border); border-radius: var(--radius);
+  margin-bottom: 16px; overflow: hidden; box-shadow: var(--shadow);
+}
+.sol-header {
+  padding: 16px 22px; display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 14px; cursor: pointer; user-select: none; transition: background 0.2s;
+  font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 17px;
+}
+.sol-header:hover { background: var(--surface); }
+.sol-marks { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 12px; white-space: nowrap; flex-shrink: 0; }
+.m1 { background: var(--teal-light); color: var(--teal); }
+.m2 { background: var(--primary-light); color: var(--primary); }
+.m3 { background: var(--accent-light); color: var(--accent); }
+.m5 { background: var(--pink-light); color: var(--pink); }
+.sol-body {
+  display: none; padding: 20px 22px; border-top: 2px solid var(--border);
+  background: #fafafe; font-size: 16px; line-height: 1.9;
+}
+.sol-body.open { display: block; }
+.sol-toggle { font-size: 22px; color: var(--primary); flex-shrink: 0; transition: transform 0.2s; font-weight: 300; }
+.sol-toggle.rotated { transform: rotate(45deg); }
+
+/* Step-by-step solution */
+.step { margin: 10px 0; padding: 12px 16px; border-radius: 8px; }
+.step-q { background: var(--primary-light); border-left: 4px solid var(--primary); font-weight: 600; color: var(--primary-dark); font-size: 15px; }
+.step-s { background: var(--surface); border-left: 4px solid var(--teal); font-size: 15px; }
+.step-ans { background: var(--green-light); border-left: 4px solid var(--green); font-weight: 700; color: #0a6640; font-size: 16px; }
+.math { font-family: 'JetBrains Mono', monospace; background: var(--primary-light); color: var(--primary-dark); padding: 2px 6px; border-radius: 4px; font-size: 15px; }
+
+/* ===== TABLE ===== */
+.table-wrap { overflow-x: auto; border-radius: var(--radius); border: 2px solid var(--border); margin: 18px 0; }
+table { width: 100%; border-collapse: collapse; background: var(--white); font-size: 16px; }
+thead { background: linear-gradient(90deg, var(--primary), #9c40ff); color: white; }
+th { padding: 13px 18px; text-align: left; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15px; }
+td { padding: 12px 18px; border-bottom: 1px solid var(--border); font-size: 15px; }
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: var(--primary-light); }
+td:first-child { font-weight: 700; color: var(--primary); font-family: 'JetBrains Mono', monospace; font-size: 14px; }
+
+/* ===== MISTAKES ===== */
+.mistake-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px; }
+@media(max-width:600px){ .mistake-grid { grid-template-columns: 1fr; } }
+.mwrong { background: var(--red-light); border: 1.5px solid var(--red); border-radius: var(--radius); padding: 16px; }
+.mright { background: var(--green-light); border: 1.5px solid var(--green); border-radius: var(--radius); padding: 16px; }
+.mlabel { font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; }
+.wl { color: var(--red); } .rl { color: var(--green); }
+.mtext { font-size: 16px; }
+
+/* ===== TIPS ===== */
+.tip-list { display: grid; gap: 12px; }
+.tip-item { background: var(--white); border: 2px solid var(--border); border-radius: var(--radius); padding: 16px 20px; display: flex; gap: 14px; align-items: flex-start; box-shadow: var(--shadow); }
+.tip-icon { font-size: 24px; flex-shrink: 0; }
+.tip-text strong { display: block; font-family: 'Nunito', sans-serif; font-size: 17px; font-weight: 800; color: var(--ink); margin-bottom: 4px; }
+.tip-text span { color: var(--muted); font-size: 15px; }
+
+/* ===== FAQ ===== */
+.faq-item { background: var(--white); border: 2px solid var(--border); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; box-shadow: var(--shadow); }
+.faq-q { padding: 18px 22px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 17px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; transition: background 0.2s; }
+.faq-q:hover { background: var(--primary-light); }
+.faq-q::after { content: '+'; font-size: 26px; color: var(--primary); flex-shrink: 0; font-weight: 300; }
+.faq-item.open .faq-q { background: var(--primary-light); }
+.faq-item.open .faq-q::after { content: '−'; }
+.faq-a { display: none; padding: 16px 22px; border-top: 2px solid var(--border); font-size: 16px; color: var(--muted); line-height: 1.8; background: var(--surface); }
+.faq-item.open .faq-a { display: block; }
+
+/* ===== CHIPS ===== */
+.chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+.chip { font-size: 14px; font-weight: 700; padding: 5px 14px; border-radius: 20px; border: 1.5px solid transparent; }
+.cv { background: var(--primary-light); color: var(--primary); border-color: var(--primary); }
+.co { background: var(--accent-light); color: var(--accent); border-color: var(--accent); }
+.ct { background: var(--teal-light); color: var(--teal); border-color: var(--teal); }
+.cp { background: var(--pink-light); color: var(--pink); border-color: var(--pink); }
+.cy { background: var(--yellow-light); color: #b08000; border-color: var(--yellow); }
+
+/* ===== LINKS ===== */
+.link-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
+.link-card { background: var(--white); border: 2px solid var(--border); border-radius: var(--radius); padding: 14px 16px; text-decoration: none; color: var(--ink); display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; transition: all 0.2s; box-shadow: var(--shadow); }
+.link-card:hover { border-color: var(--primary); background: var(--primary-light); color: var(--primary); transform: translateY(-2px); }
+
+/* ===== SIDEBAR ===== */
+.sidebar { display: flex; flex-direction: column; gap: 20px; }
+.sb-card { background: var(--white); border: 2px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.sb-head { padding: 13px 18px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15px; color: white; display: flex; align-items: center; gap: 8px; }
+.sb-h1 { background: linear-gradient(90deg, var(--primary), #9c40ff); }
+.sb-h2 { background: linear-gradient(90deg, var(--teal), #00d4c8); }
+.sb-h3 { background: linear-gradient(90deg, var(--accent), #ff9240); }
+.sb-body { padding: 16px; }
+.sb-cta { background: linear-gradient(135deg, #1a0060, var(--primary)); color: white; padding: 24px 18px; text-align: center; border-radius: var(--radius); }
+.sb-cta h3 { font-family: 'Nunito', sans-serif; font-size: 19px; font-weight: 900; margin-bottom: 8px; }
+.sb-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 16px; line-height: 1.5; }
+.sb-wa { display: block; background: #25d366; color: white; padding: 12px; border-radius: 10px; text-decoration: none; font-weight: 800; font-size: 15px; transition: background 0.2s; font-family: 'Nunito', sans-serif; }
+.sb-wa:hover { background: #128C7E; }
+.quick-nav { list-style: none; display: grid; gap: 4px; }
+.quick-nav a { display: flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; color: var(--muted); transition: all 0.2s; border: 1.5px solid transparent; }
+.quick-nav a:hover { background: var(--primary-light); color: var(--primary); border-color: var(--primary-light); }
+.fq-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+.fq-row:last-child { border-bottom: none; }
+.fq-name { color: var(--muted); }
+.fq-val { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: var(--primary); background: var(--primary-light); padding: 2px 8px; border-radius: 4px; }
+
+/* ===== FLOAT ===== */
+.float-wa { position: fixed; bottom: 24px; right: 24px; background: #25d366; color: white; padding: 15px 20px; border-radius: 50px; font-weight: 800; font-size: 14px; text-decoration: none; box-shadow: 0 4px 24px rgba(37,211,102,0.55); z-index: 200; display: flex; align-items: center; gap: 8px; transition: all 0.2s; font-family: 'Nunito', sans-serif; }
+.float-wa:hover { background: #128C7E; transform: scale(1.05); }
+@media(max-width:480px){ .float-wa span { display: none; } .float-wa { padding: 15px; border-radius: 50%; } }
+
+/* ===== FOOTER ===== */
+footer { background: linear-gradient(135deg, #0d0030, var(--primary)); color: rgba(255,255,255,0.85); padding: 44px 24px 24px; text-align: center; }
+.f-logo { font-family: 'Nunito', sans-serif; font-size: 24px; font-weight: 900; color: white; margin-bottom: 8px; }
+.f-logo span { color: var(--yellow); }
+.f-tag { font-size: 14px; opacity: 0.75; margin-bottom: 20px; }
+.f-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+.f-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 14px; font-weight: 600; }
+.f-links a:hover { color: white; }
+.f-copy { font-size: 13px; opacity: 0.5; }
+
+/* Utility */
+p { font-size: 17px; color: var(--muted); margin-bottom: 12px; }
+</style>
+</head>
+<body>
+
+<a class="float-wa" href="https://wa.me/918107563723" target="_blank" rel="noopener">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <span>WhatsApp Doubt?</span>
+</a>
+
+<nav>
+  <a class="nav-logo" href="https://m2learninghub.com/">M<span>²</span> Learning Hub</a>
+  <div class="nav-links">
+    <a href="https://m2learninghub.com/">Home</a>
+    <a href="https://m2learninghub.com/">Blog</a>
+    <a href="https://m2learninghub.com/">Resources</a>
+    <a class="nav-wa" href="https://wa.me/918107563723" target="_blank" rel="noopener">💬 WhatsApp</a>
+  </div>
+</nav>
+
+<div class="wm-bar">© M2 Learning Hub | m2learninghub.com | Manish Mishra | +91 8107563723</div>
+
+<div class="breadcrumb">
+  <a href="https://m2learninghub.com/">Home</a> › <a href="https://m2learninghub.com/">Class 10 Maths</a> › Real Numbers – Complete NCERT Solutions
+</div>
+
+<div class="hero">
+  <div class="hero-dots"></div>
+  <div class="hero-tag">📐 CBSE Class 10 Maths · Chapter 1</div>
+  <h1>Real Numbers — <em>Complete NCERT Solutions</em></h1>
+  <p class="hero-sub">Every Example + Every Exercise Question — Solved Step-by-Step. Free Formula Sheet, Exam Tips & FAQs.</p>
+  <div class="hero-pills">
+    <span class="hero-pill">✅ All NCERT Examples Solved</span>
+    <span class="hero-pill">✅ Exercise 1.1 & 1.2 Solved</span>
+    <span class="hero-pill">✅ Board 2025–26</span>
+    <span class="hero-pill">✅ Manish Sir Explained</span>
+  </div>
+  <div class="hero-btns">
+    <a class="btn-gold" href="https://wa.me/918107563723" target="_blank" rel="noopener">📲 Join Free Doubt Group</a>
+    <a class="btn-outline" href="#solutions">View Solutions ↓</a>
+  </div>
+</div>
+
+<!-- FRONT PAGE CTA -->
+<div style="max-width:1100px;margin:0 auto;padding:0 20px;">
+  <div class="cta-front">
+    <div class="cta-front-title">📚 Join FREE Class 10 Maths Doubt Group (Board 2027)</div>
+    <ul>
+      <li>Ask unlimited doubts from any book</li>
+      <li>Get instant help from teachers</li>
+      <li>Receive free notes, PYQs &amp; practice papers</li>
+    </ul>
+    <a class="wa-join-btn" href="https://wa.me/918107563723?text=Hi%20Manish%20Sir!%20I%20want%20to%20join%20the%20Class%2010%20Maths%20Doubt%20Group." target="_blank" rel="noopener">
+      👉 Join Now — wa.me/918107563723
+    </a>
+    <p style="font-size:13px;opacity:0.7;margin-top:12px;margin-bottom:0;">📌 You'll be added to the group by Manish Sir after approval</p>
+  </div>
+</div>
+
+<div class="page-wrap">
+<main>
+
+<!-- INTRODUCTION -->
+<section class="section" id="intro">
+  <h2 class="section-heading">👋 Introduction</h2>
+  <div class="intro-box">
+    <strong>What is this chapter about?</strong> Class 10 Chapter 1 — Real Numbers — covers two powerful ideas: <strong>Euclid's Division Algorithm</strong> (for finding HCF) and the <strong>Fundamental Theorem of Arithmetic</strong> (for unique prime factorisation). You'll use these to prove numbers like √2 are irrational and understand when decimals terminate.
+  </div>
+  <p>This chapter carries <strong>6–8 marks</strong> in the board exam. The questions are predictable and rewarding. Master these solutions and you're guaranteed full marks on Chapter 1.</p>
+  <div class="chip-row">
+    <span class="chip cv">Fundamental Theorem</span>
+    <span class="chip co">HCF &amp; LCM</span>
+    <span class="chip ct">Irrational Numbers</span>
+    <span class="chip cp">Decimal Expansions</span>
+    <span class="chip cy">Proof by Contradiction</span>
+  </div>
+</section>
+
+<!-- FORMULAS -->
+<section class="section" id="formulas">
+  <h2 class="section-heading">📐 Formula Sheet</h2>
+  <div class="formula-grid">
+
+    <div class="formula-card">
+      <div class="fc-header fc-h1">🔢 1. Fundamental Theorem of Arithmetic</div>
+      <div class="fc-body">
+        <div class="formula-box">Every composite number = Unique product of primes</div>
+        <div class="formula-explain"><strong>HCF:</strong> Product of <em>lowest</em> powers of common prime factors.<br>
+        <strong>LCM:</strong> Product of <em>highest</em> powers of all prime factors.<br>
+        <strong>Key:</strong> HCF(a,b) × LCM(a,b) = a × b (valid for TWO numbers only)</div>
+        <div class="formula-example">32760 = 2³ × 3² × 5 × 7 × 13</div>
+      </div>
+    </div>
+
+    <div class="formula-card">
+      <div class="fc-header fc-h2">🔍 2. HCF × LCM Relation</div>
+      <div class="fc-body">
+        <div class="formula-box">HCF(a,b) × LCM(a,b) = a × b</div>
+        <div class="formula-explain"><strong>Note:</strong> This formula works ONLY for TWO positive integers. For three numbers p, q, r — it does NOT hold directly.<br>
+        <strong>Use case:</strong> If HCF is known, find LCM quickly using LCM = (a × b) ÷ HCF</div>
+        <div class="formula-example">HCF(6,20)=2, LCM(6,20)=60 → 2×60 = 6×20 = 120 ✓</div>
+      </div>
+    </div>
+
+    <div class="formula-card">
+      <div class="fc-header fc-h3">🔑 3. Irrationality — Key Lemma</div>
+      <div class="fc-body">
+        <div class="formula-box">If prime p | a², then p | a</div>
+        <div class="formula-explain"><strong>Method:</strong> Proof by Contradiction — assume the number is rational (= a/b in lowest terms), then derive that a prime divides both a and b, contradicting HCF(a,b) = 1.<br>
+        <strong>Rule:</strong> Sum/difference of rational + irrational = irrational</div>
+        <div class="formula-example">√2, √3, √5, 5−√3, 3√2 — all irrational</div>
+      </div>
+    </div>
+
+    <div class="formula-card">
+      <div class="fc-header fc-h4">📊 4. Decimal Expansions</div>
+      <div class="fc-body">
+        <div class="formula-box">p/q terminates ↔ q = 2ⁿ × 5ᵐ</div>
+        <div class="formula-explain"><strong>Terminating:</strong> Denominator (in lowest terms) has only factors 2 and/or 5.<br>
+        <strong>Non-terminating repeating:</strong> Denominator has any other prime factor (3, 7, 11…)<br>
+        <strong>Irrational:</strong> Non-terminating, non-repeating decimal</div>
+        <div class="formula-example">7/8 = 7/2³ → terminates (0.875) | 1/6 → non-terminating</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NCERT SOLUTIONS — SECTION 1.2 EXAMPLES -->
+<section class="section" id="solutions">
+  <h2 class="section-heading">📖 NCERT Solutions — All Examples</h2>
+
+  <div class="ncert-section">
+    <span class="ncert-label label-example">📘 Section 1.2 — Fundamental Theorem Examples</span>
+
+    <div class="sol-card">
+      <div class="sol-header" onclick="toggleSol(this)">
+        Example 1: For 4ⁿ (n = natural number) — does it ever end with digit 0?
+        <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m2">Conceptual</span><span class="sol-toggle">+</span></div>
+      </div>
+      <div class="sol-body">
+        <div class="step step-q">Question: Check whether 4ⁿ ends with digit 0 for any natural number n.</div>
+        <div class="step step-s">
+          <strong>Solution:</strong><br><br>
+          For any number to end with 0, it must be divisible by 10.<br>
+          Since 10 = 2 × 5, the prime factorisation must contain the prime <strong>5</strong>.<br><br>
+          Now, <span class="math">4ⁿ = (2²)ⁿ = 2²ⁿ</span><br><br>
+          The only prime factor of 4ⁿ is <strong>2</strong>. It does NOT contain 5.<br><br>
+          By the uniqueness of the Fundamental Theorem of Arithmetic, there is no way to get 5 as a factor of 4ⁿ.
+        </div>
+        <div class="step step-ans">∴ There is NO natural number n for which 4ⁿ ends with digit 0.</div>
+      </div>
+    </div>
+
+    <div class="sol-card">
+      <div class="sol-header" onclick="toggleSol(this)">
+        Example 2: Find LCM and HCF of 6 and 20 by prime factorisation.
+        <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m2">2 marks</span><span class="sol-toggle">+</span></div>
+      </div>
+      <div class="sol-body">
+        <div class="step step-q">Find LCM and HCF of 6 and 20 by prime factorisation method.</div>
+        <div class="step step-s">
+          <strong>Step 1 — Prime Factorise:</strong><br>
+          <span class="math">6 = 2¹ × 3¹</span><br>
+          <span class="math">20 = 2² × 5¹</span><br><br>
+          <strong>Step 2 — HCF</strong> = Product of LOWEST powers of COMMON prime factors<br>
+          Common prime factor = 2 → lowest power = 2¹<br>
+          <span class="math">HCF(6, 20) = 2¹ = 2</span><br><br>
+          <strong>Step 3 — LCM</strong> = Product of HIGHEST powers of ALL prime factors<br>
+          Primes: 2, 3, 5 → highest powers: 2², 3¹, 5¹<br>
+          <span class="math">LCM(6, 20) = 2² × 3¹ × 5¹ = 4 × 3 × 5 = 60</span><br><br>
+          <strong>Verification:</strong> HCF × LCM = 2 × 60 = 120 = 6 × 20 ✓
+        </div>
+        <div class="step step-ans">HCF(6, 20) = 2 | LCM(6, 20) = 60</div>
+      </div>
+    </div>
+
+    <div class="sol-card">
+      <div class="sol-header" onclick="toggleSol(this)">
+        Example 3: HCF of 96 and 404 → find LCM.
+        <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks</span><span class="sol-toggle">+</span></div>
+      </div>
+      <div class="sol-body">
+        <div class="step step-q">Find HCF of 96 and 404 by prime factorisation. Hence find LCM.</div>
+        <div class="step step-s">
+          <strong>Prime Factorise:</strong><br>
+          96 = 2 × 48 = 2 × 2 × 24 = 2 × 2 × 2 × 12 = 2 × 2 × 2 × 2 × 6 = 2 × 2 × 2 × 2 × 2 × 3<br>
+          <span class="math">96 = 2⁵ × 3¹</span><br><br>
+          404 = 2 × 202 = 2 × 2 × 101<br>
+          <span class="math">404 = 2² × 101</span> (101 is prime)<br><br>
+          <strong>HCF</strong> = product of lowest powers of common factors<br>
+          Common factor: 2 → lowest power = 2²<br>
+          <span class="math">HCF(96, 404) = 2² = 4</span><br><br>
+          <strong>LCM</strong> using formula: LCM = (a × b) ÷ HCF<br>
+          <span class="math">LCM = (96 × 404) ÷ 4 = 38784 ÷ 4 = 9696</span>
+        </div>
+        <div class="step step-ans">HCF(96, 404) = 4 | LCM(96, 404) = 9696</div>
+      </div>
+    </div>
+
+    <div class="sol-card">
+      <div class="sol-header" onclick="toggleSol(this)">
+        Example 4: HCF and LCM of 6, 72 and 120.
+        <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks</span><span class="sol-toggle">+</span></div>
+      </div>
+      <div class="sol-body">
+        <div class="step step-q">Find HCF and LCM of 6, 72 and 120 using prime factorisation.</div>
+        <div class="step step-s">
+          <strong>Prime Factorise all three:</strong><br>
+          <span class="math">6 = 2¹ × 3¹</span><br>
+          <span class="math">72 = 2³ × 3²</span><br>
+          <span class="math">120 = 2³ × 3¹ × 5¹</span><br><br>
+          <strong>HCF</strong> = lowest powers of COMMON primes (2 and 3 are common to all)<br>
+          Common primes: 2 → min power = 2¹; 3 → min power = 3¹<br>
+          <span class="math">HCF(6, 72, 120) = 2¹ × 3¹ = 6</span><br><br>
+          <strong>LCM</strong> = highest powers of ALL primes (2, 3, 5)<br>
+          2 → max power = 2³; 3 → max power = 3²; 5 → max power = 5¹<br>
+          <span class="math">LCM(6, 72, 120) = 2³ × 3² × 5¹ = 8 × 9 × 5 = 360</span><br><br>
+          <strong>Remark:</strong> 6 × 72 × 120 = 51,840 ≠ HCF × LCM = 6 × 360 = 2160<br>
+          ∴ HCF × LCM ≠ product of three numbers (formula only for two numbers!)
+        </div>
+        <div class="step step-ans">HCF(6, 72, 120) = 6 | LCM(6, 72, 120) = 360</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MID PAGE CTA -->
+  <div class="cta-mid">
+    <div class="cta-mid-text">❓ Stuck on a question?</div>
+    <a href="https://wa.me/918107563723?text=Hi%20Manish%20Sir!%20I%20have%20a%20doubt%20in%20Real%20Numbers." target="_blank" rel="noopener">Ask your doubt here 👉</a>
+  </div>
+
+  <!-- SECTION 1.3 EXAMPLES — IRRATIONAL NUMBERS -->
+  <div class="ncert-section">
+    <span class="ncert-label label-example">📘 Section 1.3 — Irrational Numbers Examples</span>
+
+    <div class="sol-card">
+      <div class="sol-header" onclick="toggleSol(this)">
+        Example 5 (Theorem 1.3): Prove that √2 is irrational.
+        <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks ★★★</span><span class="sol-toggle">+</span></div>
+      </div>
+      <div class="sol-body">
+        <div class="step step-q">Prove that √2 is irrational. (Proof by Contradiction)</div>
+        <div class="step step-s">
+          <strong>Assume:</strong> Let √2 be rational.<br>
+          Then √2 = a/b, where a, b are integers, b ≠ 0, and HCF(a, b) = 1 (i.e., a/b is in lowest terms).<br><br>
+          <strong>Step 1:</strong> √2 = a/b → Squaring both sides → <span class="math">2 = a²/b²</span> → <span class="math">a² = 2b²</span><br><br>
+          <strong>Step 2:</strong> Since a² = 2b², we know 2 divides a².<br>
+          By Theorem 1.2 (key lemma: if p | a², then p | a), since 2 is prime:<br>
+          → <strong>2 divides a</strong><br><br>
+          <strong>Step 3:</strong> Since 2 | a, write a = 2c for some integer c.<br>
+          Substitute: a² = 2b² → (2c)² = 2b² → 4c² = 2b² → <span class="math">b² = 2c²</span><br><br>
+          <strong>Step 4:</strong> Since b² = 2c², we know 2 divides b². By the same lemma:<br>
+          → <strong>2 divides b</strong><br><br>
+          <strong>Contradiction:</strong> Both a and b are divisible by 2.<br>
+          But we assumed HCF(a, b) = 1. This is a contradiction!
+        </div>
+        <div class="step step-ans">∴ Our assumption was wrong. √2 is irrational. □</div>
+      </div>
+    </div>
+
+    <div class="sol-card">
+      <div class="sol-header" onclick="toggleSol(this)">
+        Example 5 (Textbook): Prove that √3 is irrational.
+        <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks</span><span class="sol-toggle">+</span></div>
+      </div>
+      <div class="sol-body">
+        <div class="step step-q">Prove that √3 is irrational.</div>
+        <div class="step step-s">
+          <strong>Assume:</strong> Let √3 be rational → √3 = a/b (in lowest terms, HCF(a,b) = 1).<br><br>
+          <strong>Step 1:</strong> b√3 = a → Squaring → <span class="math">3b² = a²</span><br>
+          → 3 divides a² → By lemma (3 is prime) → <strong>3 divides a</strong><br><br>
+          <strong>Step 2:</strong> Write a = 3c. Then 3b² = (3c)² = 9c² → <span class="math">b² = 3c²</span><br>
+          → 3 divides b² → <strong>3 divides b</strong><br><br>
+          <strong>Contradiction:</strong> Both a and b divisible by 3, contradicts HCF(a,b) = 1.
+        </div>
+        <div class="step step-ans">∴ √3 is irrational. □</div>
+      </div>
+    </div>
+
+    <div class="sol-card">
+      <div class="sol-header" onclick="toggleSol(this)">
+        Example 6: Show that 5 − √3 is irrational.
+        <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks</span><span class="sol-toggle">+</span></div>
+      </div>
+      <div class="sol-body">
+        <div class="step step-q">Show that 5 − √3 is irrational.</div>
+        <div class="step step-s">
+          <strong>Assume:</strong> Let 5 − √3 be rational.<br>
+          Then 5 − √3 = a/b (where a, b integers, b ≠ 0, HCF(a,b) = 1)<br><br>
+          <strong>Rearrange:</strong> <span class="math">√3 = 5 − a/b = (5b − a)/b</span><br><br>
+          Since a and b are integers, (5b − a)/b is a rational number.<br>
+          So √3 would be rational.<br><br>
+          <strong>Contradiction:</strong> But √3 is irrational (proven above). This is a contradiction.
+        </div>
+        <div class="step step-ans">∴ 5 − √3 is irrational. □</div>
+      </div>
+    </div>
+
+    <div class="sol-card">
+      <div class="sol-header" onclick="toggleSol(this)">
+        Example 7: Show that 3√2 is irrational.
+        <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks</span><span class="sol-toggle">+</span></div>
+      </div>
+      <div class="sol-body">
+        <div class="step step-q">Show that 3√2 is irrational.</div>
+        <div class="step step-s">
+          <strong>Assume:</strong> Let 3√2 be rational → 3√2 = a/b (in lowest terms)<br><br>
+          <strong>Rearrange:</strong> <span class="math">√2 = a/(3b)</span><br><br>
+          Since a, b, 3 are integers, a/(3b) is rational → √2 is rational.<br><br>
+          <strong>Contradiction:</strong> √2 is irrational. Contradiction!
+        </div>
+        <div class="step step-ans">∴ 3√2 is irrational. □</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXERCISE 1.1 — ALL QUESTIONS SOLVED -->
+<section class="section" id="ex11">
+  <h2 class="section-heading">📝 Exercise 1.1 — All Solutions</h2>
+  <span class="ncert-label label-exercise">📗 Exercise 1.1 — Prime Factorisation, HCF &amp; LCM</span>
+
+  <div class="sol-card">
+    <div class="sol-header" onclick="toggleSol(this)">
+      Q1. Express each number as a product of prime factors: 140, 156, 3825, 5005, 7429
+      <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m1">1 mark each</span><span class="sol-toggle">+</span></div>
+    </div>
+    <div class="sol-body">
+      <div class="step step-s">
+        <strong>(i) 140</strong><br>
+        140 = 2 × 70 = 2 × 2 × 35 = 2 × 2 × 5 × 7<br>
+        <span class="math">140 = 2² × 5 × 7</span><br><br>
+        <strong>(ii) 156</strong><br>
+        156 = 2 × 78 = 2 × 2 × 39 = 2 × 2 × 3 × 13<br>
+        <span class="math">156 = 2² × 3 × 13</span><br><br>
+        <strong>(iii) 3825</strong><br>
+        3825 ÷ 3 = 1275; 1275 ÷ 3 = 425; 425 ÷ 5 = 85; 85 ÷ 5 = 17<br>
+        <span class="math">3825 = 3² × 5² × 17</span><br><br>
+        <strong>(iv) 5005</strong><br>
+        5005 ÷ 5 = 1001; 1001 ÷ 7 = 143; 143 ÷ 11 = 13<br>
+        <span class="math">5005 = 5 × 7 × 11 × 13</span><br><br>
+        <strong>(v) 7429</strong><br>
+        7429 ÷ 17 = 437; 437 ÷ 19 = 23<br>
+        <span class="math">7429 = 17 × 19 × 23</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sol-card">
+    <div class="sol-header" onclick="toggleSol(this)">
+      Q2. Find LCM and HCF and verify LCM × HCF = product: (i) 26 &amp; 91 (ii) 510 &amp; 92 (iii) 336 &amp; 54
+      <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks each</span><span class="sol-toggle">+</span></div>
+    </div>
+    <div class="sol-body">
+      <div class="step step-s">
+        <strong>(i) 26 and 91</strong><br>
+        26 = 2 × 13<br>
+        91 = 7 × 13<br>
+        HCF = 13 (common: 13¹)<br>
+        LCM = 2 × 7 × 13 = 182<br>
+        Verify: 13 × 182 = 2366 = 26 × 91 = 2366 ✓<br><br>
+        <strong>(ii) 510 and 92</strong><br>
+        510 = 2 × 255 = 2 × 3 × 85 = 2 × 3 × 5 × 17<br>
+        92 = 2 × 46 = 2 × 2 × 23 = 2² × 23<br>
+        HCF = 2¹ = 2 (common: 2, lowest power)<br>
+        LCM = 2² × 3 × 5 × 17 × 23 = 4 × 3 × 5 × 17 × 23 = 23460<br>
+        Verify: 2 × 23460 = 46920 = 510 × 92 = 46920 ✓<br><br>
+        <strong>(iii) 336 and 54</strong><br>
+        336 = 2⁴ × 3 × 7<br>
+        54 = 2 × 27 = 2 × 3³<br>
+        HCF = 2¹ × 3¹ = 6 (common: 2 and 3, lowest powers)<br>
+        LCM = 2⁴ × 3³ × 7 = 16 × 27 × 7 = 3024<br>
+        Verify: 6 × 3024 = 18144 = 336 × 54 = 18144 ✓
+      </div>
+    </div>
+  </div>
+
+  <div class="sol-card">
+    <div class="sol-header" onclick="toggleSol(this)">
+      Q3. Find LCM and HCF by prime factorisation: (i) 12,15,21 (ii) 17,23,29 (iii) 8,9,25
+      <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks each</span><span class="sol-toggle">+</span></div>
+    </div>
+    <div class="sol-body">
+      <div class="step step-s">
+        <strong>(i) 12, 15 and 21</strong><br>
+        12 = 2² × 3; 15 = 3 × 5; 21 = 3 × 7<br>
+        HCF = 3¹ = 3 (only 3 is common to all, min power = 1)<br>
+        LCM = 2² × 3 × 5 × 7 = 4 × 3 × 5 × 7 = <strong>420</strong><br><br>
+        <strong>(ii) 17, 23 and 29</strong><br>
+        17, 23, 29 are all prime numbers.<br>
+        HCF = 1 (no common factor)<br>
+        LCM = 17 × 23 × 29 = <strong>11339</strong><br><br>
+        <strong>(iii) 8, 9 and 25</strong><br>
+        8 = 2³; 9 = 3²; 25 = 5²<br>
+        No common prime factor → HCF = 1<br>
+        LCM = 2³ × 3² × 5² = 8 × 9 × 25 = <strong>1800</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="sol-card">
+    <div class="sol-header" onclick="toggleSol(this)">
+      Q4. Given HCF(306, 657) = 9, find LCM(306, 657).
+      <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m2">2 marks</span><span class="sol-toggle">+</span></div>
+    </div>
+    <div class="sol-body">
+      <div class="step step-s">
+        Using: HCF × LCM = a × b<br>
+        9 × LCM = 306 × 657<br>
+        9 × LCM = 201042<br>
+        <span class="math">LCM = 201042 ÷ 9 = 22338</span>
+      </div>
+      <div class="step step-ans">LCM(306, 657) = 22338</div>
+    </div>
+  </div>
+
+  <div class="sol-card">
+    <div class="sol-header" onclick="toggleSol(this)">
+      Q5. Check whether 6ⁿ can end with digit 0 for any natural number n.
+      <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m2">2 marks</span><span class="sol-toggle">+</span></div>
+    </div>
+    <div class="sol-body">
+      <div class="step step-s">
+        For 6ⁿ to end in 0, it must be divisible by 10 = 2 × 5.<br>
+        So prime factorisation of 6ⁿ must contain the prime 5.<br><br>
+        Now: <span class="math">6ⁿ = (2 × 3)ⁿ = 2ⁿ × 3ⁿ</span><br><br>
+        The prime factors of 6ⁿ are <strong>only 2 and 3</strong>. There is no factor of 5.<br>
+        By uniqueness of the Fundamental Theorem, 5 can never be a factor of 6ⁿ.
+      </div>
+      <div class="step step-ans">∴ 6ⁿ can NEVER end with digit 0 for any natural number n.</div>
+    </div>
+  </div>
+
+  <div class="sol-card">
+    <div class="sol-header" onclick="toggleSol(this)">
+      Q6. Explain why 7×11×13+13 and 7×6×5×4×3×2×1+5 are composite numbers.
+      <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m2">2 marks</span><span class="sol-toggle">+</span></div>
+    </div>
+    <div class="sol-body">
+      <div class="step step-s">
+        <strong>Part (a):</strong> 7 × 11 × 13 + 13<br>
+        = 13 × (7 × 11 + 1)<br>
+        = 13 × (77 + 1)<br>
+        = 13 × 78<br>
+        = 13 × 2 × 39 = 13 × 2 × 3 × 13<br>
+        This has factors other than 1 and itself → <strong>Composite ✓</strong><br><br>
+        <strong>Part (b):</strong> 7 × 6 × 5 × 4 × 3 × 2 × 1 + 5<br>
+        = 5 × (7 × 6 × 4 × 3 × 2 × 1 + 1)<br>
+        = 5 × (1008 + 1)<br>
+        = 5 × 1009<br>
+        This has factor 5 (and 1009) → <strong>Composite ✓</strong>
+      </div>
+      <div class="step step-ans">Both numbers are composite because they have factors other than 1 and themselves.</div>
+    </div>
+  </div>
+
+  <div class="sol-card">
+    <div class="sol-header" onclick="toggleSol(this)">
+      Q7. Sonia takes 18 min, Ravi takes 12 min to complete one round. After how many minutes will they meet at starting point?
+      <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m2">2 marks</span><span class="sol-toggle">+</span></div>
+    </div>
+    <div class="sol-body">
+      <div class="step step-s">
+        They will meet again at the starting point after LCM(18, 12) minutes.<br><br>
+        18 = 2 × 3²<br>
+        12 = 2² × 3<br><br>
+        LCM = 2² × 3² = 4 × 9 = <span class="math">36 minutes</span>
+      </div>
+      <div class="step step-ans">They will meet again at the starting point after 36 minutes.</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXERCISE 1.2 -->
+<section class="section" id="ex12">
+  <h2 class="section-heading">📝 Exercise 1.2 — All Solutions</h2>
+  <span class="ncert-label label-exercise">📗 Exercise 1.2 — Irrational Numbers</span>
+
+  <div class="sol-card">
+    <div class="sol-header" onclick="toggleSol(this)">
+      Q1. Prove that √5 is irrational.
+      <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks ★★★</span><span class="sol-toggle">+</span></div>
+    </div>
+    <div class="sol-body">
+      <div class="step step-q">Prove that √5 is irrational. (Most important exam question!)</div>
+      <div class="step step-s">
+        <strong>Assume:</strong> Let √5 be rational → √5 = a/b (in lowest terms, so HCF(a,b) = 1)<br><br>
+        <strong>Step 1:</strong> Squaring → <span class="math">5 = a²/b²</span> → <span class="math">a² = 5b²</span><br>
+        Since 5 divides a², and 5 is prime → by Theorem 1.2: <strong>5 divides a</strong><br><br>
+        <strong>Step 2:</strong> Write a = 5k for some integer k.<br>
+        Substitute: a² = 5b² → (5k)² = 5b² → 25k² = 5b² → <span class="math">b² = 5k²</span><br>
+        → 5 divides b² → <strong>5 divides b</strong><br><br>
+        <strong>Contradiction:</strong> 5 divides both a and b. But HCF(a,b) = 1. Contradiction!
+      </div>
+      <div class="step step-ans">∴ Our assumption is wrong. √5 is irrational. □</div>
+    </div>
+  </div>
+
+  <div class="sol-card">
+    <div class="sol-header" onclick="toggleSol(this)">
+      Q2. Prove that 3 + 2√5 is irrational.
+      <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks ★★★</span><span class="sol-toggle">+</span></div>
+    </div>
+    <div class="sol-body">
+      <div class="step step-q">Prove that 3 + 2√5 is irrational. (Very frequently asked!)</div>
+      <div class="step step-s">
+        <strong>Assume:</strong> Let 3 + 2√5 be rational.<br>
+        Then 3 + 2√5 = a/b (where a, b are integers, b ≠ 0, HCF(a,b) = 1)<br><br>
+        <strong>Rearrange:</strong><br>
+        2√5 = a/b − 3<br>
+        2√5 = (a − 3b)/b<br>
+        <span class="math">√5 = (a − 3b) / (2b)</span><br><br>
+        Since a, b are integers, (a − 3b)/(2b) is a <strong>rational number</strong>.<br>
+        So √5 would be rational.<br><br>
+        <strong>Contradiction:</strong> But √5 is irrational (proved in Q1). Contradiction!
+      </div>
+      <div class="step step-ans">∴ 3 + 2√5 is irrational. □</div>
+    </div>
+  </div>
+
+  <div class="sol-card">
+    <div class="sol-header" onclick="toggleSol(this)">
+      Q3(i). Prove that 1/√2 is irrational.
+      <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks</span><span class="sol-toggle">+</span></div>
+    </div>
+    <div class="sol-body">
+      <div class="step step-s">
+        <strong>Assume:</strong> Let 1/√2 be rational → 1/√2 = a/b (HCF(a,b) = 1)<br><br>
+        <strong>Rearrange:</strong> <span class="math">√2 = b/a</span><br><br>
+        Since a, b are integers and a ≠ 0, b/a is rational → √2 is rational.<br><br>
+        <strong>Contradiction:</strong> √2 is irrational. Contradiction!
+      </div>
+      <div class="step step-ans">∴ 1/√2 is irrational. □</div>
+    </div>
+  </div>
+
+  <div class="sol-card">
+    <div class="sol-header" onclick="toggleSol(this)">
+      Q3(ii). Prove that 7√5 is irrational.
+      <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks</span><span class="sol-toggle">+</span></div>
+    </div>
+    <div class="sol-body">
+      <div class="step step-s">
+        <strong>Assume:</strong> Let 7√5 be rational → 7√5 = a/b (HCF(a,b) = 1)<br><br>
+        <strong>Rearrange:</strong> <span class="math">√5 = a/(7b)</span><br><br>
+        Since a, b, 7 are integers, a/(7b) is rational → √5 is rational.<br><br>
+        <strong>Contradiction:</strong> √5 is irrational. Contradiction!
+      </div>
+      <div class="step step-ans">∴ 7√5 is irrational. □</div>
+    </div>
+  </div>
+
+  <div class="sol-card">
+    <div class="sol-header" onclick="toggleSol(this)">
+      Q3(iii). Prove that 6 + √2 is irrational.
+      <div style="display:flex;align-items:center;gap:8px;"><span class="sol-marks m3">3 marks</span><span class="sol-toggle">+</span></div>
+    </div>
+    <div class="sol-body">
+      <div class="step step-s">
+        <strong>Assume:</strong> Let 6 + √2 be rational → 6 + √2 = a/b (HCF(a,b) = 1)<br><br>
+        <strong>Rearrange:</strong> √2 = a/b − 6 = <span class="math">(a − 6b)/b</span><br><br>
+        Since a, b are integers, (a − 6b)/b is rational → √2 is rational.<br><br>
+        <strong>Contradiction:</strong> √2 is irrational. Contradiction!
+      </div>
+      <div class="step step-ans">∴ 6 + √2 is irrational. □</div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK REF TABLE -->
+<section class="section" id="table">
+  <h2 class="section-heading">📊 Quick Reference Table</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Concept</th><th>Formula / Rule</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td>Prime Factorisation</td><td style="font-size:14px;">Every composite = unique product of primes</td><td style="color:var(--muted);font-size:14px;">360 = 2³×3²×5</td></tr>
+        <tr><td>HCF (2 numbers)</td><td style="font-size:14px;">Lowest powers of common primes</td><td style="color:var(--muted);font-size:14px;">HCF(12,18)=6</td></tr>
+        <tr><td>LCM (2 numbers)</td><td style="font-size:14px;">Highest powers of all primes</td><td style="color:var(--muted);font-size:14px;">LCM(12,18)=36</td></tr>
+        <tr><td>HCF × LCM</td><td style="font-family:monospace;font-size:13px;">= a × b (TWO numbers only!)</td><td style="color:var(--muted);font-size:14px;">6×36=12×18 ✓</td></tr>
+        <tr><td>Irrationality proof</td><td style="font-size:14px;">Contradiction: assume rational, derive paradox</td><td style="color:var(--muted);font-size:14px;">√2, √3, √5, 3+2√5</td></tr>
+        <tr><td>Key Lemma</td><td style="font-family:monospace;font-size:13px;">p prime, p|a² → p|a</td><td style="color:var(--muted);font-size:14px;">2|a² → 2|a</td></tr>
+        <tr><td>Terminating decimal</td><td style="font-family:monospace;font-size:13px;">q = 2ⁿ × 5ᵐ</td><td style="color:var(--muted);font-size:14px;">7/8→0.875 ✓</td></tr>
+        <tr><td>Non-terminating</td><td style="font-size:14px;">q has prime other than 2 or 5</td><td style="color:var(--muted);font-size:14px;">1/3=0.333…</td></tr>
+        <tr><td>4ⁿ ends in 0?</td><td style="font-size:14px;">Never — 4ⁿ=2²ⁿ has no factor 5</td><td style="color:var(--muted);font-size:14px;">No natural n</td></tr>
+        <tr><td>6ⁿ ends in 0?</td><td style="font-size:14px;">Never — 6ⁿ=2ⁿ×3ⁿ has no factor 5</td><td style="color:var(--muted);font-size:14px;">No natural n</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- COMMON MISTAKES -->
+<section class="section" id="mistakes">
+  <h2 class="section-heading">⚠️ Common Mistakes</h2>
+  <div class="mistake-grid">
+    <div class="mwrong"><div class="mlabel wl">❌ Wrong</div><div class="mtext">HCF × LCM = a×b×c for three numbers</div></div>
+    <div class="mright"><div class="mlabel rl">✅ Correct</div><div class="mtext">HCF × LCM = a×b ONLY for TWO numbers</div></div>
+  </div>
+  <div class="mistake-grid">
+    <div class="mwrong"><div class="mlabel wl">❌ Wrong</div><div class="mtext">LCM = product of lowest powers</div></div>
+    <div class="mright"><div class="mlabel rl">✅ Correct</div><div class="mtext">LCM = HIGHEST powers; HCF = LOWEST powers</div></div>
+  </div>
+  <div class="mistake-grid">
+    <div class="mwrong"><div class="mlabel wl">❌ Wrong</div><div class="mtext">Not stating "HCF(a,b) = 1" at start of proof</div></div>
+    <div class="mright"><div class="mlabel rl">✅ Correct</div><div class="mtext">Always begin: "Let a/b be in lowest terms, i.e., HCF(a,b) = 1"</div></div>
+  </div>
+  <div class="mistake-grid">
+    <div class="mwrong"><div class="mlabel wl">❌ Wrong</div><div class="mtext">Checking 13/91 termination: denominator 91 = 7×13 → non-terminating!?</div></div>
+    <div class="mright"><div class="mlabel rl">✅ Correct</div><div class="mtext">First reduce: 13/91 = 1/7. Denominator 7 ≠ 2ⁿ×5ᵐ → non-terminating</div></div>
+  </div>
+</section>
+
+<!-- EXAM TIPS -->
+<section class="section" id="tips">
+  <h2 class="section-heading">🎯 Exam Tips from Manish Sir</h2>
+  <ul class="tip-list">
+    <li class="tip-item"><span class="tip-icon">⚡</span><div class="tip-text"><strong>Irrationality proofs = guaranteed 3 marks</strong><span>CBSE asks √5, 3+2√5, 7√5 type every year. Practice all 5 variants until you can write blindfolded.</span></div></li>
+    <li class="tip-item"><span class="tip-icon">📝</span><div class="tip-text"><strong>Always write every step</strong><span>For 3-mark proofs, each logical step = marks. Never skip "let a = 2c" or "substituting".</span></div></li>
+    <li class="tip-item"><span class="tip-icon">🔢</span><div class="tip-text"><strong>Always verify HCF × LCM = a × b</strong><span>Examiners love verification. Add one line at the end — it can save you from losing a mark.</span></div></li>
+    <li class="tip-item"><span class="tip-icon">🏆</span><div class="tip-text"><strong>Chapter 1 = easiest 7 marks</strong><span>Questions here repeat every year. Do all NCERT examples + both exercises — you're done!</span></div></li>
+    <li class="tip-item"><span class="tip-icon">⚠️</span><div class="tip-text"><strong>Reduce fraction before decimal check</strong><span>Always simplify p/q to lowest terms before checking denominator for termination.</span></div></li>
+  </ul>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <h2 class="section-heading">❓ Frequently Asked Questions</h2>
+  <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">What is the Fundamental Theorem of Arithmetic?</div><div class="faq-a">Every composite number can be expressed as a product of primes in a <strong>unique way</strong> (ignoring order). E.g., 360 = 2³ × 3² × 5. This uniqueness is what makes HCF/LCM by prime factorisation work.</div></div>
+  <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Can HCF × LCM = a × b × c for three numbers?</div><div class="faq-a">No! This formula is valid <strong>only for two positive integers</strong>. For three numbers p, q, r, the formula becomes more complex and different. This is a very common mistake in exams.</div></div>
+  <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">How many marks does Real Numbers carry in Class 10 board?</div><div class="faq-a">Chapter 1 typically carries <strong>6 to 8 marks</strong> — usually 1 MCQ (1 mark) + 1 short answer (2 marks) + 1 long answer (3 marks). All questions are highly predictable.</div></div>
+  <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">What is the difference between HCF and LCM in prime factorisation?</div><div class="faq-a"><strong>HCF</strong> = product of <em>lowest (minimum)</em> powers of <em>common</em> prime factors only. <strong>LCM</strong> = product of <em>highest (maximum)</em> powers of <em>all</em> prime factors (common + non-common).</div></div>
+  <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">What is the key lemma used in all irrational proofs?</div><div class="faq-a">Theorem 1.2: <em>If p is a prime number and p divides a², then p divides a.</em> This single statement enables all irrationality proofs. Memorise it!</div></div>
+  <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Is π rational or irrational?</div><div class="faq-a">π is <strong>irrational</strong> — non-terminating, non-repeating (3.14159…). Note: 22/7 ≈ 3.142857 is only an approximation. 22/7 ≠ π.</div></div>
+</section>
+
+<!-- INTERNAL LINKS -->
+<section class="section" id="links">
+  <h2 class="section-heading">🔗 Explore More</h2>
+  <div class="link-grid">
+    <a class="link-card" href="https://m2learninghub.com/">📐 All Class 10 Chapters</a>
+    <a class="link-card" href="https://m2learninghub.com/">📋 CBSE PYQ 2020–24</a>
+    <a class="link-card" href="https://m2learninghub.com/">🎯 95+ Maths Strategy</a>
+    <a class="link-card" href="https://m2learninghub.com/">✏️ Sample Paper 2026</a>
+    <a class="link-card" href="https://m2learninghub.com/">📒 Polynomials Notes</a>
+    <a class="link-card" href="https://m2learninghub.com/">📈 Free Formula PDFs</a>
+  </div>
+</section>
+
+<!-- LAST PAGE CTA -->
+<div class="cta-last">
+  <div class="cta-last-title">🎯 Want <span>Complete Maths Preparation?</span></div>
+  <p style="font-size:16px;opacity:0.85;margin-bottom:6px;">Join our WhatsApp group and get:</p>
+  <ul class="cta-checklist">
+    <li>Chapter-wise Notes</li>
+    <li>PYQs (Last 10 Years)</li>
+    <li>Important Questions</li>
+    <li>Practice Papers</li>
+    <li>Doubt Solving Support</li>
+  </ul>
+  <p class="cta-fire">🔥 Limited access for Board 2027 students — Join with Manish Sir's approval</p>
+  <a class="wa-join-btn" href="https://wa.me/918107563723?text=Hi%20Manish%20Sir!%20I%20want%20to%20join%20the%20Class%2010%20Maths%20Board%202027%20group." target="_blank" rel="noopener">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    👉 Join Now: wa.me/918107563723
+  </a>
+  <p style="font-size:13px;opacity:0.6;margin-top:14px;margin-bottom:0;">📌 You will be added by Manish Sir after a quick approval</p>
+</div>
+
+</main>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+  <div class="sb-cta">
+    <h3>📲 Free Doubt Support</h3>
+    <p>Stuck on any question? WhatsApp Manish Sir directly!</p>
+    <a class="sb-wa" href="https://wa.me/918107563723?text=Hi%20Manish%20Sir!%20I%20have%20a%20Real%20Numbers%20doubt." target="_blank" rel="noopener">💬 Ask on WhatsApp</a>
+  </div>
+
+  <div class="sb-card">
+    <div class="sb-head sb-h1">📐 Formula Quick Ref</div>
+    <div class="sb-body">
+      <div class="fq-row"><span class="fq-name">HCF × LCM</span><span class="fq-val">= a × b</span></div>
+      <div class="fq-row"><span class="fq-name">Terminates if</span><span class="fq-val">q=2ⁿ×5ᵐ</span></div>
+      <div class="fq-row"><span class="fq-name">Key Lemma</span><span class="fq-val">p|a²→p|a</span></div>
+      <div class="fq-row"><span class="fq-name">4ⁿ ends 0?</span><span class="fq-val">Never</span></div>
+      <div class="fq-row"><span class="fq-name">6ⁿ ends 0?</span><span class="fq-val">Never</span></div>
+      <div class="fq-row"><span class="fq-name">√2 irrational</span><span class="fq-val">✓ Proven</span></div>
+    </div>
+  </div>
+
+  <div class="sb-card">
+    <div class="sb-head sb-h2">📚 Quick Navigation</div>
+    <div class="sb-body">
+      <ul class="quick-nav">
+        <li><a href="#intro">👋 Introduction</a></li>
+        <li><a href="#formulas">📐 Formula Sheet</a></li>
+        <li><a href="#solutions">📖 NCERT Examples</a></li>
+        <li><a href="#ex11">📝 Exercise 1.1</a></li>
+        <li><a href="#ex12">📝 Exercise 1.2</a></li>
+        <li><a href="#table">📊 Quick Table</a></li>
+        <li><a href="#mistakes">⚠️ Mistakes</a></li>
+        <li><a href="#tips">🎯 Exam Tips</a></li>
+        <li><a href="#faq">❓ FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sb-card" style="background:linear-gradient(135deg,var(--yellow-light),#fff8d0);border-color:var(--yellow);">
+    <div style="padding:18px;text-align:center;">
+      <div style="font-size:36px;margin-bottom:8px;">🏆</div>
+      <div style="font-family:'Nunito',sans-serif;font-weight:900;font-size:16px;color:#7a5900;margin-bottom:6px;">Chapter 1 = 7–8 Marks</div>
+      <div style="font-size:14px;color:var(--muted);">Most predictable chapter. Master all NCERT solutions here and score full marks!</div>
+    </div>
+  </div>
+
+  <div class="sb-card">
+    <div class="sb-head sb-h3">🔥 Board 2027 Group</div>
+    <div class="sb-body" style="text-align:center;">
+      <p style="font-size:14px;margin-bottom:12px;">Join the FREE Class 10 Maths Doubt Group — with Manish Sir's approval</p>
+      <a class="sb-wa" href="https://wa.me/918107563723?text=Hi%20Manish%20Sir!%20I%20want%20to%20join%20the%20Class%2010%20Maths%20Board%202027%20group." target="_blank" rel="noopener" style="background:var(--accent);">🔥 Join Group Now</a>
+    </div>
+  </div>
+
+</aside>
+</div>
+
+<footer>
+  <div class="f-logo">M<span>²</span> Learning Hub</div>
+  <div class="f-tag">Quality CBSE coaching | Class 9 &amp; 10 | JEE Foundation | Olympiad | WhatsApp: +91 8107563723</div>
+  <div class="f-links">
+    <a href="https://m2learninghub.com/">Home</a>
+    <a href="https://m2learninghub.com/">Blog</a>
+    <a href="https://m2learninghub.com/">Free Resources</a>
+    <a href="https://wa.me/918107563723" target="_blank" rel="noopener">WhatsApp Manish Sir</a>
+  </div>
+  <div class="f-copy">© 2025 M2 Learning Hub · m2learninghub.com · All rights reserved · Content by Manish Mishra</div>
+</footer>
+
+<script>
+function toggleSol(header) {
+  const body = header.nextElementSibling;
+  const toggle = header.querySelector('.sol-toggle');
+  const isOpen = body.classList.contains('open');
+  document.querySelectorAll('.sol-body').forEach(b => b.classList.remove('open'));
+  document.querySelectorAll('.sol-toggle').forEach(t => { t.textContent = '+'; t.classList.remove('rotated'); });
+  if (!isOpen) { body.classList.add('open'); toggle.textContent = '×'; toggle.classList.add('rotated'); }
+}
+function toggleFaq(item) {
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+</body>
+</html>
