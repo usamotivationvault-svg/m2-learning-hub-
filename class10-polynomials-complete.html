@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 10 Maths Polynomials – Complete NCERT Solutions | M2 Learning Hub</title>
+<meta name="description" content="Complete NCERT Solutions for Class 10 Maths Chapter 2 Polynomials. All Examples, Exercise 2.1 & 2.2 solved step-by-step by Manish Sir. Zeroes of polynomials, relationship between zeroes and coefficients, free formula sheet and exam tips.">
+<meta name="keywords" content="class 10 maths polynomials ncert solutions, polynomials class 10, zeroes of polynomial, exercise 2.1, exercise 2.2, quadratic polynomial, cbse class 10 maths chapter 2">
+<meta name="author" content="Manish Mishra, M2 Learning Hub">
+<link rel="canonical" href="https://m2learninghub.com/class10-polynomials-complete.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Class 10 Maths Polynomials – Complete NCERT Solutions | M2 Learning Hub">
+<meta property="og:description" content="Every Example + Every Exercise Question Solved Step-by-Step. Free Formula Sheet, Exam Tips & FAQs for Polynomials Class 10.">
+<meta property="og:url" content="https://m2learninghub.com/class10-polynomials-complete.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://m2learninghub.com/images/class10-polynomials-og.png">
+<meta name="robots" content="index, follow">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Class 10 Maths Polynomials – Complete NCERT Solutions",
+  "author": {"@type": "Person", "name": "Manish Mishra"},
+  "publisher": {"@type": "Organization", "name": "M2 Learning Hub"},
+  "datePublished": "2026-04-21",
+  "description": "Complete NCERT Solutions for Class 10 Maths Chapter 2 Polynomials with all examples and exercises solved step-by-step."
+}
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --primary: #1a6fc4;
+    --primary-dark: #145da0;
+    --primary-light: #e8f2fb;
+    --accent: #e67e22;
+    --accent-light: #fef5ec;
+    --green: #27ae60;
+    --green-light: #eafaf1;
+    --red: #e74c3c;
+    --red-light: #fdedec;
+    --purple: #8e44ad;
+    --purple-light: #f5eef8;
+    --text: #1a1a2e;
+    --text-muted: #5a6a7a;
+    --text-light: #8899aa;
+    --border: #dde4ed;
+    --bg: #f4f7fb;
+    --white: #ffffff;
+    --card-shadow: 0 2px 12px rgba(26,111,196,0.08);
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ── TOP WHATSAPP BAR ── */
+  .wa-topbar {
+    background: #25d366;
+    color: #fff;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+  .wa-topbar a { color: #fff; font-weight: 700; }
+
+  /* ── NAV ── */
+  nav {
+    background: var(--white);
+    border-bottom: 2px solid var(--primary-light);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(26,111,196,0.07);
+  }
+  .nav-logo {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--primary);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+  .nav-logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 20px; align-items: center; }
+  .nav-links a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--primary); }
+  .nav-wa {
+    background: #25d366;
+    color: #fff !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+  }
+  .nav-wa:hover { background: #1ebc5a; text-decoration: none !important; }
+
+  /* ── LAYOUT ── */
+  .page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 32px;
+    align-items: start;
+  }
+  .main-content { min-width: 0; }
+  @media (max-width: 900px) {
+    .page-wrapper { grid-template-columns: 1fr; }
+    .sidebar { display: none; }
+  }
+
+  /* ── BREADCRUMB ── */
+  .breadcrumb {
+    font-size: 13px;
+    color: var(--text-muted);
+    padding: 16px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .breadcrumb a { color: var(--primary); }
+  .breadcrumb span { color: var(--text-light); }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #1a3a6c 0%, #1a6fc4 60%, #2196f3 100%);
+    border-radius: var(--radius);
+    padding: 36px 36px 32px;
+    margin: 16px 0 28px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: 'f(x)';
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 80px;
+    font-weight: 900;
+    opacity: 0.06;
+    font-style: italic;
+    line-height: 1;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+  }
+  .hero h1 em { font-style: italic; opacity: 0.9; }
+  .hero-sub {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 20px;
+    max-width: 520px;
+  }
+  .hero-checks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    margin-bottom: 24px;
+  }
+  .hero-checks span {
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .hero-checks span::before { content: '✅'; font-size: 14px; }
+  .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-wa {
+    background: #25d366;
+    color: #fff;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .btn-wa:hover { background: #1ebc5a; transform: translateY(-1px); text-decoration: none; }
+  .btn-outline {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border: 1.5px solid rgba(255,255,255,0.4);
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .btn-outline:hover { background: rgba(255,255,255,0.22); text-decoration: none; }
+
+  /* ── WA GROUP BANNER ── */
+  .wa-banner {
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 28px;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .wa-banner-icon { font-size: 32px; flex-shrink: 0; margin-top: 2px; }
+  .wa-banner h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .wa-banner ul { list-style: none; margin-bottom: 12px; }
+  .wa-banner ul li { font-size: 13px; padding: 2px 0; opacity: 0.92; }
+  .wa-banner ul li::before { content: '✓ '; font-weight: 700; color: #a5d6a7; }
+  .wa-banner a {
+    display: inline-block;
+    background: #fff;
+    color: #1b5e20;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.15s;
+  }
+  .wa-banner a:hover { transform: translateY(-1px); text-decoration: none; }
+  .wa-banner-note { font-size: 11px; opacity: 0.7; margin-top: 6px; }
+
+  /* ── SECTION TITLES ── */
+  .section-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--primary-light);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* ── INTRO ── */
+  .intro-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 28px;
+    box-shadow: var(--card-shadow);
+    border-left: 5px solid var(--primary);
+  }
+  .intro-card p { color: var(--text-muted); margin-bottom: 12px; font-size: 15px; }
+  .intro-card p:last-child { margin-bottom: 0; }
+  .intro-card strong { color: var(--text); }
+  .topic-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .topic-tag {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #c5d9f1;
+  }
+
+  /* ── FORMULA SHEET ── */
+  .formula-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .formula-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+    border-top: 4px solid var(--primary);
+  }
+  .formula-card.green { border-top-color: var(--green); }
+  .formula-card.orange { border-top-color: var(--accent); }
+  .formula-card.purple { border-top-color: var(--purple); }
+  .formula-card h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .formula-box {
+    background: var(--primary-light);
+    border-radius: var(--radius-sm);
+    padding: 12px 16px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #c5d9f1;
+    line-height: 1.6;
+  }
+  .formula-box.green { background: var(--green-light); color: #1a7a42; border-color: #a9dfbf; }
+  .formula-box.orange { background: var(--accent-light); color: #b7560e; border-color: #f5cba7; }
+  .formula-box.purple { background: var(--purple-light); color: #6c3483; border-color: #d2b4de; }
+  .formula-note { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+  .formula-note strong { color: var(--text); }
+  .formula-example {
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 8px;
+    font-style: italic;
+  }
+
+  /* ── SOLUTIONS (ACCORDION) ── */
+  .solutions-block { margin-bottom: 32px; }
+  .solutions-block-title {
+    background: var(--primary);
+    color: #fff;
+    border-radius: var(--radius) var(--radius) 0 0;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .solutions-block-title.green { background: var(--green); }
+
+  .accordion-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: none;
+    overflow: hidden;
+  }
+  .accordion-item:last-child { border-radius: 0 0 var(--radius) var(--radius); }
+
+  .accordion-trigger {
+    width: 100%;
+    background: var(--white);
+    border: none;
+    padding: 16px 20px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    transition: background 0.15s;
+  }
+  .accordion-trigger:hover { background: var(--primary-light); }
+  .accordion-trigger.open { background: #f0f7ff; }
+  .accordion-trigger-left { display: flex; flex-direction: column; gap: 4px; }
+  .accordion-q-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .accordion-q-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .accordion-meta { display: flex; gap: 8px; align-items: center; margin-top: 4px; }
+  .badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  .badge-marks { background: #fff3cd; color: #856404; }
+  .badge-star { background: #f8d7da; color: #721c24; }
+  .badge-concept { background: #d1ecf1; color: #0c5460; }
+  .accordion-arrow {
+    font-size: 18px;
+    color: var(--primary);
+    transition: transform 0.25s;
+    flex-shrink: 0;
+    margin-top: 2px;
+    font-weight: 700;
+  }
+  .accordion-trigger.open .accordion-arrow { transform: rotate(180deg); }
+
+  .accordion-body {
+    display: none;
+    padding: 0 20px 20px;
+    border-top: 1px dashed var(--border);
+    background: #fafcff;
+  }
+  .accordion-body.open { display: block; }
+
+  .solution-content {
+    padding-top: 16px;
+    font-size: 14.5px;
+    line-height: 1.8;
+    color: var(--text);
+  }
+  .solution-content p { margin-bottom: 10px; }
+  .solution-content strong { color: var(--primary-dark); }
+  .solution-step {
+    background: var(--white);
+    border-left: 4px solid var(--primary);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 12px 16px;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .solution-step.green { border-left-color: var(--green); }
+  .solution-step.orange { border-left-color: var(--accent); }
+  .solution-step.purple { border-left-color: var(--purple); }
+  .math-box {
+    background: var(--primary-light);
+    border: 1px solid #c5d9f1;
+    border-radius: var(--radius-sm);
+    padding: 10px 16px;
+    font-family: 'Courier New', monospace;
+    font-size: 13.5px;
+    color: var(--primary-dark);
+    margin: 10px 0;
+    line-height: 1.7;
+  }
+  .math-box.green { background: var(--green-light); color: #1a7a42; border-color: #a9dfbf; }
+  .math-box.orange { background: var(--accent-light); color: #8c4a12; border-color: #f5cba7; }
+  .result-box {
+    background: var(--green-light);
+    border: 1.5px solid #a9dfbf;
+    border-radius: var(--radius-sm);
+    padding: 10px 16px;
+    font-weight: 700;
+    color: #1a6a38;
+    font-size: 14px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .result-box::before { content: '∴'; font-size: 16px; }
+  .contradiction-box {
+    background: #fff8e1;
+    border: 1.5px solid #ffe082;
+    border-radius: var(--radius-sm);
+    padding: 10px 16px;
+    font-weight: 600;
+    color: #5d4037;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  /* ── DOUBT CTA ── */
+  .doubt-cta {
+    background: linear-gradient(135deg, #e8f2fb, #d0e8ff);
+    border: 1px solid #c5d9f1;
+    border-radius: var(--radius-sm);
+    padding: 14px 20px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .doubt-cta a {
+    color: #fff;
+    background: var(--primary);
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    margin-left: 8px;
+    font-size: 13px;
+    text-decoration: none;
+  }
+  .doubt-cta a:hover { background: var(--primary-dark); }
+
+  /* ── QUICK REFERENCE TABLE ── */
+  .ref-table-wrap {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 28px;
+    overflow-x: auto;
+  }
+  .ref-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+  }
+  .ref-table th {
+    background: var(--primary);
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .ref-table th:first-child { border-radius: 8px 0 0 0; }
+  .ref-table th:last-child { border-radius: 0 8px 0 0; }
+  .ref-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  .ref-table tr:last-child td { border-bottom: none; }
+  .ref-table tr:nth-child(even) td { background: var(--primary-light); }
+  .ref-table code {
+    background: var(--bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--primary-dark);
+    font-family: 'Courier New', monospace;
+  }
+
+  /* ── COMMON MISTAKES ── */
+  .mistakes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  @media (max-width: 600px) { .mistakes-grid { grid-template-columns: 1fr; } }
+  .mistake-wrong {
+    background: var(--red-light);
+    border: 1.5px solid #f5c6cb;
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+  }
+  .mistake-wrong .label {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .mistake-correct {
+    background: var(--green-light);
+    border: 1.5px solid #a9dfbf;
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+  }
+  .mistake-correct .label {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .mistake-text { font-size: 13.5px; color: var(--text); line-height: 1.5; }
+
+  /* ── EXAM TIPS ── */
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .tip-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    box-shadow: var(--card-shadow);
+    border-left: 5px solid var(--accent);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .tip-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+  .tip-title { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+  .tip-text { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+  /* ── FAQ ── */
+  .faq-list { margin-bottom: 28px; }
+  .faq-item {
+    background: var(--white);
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+  }
+  .faq-trigger {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 16px 20px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    transition: background 0.15s;
+  }
+  .faq-trigger:hover { background: var(--primary-light); }
+  .faq-arrow { color: var(--primary); font-weight: 700; font-size: 16px; flex-shrink: 0; transition: transform 0.25s; }
+  .faq-trigger.open .faq-arrow { transform: rotate(180deg); }
+  .faq-body { display: none; padding: 12px 20px 16px; font-size: 14px; color: var(--text-muted); line-height: 1.7; border-top: 1px dashed var(--border); }
+  .faq-body.open { display: block; }
+  .faq-body strong { color: var(--text); }
+
+  /* ── EXPLORE MORE ── */
+  .explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+  .explore-link {
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .explore-link:hover { border-color: var(--primary); background: var(--primary-light); text-decoration: none; }
+
+  /* ── FINAL CTA ── */
+  .final-cta {
+    background: linear-gradient(135deg, #1a3a6c, #1a6fc4);
+    border-radius: var(--radius);
+    padding: 32px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 32px;
+  }
+  .final-cta h3 { font-size: 20px; font-weight: 800; margin-bottom: 10px; }
+  .final-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 16px; }
+  .final-cta ul { list-style: none; margin-bottom: 20px; }
+  .final-cta ul li { font-size: 13px; opacity: 0.9; padding: 3px 0; }
+  .final-cta ul li::before { content: '🔥 '; }
+  .final-cta-note { font-size: 11px; opacity: 0.65; margin-top: 10px; }
+
+  /* ── SIDEBAR ── */
+  .sidebar { position: sticky; top: 76px; }
+  .sidebar-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 20px;
+    border-top: 4px solid var(--primary);
+  }
+  .sidebar-card.green { border-top-color: var(--green); }
+  .sidebar-title {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .sidebar-formula-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px dashed var(--border);
+    font-size: 12.5px;
+  }
+  .sidebar-formula-row:last-child { border-bottom: none; }
+  .sidebar-formula-label { color: var(--text-muted); }
+  .sidebar-formula-val {
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    color: var(--primary-dark);
+    font-size: 12px;
+    text-align: right;
+  }
+  .sidebar-formula-val.green { color: var(--green); }
+  .sidebar-nav { list-style: none; }
+  .sidebar-nav li { padding: 2px 0; }
+  .sidebar-nav a {
+    font-size: 13px;
+    color: var(--primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 0;
+    transition: color 0.15s;
+  }
+  .sidebar-nav a:hover { color: var(--primary-dark); }
+  .sidebar-highlight {
+    background: linear-gradient(135deg, #fff3e0, #ffe8cc);
+    border: 1.5px solid #ffcc80;
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sidebar-highlight p { font-size: 13px; font-weight: 700; color: #7c4500; margin-bottom: 6px; }
+  .sidebar-highlight span { font-size: 12px; color: #7c4500; opacity: 0.8; }
+  .sidebar-wa {
+    background: #25d366;
+    color: #fff;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background 0.2s;
+  }
+  .sidebar-wa:hover { background: #1ebc5a; text-decoration: none; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #1a2535;
+    color: #b0bec5;
+    padding: 28px 24px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  footer a { color: #90caf9; }
+  footer strong { color: #fff; }
+
+  /* ── UTILITIES ── */
+  .mt-8 { margin-top: 8px; }
+  .mb-0 { margin-bottom: 0 !important; }
+  .text-center { text-align: center; }
+
+  /* ── MOBILE NAV ── */
+  @media (max-width: 600px) {
+    .nav-links { display: none; }
+    .hero { padding: 24px 20px; }
+    .hero::before { display: none; }
+    .page-wrapper { padding: 0 12px; }
+  }
+
+  /* ── DIAGRAM SECTION (moved from body) ── */
+  .diagram-section { margin-bottom: 32px; }
+  .diagram-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 20px; }
+  .diagram-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 16px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    border-top: 4px solid var(--primary);
+  }
+  .diagram-card.green-top { border-top-color: var(--green); }
+  .diagram-card.orange-top { border-top-color: var(--accent); }
+  .diagram-card.purple-top { border-top-color: var(--purple); }
+  .diagram-card svg { width: 100%; height: auto; }
+  .diagram-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+  .diagram-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+  .diagram-intro {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    box-shadow: var(--card-shadow);
+    border-left: 5px solid var(--primary);
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+  .diagram-intro strong { color: var(--text); }
+  .diagram-group-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin: 20px 0 12px;
+    padding-left: 12px;
+    border-left: 4px solid var(--primary);
+  }
+</style>
+</head>
+<body>
+
+<!-- Top WhatsApp Bar -->
+<div class="wa-topbar">
+  📲 Free Class 10 Maths &amp; Science Doubt Group 2027 — 
+  <a href="https://wa.me/918107563723?text=Hi%20Manish%20Sir!%20I%20want%20to%20join%20the%20free%20Maths%20and%20Science%20doubt%20group." rel="noopener noreferrer">+91 8107563723</a> &nbsp;|&nbsp;
+  <a href="https://wa.me/918882565496?text=Hi!%20I%20want%20to%20join%20the%20free%20Maths%20and%20Science%20doubt%20group." rel="noopener noreferrer">+91 88825 65496</a>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <a href="https://m2learninghub.com/" class="nav-logo" rel="noopener noreferrer">M² <span>Learning Hub</span></a>
+  <div class="nav-links">
+    <a href="https://m2learninghub.com/" rel="noopener noreferrer">Home</a>
+    <a href="https://m2learninghub.com/blog.html" rel="noopener noreferrer">Blog</a>
+    <a href="https://m2learninghub.com/blog.html" rel="noopener noreferrer">Resources</a>
+    <a href="https://wa.me/918107563723" class="nav-wa" rel="noopener noreferrer">💬 +91 8107563723</a>
+  </div>
+</nav>
+
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="https://m2learninghub.com/" rel="noopener noreferrer">Home</a>
+      <span>›</span>
+      <a href="https://m2learninghub.com/blog.html" rel="noopener noreferrer">Class 10 Maths</a>
+      <span>›</span>
+      <span>Polynomials – Complete NCERT Solutions</span>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero" id="top">
+      <div class="hero-badge">📐 CBSE Class 10 Maths · Chapter 2</div>
+      <h1>Polynomials — <em>Complete NCERT Solutions</em></h1>
+      <p class="hero-sub">Every Example + Every Exercise Question — Solved Step-by-Step. Free Formula Sheet, Exam Tips &amp; FAQs.</p>
+      <div class="hero-checks">
+        <span>All NCERT Examples Solved</span>
+        <span>Exercise 2.1 &amp; 2.2 Solved</span>
+        <span>Board 2026–27</span>
+        <span>Manish Sir Explained</span>
+      </div>
+      <div class="hero-btns">
+        <a href="https://wa.me/918107563723" class="btn-wa" rel="noopener noreferrer">📲 Join Free Doubt Group</a>
+        <a href="#solutions" class="btn-outline">View Solutions ↓</a>
+      </div>
+    </div>
+
+    <!-- WhatsApp Group Banner -->
+    <div class="wa-banner">
+      <div class="wa-banner-icon">📚</div>
+      <div>
+        <h3>Join FREE Class 10 Maths &amp; Science Doubt Group 2027</h3>
+        <ul>
+          <li>Ask unlimited doubts — Maths &amp; Science both covered</li>
+          <li>Get instant help from Manish Sir &amp; Madhvi Ma'am</li>
+          <li>Receive free notes, PYQs &amp; practice papers</li>
+        </ul>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="https://wa.me/918107563723?text=Hi%20Manish%20Sir!%20I%20want%20to%20join%20the%20Class%2010%20Maths%20and%20Science%20Doubt%20Group%202027." rel="noopener noreferrer">💬 +91 8107563723</a>
+          <a href="https://wa.me/918882565496?text=Hi!%20I%20want%20to%20join%20the%20Class%2010%20Maths%20and%20Science%20Doubt%20Group%202027." style="background:#fff; color:#1b5e20;" rel="noopener noreferrer">💬 +91 88825 65496</a>
+        </div>
+        <p class="wa-banner-note">📌 You'll be added to the group by Manish Sir after approval</p>
+      </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="intro-card" id="intro">
+      <div class="section-title">👋 Introduction</div>
+      <p><strong>What is this chapter about?</strong> Class 10 Chapter 2 — Polynomials — builds on what you studied in Class IX and takes it deeper. You will explore the <strong>geometrical meaning of zeroes</strong> of a polynomial (what they look like on a graph), the powerful <strong>relationship between zeroes and coefficients</strong> of quadratic and cubic polynomials, and how to <strong>find and verify zeroes</strong> step-by-step.</p>
+      <p>The chapter covers three key ideas: understanding zeroes from graphs (parabolas and curves), the sum/product formulas for quadratic polynomials (α + β and αβ), and the three relations for cubic polynomials (α + β + γ, αβ + βγ + γα, and αβγ).</p>
+      <p>This chapter carries <strong>6–8 marks</strong> in the board exam. Questions on finding zeroes and verifying relationships are asked every single year. Master these solutions and you are guaranteed full marks on Chapter 2.</p>
+      <div class="topic-tags">
+        <span class="topic-tag">Zeroes of Polynomials</span>
+        <span class="topic-tag">Geometrical Meaning</span>
+        <span class="topic-tag">Quadratic Polynomials</span>
+        <span class="topic-tag">Sum &amp; Product of Zeroes</span>
+        <span class="topic-tag">Cubic Polynomials</span>
+        <span class="topic-tag">Splitting the Middle Term</span>
+      </div>
+    </div>
+
+    <!-- Formula Sheet -->
+    <div id="formulas">
+      <div class="section-title">📐 Formula Sheet</div>
+      <div class="formula-grid">
+
+        <div class="formula-card">
+          <h4>🔢 1. Types of Polynomials</h4>
+          <div class="formula-box">
+            Linear: ax + b (degree 1)<br>
+            Quadratic: ax² + bx + c (degree 2)<br>
+            Cubic: ax³ + bx² + cx + d (degree 3)
+          </div>
+          <p class="formula-note"><strong>Zeroes of a polynomial p(x):</strong> A real number k is a zero if p(k) = 0. Geometrically, zeroes are the x-coordinates where the graph of y = p(x) crosses the x-axis.</p>
+          <div class="formula-example">e.g., p(x) = x² − 3x − 4 → zeroes are −1 and 4 since p(−1) = 0, p(4) = 0</div>
+        </div>
+
+        <div class="formula-card green">
+          <h4>🔑 2. Quadratic — Sum &amp; Product of Zeroes</h4>
+          <div class="formula-box green">
+            For ax² + bx + c, zeroes α and β:<br><br>
+            α + β = −b/a (Sum of zeroes)<br>
+            α × β = c/a (Product of zeroes)
+          </div>
+          <p class="formula-note"><strong>How to remember:</strong> Sum = −(coeff of x) ÷ (coeff of x²). Product = constant term ÷ (coeff of x²).</p>
+          <div class="formula-example">e.g., x² + 7x + 10: α+β = −7/1 = −7, αβ = 10/1 = 10</div>
+        </div>
+
+        <div class="formula-card orange">
+          <h4>🔑 3. Forming a Quadratic from Zeroes</h4>
+          <div class="formula-box orange">
+            p(x) = x² − (α + β)x + αβ<br><br>
+            or k[x² − (Sum)x + (Product)]<br>
+            where k is any non-zero real constant
+          </div>
+          <p class="formula-note"><strong>Use this when:</strong> Sum and product of zeroes are given and you need to find the polynomial. Substitute values directly.</p>
+          <div class="formula-example">e.g., Sum = −3, Product = 2 → p(x) = x² + 3x + 2</div>
+        </div>
+
+        <div class="formula-card purple">
+          <h4>🔑 4. Cubic — Three Zeroes Relations</h4>
+          <div class="formula-box purple">
+            For ax³ + bx² + cx + d, zeroes α, β, γ:<br><br>
+            α + β + γ = −b/a<br>
+            αβ + βγ + γα = c/a<br>
+            α × β × γ = −d/a
+          </div>
+          <p class="formula-note"><strong>Note the signs:</strong> Sum = −b/a, Sum of products two at a time = c/a, Product of all three = −d/a. The sign on the product flips!</p>
+          <div class="formula-example">e.g., 2x³ − 5x² − 14x + 8: α+β+γ = 5/2, αβγ = −8/2 = −4</div>
+        </div>
+
+        <div class="formula-card">
+          <h4>📊 5. Geometrical Meaning of Zeroes</h4>
+          <div class="formula-box">
+            Linear: graph is a straight line → 1 zero<br>
+            Quadratic: parabola → 0, 1, or 2 zeroes<br>
+            Cubic: S-curve → 1, 2, or 3 zeroes
+          </div>
+          <p class="formula-note">Number of zeroes = number of times graph cuts x-axis. A polynomial of degree n has <strong>at most n zeroes</strong>.</p>
+          <div class="formula-example">Parabola opens up if a &gt; 0 (∪ shape), down if a &lt; 0 (∩ shape)</div>
+        </div>
+
+        <div class="formula-card green">
+          <h4>📐 6. Splitting the Middle Term</h4>
+          <div class="formula-box green">
+            For ax² + bx + c:<br>
+            Find p, q such that p + q = b<br>
+            and p × q = ac<br>
+            Then split bx = px + qx and factorise
+          </div>
+          <p class="formula-note">This is the standard method to factorise quadratics and find their zeroes. Always verify zeroes by substituting back.</p>
+          <div class="formula-example">e.g., 2x² − 8x + 6: p+q = −8, pq = 12 → p = −6, q = −2</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DIAGRAMS SECTION -->
+    <div id="diagrams">
+      <div class="section-title">📊 Visual Diagrams — Geometrical Meaning of Zeroes</div>
+
+      <div class="diagram-intro">
+        <strong>Why diagrams matter:</strong> The geometrical meaning of zeroes is one of the most visually tested concepts in Class 10 boards. You must be able to look at any graph of y = p(x) and immediately tell the number of zeroes. The diagrams below cover every possible case for linear, quadratic, and cubic polynomials — exactly as in NCERT.
+      </div>
+
+      <!-- LINEAR POLYNOMIAL -->
+      <div class="diagram-group-title">📈 Linear Polynomial — ax + b (Degree 1)</div>
+      <div class="diagram-row" style="grid-template-columns: 1fr 1fr;">
+
+        <div class="diagram-card">
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+            <!-- axes -->
+            <line x1="10" y1="80" x2="190" y2="80" stroke="#b0bec5" stroke-width="1.5"/>
+            <line x1="100" y1="10" x2="100" y2="150" stroke="#b0bec5" stroke-width="1.5"/>
+            <!-- arrowheads -->
+            <polygon points="190,80 183,76 183,84" fill="#b0bec5"/>
+            <polygon points="100,10 96,17 104,17" fill="#b0bec5"/>
+            <!-- axis labels -->
+            <text x="186" y="76" font-size="11" fill="#b0bec5">X</text>
+            <text x="104" y="15" font-size="11" fill="#b0bec5">Y</text>
+            <text x="98" y="92" font-size="10" fill="#b0bec5">O</text>
+            <!-- y = 2x + 3 line: passes through (-3/2, 0) → x=25, y=80 and (1, 5) → x=133, y=47 -->
+            <line x1="20" y1="138" x2="180" y2="26" stroke="#1a6fc4" stroke-width="2.2"/>
+            <!-- zero point -->
+            <circle cx="73" cy="80" r="5" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+            <!-- labels -->
+            <text x="55" y="97" font-size="10" font-weight="700" fill="#e74c3c">−b/a</text>
+            <text x="24" y="155" font-size="10" fill="#1a6fc4">y = ax + b</text>
+            <!-- zero line dashed -->
+            <line x1="73" y1="80" x2="73" y2="150" stroke="#e74c3c" stroke-width="1" stroke-dasharray="3,3"/>
+          </svg>
+          <div class="diagram-label">1 Zero (Always)</div>
+          <div class="diagram-sub">Straight line cuts x-axis at exactly <strong>one point</strong>. Zero = −b/a</div>
+        </div>
+
+        <div class="diagram-card" style="border-top-color: var(--text-muted);">
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="80" x2="190" y2="80" stroke="#b0bec5" stroke-width="1.5"/>
+            <line x1="100" y1="10" x2="100" y2="150" stroke="#b0bec5" stroke-width="1.5"/>
+            <polygon points="190,80 183,76 183,84" fill="#b0bec5"/>
+            <polygon points="100,10 96,17 104,17" fill="#b0bec5"/>
+            <text x="186" y="76" font-size="11" fill="#b0bec5">X</text>
+            <text x="104" y="15" font-size="11" fill="#b0bec5">Y</text>
+            <text x="98" y="92" font-size="10" fill="#b0bec5">O</text>
+            <!-- horizontal line, never cuts x-axis concept — show ax+b with b very large -->
+            <line x1="20" y1="40" x2="180" y2="40" stroke="#8899aa" stroke-width="2" stroke-dasharray="6,3"/>
+            <text x="30" y="36" font-size="10" fill="#8899aa">y = c (constant)</text>
+            <text x="30" y="100" font-size="10" fill="#8899aa">parallel to x-axis</text>
+            <text x="30" y="115" font-size="10" fill="#e74c3c">→ 0 zeroes</text>
+            <text x="24" y="155" font-size="10" fill="#8899aa">Not a polynomial of degree 1</text>
+          </svg>
+          <div class="diagram-label">Key Rule: Degree n → At Most n Zeroes</div>
+          <div class="diagram-sub">A non-zero constant has no zero. A linear polynomial always has exactly 1 zero.</div>
+        </div>
+
+      </div>
+
+      <!-- QUADRATIC POLYNOMIAL - 3 cases -->
+      <div class="diagram-group-title">📉 Quadratic Polynomial — ax² + bx + c (Degree 2) — 3 Cases</div>
+      <div class="diagram-row">
+
+        <!-- Case 1: 2 distinct zeroes, opens up -->
+        <div class="diagram-card">
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="100" x2="190" y2="100" stroke="#b0bec5" stroke-width="1.5"/>
+            <line x1="100" y1="10" x2="100" y2="155" stroke="#b0bec5" stroke-width="1.5"/>
+            <polygon points="190,100 183,96 183,104" fill="#b0bec5"/>
+            <polygon points="100,10 96,17 104,17" fill="#b0bec5"/>
+            <text x="186" y="96" font-size="10" fill="#b0bec5">X</text>
+            <text x="104" y="15" font-size="10" fill="#b0bec5">Y</text>
+            <text x="103" y="112" font-size="9" fill="#b0bec5">O</text>
+            <!-- upward parabola: x²-3x-4, scaled, vertex at x=1.5, y=-6.25 -->
+            <!-- path: smooth parabola opening up, cuts x-axis at ~x=55 and x=155 -->
+            <path d="M30,25 Q100,155 170,25" fill="none" stroke="#1a6fc4" stroke-width="2.2"/>
+            <!-- zero dots -->
+            <circle cx="55" cy="100" r="5" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+            <circle cx="145" cy="100" r="5" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+            <!-- labels -->
+            <text x="42" y="116" font-size="9" font-weight="700" fill="#e74c3c">α</text>
+            <text x="140" y="116" font-size="9" font-weight="700" fill="#e74c3c">β</text>
+            <text x="8" y="25" font-size="9" fill="#1a6fc4">a &gt; 0</text>
+          </svg>
+          <div class="diagram-label" style="color:var(--green);">Case 1: 2 Distinct Zeroes</div>
+          <div class="diagram-sub">Parabola (opens up, a &gt; 0) cuts x-axis at <strong>two distinct points α and β</strong></div>
+        </div>
+
+        <!-- Case 1b: 2 distinct zeroes, opens down -->
+        <div class="diagram-card green-top">
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="60" x2="190" y2="60" stroke="#b0bec5" stroke-width="1.5"/>
+            <line x1="100" y1="10" x2="100" y2="155" stroke="#b0bec5" stroke-width="1.5"/>
+            <polygon points="190,60 183,56 183,64" fill="#b0bec5"/>
+            <polygon points="100,10 96,17 104,17" fill="#b0bec5"/>
+            <text x="186" y="56" font-size="10" fill="#b0bec5">X</text>
+            <text x="104" y="15" font-size="10" fill="#b0bec5">Y</text>
+            <text x="103" y="72" font-size="9" fill="#b0bec5">O</text>
+            <!-- downward parabola -->
+            <path d="M30,135 Q100,5 170,135" fill="none" stroke="#27ae60" stroke-width="2.2"/>
+            <circle cx="55" cy="60" r="5" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+            <circle cx="145" cy="60" r="5" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+            <text x="42" y="75" font-size="9" font-weight="700" fill="#e74c3c">α</text>
+            <text x="140" y="75" font-size="9" font-weight="700" fill="#e74c3c">β</text>
+            <text x="8" y="155" font-size="9" fill="#27ae60">a &lt; 0</text>
+          </svg>
+          <div class="diagram-label" style="color:var(--green);">Case 1: 2 Zeroes (a &lt; 0)</div>
+          <div class="diagram-sub">Parabola opens <strong>downward</strong> (a &lt; 0), still cuts x-axis at two points α and β</div>
+        </div>
+
+        <!-- Case 2: 1 zero (tangent) -->
+        <div class="diagram-card orange-top">
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="100" x2="190" y2="100" stroke="#b0bec5" stroke-width="1.5"/>
+            <line x1="100" y1="10" x2="100" y2="155" stroke="#b0bec5" stroke-width="1.5"/>
+            <polygon points="190,100 183,96 183,104" fill="#b0bec5"/>
+            <polygon points="100,10 96,17 104,17" fill="#b0bec5"/>
+            <text x="186" y="96" font-size="10" fill="#b0bec5">X</text>
+            <text x="104" y="15" font-size="10" fill="#b0bec5">Y</text>
+            <text x="103" y="112" font-size="9" fill="#b0bec5">O</text>
+            <!-- parabola tangent to x-axis at vertex: (x-4)² shifted: touches at x=100 -->
+            <path d="M30,60 Q100,100 170,60" fill="none" stroke="#e67e22" stroke-width="2.2"/>
+            <!-- tangent point -->
+            <circle cx="100" cy="100" r="5" fill="#e67e22" stroke="#fff" stroke-width="1.5"/>
+            <text x="88" y="118" font-size="9" font-weight="700" fill="#e67e22">α = β</text>
+            <text x="8" y="25" font-size="9" fill="#e67e22">a &gt; 0</text>
+          </svg>
+          <div class="diagram-label" style="color:var(--accent);">Case 2: 1 Zero (Repeated)</div>
+          <div class="diagram-sub">Parabola <strong>touches</strong> x-axis at exactly one point. Two equal zeroes: α = β</div>
+        </div>
+
+        <!-- Case 3: 0 zeroes -->
+        <div class="diagram-card purple-top">
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="130" x2="190" y2="130" stroke="#b0bec5" stroke-width="1.5"/>
+            <line x1="100" y1="10" x2="100" y2="155" stroke="#b0bec5" stroke-width="1.5"/>
+            <polygon points="190,130 183,126 183,134" fill="#b0bec5"/>
+            <polygon points="100,10 96,17 104,17" fill="#b0bec5"/>
+            <text x="186" y="126" font-size="10" fill="#b0bec5">X</text>
+            <text x="104" y="15" font-size="10" fill="#b0bec5">Y</text>
+            <text x="103" y="143" font-size="9" fill="#b0bec5">O</text>
+            <!-- parabola entirely above x-axis -->
+            <path d="M30,110 Q100,30 170,110" fill="none" stroke="#8e44ad" stroke-width="2.2"/>
+            <text x="60" y="148" font-size="9" fill="#8e44ad">No intersection</text>
+            <text x="60" y="160" font-size="9" font-weight="700" fill="#e74c3c">→ 0 zeroes</text>
+          </svg>
+          <div class="diagram-label" style="color:var(--purple);">Case 3: No Zeroes</div>
+          <div class="diagram-sub">Parabola is completely <strong>above</strong> x-axis (a &gt; 0) — does not cut it. 0 real zeroes.</div>
+        </div>
+
+        <!-- Case 3b: 0 zeroes, opens down -->
+        <div class="diagram-card purple-top">
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="30" x2="190" y2="30" stroke="#b0bec5" stroke-width="1.5"/>
+            <line x1="100" y1="10" x2="100" y2="155" stroke="#b0bec5" stroke-width="1.5"/>
+            <polygon points="190,30 183,26 183,34" fill="#b0bec5"/>
+            <polygon points="100,10 96,17 104,17" fill="#b0bec5"/>
+            <text x="186" y="26" font-size="10" fill="#b0bec5">X</text>
+            <text x="104" y="15" font-size="10" fill="#b0bec5">Y</text>
+            <text x="103" y="42" font-size="9" fill="#b0bec5">O</text>
+            <!-- downward parabola below x-axis -->
+            <path d="M30,60 Q100,150 170,60" fill="none" stroke="#8e44ad" stroke-width="2.2"/>
+            <text x="55" y="20" font-size="9" fill="#8e44ad">No intersection</text>
+            <text x="8" y="155" font-size="9" fill="#8e44ad">a &lt; 0</text>
+            <text x="55" y="155" font-size="9" font-weight="700" fill="#e74c3c">→ 0 zeroes</text>
+          </svg>
+          <div class="diagram-label" style="color:var(--purple);">Case 3: No Zeroes (a &lt; 0)</div>
+          <div class="diagram-sub">Parabola opens downward, entirely <strong>below</strong> x-axis — 0 real zeroes.</div>
+        </div>
+
+      </div>
+
+      <!-- CUBIC POLYNOMIAL -->
+      <div class="diagram-group-title">📐 Cubic Polynomial — ax³ + bx² + cx + d (Degree 3)</div>
+      <div class="diagram-row">
+
+        <!-- 3 distinct zeroes -->
+        <div class="diagram-card">
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="80" x2="190" y2="80" stroke="#b0bec5" stroke-width="1.5"/>
+            <line x1="100" y1="10" x2="100" y2="155" stroke="#b0bec5" stroke-width="1.5"/>
+            <polygon points="190,80 183,76 183,84" fill="#b0bec5"/>
+            <polygon points="100,10 96,17 104,17" fill="#b0bec5"/>
+            <text x="186" y="76" font-size="10" fill="#b0bec5">X</text>
+            <text x="104" y="15" font-size="10" fill="#b0bec5">Y</text>
+            <!-- S-shaped cubic with 3 x-intercepts: at ~x=40, 100, 160 -->
+            <path d="M15,20 C30,20 38,80 40,80 C55,80 70,25 100,80 C130,135 145,80 160,80 C165,80 175,140 185,145" fill="none" stroke="#1a6fc4" stroke-width="2.2"/>
+            <circle cx="40" cy="80" r="4.5" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+            <circle cx="100" cy="80" r="4.5" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+            <circle cx="160" cy="80" r="4.5" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+            <text x="28" y="95" font-size="9" font-weight="700" fill="#e74c3c">α</text>
+            <text x="97" y="95" font-size="9" font-weight="700" fill="#e74c3c">β</text>
+            <text x="158" y="95" font-size="9" font-weight="700" fill="#e74c3c">γ</text>
+          </svg>
+          <div class="diagram-label" style="color:var(--primary);">3 Distinct Zeroes</div>
+          <div class="diagram-sub">Cubic curve cuts x-axis at <strong>3 different points</strong> α, β, γ (maximum possible)</div>
+        </div>
+
+        <!-- 2 zeroes (one repeated) -->
+        <div class="diagram-card green-top">
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="80" x2="190" y2="80" stroke="#b0bec5" stroke-width="1.5"/>
+            <line x1="100" y1="10" x2="100" y2="155" stroke="#b0bec5" stroke-width="1.5"/>
+            <polygon points="190,80 183,76 183,84" fill="#b0bec5"/>
+            <polygon points="100,10 96,17 104,17" fill="#b0bec5"/>
+            <text x="186" y="76" font-size="10" fill="#b0bec5">X</text>
+            <text x="104" y="15" font-size="10" fill="#b0bec5">Y</text>
+            <!-- cubic touching x-axis at one point, crossing at another: x²(x-1) -->
+            <path d="M15,130 C40,100 60,80 80,80 C100,80 105,105 120,80 C140,50 160,20 185,10" fill="none" stroke="#27ae60" stroke-width="2.2"/>
+            <!-- touches at x=80 (tangent), crosses at ~x=120 -->
+            <circle cx="80" cy="80" r="4.5" fill="#e67e22" stroke="#fff" stroke-width="1.5"/>
+            <circle cx="155" cy="80" r="4.5" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+            <text x="65" y="95" font-size="9" font-weight="700" fill="#e67e22">α=β</text>
+            <text x="152" y="95" font-size="9" font-weight="700" fill="#e74c3c">γ</text>
+          </svg>
+          <div class="diagram-label" style="color:var(--green);">2 Zeroes (1 Repeated)</div>
+          <div class="diagram-sub">Curve <strong>touches</strong> x-axis at α (repeated zero) and crosses at γ — total 2 distinct values</div>
+        </div>
+
+        <!-- 1 zero only -->
+        <div class="diagram-card orange-top">
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="80" x2="190" y2="80" stroke="#b0bec5" stroke-width="1.5"/>
+            <line x1="100" y1="10" x2="100" y2="155" stroke="#b0bec5" stroke-width="1.5"/>
+            <polygon points="190,80 183,76 183,84" fill="#b0bec5"/>
+            <polygon points="100,10 96,17 104,17" fill="#b0bec5"/>
+            <text x="186" y="76" font-size="10" fill="#b0bec5">X</text>
+            <text x="104" y="15" font-size="10" fill="#b0bec5">Y</text>
+            <!-- y = x³: classic single-zero cubic -->
+            <path d="M20,155 C40,130 70,100 100,80 C130,60 160,30 180,5" fill="none" stroke="#e67e22" stroke-width="2.2"/>
+            <circle cx="100" cy="80" r="4.5" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+            <text x="88" y="95" font-size="9" font-weight="700" fill="#e74c3c">α only</text>
+            <text x="20" y="20" font-size="9" fill="#e67e22">y = x³</text>
+          </svg>
+          <div class="diagram-label" style="color:var(--accent);">1 Zero Only</div>
+          <div class="diagram-sub">Cubic cuts x-axis at <strong>only one point</strong> (e.g., y = x³ has zero only at x = 0)</div>
+        </div>
+
+      </div>
+
+      <!-- Summary Table of Cases -->
+      <div style="background:var(--white); border-radius:var(--radius); padding:20px 24px; box-shadow:var(--card-shadow); margin-bottom:16px;">
+        <div style="font-size:14px; font-weight:700; color:var(--text); margin-bottom:14px;">📋 Summary: Number of Zeroes by Polynomial Type</div>
+        <table style="width:100%; border-collapse:collapse; font-size:13px;">
+          <thead>
+            <tr style="background:var(--primary); color:#fff;">
+              <th style="padding:9px 12px; text-align:left; border-radius:8px 0 0 0;">Polynomial Type</th>
+              <th style="padding:9px 12px; text-align:center;">Degree</th>
+              <th style="padding:9px 12px; text-align:center;">Graph Shape</th>
+              <th style="padding:9px 12px; text-align:center; border-radius:0 8px 0 0;">Possible Zeroes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--primary-light);">
+              <td style="padding:9px 12px; font-weight:600;">Linear (ax + b)</td>
+              <td style="padding:9px 12px; text-align:center;">1</td>
+              <td style="padding:9px 12px; text-align:center;">Straight line</td>
+              <td style="padding:9px 12px; text-align:center; font-weight:700; color:var(--green);">Exactly 1</td>
+            </tr>
+            <tr>
+              <td style="padding:9px 12px; font-weight:600;">Quadratic (ax² + bx + c)</td>
+              <td style="padding:9px 12px; text-align:center;">2</td>
+              <td style="padding:9px 12px; text-align:center;">Parabola (∪ or ∩)</td>
+              <td style="padding:9px 12px; text-align:center; font-weight:700; color:var(--accent);">0, 1, or 2</td>
+            </tr>
+            <tr style="background:var(--primary-light);">
+              <td style="padding:9px 12px; font-weight:600;">Cubic (ax³ + bx² + cx + d)</td>
+              <td style="padding:9px 12px; text-align:center;">3</td>
+              <td style="padding:9px 12px; text-align:center;">S-shaped curve</td>
+              <td style="padding:9px 12px; text-align:center; font-weight:700; color:var(--purple);">1, 2, or 3</td>
+            </tr>
+            <tr>
+              <td style="padding:9px 12px; font-weight:600; color:var(--text-muted);">General (degree n)</td>
+              <td style="padding:9px 12px; text-align:center;">n</td>
+              <td style="padding:9px 12px; text-align:center;">Any curve</td>
+              <td style="padding:9px 12px; text-align:center; font-weight:700; color:var(--primary);">At most n</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div><!-- end #diagrams -->
+
+    <div id="solutions">
+      <div class="section-title">📖 NCERT Solutions — All Examples</div>
+
+      <!-- Section 2.2 Examples -->
+      <div class="solutions-block">
+        <div class="solutions-block-title">📘 Section 2.2 — Geometrical Meaning Examples</div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Example 1</span>
+              <span class="accordion-q-title">From graphs of y = p(x), find the number of zeroes of p(x) for each graph.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-concept">Conceptual</span>
+                <span class="badge badge-marks">1 mark each</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <p>The number of zeroes of p(x) equals the number of times the graph of y = p(x) <strong>intersects (cuts) the x-axis</strong>.</p>
+              <div class="solution-step">
+                <strong>(i)</strong> The graph intersects the x-axis at <strong>one point</strong> only.<br>
+                ∴ Number of zeroes = <strong>1</strong>
+              </div>
+              <div class="solution-step">
+                <strong>(ii)</strong> The graph intersects the x-axis at <strong>two points</strong>.<br>
+                ∴ Number of zeroes = <strong>2</strong>
+              </div>
+              <div class="solution-step">
+                <strong>(iii)</strong> The graph intersects the x-axis at <strong>three points</strong>.<br>
+                ∴ Number of zeroes = <strong>3</strong>
+              </div>
+              <div class="solution-step">
+                <strong>(iv)</strong> The graph intersects the x-axis at <strong>one point</strong> only (touches but doesn't cross).<br>
+                ∴ Number of zeroes = <strong>1</strong>
+              </div>
+              <div class="solution-step">
+                <strong>(v)</strong> The graph intersects the x-axis at <strong>one point</strong>.<br>
+                ∴ Number of zeroes = <strong>1</strong>
+              </div>
+              <div class="solution-step">
+                <strong>(vi)</strong> The graph intersects the x-axis at <strong>four points</strong>.<br>
+                ∴ Number of zeroes = <strong>4</strong>
+              </div>
+              <div class="contradiction-box">
+                💡 Key rule: A polynomial of degree n has <strong>at most n zeroes</strong>. The number of zeroes ≤ degree of polynomial.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end solutions-block -->
+
+      <!-- Section 2.3 Examples -->
+      <div class="solutions-block">
+        <div class="solutions-block-title">📘 Section 2.3 — Zeroes &amp; Coefficients Examples</div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Example 2</span>
+              <span class="accordion-q-title">Find the zeroes of x² + 7x + 10 and verify the relationship between zeroes and coefficients.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">3 marks</span>
+                <span class="badge badge-star">★★★ Most Asked</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <p><strong>Step 1 — Factorise by splitting the middle term:</strong></p>
+              <div class="math-box">
+                x² + 7x + 10<br>
+                We need p + q = 7 and p × q = 10<br>
+                → p = 5, q = 2 works: 5 + 2 = 7, 5 × 2 = 10<br><br>
+                = x² + 5x + 2x + 10<br>
+                = x(x + 5) + 2(x + 5)<br>
+                = (x + 2)(x + 5)
+              </div>
+              <div class="solution-step">
+                <strong>Step 2 — Find zeroes:</strong><br>
+                p(x) = 0 when x + 2 = 0 or x + 5 = 0<br>
+                → <strong>x = −2 or x = −5</strong><br>
+                ∴ Zeroes are α = −2 and β = −5
+              </div>
+              <div class="solution-step green">
+                <strong>Step 3 — Verify (a = 1, b = 7, c = 10):</strong><br><br>
+                Sum of zeroes: α + β = −2 + (−5) = −7 = −(7)/1 = −b/a ✓<br><br>
+                Product of zeroes: α × β = (−2)(−5) = 10 = 10/1 = c/a ✓
+              </div>
+              <div class="result-box">Zeroes: −2 and −5. Both relationships verified.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Example 3</span>
+              <span class="accordion-q-title">Find the zeroes of x² − 3 and verify the relationship between zeroes and coefficients.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">3 marks</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <p><strong>Using the identity a² − b² = (a − b)(a + b):</strong></p>
+              <div class="math-box">
+                x² − 3 = x² − (√3)²<br>
+                = (x − √3)(x + √3)
+              </div>
+              <div class="solution-step">
+                <strong>Zeroes:</strong> p(x) = 0 when x − √3 = 0 or x + √3 = 0<br>
+                → <strong>α = √3 and β = −√3</strong>
+              </div>
+              <div class="solution-step green">
+                <strong>Verify (a = 1, b = 0, c = −3):</strong><br><br>
+                Sum of zeroes: α + β = √3 + (−√3) = 0 = −(0)/1 = −b/a ✓<br><br>
+                Product of zeroes: α × β = (√3)(−√3) = −3 = (−3)/1 = c/a ✓
+              </div>
+              <div class="result-box">Zeroes: √3 and −√3. Both relationships verified.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Example 4</span>
+              <span class="accordion-q-title">Find a quadratic polynomial whose sum of zeroes is −3 and product of zeroes is 2.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">2 marks</span>
+                <span class="badge badge-star">★★ Frequently Asked</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <p>Let the quadratic polynomial be ax² + bx + c with zeroes α and β.</p>
+              <div class="solution-step">
+                <strong>Given:</strong><br>
+                α + β = −3 = −b/a → with a = 1, b = 3<br>
+                α × β = 2 = c/a → with a = 1, c = 2
+              </div>
+              <div class="math-box">
+                Using formula: p(x) = x² − (Sum)x + (Product)<br>
+                = x² − (−3)x + 2<br>
+                = x² + 3x + 2
+              </div>
+              <div class="result-box">Required quadratic polynomial: x² + 3x + 2</div>
+              <p class="mt-8" style="font-size:13px; color: var(--text-muted);">Note: Any polynomial of the form k(x² + 3x + 2), where k is a non-zero real number, is also a valid answer.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Example 5</span>
+              <span class="accordion-q-title">Verify that 3, −1, −1/3 are the zeroes of 3x³ − 5x² − 11x − 3, and verify the relationships between zeroes and coefficients.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">5 marks</span>
+                <span class="badge badge-concept">Cubic Polynomial</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <p>Here a = 3, b = −5, c = −11, d = −3. We verify each value by substituting into p(x).</p>
+              <div class="solution-step">
+                <strong>Verify x = 3:</strong><br>
+                p(3) = 3(3)³ − 5(3)² − 11(3) − 3<br>
+                = 3(27) − 5(9) − 33 − 3<br>
+                = 81 − 45 − 33 − 3 = <strong>0 ✓</strong>
+              </div>
+              <div class="solution-step">
+                <strong>Verify x = −1:</strong><br>
+                p(−1) = 3(−1)³ − 5(−1)² − 11(−1) − 3<br>
+                = −3 − 5 + 11 − 3 = <strong>0 ✓</strong>
+              </div>
+              <div class="solution-step">
+                <strong>Verify x = −1/3:</strong><br>
+                p(−1/3) = 3(−1/3)³ − 5(−1/3)² − 11(−1/3) − 3<br>
+                = 3(−1/27) − 5(1/9) + 11/3 − 3<br>
+                = −1/9 − 5/9 + 11/3 − 3<br>
+                = −6/9 + 11/3 − 3<br>
+                = −2/3 + 11/3 − 9/3 = 0/3 = <strong>0 ✓</strong>
+              </div>
+              <p>∴ 3, −1 and −1/3 are zeroes. Let α = 3, β = −1, γ = −1/3.</p>
+              <div class="solution-step green">
+                <strong>Verify Sum (α + β + γ = −b/a):</strong><br>
+                3 + (−1) + (−1/3) = 2 − 1/3 = 5/3<br>
+                −b/a = −(−5)/3 = 5/3 ✓
+              </div>
+              <div class="solution-step green">
+                <strong>Verify Sum of products two at a time (αβ + βγ + γα = c/a):</strong><br>
+                αβ = 3 × (−1) = −3<br>
+                βγ = (−1) × (−1/3) = 1/3<br>
+                γα = (−1/3) × 3 = −1<br>
+                αβ + βγ + γα = −3 + 1/3 − 1 = −4 + 1/3 = −11/3<br>
+                c/a = −11/3 ✓
+              </div>
+              <div class="solution-step green">
+                <strong>Verify Product (αβγ = −d/a):</strong><br>
+                3 × (−1) × (−1/3) = 3 × 1/3 = 1<br>
+                −d/a = −(−3)/3 = 1 ✓
+              </div>
+              <div class="result-box">All three zeroes verified. All three coefficient relationships verified.</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end solutions-block -->
+
+      <div class="doubt-cta">
+        ❓ Stuck on a question? &nbsp;
+        <a href="https://wa.me/918107563723?text=Hi%20Manish%20Sir!%20I%20have%20a%20doubt%20in%20Polynomials." rel="noopener noreferrer">📲 +91 8107563723</a>
+        &nbsp;|&nbsp;
+        <a href="https://wa.me/918882565496?text=Hi!%20I%20have%20a%20doubt%20in%20Polynomials." style="background:#27ae60;" rel="noopener noreferrer">📲 +91 88825 65496</a>
+      </div>
+
+      <!-- Exercise 2.1 -->
+      <div class="solutions-block" id="ex21">
+        <div class="solutions-block-title green">📗 Exercise 2.1 — Zeroes from Graphs</div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.1 — Q1</span>
+              <span class="accordion-q-title">The graphs of y = p(x) are given for some polynomials p(x). Find the number of zeroes of p(x) in each case.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">1 mark each</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <p>The number of zeroes = number of times the graph cuts the x-axis.</p>
+              <div class="solution-step">
+                <strong>(i)</strong> The graph does not intersect the x-axis at all.<br>
+                ∴ Number of zeroes = <strong>0</strong>
+              </div>
+              <div class="solution-step">
+                <strong>(ii)</strong> The graph intersects the x-axis at <strong>one point</strong>.<br>
+                ∴ Number of zeroes = <strong>1</strong>
+              </div>
+              <div class="solution-step">
+                <strong>(iii)</strong> The graph intersects the x-axis at <strong>three points</strong>.<br>
+                ∴ Number of zeroes = <strong>3</strong>
+              </div>
+              <div class="solution-step">
+                <strong>(iv)</strong> The graph intersects the x-axis at <strong>two points</strong>.<br>
+                ∴ Number of zeroes = <strong>2</strong>
+              </div>
+              <div class="solution-step">
+                <strong>(v)</strong> The graph intersects the x-axis at <strong>four points</strong>.<br>
+                ∴ Number of zeroes = <strong>4</strong>
+              </div>
+              <div class="solution-step">
+                <strong>(vi)</strong> The graph intersects the x-axis at <strong>three points</strong>.<br>
+                ∴ Number of zeroes = <strong>3</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end ex2.1 -->
+
+      <!-- Exercise 2.2 -->
+      <div class="solutions-block" id="ex22">
+        <div class="solutions-block-title green">📗 Exercise 2.2 — Zeroes &amp; Coefficients</div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.2 — Q1 (i)</span>
+              <span class="accordion-q-title">Find the zeroes of x² − 2x − 8 and verify the relationship between zeroes and coefficients.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">3 marks</span>
+                <span class="badge badge-star">★★★ Most Asked</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <div class="math-box">
+                x² − 2x − 8<br>
+                Split: p + q = −2, p × q = −8 → p = −4, q = 2<br>
+                = x² − 4x + 2x − 8<br>
+                = x(x − 4) + 2(x − 4)<br>
+                = (x + 2)(x − 4)
+              </div>
+              <div class="solution-step">
+                <strong>Zeroes:</strong> x + 2 = 0 → x = −2, and x − 4 = 0 → x = 4<br>
+                ∴ <strong>α = −2, β = 4</strong>
+              </div>
+              <div class="solution-step green">
+                <strong>Verify (a = 1, b = −2, c = −8):</strong><br><br>
+                Sum: α + β = −2 + 4 = 2 = −(−2)/1 = −b/a ✓<br>
+                Product: αβ = (−2)(4) = −8 = −8/1 = c/a ✓
+              </div>
+              <div class="result-box">Zeroes: −2 and 4. Relationships verified.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.2 — Q1 (ii)</span>
+              <span class="accordion-q-title">Find the zeroes of 4s² − 4s + 1 and verify the relationship between zeroes and coefficients.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">3 marks</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <div class="math-box">
+                4s² − 4s + 1<br>
+                Split: p + q = −4, p × q = 4 × 1 = 4 → p = −2, q = −2<br>
+                = 4s² − 2s − 2s + 1<br>
+                = 2s(2s − 1) − 1(2s − 1)<br>
+                = (2s − 1)(2s − 1) = (2s − 1)²
+              </div>
+              <div class="solution-step">
+                <strong>Zeroes:</strong> 2s − 1 = 0 → s = 1/2 (repeated zero)<br>
+                ∴ <strong>α = 1/2, β = 1/2</strong>
+              </div>
+              <div class="solution-step green">
+                <strong>Verify (a = 4, b = −4, c = 1):</strong><br><br>
+                Sum: α + β = 1/2 + 1/2 = 1 = −(−4)/4 = 4/4 = 1 = −b/a ✓<br>
+                Product: αβ = (1/2)(1/2) = 1/4 = 1/4 = c/a ✓
+              </div>
+              <div class="result-box">Zeroes: 1/2 and 1/2 (equal/repeated zeroes). Relationships verified.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.2 — Q1 (iii)</span>
+              <span class="accordion-q-title">Find the zeroes of 6x² − 3 − 7x and verify the relationship between zeroes and coefficients.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">3 marks</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <p>First, write in standard form: <strong>6x² − 7x − 3</strong></p>
+              <div class="math-box">
+                6x² − 7x − 3<br>
+                Split: p + q = −7, p × q = 6 × (−3) = −18<br>
+                → p = −9, q = 2 (since −9 + 2 = −7, −9 × 2 = −18)<br>
+                = 6x² − 9x + 2x − 3<br>
+                = 3x(2x − 3) + 1(2x − 3)<br>
+                = (3x + 1)(2x − 3)
+              </div>
+              <div class="solution-step">
+                <strong>Zeroes:</strong> 3x + 1 = 0 → x = −1/3, and 2x − 3 = 0 → x = 3/2<br>
+                ∴ <strong>α = −1/3, β = 3/2</strong>
+              </div>
+              <div class="solution-step green">
+                <strong>Verify (a = 6, b = −7, c = −3):</strong><br><br>
+                Sum: α + β = −1/3 + 3/2 = −2/6 + 9/6 = 7/6 = −(−7)/6 = −b/a ✓<br>
+                Product: αβ = (−1/3)(3/2) = −3/6 = −1/2 = (−3)/6 = c/a ✓
+              </div>
+              <div class="result-box">Zeroes: −1/3 and 3/2. Relationships verified.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.2 — Q1 (iv)</span>
+              <span class="accordion-q-title">Find the zeroes of 4u² + 8u and verify the relationship between zeroes and coefficients.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">3 marks</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <div class="math-box">
+                4u² + 8u<br>
+                = 4u(u + 2)<br>
+                [Take 4u common — no splitting needed here!]
+              </div>
+              <div class="solution-step">
+                <strong>Zeroes:</strong> 4u = 0 → u = 0, and u + 2 = 0 → u = −2<br>
+                ∴ <strong>α = 0, β = −2</strong>
+              </div>
+              <div class="solution-step green">
+                <strong>Verify (a = 4, b = 8, c = 0):</strong><br><br>
+                Sum: α + β = 0 + (−2) = −2 = −8/4 = −b/a ✓<br>
+                Product: αβ = (0)(−2) = 0 = 0/4 = c/a ✓
+              </div>
+              <div class="result-box">Zeroes: 0 and −2. Relationships verified.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.2 — Q1 (v)</span>
+              <span class="accordion-q-title">Find the zeroes of t² − 15 and verify the relationship between zeroes and coefficients.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">3 marks</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <div class="math-box">
+                t² − 15 = t² − (√15)²<br>
+                = (t − √15)(t + √15)
+              </div>
+              <div class="solution-step">
+                <strong>Zeroes:</strong> t = √15 and t = −√15<br>
+                ∴ <strong>α = √15, β = −√15</strong>
+              </div>
+              <div class="solution-step green">
+                <strong>Verify (a = 1, b = 0, c = −15):</strong><br><br>
+                Sum: α + β = √15 + (−√15) = 0 = −0/1 = −b/a ✓<br>
+                Product: αβ = (√15)(−√15) = −15 = −15/1 = c/a ✓
+              </div>
+              <div class="result-box">Zeroes: √15 and −√15. Relationships verified.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.2 — Q1 (vi)</span>
+              <span class="accordion-q-title">Find the zeroes of 3x² − x − 4 and verify the relationship between zeroes and coefficients.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">3 marks</span>
+                <span class="badge badge-star">★★★ Most Asked</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <div class="math-box">
+                3x² − x − 4<br>
+                Split: p + q = −1, p × q = 3 × (−4) = −12<br>
+                → p = −4, q = 3 (since −4 + 3 = −1, −4 × 3 = −12)<br>
+                = 3x² − 4x + 3x − 4<br>
+                = x(3x − 4) + 1(3x − 4)<br>
+                = (x + 1)(3x − 4)
+              </div>
+              <div class="solution-step">
+                <strong>Zeroes:</strong> x + 1 = 0 → x = −1, and 3x − 4 = 0 → x = 4/3<br>
+                ∴ <strong>α = −1, β = 4/3</strong>
+              </div>
+              <div class="solution-step green">
+                <strong>Verify (a = 3, b = −1, c = −4):</strong><br><br>
+                Sum: α + β = −1 + 4/3 = −3/3 + 4/3 = 1/3 = −(−1)/3 = −b/a ✓<br>
+                Product: αβ = (−1)(4/3) = −4/3 = (−4)/3 = c/a ✓
+              </div>
+              <div class="result-box">Zeroes: −1 and 4/3. Relationships verified.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.2 — Q2 (i)</span>
+              <span class="accordion-q-title">Find a quadratic polynomial with sum = 1/4 and product = −1.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">2 marks</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <div class="solution-step">
+                Sum of zeroes (α + β) = 1/4<br>
+                Product of zeroes (αβ) = −1
+              </div>
+              <div class="math-box">
+                p(x) = k[x² − (Sum)x + Product]<br>
+                = k[x² − (1/4)x + (−1)]<br>
+                = k[x² − x/4 − 1]<br><br>
+                Multiplying by 4 (taking k = 4):<br>
+                = 4x² − x − 4
+              </div>
+              <div class="result-box">Required polynomial: 4x² − x − 4</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.2 — Q2 (ii)</span>
+              <span class="accordion-q-title">Find a quadratic polynomial with sum = √2 and product = 1/3.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">2 marks</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <div class="math-box">
+                p(x) = k[x² − (√2)x + 1/3]<br><br>
+                Multiplying by 3 (taking k = 3):<br>
+                = 3x² − 3√2 x + 1
+              </div>
+              <div class="result-box">Required polynomial: 3x² − 3√2 x + 1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.2 — Q2 (iii)</span>
+              <span class="accordion-q-title">Find a quadratic polynomial with sum = 0 and product = √5.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">2 marks</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <div class="math-box">
+                p(x) = k[x² − (0)x + √5]<br>
+                = k[x² + √5]<br><br>
+                Taking k = 1:<br>
+                = x² + √5
+              </div>
+              <div class="result-box">Required polynomial: x² + √5</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.2 — Q2 (iv)</span>
+              <span class="accordion-q-title">Find a quadratic polynomial with sum = 1 and product = 1.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">2 marks</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <div class="math-box">
+                p(x) = k[x² − (1)x + 1]<br>
+                = k[x² − x + 1]<br><br>
+                Taking k = 1:<br>
+                = x² − x + 1
+              </div>
+              <div class="result-box">Required polynomial: x² − x + 1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.2 — Q2 (v)</span>
+              <span class="accordion-q-title">Find a quadratic polynomial with sum = −1/4 and product = 1/4.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">2 marks</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <div class="math-box">
+                p(x) = k[x² − (−1/4)x + 1/4]<br>
+                = k[x² + x/4 + 1/4]<br><br>
+                Multiplying by 4 (taking k = 4):<br>
+                = 4x² + x + 1
+              </div>
+              <div class="result-box">Required polynomial: 4x² + x + 1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="accordion-trigger-left">
+              <span class="accordion-q-label">Exercise 2.2 — Q2 (vi)</span>
+              <span class="accordion-q-title">Find a quadratic polynomial with sum = 4 and product = 1.</span>
+              <div class="accordion-meta">
+                <span class="badge badge-marks">2 marks</span>
+              </div>
+            </div>
+            <span class="accordion-arrow">▾</span>
+          </button>
+          <div class="accordion-body">
+            <div class="solution-content">
+              <div class="math-box">
+                p(x) = k[x² − (4)x + 1]<br>
+                = k[x² − 4x + 1]<br><br>
+                Taking k = 1:<br>
+                = x² − 4x + 1
+              </div>
+              <div class="result-box">Required polynomial: x² − 4x + 1</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end ex2.2 -->
+    </div><!-- end #solutions -->
+
+    <!-- Quick Reference Table -->
+    <div id="table">
+      <div class="section-title">📊 Quick Reference Table</div>
+      <div class="ref-table-wrap">
+        <table class="ref-table">
+          <thead>
+            <tr>
+              <th>Concept</th>
+              <th>Formula / Rule</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Linear polynomial</td>
+              <td>ax + b, degree 1, exactly 1 zero</td>
+              <td><code>2x + 3 → zero = −3/2</code></td>
+            </tr>
+            <tr>
+              <td>Quadratic polynomial</td>
+              <td>ax² + bx + c, degree 2, at most 2 zeroes</td>
+              <td><code>x²−3x−4 → zeroes: −1, 4</code></td>
+            </tr>
+            <tr>
+              <td>Cubic polynomial</td>
+              <td>ax³+bx²+cx+d, degree 3, at most 3 zeroes</td>
+              <td><code>x³−4x → zeroes: −2, 0, 2</code></td>
+            </tr>
+            <tr>
+              <td>Sum of zeroes (quadratic)</td>
+              <td>α + β = −b/a</td>
+              <td><code>x²+7x+10: α+β = −7</code></td>
+            </tr>
+            <tr>
+              <td>Product of zeroes (quadratic)</td>
+              <td>αβ = c/a</td>
+              <td><code>x²+7x+10: αβ = 10</code></td>
+            </tr>
+            <tr>
+              <td>Form polynomial from zeroes</td>
+              <td>x² − (Sum)x + Product</td>
+              <td><code>Sum=−3, Prod=2 → x²+3x+2</code></td>
+            </tr>
+            <tr>
+              <td>Sum of zeroes (cubic)</td>
+              <td>α + β + γ = −b/a</td>
+              <td><code>2x³−5x²−14x+8: sum = 5/2</code></td>
+            </tr>
+            <tr>
+              <td>Sum of products two at a time</td>
+              <td>αβ + βγ + γα = c/a</td>
+              <td><code>2x³−5x²−14x+8: = −7</code></td>
+            </tr>
+            <tr>
+              <td>Product of zeroes (cubic)</td>
+              <td>αβγ = −d/a</td>
+              <td><code>2x³−5x²−14x+8: = −4</code></td>
+            </tr>
+            <tr>
+              <td>Parabola opens up</td>
+              <td>a &gt; 0 (∪ shape)</td>
+              <td><code>x²−3x−4 → opens upward</code></td>
+            </tr>
+            <tr>
+              <td>Parabola opens down</td>
+              <td>a &lt; 0 (∩ shape)</td>
+              <td><code>−x²+2x+3 → opens downward</code></td>
+            </tr>
+            <tr>
+              <td>Number of zeroes rule</td>
+              <td>Degree n → at most n zeroes</td>
+              <td><code>degree 2 → max 2 zeroes</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Common Mistakes -->
+    <div id="mistakes">
+      <div class="section-title">⚠️ Common Mistakes</div>
+      <div class="mistakes-grid">
+
+        <div class="mistake-wrong">
+          <div class="label">❌ Wrong</div>
+          <div class="mistake-text">Forgetting the negative sign: writing Sum = b/a instead of −b/a</div>
+        </div>
+        <div class="mistake-correct">
+          <div class="label">✅ Correct</div>
+          <div class="mistake-text">Sum of zeroes = <strong>−b/a</strong> (negative sign is essential; product = c/a has no negative)</div>
+        </div>
+
+        <div class="mistake-wrong">
+          <div class="label">❌ Wrong</div>
+          <div class="mistake-text">Writing the polynomial with wrong signs: p(x) = x² + (Sum)x + Product</div>
+        </div>
+        <div class="mistake-correct">
+          <div class="label">✅ Correct</div>
+          <div class="mistake-text">Formula is p(x) = x² <strong>−</strong> (Sum)x + Product. The minus sign before Sum is critical.</div>
+        </div>
+
+        <div class="mistake-wrong">
+          <div class="label">❌ Wrong</div>
+          <div class="mistake-text">Not writing 6x²−3−7x in standard form before factorising (missing step)</div>
+        </div>
+        <div class="mistake-correct">
+          <div class="label">✅ Correct</div>
+          <div class="mistake-text">Always rewrite in standard form <strong>ax²+bx+c</strong> first → 6x²−7x−3, then split.</div>
+        </div>
+
+        <div class="mistake-wrong">
+          <div class="label">❌ Wrong</div>
+          <div class="mistake-text">Product of zeroes for cubic: writing αβγ = d/a (missing negative sign)</div>
+        </div>
+        <div class="mistake-correct">
+          <div class="label">✅ Correct</div>
+          <div class="mistake-text">Product of zeroes for cubic = <strong>−d/a</strong>. Only the product of all three has a negative sign.</div>
+        </div>
+
+        <div class="mistake-wrong">
+          <div class="label">❌ Wrong</div>
+          <div class="mistake-text">Thinking 4s²−4s+1 has two different zeroes because it's a quadratic</div>
+        </div>
+        <div class="mistake-correct">
+          <div class="label">✅ Correct</div>
+          <div class="mistake-text">4s²−4s+1 = (2s−1)² has a <strong>repeated zero</strong> s = 1/2 twice. This counts as one unique zero.</div>
+        </div>
+
+        <div class="mistake-wrong">
+          <div class="label">❌ Wrong</div>
+          <div class="mistake-text">Assuming a quadratic always has 2 distinct zeroes from a graph</div>
+        </div>
+        <div class="mistake-correct">
+          <div class="label">✅ Correct</div>
+          <div class="mistake-text">A quadratic can have <strong>0, 1, or 2</strong> zeroes. If parabola doesn't cut x-axis → 0 zeroes.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Exam Tips -->
+    <div id="tips">
+      <div class="section-title">🎯 Exam Tips from Manish Sir</div>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">⚡</div>
+          <div>
+            <div class="tip-title">Zeroes from graphs = guaranteed 1 mark</div>
+            <div class="tip-text">CBSE asks graph-based questions every year in MCQ or 1-mark section. Remember: number of zeroes = number of times graph cuts x-axis. A parabola touching (not crossing) the x-axis = 1 zero.</div>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">📝</div>
+          <div>
+            <div class="tip-title">Always verify at the end</div>
+            <div class="tip-text">After finding zeroes, always verify the sum and product relationships. It takes 2 lines and can save you 1 mark. Examiners check for this verification step explicitly.</div>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🔢</div>
+          <div>
+            <div class="tip-title">Remember the sign rule</div>
+            <div class="tip-text">For quadratic: Sum = −b/a (negative), Product = c/a (positive). For cubic: Sum = −b/a, Sum of pairs = c/a, Product = −d/a. The signs on Sum and cubic Product are negative — very commonly forgotten in exams.</div>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">🏆</div>
+          <div>
+            <div class="tip-title">Chapter 2 = easy 6–8 marks</div>
+            <div class="tip-text">Polynomials questions are highly predictable. Practice all 6 parts of Exercise 2.2 Q1 and all 6 parts of Q2. These are repeated every year with minor variations. Master these = guaranteed full marks.</div>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">⚠️</div>
+          <div>
+            <div class="tip-title">Standard form first, always</div>
+            <div class="tip-text">Before splitting the middle term, rewrite the polynomial in standard form ax²+bx+c. Questions like 6x²−3−7x are given out of order deliberately. Rearranging first prevents silly errors.</div>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-icon">💡</div>
+          <div>
+            <div class="tip-title">Forming a polynomial is the easy 2-marker</div>
+            <div class="tip-text">Questions like "find quadratic polynomial with sum 4 and product 1" are pure formula application. Just plug into x² − (sum)x + product. Never miss these 2 marks.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div id="faq">
+      <div class="section-title">❓ Frequently Asked Questions</div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" onclick="toggleFaq(this)">
+            What is the geometrical meaning of the zeroes of a polynomial?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-body">
+            The zeroes of a polynomial p(x) are the <strong>x-coordinates of the points where the graph of y = p(x) intersects the x-axis</strong>. For a linear polynomial, the graph (straight line) cuts the x-axis at exactly one point. For a quadratic polynomial, the parabola can cut the x-axis at 0, 1, or 2 points — giving 0, 1, or 2 zeroes respectively.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" onclick="toggleFaq(this)">
+            How many zeroes can a quadratic and cubic polynomial have?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-body">
+            A <strong>quadratic polynomial</strong> (degree 2) can have at most <strong>2 zeroes</strong> — it can have 0, 1, or 2 zeroes. A <strong>cubic polynomial</strong> (degree 3) can have at most <strong>3 zeroes</strong>. In general, a polynomial of degree n has at most n zeroes.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" onclick="toggleFaq(this)">
+            What is the formula for the sum and product of zeroes of a quadratic polynomial?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-body">
+            For a quadratic polynomial ax² + bx + c with zeroes α and β:<br><br>
+            <strong>Sum of zeroes:</strong> α + β = −b/a = −(Coefficient of x) ÷ (Coefficient of x²)<br>
+            <strong>Product of zeroes:</strong> αβ = c/a = (Constant term) ÷ (Coefficient of x²)<br><br>
+            These are the most important formulas in this chapter.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" onclick="toggleFaq(this)">
+            How do you form a quadratic polynomial from given sum and product of zeroes?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-body">
+            Use the formula: <strong>p(x) = k[x² − (Sum of zeroes)x + (Product of zeroes)]</strong>, where k is any non-zero real number (usually take k = 1). For example, if sum = 4 and product = 3, then p(x) = x² − 4x + 3. Any scalar multiple k(x² − 4x + 3) is also valid.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" onclick="toggleFaq(this)">
+            What are the three relationships for zeroes of a cubic polynomial?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-body">
+            For ax³ + bx² + cx + d with zeroes α, β, γ:<br><br>
+            1. <strong>α + β + γ = −b/a</strong> (sum of all three zeroes)<br>
+            2. <strong>αβ + βγ + γα = c/a</strong> (sum of products of zeroes taken two at a time)<br>
+            3. <strong>αβγ = −d/a</strong> (product of all three zeroes)<br><br>
+            Note: Relationships 1 and 3 have a negative sign; relationship 2 does not.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" onclick="toggleFaq(this)">
+            How many marks does Chapter 2 Polynomials carry in Class 10 board?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-body">
+            Chapter 2 typically carries <strong>6 to 8 marks</strong> in the CBSE Class 10 board exam — usually 1 MCQ (1 mark) + 1 short answer (2 marks) + 1 long answer (3 marks). The most frequently asked questions are: finding zeroes and verifying, and forming a quadratic polynomial from given sum and product.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" onclick="toggleFaq(this)">
+            What is the difference between a zero and a root of a polynomial?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-body">
+            In the context of polynomials, <strong>zero</strong> and <strong>root</strong> mean the same thing — a value of x for which p(x) = 0. The term "zero of a polynomial" is preferred in NCERT. The term "root" is more commonly used when referring to equations (like "roots of the equation x²−5x+6 = 0"). Both are acceptable in board exams.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Explore More -->
+    <div class="section-title">🔗 Explore More</div>
+    <div class="explore-grid">
+      <a href="https://m2learninghub.com/blog.html" class="explore-link" rel="noopener noreferrer">📐 All Class 10 Chapters</a>
+      <a href="https://m2learninghub.com/class10-real-numbers-complete.html" class="explore-link" rel="noopener noreferrer">🔢 Chapter 1: Real Numbers</a>
+      <a href="https://m2learninghub.com/blog.html" class="explore-link" rel="noopener noreferrer">📋 CBSE PYQ 2020–25</a>
+      <a href="https://m2learninghub.com/class10-maths-score-95.html" class="explore-link" rel="noopener noreferrer">🎯 95+ Maths Strategy</a>
+      <a href="https://m2learninghub.com/blog.html" class="explore-link" rel="noopener noreferrer">📒 Pair of Linear Equations</a>
+      <a href="https://m2learninghub.com/blog.html" class="explore-link" rel="noopener noreferrer">📈 Free Formula PDFs</a>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="final-cta">
+      <h3>🎯 Want Complete Maths and Science Preparation?</h3>
+      <p>Join our FREE Class 10 Maths &amp; Science Doubt Group 2027 and get:</p>
+      <ul>
+        <li>Chapter-wise Notes — Maths &amp; Science</li>
+        <li>PYQs (Last 10 Years)</li>
+        <li>Important Questions &amp; Practice Papers</li>
+        <li>Live Doubt Solving by Manish Sir &amp; Madhvi Ma'am</li>
+        <li>Free Formula Sheets &amp; Short Notes</li>
+      </ul>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:10px;">
+        <a href="https://wa.me/918107563723?text=Hi%20Manish%20Sir!%20I%20want%20to%20join%20the%20Class%2010%20Maths%20and%20Science%20Doubt%20Group%202027." class="btn-wa" style="display:inline-flex;" rel="noopener noreferrer">💬 +91 8107563723</a>
+        <a href="https://wa.me/918882565496?text=Hi!%20I%20want%20to%20join%20the%20Class%2010%20Maths%20and%20Science%20Doubt%20Group%202027." class="btn-wa" style="display:inline-flex; background:#1ebc5a;" rel="noopener noreferrer">💬 +91 88825 65496</a>
+      </div>
+      <p class="final-cta-note">📌 You will be added by Manish Sir after a quick approval</p>
+      <p class="final-cta-note" style="margin-top:4px;">🔥 Limited access for Board 2027 students</p>
+    </div>
+
+  </main>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+
+    <div class="sidebar-highlight">
+      <p>🏆 Chapter 2 = 6–8 Marks</p>
+      <span>Highly predictable questions. Master zeroes &amp; coefficient formulas for full marks!</span>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sidebar-title">📐 Formula Quick Ref</div>
+      <div class="sidebar-formula-row">
+        <span class="sidebar-formula-label">Sum (quadratic)</span>
+        <span class="sidebar-formula-val">α+β = −b/a</span>
+      </div>
+      <div class="sidebar-formula-row">
+        <span class="sidebar-formula-label">Product (quadratic)</span>
+        <span class="sidebar-formula-val">αβ = c/a</span>
+      </div>
+      <div class="sidebar-formula-row">
+        <span class="sidebar-formula-label">Form polynomial</span>
+        <span class="sidebar-formula-val">x²−(Sum)x+Prod</span>
+      </div>
+      <div class="sidebar-formula-row">
+        <span class="sidebar-formula-label">Sum (cubic)</span>
+        <span class="sidebar-formula-val green">α+β+γ = −b/a</span>
+      </div>
+      <div class="sidebar-formula-row">
+        <span class="sidebar-formula-label">Sum pairs (cubic)</span>
+        <span class="sidebar-formula-val green">αβ+βγ+γα = c/a</span>
+      </div>
+      <div class="sidebar-formula-row">
+        <span class="sidebar-formula-label">Product (cubic)</span>
+        <span class="sidebar-formula-val green">αβγ = −d/a</span>
+      </div>
+      <div class="sidebar-formula-row">
+        <span class="sidebar-formula-label">Max zeroes (quadratic)</span>
+        <span class="sidebar-formula-val">2</span>
+      </div>
+      <div class="sidebar-formula-row">
+        <span class="sidebar-formula-label">Max zeroes (cubic)</span>
+        <span class="sidebar-formula-val">3</span>
+      </div>
+    </div>
+
+    <div class="sidebar-card green">
+      <div class="sidebar-title">📚 Quick Navigation</div>
+      <ul class="sidebar-nav">
+        <li><a href="#intro">👋 Introduction</a></li>
+        <li><a href="#formulas">📐 Formula Sheet</a></li>
+        <li><a href="#diagrams">📊 Visual Diagrams</a></li>
+        <li><a href="#solutions">📖 NCERT Examples</a></li>
+        <li><a href="#ex21">📝 Exercise 2.1</a></li>
+        <li><a href="#ex22">📝 Exercise 2.2</a></li>
+        <li><a href="#table">📊 Quick Table</a></li>
+        <li><a href="#mistakes">⚠️ Mistakes</a></li>
+        <li><a href="#tips">🎯 Exam Tips</a></li>
+        <li><a href="#faq">❓ FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sidebar-title">🔥 Free Doubt Group 2027</div>
+      <p style="font-size:13px; color:var(--text-muted); margin-bottom:10px;">FREE Class 10 Maths &amp; Science Doubt Group — join with Manish Sir's approval</p>
+      <a href="https://wa.me/918107563723?text=Hi%20Manish%20Sir!%20I%20want%20to%20join%20the%20Class%2010%20Maths%20and%20Science%20Doubt%20Group%202027." class="sidebar-wa" rel="noopener noreferrer">💬 +91 8107563723</a>
+      <a href="https://wa.me/918882565496?text=Hi!%20I%20want%20to%20join%20the%20Class%2010%20Maths%20and%20Science%20Doubt%20Group%202027." class="sidebar-wa" style="margin-top:6px; background:#1ebc5a;" rel="noopener noreferrer">💬 +91 88825 65496</a>
+    </div>
+
+  </aside>
+
+</div><!-- end page-wrapper -->
+
+<!-- Footer -->
+<footer>
+  <strong>M² Learning Hub</strong><br>
+  Quality CBSE coaching | Class 9 &amp; 10 | JEE Foundation | Olympiad<br>
+  📞 <a href="tel:+918107563723">+91 8107563723</a> &nbsp;|&nbsp; 📞 <a href="tel:+918882565496">+91 88825 65496</a><br><br>
+  <a href="https://m2learninghub.com/" rel="noopener noreferrer">Home</a> &nbsp;|&nbsp;
+  <a href="https://m2learninghub.com/blog.html" rel="noopener noreferrer">Blog</a> &nbsp;|&nbsp;
+  <a href="https://m2learninghub.com/blog.html" rel="noopener noreferrer">Free Resources</a> &nbsp;|&nbsp;
+  <a href="https://wa.me/918107563723" rel="noopener noreferrer">WhatsApp Manish Sir</a> &nbsp;|&nbsp;
+  <a href="https://wa.me/918882565496" rel="noopener noreferrer">WhatsApp Madhvi Ma'am</a><br><br>
+  © 2026 M2 Learning Hub · m2learninghub.com · All rights reserved · Content by Manish Mishra
+</footer>
+
+<script>
+  function toggleAcc(btn) {
+    const body = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    btn.classList.toggle('open', !isOpen);
+    body.classList.toggle('open', !isOpen);
+    btn.setAttribute('aria-expanded', String(!isOpen));
+  }
+
+  function toggleFaq(btn) {
+    const body = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    btn.classList.toggle('open', !isOpen);
+    body.classList.toggle('open', !isOpen);
+    btn.setAttribute('aria-expanded', String(!isOpen));
+  }
+
+  // Open first accordion by default
+  document.addEventListener('DOMContentLoaded', function() {
+    const firstTrigger = document.querySelector('.accordion-trigger');
+    if (firstTrigger) toggleAcc(firstTrigger);
+  });
+</script>
+
+</body>
+</html>
