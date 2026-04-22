@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Science Chapter 1 – Chemical Reactions &amp; Equations | M2 Learning Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink-blue: #3a5a9f;
+    --ink-dark: #3c3c4e;
+    --ink-red: #c05248;
+    --ink-green: #3a7f5a;
+    --ink-purple: #8c5498;
+    --ink-orange: #c06830;
+    --ink-teal: #2e8aaa;
+    --paper: #fffef8;
+    --paper-line: #d8e5f5;
+    --highlight-yellow: #fffde8;
+    --highlight-pink: #fdeef3;
+    --highlight-green: #eef6f0;
+    --highlight-blue: #edf5fd;
+    --highlight-orange: #fef5ea;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #e0e4ed;
+    font-family: 'Nunito Sans', sans-serif;
+    min-height: 100vh;
+    padding: 20px 20px 100px;
+  }
+
+  .notebook {
+    max-width: 920px;
+    margin: 0 auto;
+    background: var(--paper);
+    border-radius: 4px;
+    box-shadow: 4px 4px 24px rgba(0,0,0,0.25), -2px 0 8px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .notebook::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: repeating-linear-gradient(transparent, transparent 35px, var(--paper-line) 35px, var(--paper-line) 36px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .notebook::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 72px; bottom: 0; width: 2px;
+    background: #e8a0a0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .spiral {
+    position: fixed;
+    left: calc(50% - 460px - 14px);
+    top: 0;
+    width: 28px;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 36px;
+    gap: 26px;
+  }
+
+  .spiral-ring {
+    width: 22px; height: 22px;
+    border: 3px solid #9e9e9e;
+    border-radius: 50%;
+    background: #e0e4ed;
+    flex-shrink: 0;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  }
+
+  .content {
+    padding: 40px 52px 80px 96px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    text-align: center;
+    padding: 28px 0 36px;
+    border-bottom: 3px solid var(--ink-blue);
+    margin-bottom: 42px;
+  }
+
+  .site-badge {
+    display: inline-block;
+    background: var(--ink-blue);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    padding: 4px 18px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+
+  .chapter-tag {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.05rem;
+    color: var(--ink-red);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .chapter-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3.2rem;
+    color: var(--ink-blue);
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 6px 0;
+  }
+
+  .chapter-title span { color: var(--ink-red); }
+
+  .chapter-subtitle {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.05rem;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  /* ── PROGRESS BAR ── */
+  .progress-bar-wrap {
+    background: #e0e4ed;
+    border-radius: 20px;
+    height: 10px;
+    margin: 14px 0 4px;
+    overflow: hidden;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(90deg, var(--ink-blue), var(--ink-teal));
+    width: 0%;
+    transition: width 1.4s ease;
+  }
+
+  .progress-label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+    color: #888;
+    text-align: right;
+  }
+
+  /* ── SECTION ── */
+  .section { margin-bottom: 56px; }
+
+  .section-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    padding: 6px 18px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 22px;
+    position: relative;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 18px; right: 18px;
+    height: 3px; border-radius: 2px;
+  }
+
+  .s-blue  { color: var(--ink-blue);   background: var(--highlight-blue);   }
+  .s-blue::after  { background: var(--ink-blue);   }
+  .s-red   { color: var(--ink-red);    background: var(--highlight-pink);   }
+  .s-red::after   { background: var(--ink-red);    }
+  .s-green { color: var(--ink-green);  background: var(--highlight-green);  }
+  .s-green::after { background: var(--ink-green);  }
+  .s-purple{ color: var(--ink-purple); background: #f3e5f5; }
+  .s-purple::after{ background: var(--ink-purple); }
+  .s-orange{ color: var(--ink-orange); background: var(--highlight-orange); }
+  .s-orange::after{ background: var(--ink-orange); }
+  .s-teal  { color: var(--ink-teal);   background: #e0f7fa; }
+  .s-teal::after  { background: var(--ink-teal);   }
+
+  .subsection {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--ink-teal);
+    border-left: 4px solid var(--ink-teal);
+    padding-left: 10px;
+    margin: 18px 0 10px;
+  }
+
+  p, li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.95;
+    color: #222;
+  }
+
+  ul { padding-left: 24px; margin: 8px 0; }
+  li { margin-bottom: 4px; }
+  li::marker { color: var(--ink-blue); }
+
+  /* ── BOXES ── */
+  .box {
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 14px 0;
+    position: relative;
+    border-left: 5px solid;
+  }
+
+  .box-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .box-yellow  { background: var(--highlight-yellow); border-color: #f9a825; }
+  .box-yellow .box-title { color: #e65100; }
+  .box-pink    { background: var(--highlight-pink);   border-color: var(--ink-red);  }
+  .box-pink .box-title   { color: var(--ink-red);    }
+  .box-green   { background: var(--highlight-green);  border-color: var(--ink-green);}
+  .box-green .box-title  { color: var(--ink-green);  }
+  .box-blue    { background: var(--highlight-blue);   border-color: var(--ink-blue); }
+  .box-blue .box-title   { color: var(--ink-blue);   }
+  .box-purple  { background: #f3e5f5; border-color: var(--ink-purple); }
+  .box-purple .box-title { color: var(--ink-purple); }
+  .box-teal    { background: #e0f7fa; border-color: var(--ink-teal); }
+  .box-teal .box-title   { color: var(--ink-teal);   }
+
+  /* ── STUDENT FLOW BLOCKS ── */
+  .practice-block {
+    background: linear-gradient(135deg, #fff9c4 0%, #fffde7 100%);
+    border: 2.5px dashed #f9a825;
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+
+  .practice-block .pb-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #e65100;
+    margin-bottom: 10px;
+  }
+
+  .practice-block ul li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #333;
+  }
+
+  .test-block {
+    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+    border: 2.5px solid var(--ink-green);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin: 14px 0;
+  }
+
+  .test-block .tb-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink-green);
+    margin-bottom: 8px;
+  }
+
+  .test-block .tb-q {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.05rem;
+    color: #333;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+
+  .test-block .tb-a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.05rem;
+    color: var(--ink-green);
+  }
+
+  .reveal-btn {
+    background: var(--ink-green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 18px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.05rem;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .reveal-btn:hover { background: #145a32; transform: scale(1.04); }
+
+  .answer-reveal {
+    display: none;
+    margin-top: 8px;
+    padding: 10px 14px;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid var(--ink-green);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.05rem;
+    color: var(--ink-green);
+    animation: fadeUp 0.3s ease;
+  }
+
+  @keyframes fadeUp {
+    from { opacity:0; transform: translateY(8px); }
+    to   { opacity:1; transform: translateY(0); }
+  }
+
+  /* ── FORMULA ── */
+  .formula {
+    background: #fff;
+    border: 2.5px solid var(--ink-blue);
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin: 14px 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    color: var(--ink-dark);
+    text-align: center;
+    box-shadow: 3px 3px 0 var(--ink-blue);
+    position: relative;
+  }
+
+  .formula::before { content: '✏️'; position:absolute; top:6px; left:10px; font-size:0.9rem; }
+
+  .formula .label {
+    font-size: 0.85rem; color: #777;
+    font-family: 'Nunito Sans', sans-serif;
+    display: block; margin-bottom: 4px;
+  }
+
+  .formula .eq { font-size: 1.45rem; color: var(--ink-blue); font-weight: 700; }
+  .formula .eq .reactant { color: var(--ink-red); }
+  .formula .eq .product  { color: var(--ink-green); }
+  .formula .eq .arrow    { color: var(--ink-dark); margin: 0 6px; }
+
+  /* ── REACTION TABLE ── */
+  .reaction-table {
+    width: 100%; border-collapse: collapse;
+    margin: 16px 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+  }
+
+  .reaction-table th {
+    background: var(--ink-blue);
+    color: white;
+    padding: 10px 14px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .reaction-table td {
+    padding: 9px 14px;
+    border-bottom: 1px dashed #bbb;
+    line-height: 1.5;
+  }
+
+  .reaction-table tr:nth-child(even) td { background: #f9f9f2; }
+  .reaction-table tr:hover td { background: var(--highlight-yellow); transition: 0.2s; }
+
+  /* ── DIAGRAM ── */
+  .diagram-wrap {
+    background: white;
+    border: 2px dashed #9e9e9e;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .diagram-caption {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 8px;
+    font-style: italic;
+  }
+
+  /* ── TRICK ── */
+  .trick {
+    background: linear-gradient(135deg, #fff9c4, #ffe082);
+    border: 2px solid #f9a825;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 16px 0;
+  }
+
+  .trick::before {
+    content: '💡 Memory Trick!';
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #e65100;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  /* ── IMP QUESTION ── */
+  .iq {
+    background: var(--highlight-pink);
+    border: 2px solid var(--ink-red);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 14px 0;
+    transition: transform 0.2s;
+  }
+
+  .iq:hover { transform: translateX(4px); }
+
+  .iq-num  { font-family: 'Nunito', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--ink-red); margin-bottom: 4px; }
+  .iq-q    { font-family: 'Nunito Sans', sans-serif; font-size: 1.05rem; color: #333; font-weight: bold; margin-bottom: 6px; }
+  .iq-a    { font-family: 'Nunito Sans', sans-serif; font-size: 1rem; color: var(--ink-green); line-height: 1.7; }
+
+  /* ── NCERT SOLUTION ── */
+  .ncert-q {
+    background: #fff;
+    border: 2px solid var(--ink-purple);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 14px 0;
+    box-shadow: 2px 2px 0 var(--ink-purple);
+  }
+
+  .ncert-q .nq-num  { font-family: 'Nunito', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--ink-purple); margin-bottom: 4px; }
+  .ncert-q .nq-q    { font-family: 'Nunito Sans', sans-serif; font-size: 1.05rem; color: #333; font-weight: bold; margin-bottom: 8px; }
+  .ncert-q .nq-a    { font-family: 'Nunito Sans', sans-serif; font-size: 1rem; color: #1a3a8f; line-height: 1.75; background: var(--highlight-blue); padding: 10px 14px; border-radius: 8px; }
+
+  /* ── REACTION CARDS ── */
+  .rxn-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 16px 0;
+  }
+
+  .rxn-card {
+    border-radius: 12px; padding: 16px;
+    border: 2.5px solid;
+    position: relative; overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .rxn-card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
+
+  .rxn-card .rxn-type { font-family: 'Nunito', sans-serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 6px; }
+  .rxn-card .rxn-def  { font-family: 'Nunito Sans', sans-serif; font-size: 0.95rem; line-height: 1.5; color: #333; }
+  .rxn-card .rxn-ex   { font-family: 'Nunito', sans-serif; font-size: 1rem; margin-top: 8px; padding: 6px 10px; border-radius: 6px; background: rgba(255,255,255,0.6); }
+  .rxn-card .rxn-badge { position: absolute; top: 12px; right: 12px; font-size: 1.6rem; }
+
+  /* ── OBSERVATION GRID ── */
+  .obs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 14px 0;
+  }
+
+  .obs-item {
+    background: white; border: 2px solid; border-radius: 10px;
+    padding: 12px; text-align: center;
+    font-family: 'Nunito', sans-serif; font-size: 1.15rem; font-weight: 700;
+    transition: transform 0.2s;
+  }
+
+  .obs-item:hover { transform: scale(1.04); }
+  .obs-item .emoji { font-size: 1.8rem; display: block; margin-bottom: 4px; }
+
+  /* ── MISTAKES SECTION ── */
+  .mistake-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: #fff;
+    border: 2px solid #ef9a9a;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 12px 0;
+    transition: transform 0.2s;
+  }
+
+  .mistake-item:hover { transform: translateX(4px); }
+
+  .mistake-icon { font-size: 1.8rem; flex-shrink: 0; }
+
+  .mistake-wrong {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--ink-red);
+    text-decoration: line-through;
+    margin-bottom: 4px;
+  }
+
+  .mistake-right {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--ink-green);
+    font-weight: bold;
+  }
+
+  .mistake-label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  /* ── REAL LIFE CARD ── */
+  .rl-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+  }
+
+  .rl-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px 12px;
+    text-align: center;
+    border: 2px solid;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .rl-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+
+  .rl-card .rl-icon { font-size: 2.4rem; display: block; margin-bottom: 8px; }
+  .rl-card .rl-title { font-family: 'Nunito', sans-serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 4px; }
+  .rl-card .rl-desc  { font-family: 'Nunito Sans', sans-serif; font-size: 0.9rem; color: #555; line-height: 1.4; }
+  .rl-card .rl-type  { font-family: 'Nunito', sans-serif; font-size: 0.95rem; font-weight: 700; margin-top: 8px; padding: 3px 10px; border-radius: 20px; display: inline-block; color: white; }
+
+  /* ── EXAM BOOSTER ── */
+  .eb-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 16px 0;
+  }
+
+  .eb-card {
+    border-radius: 12px;
+    padding: 16px;
+    border: 2.5px solid;
+  }
+
+  .eb-card .eb-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .eb-card ul li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.98rem;
+    line-height: 1.85;
+    color: #333;
+  }
+
+  /* ── DIVIDER ── */
+  .divider {
+    text-align: center;
+    margin: 28px 0;
+    color: #bbb;
+    font-size: 1.4rem;
+    letter-spacing: 8px;
+  }
+
+  .sticker {
+    display: inline-block;
+    background: var(--ink-red);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  /* ── WHATSAPP BUTTON ── */
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    background: #25D366;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 32px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(37,211,102,0.5);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: waPulse 2.5s infinite;
+  }
+
+  .whatsapp-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 6px 24px rgba(37,211,102,0.7);
+    animation: none;
+  }
+
+  @keyframes waPulse {
+    0%, 100% { box-shadow: 0 4px 16px rgba(37,211,102,0.5); }
+    50%       { box-shadow: 0 4px 28px rgba(37,211,102,0.9); }
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    text-align: center;
+    padding: 24px 0 16px;
+    border-top: 2px dashed #bbb;
+    margin-top: 30px;
+  }
+
+  .footer p { font-family: 'Nunito', sans-serif; font-size: 1.1rem; color: #888; }
+  .footer .brand { color: var(--ink-blue); font-size: 1.25rem; font-weight: 700; }
+
+  /* ── ANIMATIONS ── */
+  .section { animation: fadeUp 0.5s ease both; }
+  .section:nth-child(2)  { animation-delay: 0.05s; }
+  .section:nth-child(3)  { animation-delay: 0.1s;  }
+  .section:nth-child(4)  { animation-delay: 0.15s; }
+  .section:nth-child(5)  { animation-delay: 0.2s;  }
+  .section:nth-child(6)  { animation-delay: 0.25s; }
+  .section:nth-child(7)  { animation-delay: 0.3s;  }
+  .section:nth-child(8)  { animation-delay: 0.35s; }
+  .section:nth-child(9)  { animation-delay: 0.4s;  }
+  .section:nth-child(10) { animation-delay: 0.45s; }
+
+
+  /* ── DIFFICULTY BADGES ── */
+  .diff-badge {
+    display: inline-block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .diff-basic    { background: #eef6f0; color: #3a7f5a; border: 1.5px solid #3a7f5a; }
+  .diff-moderate { background: #fef5ea; color: #c06830; border: 1.5px solid #c06830; }
+  .diff-board    { background: #fdeef3; color: #c05248; border: 1.5px solid #c05248; }
+
+  /* ── QUICK REVISION TABLE ── */
+  .qr-table {
+    width: 100%; border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+  }
+  .qr-table th {
+    background: var(--ink-blue);
+    color: white;
+    padding: 11px 14px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .qr-table td {
+    padding: 10px 14px;
+    border-bottom: 1px dashed #ccc;
+    line-height: 1.55;
+    vertical-align: top;
+  }
+  .qr-table tr:nth-child(even) td { background: #f8f8f2; }
+  .qr-table tr:hover td { background: var(--highlight-yellow); transition: 0.2s; }
+  .qr-tag {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    padding: 1px 8px;
+    border-radius: 10px;
+    color: white;
+  }
+
+  /* ── PYQ SECTION ── */
+  .pyq-item {
+    background: #fff;
+    border: 2px solid var(--ink-teal);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 16px 0;
+    position: relative;
+    box-shadow: 2px 2px 0 var(--ink-teal);
+  }
+  .pyq-year {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: white;
+    background: var(--ink-teal);
+    padding: 2px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+  .pyq-q {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.05rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  .pyq-a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--ink-green);
+    line-height: 1.7;
+    background: var(--highlight-green);
+    padding: 10px 14px;
+    border-radius: 8px;
+    display: none;
+  }
+  .pyq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 16px 0;
+  }
+
+  /* ── EXAM STRATEGY ── */
+  .strategy-card {
+    background: white;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 14px 0;
+    border-left: 5px solid;
+  }
+  .strategy-card .sc-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .strategy-card ul li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.02rem;
+    line-height: 2;
+    color: #333;
+  }
+  .sc-blue  { border-color: var(--ink-blue);   background: var(--highlight-blue);   }
+  .sc-blue .sc-title  { color: var(--ink-blue);   }
+  .sc-green { border-color: var(--ink-green);  background: var(--highlight-green);  }
+  .sc-green .sc-title { color: var(--ink-green);  }
+  .sc-orange{ border-color: var(--ink-orange); background: var(--highlight-orange); }
+  .sc-orange .sc-title{ color: var(--ink-orange); }
+  .sc-red   { border-color: var(--ink-red);    background: var(--highlight-pink);   }
+  .sc-red .sc-title   { color: var(--ink-red);    }
+
+  /* ── MARKS STRIP ── */
+  .marks-strip {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 14px 0;
+  }
+  .ms-chip {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 5px 16px;
+    border-radius: 20px;
+    border: 2px solid;
+  }
+
+
+  /* ── TEACHER BADGE ── */
+  .teacher-badge {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    background: linear-gradient(135deg, #c05248, #8c5498);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 800;
+    padding: 8px 20px 10px 16px;
+    border-bottom-left-radius: 16px;
+    box-shadow: -2px 2px 12px rgba(0,0,0,0.22);
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .teacher-badge .tb-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    opacity: 0.85;
+    display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+  }
+  .teacher-badge .tb-name {
+    font-size: 1rem;
+    font-weight: 800;
+    display: block;
+    letter-spacing: 0.2px;
+  }
+  /* ── RESPONSIVE ── */
+  @media (max-width: 640px) {
+    .rxn-cards, .eb-grid, .pyq-grid { grid-template-columns: 1fr; }
+    .rl-grid { grid-template-columns: 1fr 1fr; }
+    .obs     { grid-template-columns: 1fr 1fr; }
+    .chapter-title { font-size: 2.1rem; }
+    .content { padding: 20px 16px 40px 20px; }
+    .notebook::after { display: none; }
+    .spiral { display: none; }
+  }
+</style>
+</head>
+<body>
+
+
+<!-- Teacher Badge -->
+<div class="teacher-badge">
+  <span class="tb-label">✨ Notes by</span>
+  <span class="tb-name">Madhvi Rai Ma'am</span>
+</div>
+
+<!-- WhatsApp Sticky Button -->
+<a href="https://wa.me/918882565496" class="whatsapp-btn" target="_blank">
+  💬 Ask Doubt on WhatsApp
+</a>
+
+<!-- Spiral Rings -->
+<div class="spiral" id="spiral"></div>
+
+<div class="notebook">
+  <div class="content">
+
+    <!-- ══════════ HEADER ══════════ -->
+    <div class="header">
+      <a href="https://m2learninghub.com" target="_blank" class="site-badge" style="text-decoration:none;">🌐 m2learninghub.com</a>
+      <div class="chapter-tag">⚗️ Class 10 Science · Chapter 1</div>
+      <div class="chapter-title">Chemical Reactions<br><span>&amp; Equations</span></div>
+      <div class="chapter-subtitle">Handwritten Notes · Formulas · NCERT Solutions · Exam Booster ✍️</div>
+      <div style="margin-top:14px;">
+        <div class="progress-label">Your Progress: <span id="prog-pct">0%</span></div>
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-fill" id="progress-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════ SECTION 1: Identify Reaction ══════════ -->
+    <div class="section">
+      <div class="section-title s-blue">🔍 How to Identify a Chemical Reaction?</div>
+
+      <p>When we observe changes around us — food getting cooked, iron rusting, or grapes fermenting — a <strong>chemical reaction</strong> has taken place. Atoms of one element do not change into another; only bonds break and new ones form.</p>
+
+      <div class="obs">
+        <div class="obs-item" style="border-color:#e53935; color:#e53935;">
+          <span class="emoji">🌡️</span>Change in Temperature
+        </div>
+        <div class="obs-item" style="border-color:#1e88e5; color:#1e88e5;">
+          <span class="emoji">🎨</span>Change in Colour
+        </div>
+        <div class="obs-item" style="border-color:#43a047; color:#43a047;">
+          <span class="emoji">💨</span>Evolution of Gas
+        </div>
+        <div class="obs-item" style="border-color:#fb8c00; color:#fb8c00;">
+          <span class="emoji">🧊</span>Change in State
+        </div>
+      </div>
+
+      <div class="trick">
+        Remember with: <strong>TCGS</strong> → <em>T</em>emperature · <em>C</em>olour · <em>G</em>as · <em>S</em>tate!
+      </div>
+
+      <!-- STUDENT FLOW 1 -->
+      <div class="practice-block">
+        <div class="pb-title">🧠 Quick Practice</div>
+        <ul>
+          <li>Define chemical reaction and give 2 examples from daily life.</li>
+          <li>List all 4 indicators that a chemical reaction has occurred.</li>
+          <li>Which of these is a chemical change: melting ice OR burning paper? Why?</li>
+        </ul>
+      </div>
+
+      <div class="test-block">
+        <div class="tb-title">⚡ 30 Sec Test <span class="diff-badge diff-basic">⭐ Basic</span></div>
+        <div class="tb-q">Q: Iron left in humid air gets a reddish-brown coating. Which indicator of chemical reaction is this?</div>
+        <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+        <div class="answer-reveal">✅ Change in Colour (and also change in state — solid iron → solid rust). This is <strong>corrosion</strong>.</div>
+      </div>
+    </div>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══════════ SECTION 2: Chemical Equations ══════════ -->
+    <div class="section">
+      <div class="section-title s-red">✍️ Chemical Equations</div>
+
+      <div class="subsection">Word Equation</div>
+      <p>The simplest way to represent a reaction in words:</p>
+      <div class="formula">
+        <span class="label">Example: Burning of Magnesium</span>
+        <div class="eq">
+          <span class="reactant">Magnesium + Oxygen</span>
+          <span class="arrow">→</span>
+          <span class="product">Magnesium Oxide</span>
+        </div>
+      </div>
+
+      <div class="subsection">Symbolic (Chemical) Equation</div>
+      <p>Use chemical formulae for conciseness. A chemical equation represents a chemical reaction.</p>
+      <div class="formula">
+        <span class="label">Skeletal (Unbalanced):</span>
+        <div class="eq">
+          <span class="reactant">Mg + O₂</span><span class="arrow">→</span><span class="product">MgO</span>
+        </div>
+      </div>
+
+      <div class="box box-yellow">
+        <div class="box-title">📝 Rules for Writing Equations</div>
+        <ul>
+          <li>Reactants on <strong>LHS</strong>, Products on <strong>RHS</strong>, arrow (→) in middle</li>
+          <li>Plus (+) sign between multiple reactants or products</li>
+          <li>Physical states: <strong>(s)</strong> solid · <strong>(l)</strong> liquid · <strong>(g)</strong> gas · <strong>(aq)</strong> aqueous</li>
+          <li>Conditions (heat, light, pressure, catalyst) written above/below arrow</li>
+        </ul>
+      </div>
+
+      <div class="subsection">Balancing Equations — Hit and Trial Method</div>
+
+      <p>Based on <strong>Law of Conservation of Mass</strong>: atoms are neither created nor destroyed. Count must be equal on both sides.</p>
+
+      <div class="box box-blue">
+        <div class="box-title">⚖️ Steps to Balance Fe + H₂O → Fe₃O₄ + H₂</div>
+        <ol style="padding-left:20px; font-family:'Nunito Sans', sans-serif; font-size:1.05rem; line-height:2.1;">
+          <li>Draw boxes around each formula. <strong>Never change formula inside.</strong></li>
+          <li>Count atoms: Fe=1 vs 3 · H=2 vs 2 · O=1 vs 4 (unequal!)</li>
+          <li>Balance O first (most atoms): put 4H₂O on LHS → 4 oxygens ✓</li>
+          <li>Balance H: 8H on LHS → put 4H₂ on RHS ✓</li>
+          <li>Balance Fe: 1 on LHS vs 3 on RHS → put 3Fe on LHS ✓</li>
+          <li>Verify all atoms, then add physical state symbols.</li>
+        </ol>
+      </div>
+
+      <div class="formula" style="border-color:var(--ink-green); box-shadow:3px 3px 0 var(--ink-green);">
+        <span class="label">✅ Balanced:</span>
+        <div class="eq"><span class="reactant">3Fe(s) + 4H₂O(g)</span><span class="arrow">→</span><span class="product">Fe₃O₄(s) + 4H₂(g)</span></div>
+      </div>
+
+      <div class="formula" style="border-color:var(--ink-purple); box-shadow:3px 3px 0 var(--ink-purple);">
+        <span class="label">Photosynthesis (conditions above arrow):</span>
+        <div class="eq" style="font-size:1.15rem;">
+          <span class="reactant">6CO₂ + 12H₂O</span>
+          <span class="arrow" style="display:block; font-size:0.85rem;">→ <em style="color:var(--ink-green);">Sunlight + Chlorophyll</em></span>
+          <span class="product">C₆H₁₂O₆ + 6O₂ + 6H₂O</span>
+        </div>
+      </div>
+
+      <!-- STUDENT FLOW 2 -->
+      <div class="practice-block">
+        <div class="pb-title">🧠 Quick Practice</div>
+        <ul>
+          <li>Balance: Zn + H₂SO₄ → ZnSO₄ + H₂ (Verify atom count for each element)</li>
+          <li>Write a balanced equation for: Sodium + Water → Sodium Hydroxide + Hydrogen</li>
+          <li>What do symbols (s), (l), (g) and (aq) represent? Give one example each.</li>
+        </ul>
+      </div>
+
+      <div class="test-block">
+        <div class="tb-title">⚡ 30 Sec Test <span class="diff-badge diff-basic">⭐ Basic</span></div>
+        <div class="tb-q">Q: In a balanced equation, what is the coefficient of H₂ in:<br>H₂ + Cl₂ → HCl ?</div>
+        <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+        <div class="answer-reveal">✅ <strong>H₂ + Cl₂ → 2HCl</strong> — Coefficient of H₂ = <strong>1</strong>. But HCl gets coefficient 2 to balance H and Cl atoms.</div>
+      </div>
+    </div>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══════════ SECTION 3: Types of Reactions ══════════ -->
+    <div class="section">
+      <div class="section-title s-green">⚗️ Types of Chemical Reactions</div>
+
+      <div class="rxn-cards">
+        <div class="rxn-card" style="background:#e3f2fd; border-color:var(--ink-blue);">
+          <div class="rxn-badge">🔗</div>
+          <div class="rxn-type" style="color:var(--ink-blue);">1. Combination</div>
+          <div class="rxn-def">Two or more substances combine to form a <strong>single product</strong>. Often exothermic.</div>
+          <div class="rxn-ex" style="color:var(--ink-blue);">A + B → AB<br>CaO + H₂O → Ca(OH)₂ + Heat</div>
+        </div>
+
+        <div class="rxn-card" style="background:#fce4ec; border-color:var(--ink-red);">
+          <div class="rxn-badge">💥</div>
+          <div class="rxn-type" style="color:var(--ink-red);">2. Decomposition</div>
+          <div class="rxn-def">A single substance breaks down into <strong>two or more simpler substances</strong>.</div>
+          <div class="rxn-ex" style="color:var(--ink-red);">AB → A + B<br>2FeSO₄ →<sup>Heat</sup> Fe₂O₃ + SO₂ + SO₃</div>
+        </div>
+
+        <div class="rxn-card" style="background:#e8f5e9; border-color:var(--ink-green);">
+          <div class="rxn-badge">🔄</div>
+          <div class="rxn-type" style="color:var(--ink-green);">3. Displacement</div>
+          <div class="rxn-def">A more reactive element displaces a <strong>less reactive element</strong> from its compound.</div>
+          <div class="rxn-ex" style="color:var(--ink-green);">Fe + CuSO₄ → FeSO₄ + Cu<br>(Fe displaces Cu)</div>
+        </div>
+
+        <div class="rxn-card" style="background:#f3e5f5; border-color:var(--ink-purple);">
+          <div class="rxn-badge">⇄</div>
+          <div class="rxn-type" style="color:var(--ink-purple);">4. Double Displacement</div>
+          <div class="rxn-def">Ions exchange between two reactants — often forms a <strong>precipitate (↓)</strong>.</div>
+          <div class="rxn-ex" style="color:var(--ink-purple);">Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl</div>
+        </div>
+
+        <div class="rxn-card" style="background:var(--highlight-orange); border-color:var(--ink-orange);">
+          <div class="rxn-badge">🔥</div>
+          <div class="rxn-type" style="color:var(--ink-orange);">5. Exothermic</div>
+          <div class="rxn-def">Reactions that <strong>release heat/energy</strong> along with products.</div>
+          <div class="rxn-ex" style="color:var(--ink-orange);">Burning, Respiration, CaO + H₂O</div>
+        </div>
+
+        <div class="rxn-card" style="background:#e0f7fa; border-color:var(--ink-teal);">
+          <div class="rxn-badge">❄️</div>
+          <div class="rxn-type" style="color:var(--ink-teal);">6. Endothermic</div>
+          <div class="rxn-def">Reactions that <strong>absorb energy</strong> from surroundings.</div>
+          <div class="rxn-ex" style="color:var(--ink-teal);">2AgCl →<sup>Light</sup> 2Ag + Cl₂<br>Electrolysis of water</div>
+        </div>
+      </div>
+
+      <div class="box box-purple">
+        <div class="box-title">🔁 Redox Reactions — OIL RIG Rule</div>
+        <p style="font-family:'Nunito Sans', sans-serif; font-size:1.05rem; line-height:1.8;">
+          <strong>OIL</strong> = Oxidation Is Loss (of electrons / hydrogen, or gain of oxygen)<br>
+          <strong>RIG</strong> = Reduction Is Gain (of electrons / hydrogen, or loss of oxygen)<br>
+          ➜ Both happen simultaneously in the same reaction!
+        </p>
+        <div class="formula" style="margin-top:10px; border-color:var(--ink-purple); box-shadow:2px 2px 0 var(--ink-purple);">
+          <div class="eq" style="font-size:1.2rem;">
+            <span class="reactant">CuO + H₂</span><span class="arrow">→<sup style="font-size:0.75rem; color:var(--ink-orange);">Heat</sup></span><span class="product">Cu + H₂O</span>
+          </div>
+          <div style="font-family:'Nunito Sans', sans-serif; font-size:0.92rem; color:#555; margin-top:6px;">
+            CuO → Cu: <strong>Reduced</strong> (lost O) &nbsp;|&nbsp; H₂ → H₂O: <strong>Oxidised</strong> (gained O)
+          </div>
+        </div>
+      </div>
+
+      <!-- STUDENT FLOW 3 -->
+      <div class="practice-block">
+        <div class="pb-title">🧠 Quick Practice</div>
+        <ul>
+          <li>Classify: CaCO₃ → CaO + CO₂ — which type of reaction?</li>
+          <li>Why is decomposition the <em>opposite</em> of combination? Give one example of each.</li>
+          <li>In Fe₂O₃ + 2Al → Al₂O₃ + 2Fe — identify which is oxidised and which is reduced.</li>
+          <li>What is a precipitate? Name the precipitate in: BaCl₂ + Na₂SO₄ → ?</li>
+        </ul>
+      </div>
+
+      <div class="test-block">
+        <div class="tb-title">⚡ 30 Sec Test <span class="diff-badge diff-moderate">⭐⭐ Moderate</span></div>
+        <div class="tb-q">Q: Which gas is evolved when Zn reacts with dilute HCl? What type of reaction is it?</div>
+        <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+        <div class="answer-reveal">✅ <strong>Hydrogen (H₂)</strong> is evolved. Reaction: Zn + 2HCl → ZnCl₂ + H₂↑<br>Type: <strong>Displacement reaction</strong> (Zn displaces H from HCl)</div>
+      </div>
+    </div>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══════════ DIAGRAMS ══════════ -->
+    <div class="section">
+      <div class="section-title s-orange">🎨 Key Diagrams</div>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 500 285" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Nunito', sans-serif; max-width:100%;">
+          <rect width="500" height="285" fill="#f9f9f2" rx="8"/>
+          <text x="250" y="26" text-anchor="middle" fill="#1a3a8f" font-size="17" font-weight="bold">⚡ Electrolysis of Water</text>
+          <!-- Container -->
+          <rect x="90" y="55" width="320" height="170" rx="10" fill="#bbdefb" stroke="#1a3a8f" stroke-width="2"/>
+          <rect x="93" y="110" width="314" height="112" rx="0" fill="#90caf9" opacity="0.45"/>
+          <text x="250" y="73" text-anchor="middle" fill="#1a3a8f" font-size="12">Plastic Container (with dilute H₂SO₄)</text>
+          <!-- Cathode -->
+          <rect x="152" y="74" width="13" height="125" rx="3" fill="#555"/>
+          <text x="158" y="68" text-anchor="middle" fill="#444" font-size="11">Cathode (−)</text>
+          <!-- Anode -->
+          <rect x="335" y="74" width="13" height="125" rx="3" fill="#555"/>
+          <text x="342" y="68" text-anchor="middle" fill="#444" font-size="11">Anode (+)</text>
+          <!-- H2 test tube -->
+          <ellipse cx="158" cy="89" rx="22" ry="6" fill="white" stroke="#1a3a8f" stroke-width="1.5"/>
+          <rect x="136" y="89" width="44" height="56" fill="white" stroke="#1a3a8f" stroke-width="1.5"/>
+          <ellipse cx="158" cy="145" rx="22" ry="7" fill="white" stroke="#1a3a8f" stroke-width="1.5"/>
+          <circle cx="154" cy="118" r="3" fill="#4fc3f7" opacity="0.8"/>
+          <circle cx="163" cy="107" r="2" fill="#4fc3f7" opacity="0.8"/>
+          <circle cx="157" cy="132" r="2.5" fill="#4fc3f7" opacity="0.8"/>
+          <text x="158" y="166" text-anchor="middle" fill="#0288d1" font-size="14" font-weight="bold">H₂</text>
+          <text x="158" y="180" text-anchor="middle" fill="#555" font-size="11">(2 volumes)</text>
+          <!-- O2 test tube -->
+          <ellipse cx="342" cy="89" rx="22" ry="6" fill="white" stroke="#e53935" stroke-width="1.5"/>
+          <rect x="320" y="89" width="44" height="56" fill="white" stroke="#e53935" stroke-width="1.5"/>
+          <ellipse cx="342" cy="145" rx="22" ry="7" fill="white" stroke="#e53935" stroke-width="1.5"/>
+          <circle cx="338" cy="122" r="3" fill="#ef9a9a" opacity="0.8"/>
+          <circle cx="347" cy="111" r="2" fill="#ef9a9a" opacity="0.8"/>
+          <text x="342" y="166" text-anchor="middle" fill="#c62828" font-size="14" font-weight="bold">O₂</text>
+          <text x="342" y="180" text-anchor="middle" fill="#555" font-size="11">(1 volume)</text>
+          <!-- Battery -->
+          <rect x="190" y="238" width="120" height="30" rx="6" fill="#ffd54f" stroke="#f9a825" stroke-width="2"/>
+          <text x="250" y="258" text-anchor="middle" fill="#e65100" font-size="13" font-weight="bold">DC Source / Battery</text>
+          <line x1="158" y1="74" x2="158" y2="245" stroke="#333" stroke-width="2"/>
+          <line x1="158" y1="245" x2="190" y2="253" stroke="#333" stroke-width="2"/>
+          <line x1="342" y1="74" x2="342" y2="245" stroke="#333" stroke-width="2"/>
+          <line x1="342" y1="245" x2="310" y2="253" stroke="#333" stroke-width="2"/>
+          <text x="250" y="278" text-anchor="middle" fill="#1a6b3a" font-size="13" font-weight="bold">2H₂O(l) → 2H₂(g) + O₂(g) [Endothermic]</text>
+        </svg>
+        <div class="diagram-caption">⚡ Electrolysis of Water — H₂ at cathode is DOUBLE the volume of O₂ at anode (ratio 2:1)</div>
+      </div>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 500 225" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Nunito', sans-serif; max-width:100%;">
+          <rect width="500" height="225" fill="#f9f9f2" rx="8"/>
+          <text x="250" y="26" text-anchor="middle" fill="#1a3a8f" font-size="17" font-weight="bold">🔄 Displacement: Fe in CuSO₄</text>
+          <!-- Before -->
+          <text x="125" y="52" text-anchor="middle" fill="#777" font-size="13">BEFORE</text>
+          <rect x="75" y="60" width="100" height="120" rx="10" fill="#90caf9" stroke="#1a3a8f" stroke-width="2"/>
+          <ellipse cx="125" cy="60" rx="50" ry="9" fill="#bbdefb" stroke="#1a3a8f" stroke-width="2"/>
+          <rect x="118" y="50" width="7" height="110" rx="2" fill="#bdbdbd" stroke="#9e9e9e" stroke-width="1"/>
+          <text x="125" y="196" text-anchor="middle" fill="#1565c0" font-size="12">Blue CuSO₄</text>
+          <text x="125" y="212" text-anchor="middle" fill="#9e9e9e" font-size="11">Grey Fe nail</text>
+          <!-- Arrow -->
+          <text x="250" y="128" text-anchor="middle" fill="#e65100" font-size="32">→</text>
+          <text x="250" y="150" text-anchor="middle" fill="#e65100" font-size="12">~20 min</text>
+          <!-- After -->
+          <text x="375" y="52" text-anchor="middle" fill="#777" font-size="13">AFTER</text>
+          <rect x="325" y="60" width="100" height="120" rx="10" fill="#e0f2f1" stroke="#1a3a8f" stroke-width="2"/>
+          <ellipse cx="375" cy="60" rx="50" ry="9" fill="#b2dfdb" stroke="#1a3a8f" stroke-width="2"/>
+          <rect x="368" y="50" width="7" height="110" rx="2" fill="#a1887f" stroke="#795548" stroke-width="1"/>
+          <text x="375" y="196" text-anchor="middle" fill="#1b5e20" font-size="12">Pale FeSO₄</text>
+          <text x="375" y="212" text-anchor="middle" fill="#795548" font-size="11">Brownish Cu on nail</text>
+          <!-- Equation -->
+          <text x="250" y="222" text-anchor="middle" fill="#1a6b3a" font-size="12" font-weight="bold">Fe(s) + CuSO₄(aq) → FeSO₄(aq) + Cu(s)</text>
+        </svg>
+        <div class="diagram-caption">🔄 Iron (more reactive) displaces Copper — blue colour fades, nail turns brownish</div>
+      </div>
+    </div>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══════════ SECTION: All Important Formulas ══════════ -->
+    <div class="section">
+      <div class="section-title s-purple">📐 All Important Equations <span class="sticker">⭐ Must Know</span></div>
+
+      <table class="reaction-table">
+        <thead>
+          <tr><th>#</th><th>Reaction</th><th>Balanced Equation</th><th>Type</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Burning of Mg</td><td style="font-family:'Nunito', sans-serif;font-size:1.1rem;color:var(--ink-blue);">2Mg + O₂ → 2MgO</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-orange);">Combination + Exothermic</td></tr>
+          <tr><td>2</td><td>Quick Lime + Water</td><td style="font-family:'Nunito', sans-serif;font-size:1.1rem;color:var(--ink-blue);">CaO + H₂O → Ca(OH)₂ + Heat</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-orange);">Combination + Exothermic</td></tr>
+          <tr><td>3</td><td>Decomp. of FeSO₄</td><td style="font-family:'Nunito', sans-serif;font-size:1rem;color:var(--ink-blue);">2FeSO₄ → Fe₂O₃ + SO₂ + SO₃</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-red);">Thermal Decomposition</td></tr>
+          <tr><td>4</td><td>Decomp. of Pb(NO₃)₂</td><td style="font-family:'Nunito', sans-serif;font-size:0.95rem;color:var(--ink-blue);">2Pb(NO₃)₂ → 2PbO + 4NO₂ + O₂</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-red);">Thermal Decomposition</td></tr>
+          <tr><td>5</td><td>Electrolysis of Water</td><td style="font-family:'Nunito', sans-serif;font-size:1.1rem;color:var(--ink-blue);">2H₂O → 2H₂ + O₂</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-teal);">Electrolytic Decomposition</td></tr>
+          <tr><td>6</td><td>AgCl in Sunlight</td><td style="font-family:'Nunito', sans-serif;font-size:1.1rem;color:var(--ink-blue);">2AgCl → 2Ag + Cl₂</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-teal);">Photolytic Decomposition</td></tr>
+          <tr><td>7</td><td>Fe + CuSO₄</td><td style="font-family:'Nunito', sans-serif;font-size:1.1rem;color:var(--ink-blue);">Fe + CuSO₄ → FeSO₄ + Cu</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-green);">Displacement</td></tr>
+          <tr><td>8</td><td>Zn + CuSO₄</td><td style="font-family:'Nunito', sans-serif;font-size:1.1rem;color:var(--ink-blue);">Zn + CuSO₄ → ZnSO₄ + Cu</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-green);">Displacement</td></tr>
+          <tr><td>9</td><td>BaCl₂ + Na₂SO₄</td><td style="font-family:'Nunito', sans-serif;font-size:1rem;color:var(--ink-blue);">BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-purple);">Double Displacement</td></tr>
+          <tr><td>10</td><td>CuO + H₂ (Redox)</td><td style="font-family:'Nunito', sans-serif;font-size:1.1rem;color:var(--ink-blue);">CuO + H₂ → Cu + H₂O</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-red);">Redox</td></tr>
+          <tr><td>11</td><td>Respiration</td><td style="font-family:'Nunito', sans-serif;font-size:0.95rem;color:var(--ink-blue);">C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-orange);">Exothermic</td></tr>
+          <tr><td>12</td><td>Zn + H₂SO₄</td><td style="font-family:'Nunito', sans-serif;font-size:1.1rem;color:var(--ink-blue);">Zn + H₂SO₄ → ZnSO₄ + H₂↑</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-green);">Displacement</td></tr>
+          <tr><td>13</td><td>Whitewash reaction</td><td style="font-family:'Nunito', sans-serif;font-size:1rem;color:var(--ink-blue);">Ca(OH)₂ + CO₂ → CaCO₃ + H₂O</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-blue);">Combination</td></tr>
+          <tr><td>14</td><td>Burning natural gas</td><td style="font-family:'Nunito', sans-serif;font-size:1rem;color:var(--ink-blue);">CH₄ + 2O₂ → CO₂ + 2H₂O</td><td style="font-family:'Nunito', sans-serif;color:var(--ink-orange);">Exothermic</td></tr>
+        </tbody>
+      </table>
+
+      <!-- STUDENT FLOW 4 -->
+      <div class="practice-block">
+        <div class="pb-title">🧠 Quick Practice</div>
+        <ul>
+          <li>Write 3 equations from the table above from memory — close the page and try!</li>
+          <li>Pick any 2 reactions and write their type with reason.</li>
+          <li>Which reactions release brown fumes of NO₂? Write the equation.</li>
+        </ul>
+      </div>
+
+      <div class="test-block">
+        <div class="tb-title">⚡ 30 Sec Test <span class="diff-badge diff-moderate">⭐⭐ Moderate</span></div>
+        <div class="tb-q">Q: What is the balanced equation for reaction of Calcium Hydroxide with Carbon Dioxide? What is it used for?</div>
+        <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+        <div class="answer-reveal">✅ Ca(OH)₂ + CO₂ → CaCO₃ + H₂O<br>Used in <strong>whitewashing walls</strong> — thin CaCO₃ layer gives shiny finish after 2–3 days.</div>
+      </div>
+    </div>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══════════ SECTION: Real Life Applications ══════════ -->
+    <div class="section">
+      <div class="section-title s-orange">🌍 Real Life Applications</div>
+      <p>Chemistry is everywhere around you! Connect your chapter to real life:</p>
+
+      <div class="rl-grid">
+        <div class="rl-card" style="border-color:#e53935;">
+          <span class="rl-icon">🍳</span>
+          <div class="rl-title" style="color:#e53935;">Cooking Food</div>
+          <div class="rl-desc">Food changes chemically — new substances form. Can't be reversed.</div>
+          <span class="rl-type" style="background:#e53935;">Chemical Change</span>
+        </div>
+
+        <div class="rl-card" style="border-color:#795548;">
+          <span class="rl-icon">🔩</span>
+          <div class="rl-title" style="color:#795548;">Rusting of Iron</div>
+          <div class="rl-desc">Fe + O₂ + H₂O → Fe₂O₃·xH₂O. Slow oxidation by moisture & oxygen.</div>
+          <span class="rl-type" style="background:#795548;">Corrosion</span>
+        </div>
+
+        <div class="rl-card" style="border-color:var(--ink-orange);">
+          <span class="rl-icon">🍟</span>
+          <div class="rl-title" style="color:var(--ink-orange);">Chips go Stale</div>
+          <div class="rl-desc">Oils oxidise → bad smell & taste. Solved by flushing N₂ in packets.</div>
+          <span class="rl-type" style="background:var(--ink-orange);">Rancidity</span>
+        </div>
+
+        <div class="rl-card" style="border-color:var(--ink-red);">
+          <span class="rl-icon">🫁</span>
+          <div class="rl-title" style="color:var(--ink-red);">Respiration</div>
+          <div class="rl-desc">Glucose + O₂ → CO₂ + H₂O + Energy. Keeps us alive every second!</div>
+          <span class="rl-type" style="background:var(--ink-red);">Exothermic</span>
+        </div>
+
+        <div class="rl-card" style="border-color:var(--ink-purple);">
+          <span class="rl-icon">📸</span>
+          <div class="rl-title" style="color:var(--ink-purple);">Photography</div>
+          <div class="rl-desc">AgCl/AgBr decompose in light → forms Ag deposits on film. B&W photos!</div>
+          <span class="rl-type" style="background:var(--ink-purple);">Photolytic Decomp.</span>
+        </div>
+
+        <div class="rl-card" style="border-color:var(--ink-green);">
+          <span class="rl-icon">🏗️</span>
+          <div class="rl-title" style="color:var(--ink-green);">Cement Making</div>
+          <div class="rl-desc">CaCO₃ → CaO + CO₂ at high temp. CaO (quick lime) is used in cement.</div>
+          <span class="rl-type" style="background:var(--ink-green);">Thermal Decomp.</span>
+        </div>
+
+        <div class="rl-card" style="border-color:var(--ink-blue);">
+          <span class="rl-icon">🍇</span>
+          <div class="rl-title" style="color:var(--ink-blue);">Fermentation</div>
+          <div class="rl-desc">Yeast converts glucose → ethanol + CO₂. Used in bread, wine making.</div>
+          <span class="rl-type" style="background:var(--ink-blue);">Chemical Change</span>
+        </div>
+
+        <div class="rl-card" style="border-color:var(--ink-teal);">
+          <span class="rl-icon">🌱</span>
+          <div class="rl-title" style="color:var(--ink-teal);">Photosynthesis</div>
+          <div class="rl-desc">6CO₂ + 12H₂O → C₆H₁₂O₆ + 6O₂ + 6H₂O. Plants use sunlight to make food!</div>
+          <span class="rl-type" style="background:var(--ink-teal);">Endothermic</span>
+        </div>
+
+        <div class="rl-card" style="border-color:#607d8b;">
+          <span class="rl-icon">🧱</span>
+          <div class="rl-title" style="color:#607d8b;">Whitewashing</div>
+          <div class="rl-desc">Ca(OH)₂ + CO₂ → CaCO₃ — shiny finish on walls after 2–3 days.</div>
+          <span class="rl-type" style="background:#607d8b;">Combination</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══════════ SECTION: Mistakes Students Make ══════════ -->
+    <div class="section">
+      <div class="section-title s-red">🚫 Mistakes Students Make <span class="sticker">Avoid These!</span></div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 1: Changing the formula while balancing</div>
+          <div class="mistake-wrong">Writing H₂O₄ or (H₂O)₄ to balance oxygen</div>
+          <div class="mistake-right">✅ Always use ONLY coefficients: 4H₂O — never change the formula inside!</div>
+        </div>
+      </div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 2: Confusing Oxidation and Reduction</div>
+          <div class="mistake-wrong">Saying "CuO is oxidised because it reacts with H₂"</div>
+          <div class="mistake-right">✅ CuO <em>loses</em> oxygen → it is REDUCED. H₂ <em>gains</em> oxygen → it is OXIDISED.</div>
+        </div>
+      </div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 3: Forgetting ↓ (precipitate) symbol</div>
+          <div class="mistake-wrong">Writing BaSO₄ without ↓ in double displacement reactions</div>
+          <div class="mistake-right">✅ Always write <strong>BaSO₄↓</strong> to show it is an insoluble precipitate. Marks deducted!</div>
+        </div>
+      </div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 4: Mixing up Exothermic and Endothermic</div>
+          <div class="mistake-wrong">Saying "decomposition is always exothermic"</div>
+          <div class="mistake-right">✅ Decomposition reactions ABSORB energy — they are ENDOTHERMIC (heat, light, or electricity needed).</div>
+        </div>
+      </div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 5: Not writing physical state symbols</div>
+          <div class="mistake-wrong">Writing 3Fe + 4H₂O → Fe₃O₄ + 4H₂ (incomplete)</div>
+          <div class="mistake-right">✅ Full answer: <strong>3Fe(s) + 4H₂O(g) → Fe₃O₄(s) + 4H₂(g)</strong> — states matter in board exams!</div>
+        </div>
+      </div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 6: Calling Fe₂O₃ + 2Al → Al₂O₃ + 2Fe a double displacement</div>
+          <div class="mistake-wrong">Students say "two compounds react = double displacement"</div>
+          <div class="mistake-right">✅ No ion exchange here — it is a <strong>Displacement reaction</strong>. Al (more reactive) displaces Fe.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══════════ SECTION: NCERT Full Solutions ══════════ -->
+    <div class="section">
+      <div class="section-title s-purple">📘 NCERT Exercise — Full Solutions</div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-basic">⭐ Basic</span> Q1. Which statements about 2PbO(s) + C(s) → 2Pb(s) + CO₂(g) are incorrect?</div>
+        <div class="nq-q">(a) Lead is getting reduced. (b) CO₂ is getting oxidised. (c) C is getting oxidised. (d) PbO is getting reduced. → Options: (i)(a&b) (ii)(a&c) (iii)(a,b,c) (iv) all</div>
+        <div class="nq-a">
+          ✅ <strong>Answer: (i) (a) and (b)</strong><br>
+          • PbO loses oxygen → PbO is REDUCED (not lead). So (a) is wrong.<br>
+          • CO₂ is the product — it cannot be oxidised further. So (b) is wrong.<br>
+          • C gains oxygen → becomes CO₂ → C is OXIDISED. So (c) is CORRECT.<br>
+          • PbO loses oxygen → PbO is REDUCED. So (d) is CORRECT.
+        </div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-basic">⭐ Basic</span> Q2. Fe₂O₃ + 2Al → Al₂O₃ + 2Fe. This reaction is an example of:</div>
+        <div class="nq-q">(a) Combination (b) Double displacement (c) Decomposition (d) Displacement</div>
+        <div class="nq-a">✅ <strong>Answer: (d) Displacement reaction</strong><br>Aluminium (more reactive) displaces Iron from Fe₂O₃. This is also a Redox reaction (thermite reaction — used in welding railway tracks).</div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-basic">⭐ Basic</span> Q3. What happens when dilute HCl is added to iron fillings?</div>
+        <div class="nq-q">(a) H₂ gas + iron chloride (b) Cl₂ gas + iron hydroxide (c) No reaction (d) Iron salt + water</div>
+        <div class="nq-a">✅ <strong>Answer: (a) Hydrogen gas and iron chloride are produced</strong><br>Fe(s) + 2HCl(aq) → FeCl₂(aq) + H₂(g)↑<br>Iron displaces hydrogen from HCl — displacement reaction.</div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-moderate">⭐⭐ Moderate</span> Q4. What is a balanced chemical equation? Why should chemical equations be balanced?</div>
+        <div class="nq-a">✅ A balanced chemical equation has equal number of atoms of each element on both the LHS (reactants) and RHS (products).<br><br>
+        <strong>Why balance?</strong> Based on the <em>Law of Conservation of Mass</em> — matter can neither be created nor destroyed. So the total mass of reactants must equal total mass of products. Balancing ensures this holds true.</div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-moderate">⭐⭐ Moderate</span> Q5. Translate and balance: (a) H₂ + N₂ → NH₃ &nbsp;(b) H₂S burns in air &nbsp;(c) BaCl₂ + Al₂(SO₄)₃ → &nbsp;(d) K + H₂O →</div>
+        <div class="nq-a">
+          (a) <strong>3H₂ + N₂ → 2NH₃</strong><br>
+          (b) <strong>2H₂S + 3O₂ → 2H₂O + 2SO₂</strong><br>
+          (c) <strong>3BaCl₂ + Al₂(SO₄)₃ → 3BaSO₄↓ + 2AlCl₃</strong><br>
+          (d) <strong>2K + 2H₂O → 2KOH + H₂↑</strong>
+        </div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-moderate">⭐⭐ Moderate</span> Q6. Balance the following chemical equations:</div>
+        <div class="nq-a">
+          (a) <strong>2HNO₃ + Ca(OH)₂ → Ca(NO₃)₂ + 2H₂O</strong><br>
+          (b) <strong>2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O</strong><br>
+          (c) <strong>NaCl + AgNO₃ → AgCl↓ + NaNO₃</strong> (already balanced)<br>
+          (d) <strong>BaCl₂ + H₂SO₄ → BaSO₄↓ + 2HCl</strong>
+        </div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-moderate">⭐⭐ Moderate</span> Q7. Write balanced equations for:</div>
+        <div class="nq-a">
+          (a) Ca(OH)₂ + CO₂ → <strong>CaCO₃ + H₂O</strong><br>
+          (b) Zn + 2AgNO₃ → <strong>Zn(NO₃)₂ + 2Ag</strong><br>
+          (c) 2Al + 3CuCl₂ → <strong>2AlCl₃ + 3Cu</strong><br>
+          (d) BaCl₂ + K₂SO₄ → <strong>BaSO₄↓ + 2KCl</strong>
+        </div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-moderate">⭐⭐ Moderate</span> Q8. Write balanced equations and identify reaction type:</div>
+        <div class="nq-a">
+          (a) 2KBr(aq) + BaI₂(aq) → 2KI(aq) + BaBr₂(aq) — <strong>Double Displacement</strong><br>
+          (b) ZnCO₃(s) → ZnO(s) + CO₂(g) — <strong>Thermal Decomposition</strong><br>
+          (c) H₂(g) + Cl₂(g) → 2HCl(g) — <strong>Combination</strong><br>
+          (d) Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g) — <strong>Displacement</strong>
+        </div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-moderate">⭐⭐ Moderate</span> Q9. What are exothermic and endothermic reactions? Give examples.</div>
+        <div class="nq-a">
+          <strong>Exothermic:</strong> Reactions that release heat/energy along with products.<br>
+          Examples: Burning of CH₄, Respiration (C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy), CaO + H₂O → Ca(OH)₂ + Heat<br><br>
+          <strong>Endothermic:</strong> Reactions that absorb energy from surroundings.<br>
+          Examples: Photosynthesis, 2AgCl →(Light) 2Ag + Cl₂, Electrolysis of water
+        </div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-moderate">⭐⭐ Moderate</span> Q10. Why is respiration an exothermic reaction?</div>
+        <div class="nq-a">During respiration, glucose (food) is broken down in cells using oxygen, releasing energy which keeps our body warm and functional.<br>
+        C₆H₁₂O₆(aq) + 6O₂(g) → 6CO₂(g) + 6H₂O(l) + <strong>Energy</strong><br>
+        Since energy (heat) is released — it is an <strong>exothermic reaction</strong>.</div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-board">⭐⭐⭐ Board Level</span> Q11. Why are decomposition reactions called opposite of combination?</div>
+        <div class="nq-a">
+          <strong>Combination:</strong> Two or more substances → ONE product: A + B → AB<br>
+          <em>Example: CaO + H₂O → Ca(OH)₂</em><br><br>
+          <strong>Decomposition:</strong> ONE substance → two or more products: AB → A + B<br>
+          <em>Example: CaCO₃ → CaO + CO₂</em><br><br>
+          They are exactly opposite in terms of direction of reaction.
+        </div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-board">⭐⭐⭐ Board Level</span> Q12. Decomposition with heat, light, electricity:</div>
+        <div class="nq-a">
+          <strong>Heat:</strong> CaCO₃(s) →(Heat) CaO(s) + CO₂(g)<br>
+          <strong>Light:</strong> 2AgCl(s) →(Sunlight) 2Ag(s) + Cl₂(g)<br>
+          <strong>Electricity:</strong> 2H₂O(l) →(Electricity) 2H₂(g) + O₂(g)
+        </div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-board">⭐⭐⭐ Board Level</span> Q13. Difference between Displacement and Double Displacement:</div>
+        <div class="nq-a">
+          <strong>Displacement:</strong> One element replaces another from its compound.<br>
+          <em>Zn + CuSO₄ → ZnSO₄ + Cu</em><br><br>
+          <strong>Double Displacement:</strong> Exchange of ions between two compounds — often forms precipitate.<br>
+          <em>Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl</em>
+        </div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-board">⭐⭐⭐ Board Level</span> Q14. Recovery of silver from AgNO₃ by copper displacement:</div>
+        <div class="nq-a">✅ <strong>Cu(s) + 2AgNO₃(aq) → Cu(NO₃)₂(aq) + 2Ag(s)</strong><br>Copper (more reactive) displaces Silver from silver nitrate solution.</div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-board">⭐⭐⭐ Board Level</span> Q15. What is a precipitation reaction? Give examples.</div>
+        <div class="nq-a">
+          A reaction in which an <strong>insoluble solid (precipitate)</strong> is formed when two solutions are mixed.<br><br>
+          Example 1: Na₂SO₄(aq) + BaCl₂(aq) → <strong>BaSO₄↓</strong>(s) + 2NaCl(aq) — white precipitate<br>
+          Example 2: Pb(NO₃)₂(aq) + 2KI(aq) → <strong>PbI₂↓</strong>(s) + 2KNO₃(aq) — yellow precipitate
+        </div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-board">⭐⭐⭐ Board Level</span> Q16. Explain oxidation and reduction with 2 examples each:</div>
+        <div class="nq-a">
+          <strong>Oxidation</strong> (gain of O / loss of H):<br>
+          (i) 2Cu + O₂ → 2CuO (Cu gains oxygen)<br>
+          (ii) H₂S + Cl₂ → 2HCl + S (H₂S loses hydrogen)<br><br>
+          <strong>Reduction</strong> (loss of O / gain of H):<br>
+          (i) CuO + H₂ → Cu + H₂O (CuO loses oxygen)<br>
+          (ii) 2FeCl₃ + H₂ → 2FeCl₂ + 2HCl (gains hydrogen)
+        </div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-board">⭐⭐⭐ Board Level</span> Q17. Shiny brown element 'X' turns black on heating. Name X and the black compound.</div>
+        <div class="nq-a">✅ <strong>X = Copper (Cu)</strong> — shiny brown metal.<br>
+        Black compound = <strong>Copper(II) Oxide (CuO)</strong><br>
+        Reaction: 2Cu(s) + O₂(g) →(Heat) 2CuO(s)</div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-board">⭐⭐⭐ Board Level</span> Q18. Why do we apply paint on iron articles?</div>
+        <div class="nq-a">✅ Paint acts as a <strong>protective barrier</strong> — it prevents iron from coming into contact with oxygen and moisture (water vapour). Without these two, rusting (corrosion) cannot occur. The paint layer essentially starves the iron of the reactants it needs to corrode.</div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-board">⭐⭐⭐ Board Level</span> Q19. Oil and fat food items are flushed with nitrogen. Why?</div>
+        <div class="nq-a">✅ Nitrogen is <strong>chemically inert</strong> — it does not react with oils or fats. Flushing displaces oxygen inside the packet. Without oxygen, oxidation of fats cannot occur, so the food stays fresh and does not become rancid. This increases shelf life.</div>
+      </div>
+
+      <div class="ncert-q">
+        <div class="nq-num"><span class="diff-badge diff-board">⭐⭐⭐ Board Level</span> Q20. Explain Corrosion and Rancidity with one example each.</div>
+        <div class="nq-a">
+          <strong>Corrosion:</strong> Slow destruction of metals by chemical attack of air, moisture, acids etc.<br>
+          <em>Example: Rusting of iron — 4Fe + 3O₂ + xH₂O → 2Fe₂O₃·xH₂O (rust)</em><br><br>
+          <strong>Rancidity:</strong> Oxidation of fats/oils in food causing unpleasant smell and taste.<br>
+          <em>Example: Butter left open turns rancid due to oxidation by air.</em><br>
+          Prevention: Add antioxidants, store in airtight containers, use N₂ gas in packets.
+        </div>
+      </div>
+    </div>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══════════ SECTION: Exam Booster ══════════ -->
+    <div class="section">
+      <div class="section-title s-teal">🏆 Final Exam Booster</div>
+
+      <div class="eb-grid">
+        <div class="eb-card" style="background:#e3f2fd; border-color:var(--ink-blue);">
+          <div class="eb-title" style="color:var(--ink-blue);">📌 1-Mark Sure-shots <span class="diff-badge diff-basic">⭐ Basic</span></div>
+          <ul>
+            <li>What is a skeletal equation?</li>
+            <li>Name the gas evolved: Zn + H₂SO₄</li>
+            <li>Define combination reaction</li>
+            <li>What is a precipitate?</li>
+            <li>Give one example of exothermic reaction</li>
+            <li>Name the phenomenon: iron gets reddish-brown layer</li>
+          </ul>
+        </div>
+
+        <div class="eb-card" style="background:var(--highlight-pink); border-color:var(--ink-red);">
+          <div class="eb-title" style="color:var(--ink-red);">📌 2-Mark Questions <span class="diff-badge diff-moderate">⭐⭐ Moderate</span></div>
+          <ul>
+            <li>Balance: Fe + H₂O → Fe₃O₄ + H₂</li>
+            <li>What is rancidity? How prevented?</li>
+            <li>Difference: Exo vs Endothermic</li>
+            <li>Why clean Mg ribbon before burning?</li>
+            <li>What is a redox reaction? Example?</li>
+            <li>Why does iron nail turn brown in CuSO₄?</li>
+          </ul>
+        </div>
+
+        <div class="eb-card" style="background:var(--highlight-green); border-color:var(--ink-green);">
+          <div class="eb-title" style="color:var(--ink-green);">📌 3-Mark Questions <span class="diff-badge diff-moderate">⭐⭐ Moderate</span></div>
+          <ul>
+            <li>Explain electrolysis of water with equation</li>
+            <li>What are 3 types of decomposition with examples?</li>
+            <li>Distinguish displacement vs double displacement (with eq)</li>
+            <li>Why is respiration exothermic? Write equation.</li>
+            <li>Explain corrosion and 2 ways to prevent it.</li>
+          </ul>
+        </div>
+
+        <div class="eb-card" style="background:#f3e5f5; border-color:var(--ink-purple);">
+          <div class="eb-title" style="color:var(--ink-purple);">📌 5-Mark Board Questions <span class="diff-badge diff-board">⭐⭐⭐ Board Level</span></div>
+          <ul>
+            <li>Define 5 types of reactions with examples each</li>
+            <li>Balance + identify type: all Q8 parts (a,b,c,d)</li>
+            <li>Write 3 equations where energy supplied = heat/light/electricity</li>
+            <li>Explain oxidation & reduction with 2 examples each</li>
+            <li>What is rancidity + corrosion? Real-life examples + prevention</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box box-teal">
+        <div class="box-title">⭐ Last Day Revision Checklist</div>
+        <ul style="font-family:'Nunito Sans', sans-serif; font-size:1.05rem; line-height:2.2;">
+          <li>☐ I know all 4 indicators of chemical reaction</li>
+          <li>☐ I can balance any equation using Hit-and-Trial method</li>
+          <li>☐ I know all 6 types of reactions with 1 example each</li>
+          <li>☐ I understand Oxidation vs Reduction (OIL RIG)</li>
+          <li>☐ I can write equations for decomp by heat, light, electricity</li>
+          <li>☐ I know difference between Displacement and Double Displacement</li>
+          <li>☐ I understand Corrosion and Rancidity with prevention</li>
+          <li>☐ I have practised all NCERT Exercise questions</li>
+        </ul>
+      </div>
+
+      <!-- FINAL STUDENT FLOW -->
+      <div class="practice-block">
+        <div class="pb-title">🧠 Final Quick Practice</div>
+        <ul>
+          <li>Write 5 equations from memory — timed (under 3 minutes).</li>
+          <li>Explain to a friend: what is the difference between Oxidation and Reduction?</li>
+          <li>Write your own definition of a chemical reaction in 2 sentences.</li>
+        </ul>
+      </div>
+
+      <div class="test-block">
+        <div class="tb-title">⚡ Final Boss Test <span class="diff-badge diff-board">⭐⭐⭐ Board Level</span></div>
+        <div class="tb-q">Q: The reaction Fe₂O₃ + 2Al → Al₂O₃ + 2Fe releases a lot of heat and is used in welding railways. (a) Name the reaction type. (b) Identify what is oxidised and what is reduced.</div>
+        <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+        <div class="answer-reveal">
+          ✅ (a) <strong>Displacement reaction</strong> (also Redox / Thermite reaction)<br>
+          (b) Al is <strong>OXIDISED</strong> (gains O → forms Al₂O₃) · Fe₂O₃ is <strong>REDUCED</strong> (loses O → forms Fe)
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════ QUICK RECAP ══════════ -->
+    <div class="section">
+      <div class="box box-green">
+        <div class="box-title">🚀 Master Summary — Everything in One Box</div>
+        <ul style="font-family:'Nunito Sans', sans-serif; font-size:1.05rem; line-height:2.1;">
+          <li><strong>Indicators:</strong> Colour change · Temperature change · Gas evolution · State change</li>
+          <li><strong>Balanced equation</strong> → Law of Conservation of Mass</li>
+          <li><strong>Combination:</strong> A+B→AB &nbsp;|&nbsp; <strong>Decomposition:</strong> AB→A+B (Opposite!)</li>
+          <li><strong>Displacement:</strong> More reactive displaces less reactive metal</li>
+          <li><strong>Double Displacement:</strong> Ion exchange → often precipitate formed</li>
+          <li><strong>Exothermic:</strong> Heat released (combustion, respiration, CaO+H₂O)</li>
+          <li><strong>Endothermic:</strong> Heat absorbed (decomposition, photosynthesis)</li>
+          <li><strong>Oxidation:</strong> Gain O / Lose H &nbsp;|&nbsp; <strong>Reduction:</strong> Lose O / Gain H</li>
+          <li><strong>Corrosion:</strong> Slow oxidation of metals (rusting, tarnishing)</li>
+          <li><strong>Rancidity:</strong> Oxidation of food fats → bad smell/taste</li>
+          <li>States: (s) (l) (g) (aq) · ↓ = precipitate · ↑ = gas evolved</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══════════ QUICK REVISION TABLE ══════════ -->
+    <div class="section">
+      <div class="section-title s-teal">📋 Quick Revision Table <span class="sticker">Board Must</span></div>
+
+      <table class="qr-table">
+        <thead>
+          <tr><th>#</th><th>Term / Concept</th><th>Definition / Key Point</th><th>Example</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td><strong>Chemical Reaction</strong></td><td>Process where reactants form new products with different properties</td><td>Burning of Mg</td></tr>
+          <tr><td>2</td><td><strong>Combination Reaction</strong></td><td>A + B → AB (two or more → one product)</td><td>CaO + H₂O → Ca(OH)₂</td></tr>
+          <tr><td>3</td><td><strong>Decomposition Reaction</strong></td><td>AB → A + B (one → two or more); opposite of combination</td><td>2FeSO₄ → Fe₂O₃ + SO₂ + SO₃</td></tr>
+          <tr><td>4</td><td><strong>Displacement Reaction</strong></td><td>More reactive element displaces less reactive from compound</td><td>Fe + CuSO₄ → FeSO₄ + Cu</td></tr>
+          <tr><td>5</td><td><strong>Double Displacement</strong></td><td>Ion exchange between two compounds; precipitate often formed</td><td>BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl</td></tr>
+          <tr><td>6</td><td><strong>Exothermic</strong></td><td>Energy (heat) released along with products</td><td>Combustion, Respiration, CaO+H₂O</td></tr>
+          <tr><td>7</td><td><strong>Endothermic</strong></td><td>Energy absorbed from surroundings</td><td>Photosynthesis, Electrolysis of water</td></tr>
+          <tr><td>8</td><td><strong>Oxidation</strong></td><td>Gain of O / Loss of H / Loss of electrons (OIL)</td><td>H₂ → H₂O (gains O)</td></tr>
+          <tr><td>9</td><td><strong>Reduction</strong></td><td>Loss of O / Gain of H / Gain of electrons (RIG)</td><td>CuO → Cu (loses O)</td></tr>
+          <tr><td>10</td><td><strong>Redox Reaction</strong></td><td>Oxidation &amp; Reduction occur simultaneously</td><td>CuO + H₂ → Cu + H₂O</td></tr>
+          <tr><td>11</td><td><strong>Corrosion</strong></td><td>Slow oxidation of metals by air + moisture</td><td>Rusting: 4Fe + 3O₂ + xH₂O → 2Fe₂O₃·xH₂O</td></tr>
+          <tr><td>12</td><td><strong>Rancidity</strong></td><td>Oxidation of oils/fats → bad smell &amp; taste</td><td>Butter left open turns rancid</td></tr>
+          <tr><td>13</td><td><strong>Precipitate (↓)</strong></td><td>Insoluble solid formed when two solutions react</td><td>BaSO₄↓ (white), PbI₂↓ (yellow)</td></tr>
+          <tr><td>14</td><td><strong>Photolytic Decomp.</strong></td><td>Decomposition caused by light energy</td><td>2AgCl →(Light) 2Ag + Cl₂</td></tr>
+          <tr><td>15</td><td><strong>Electrolytic Decomp.</strong></td><td>Decomposition caused by electricity</td><td>2H₂O →(Elec) 2H₂ + O₂</td></tr>
+          <tr><td>16</td><td><strong>Thermal Decomp.</strong></td><td>Decomposition caused by heat</td><td>CaCO₃ →(Heat) CaO + CO₂</td></tr>
+          <tr><td>17</td><td><strong>Balanced Equation</strong></td><td>Equal atoms of each element on LHS and RHS</td><td>3Fe + 4H₂O → Fe₃O₄ + 4H₂</td></tr>
+          <tr><td>18</td><td><strong>State Symbols</strong></td><td>(s)=solid, (l)=liquid, (g)=gas, (aq)=aqueous</td><td>Zn(s) + H₂SO₄(aq) → ZnSO₄(aq) + H₂↑(g)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══════════ PYQs ══════════ -->
+    <div class="section">
+      <div class="section-title s-blue">📅 Previous Year Questions (PYQs)</div>
+
+      <div class="box box-blue" style="margin-bottom:20px;">
+        <div class="box-title">💡 How to use PYQs</div>
+        <p style="font-family:'Nunito Sans', sans-serif; font-size:1rem; line-height:1.8;">These questions have appeared in CBSE Board exams. Practise them first — then reveal the answer. Stars show difficulty level: <span class="diff-badge diff-basic">⭐ Basic</span> <span class="diff-badge diff-moderate">⭐⭐ Moderate</span> <span class="diff-badge diff-board">⭐⭐⭐ Board Level</span></p>
+      </div>
+
+      <div class="pyq-grid">
+
+        <div class="pyq-item">
+          <span class="pyq-year">2020 · 1 Mark</span>
+          <span class="diff-badge diff-basic">⭐ Basic</span>
+          <div class="pyq-q">Q: What happens when dilute hydrochloric acid is added to iron filings?</div>
+          <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+          <div class="pyq-a answer-reveal">✅ Hydrogen gas is evolved and iron(II) chloride is formed.<br><strong>Fe(s) + 2HCl(aq) → FeCl₂(aq) + H₂(g)↑</strong><br>Type: Displacement reaction.</div>
+        </div>
+
+        <div class="pyq-item">
+          <span class="pyq-year">2019 · 1 Mark</span>
+          <span class="diff-badge diff-basic">⭐ Basic</span>
+          <div class="pyq-q">Q: Name the type of reaction: CaO + H₂O → Ca(OH)₂ + Heat</div>
+          <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+          <div class="pyq-a answer-reveal">✅ <strong>Combination Reaction</strong> (also Exothermic). Two substances combine to form one product and heat is released.</div>
+        </div>
+
+        <div class="pyq-item">
+          <span class="pyq-year">2020 · 2 Marks</span>
+          <span class="diff-badge diff-moderate">⭐⭐ Moderate</span>
+          <div class="pyq-q">Q: What is rancidity? Write two ways to prevent it.</div>
+          <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+          <div class="pyq-a answer-reveal">✅ <strong>Rancidity:</strong> Oxidation of fats/oils in food leading to unpleasant smell and taste.<br><strong>Prevention:</strong><br>1. Flush with nitrogen (inert gas) — displaces O₂ from packets (e.g., chips).<br>2. Add antioxidants (e.g., BHA, BHT) to delay oxidation.<br>3. Store in airtight, refrigerated containers.</div>
+        </div>
+
+        <div class="pyq-item">
+          <span class="pyq-year">2018 · 2 Marks</span>
+          <span class="diff-badge diff-moderate">⭐⭐ Moderate</span>
+          <div class="pyq-q">Q: Balance: Fe + H₂O → Fe₃O₄ + H₂. Add state symbols.</div>
+          <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+          <div class="pyq-a answer-reveal">✅ <strong>3Fe(s) + 4H₂O(g) → Fe₃O₄(s) + 4H₂(g)</strong><br>Steps: Balance O (4H₂O), then H (4H₂), then Fe (3Fe). Verify: Fe=3, H=8, O=4 on both sides ✓</div>
+        </div>
+
+        <div class="pyq-item">
+          <span class="pyq-year">2022 · 3 Marks</span>
+          <span class="diff-badge diff-board">⭐⭐⭐ Board Level</span>
+          <div class="pyq-q">Q: What is a displacement reaction? With the activity of iron nail in CuSO₄ solution, explain the activity series.</div>
+          <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+          <div class="pyq-a answer-reveal">✅ <strong>Displacement:</strong> A more reactive element replaces a less reactive element from its compound.<br><strong>Activity:</strong> Fe nail dipped in blue CuSO₄ solution → nail turns brownish (Cu deposits), solution turns pale green (FeSO₄).<br><strong>Reaction:</strong> Fe(s) + CuSO₄(aq) → FeSO₄(aq) + Cu(s)<br><strong>Reason:</strong> Fe is more reactive than Cu in the activity series, so Fe displaces Cu.</div>
+        </div>
+
+        <div class="pyq-item">
+          <span class="pyq-year">2019 · 2 Marks</span>
+          <span class="diff-badge diff-moderate">⭐⭐ Moderate</span>
+          <div class="pyq-q">Q: Why do we apply paint on iron articles? Name the phenomenon being prevented.</div>
+          <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+          <div class="pyq-a answer-reveal">✅ Paint forms a <strong>protective barrier</strong> that prevents iron from coming in contact with oxygen and moisture. Without these two reactants, the reaction of rusting cannot occur.<br><strong>Phenomenon prevented: Corrosion (rusting)</strong><br>Reaction prevented: 4Fe + 3O₂ + xH₂O → 2Fe₂O₃·xH₂O</div>
+        </div>
+
+        <div class="pyq-item">
+          <span class="pyq-year">2023 · 3 Marks</span>
+          <span class="diff-badge diff-board">⭐⭐⭐ Board Level</span>
+          <div class="pyq-q">Q: In the reaction: 2PbO(s) + C(s) → 2Pb(s) + CO₂(g) — (a) name the substance oxidised (b) name the substance reduced (c) identify the type of reaction.</div>
+          <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+          <div class="pyq-a answer-reveal">✅ (a) <strong>Carbon (C)</strong> is oxidised — it gains oxygen to form CO₂.<br>(b) <strong>Lead oxide (PbO)</strong> is reduced — it loses oxygen to form Pb.<br>(c) <strong>Redox Reaction</strong> (oxidation and reduction occur simultaneously).</div>
+        </div>
+
+        <div class="pyq-item">
+          <span class="pyq-year">2021 · 5 Marks</span>
+          <span class="diff-badge diff-board">⭐⭐⭐ Board Level</span>
+          <div class="pyq-q">Q: (a) Define exothermic and endothermic reactions with one example each. (b) Is dissolving of NH₄Cl in water exothermic or endothermic? Why?</div>
+          <button class="reveal-btn" onclick="reveal(this)">Show Answer 👀</button>
+          <div class="pyq-a answer-reveal">✅ (a) <strong>Exothermic:</strong> Reactions that release heat/energy.<br><em>Example: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy (Respiration)</em><br><br><strong>Endothermic:</strong> Reactions that absorb energy from surroundings.<br><em>Example: 2AgCl →(Light) 2Ag + Cl₂ (Photolytic decomposition)</em><br><br>(b) Dissolving NH₄Cl is <strong>endothermic</strong> — the solution feels cold. Energy is absorbed from surroundings to break the ionic lattice of NH₄Cl.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══════════ EXAM STRATEGY ══════════ -->
+    <div class="section">
+      <div class="section-title s-green">🎯 Exam Strategy</div>
+
+      <div class="marks-strip">
+        <span class="ms-chip" style="background:#edf5fd; color:var(--ink-blue); border-color:var(--ink-blue);">1-Mark: Definition / Name</span>
+        <span class="ms-chip" style="background:#eef6f0; color:var(--ink-green); border-color:var(--ink-green);">2-Mark: Explain + Example</span>
+        <span class="ms-chip" style="background:#fef5ea; color:var(--ink-orange); border-color:var(--ink-orange);">3-Mark: Concept + Equations</span>
+        <span class="ms-chip" style="background:#fdeef3; color:var(--ink-red); border-color:var(--ink-red);">5-Mark: Full Answer + Diagrams</span>
+      </div>
+
+      <div class="strategy-card sc-blue">
+        <div class="sc-title">📝 How to Answer 1-Mark Questions</div>
+        <ul>
+          <li>Give a direct one-line answer — do not write paragraphs.</li>
+          <li>For "Name the type" → just write: <em>Displacement Reaction</em></li>
+          <li>For "Define" → one sentence with the key term bold.</li>
+          <li>Always include the chemical symbol if a reaction is given. E.g., "H₂↑" not just "hydrogen".</li>
+        </ul>
+      </div>
+
+      <div class="strategy-card sc-green">
+        <div class="sc-title">✍️ How to Answer 2–3 Mark Questions</div>
+        <ul>
+          <li>State the definition → give the balanced equation → explain in 1–2 lines.</li>
+          <li>Always add state symbols: (s), (l), (g), (aq). Missing symbols = marks deducted.</li>
+          <li>Write ↓ for precipitate and ↑ for gas evolved — these are expected.</li>
+          <li>For redox: always identify BOTH the oxidised AND reduced substance.</li>
+          <li>For decomposition types: mention the energy source (heat / light / electricity).</li>
+        </ul>
+      </div>
+
+      <div class="strategy-card sc-orange">
+        <div class="sc-title">🏆 5-Mark Board Question Blueprint</div>
+        <ul>
+          <li><strong>Part (a) [2 marks]:</strong> Define both terms with clear contrast.</li>
+          <li><strong>Part (b) [2 marks]:</strong> Write balanced equations with state symbols for each.</li>
+          <li><strong>Part (c) [1 mark]:</strong> Real-life application or identify the type of reaction.</li>
+          <li>For electrolysis: draw the diagram showing cathode (−) / anode (+), H₂ and O₂ collection, 2:1 ratio.</li>
+          <li>For corrosion/rancidity: write at least 2 prevention methods each.</li>
+        </ul>
+      </div>
+
+      <div class="strategy-card sc-red">
+        <div class="sc-title">⚠️ Marks-Saving Tips</div>
+        <ul>
+          <li><strong>Never change</strong> a chemical formula while balancing — change coefficients ONLY.</li>
+          <li>In OIL RIG questions — always say what is oxidised AND what is reduced in the same answer.</li>
+          <li>Corrosion ≠ Rancidity: Corrosion = metals · Rancidity = food fats. Don't mix them up.</li>
+          <li>Photosynthesis is <strong>endothermic</strong>; Respiration is <strong>exothermic</strong>. This is a common swap mistake.</li>
+          <li>In displacement: check the activity series mentally before writing the answer.</li>
+          <li>Write reactions with heat/light conditions ABOVE the arrow: →<sup>Heat</sup></li>
+        </ul>
+      </div>
+
+      <div class="box box-yellow" style="margin-top:20px;">
+        <div class="box-title">⏱️ Time Management — 3 Hours Exam</div>
+        <ul style="font-family:'Nunito Sans', sans-serif; font-size:1.02rem; line-height:2.1;">
+          <li>Section A (1-mark MCQs): 30 sec each max — do not overthink</li>
+          <li>Section B (2-mark): 3–4 min each — definition + equation</li>
+          <li>Section C (3-mark): 5–6 min each — concept + equation + reason</li>
+          <li>Section D (5-mark): 8–10 min — full structured answer</li>
+          <li>Keep 15 minutes for revision at the end</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <!-- ══════════ COMMON MISTAKES (EXPANDED) ══════════ -->
+    <div class="section">
+      <div class="section-title s-red">🚫 All Common Mistakes — Don't Lose Marks!</div>
+
+      <div class="box box-pink" style="margin-bottom:18px;">
+        <div class="box-title">🔴 These mistakes cost students 5–10 marks in boards. Read carefully!</div>
+      </div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 7: Writing photosynthesis as exothermic</div>
+          <div class="mistake-wrong">Photosynthesis = exothermic because plants release oxygen</div>
+          <div class="mistake-right">✅ Photosynthesis ABSORBS sunlight energy → it is ENDOTHERMIC. Respiration RELEASES energy → EXOTHERMIC.</div>
+        </div>
+      </div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 8: Confusing Corrosion and Rancidity</div>
+          <div class="mistake-wrong">Butter turning rancid is called corrosion</div>
+          <div class="mistake-right">✅ Corrosion = oxidation of METALS (rusting, tarnishing). Rancidity = oxidation of FOOD FATS/OILS. Two completely different phenomena.</div>
+        </div>
+      </div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 9: Wrong ratio for electrolysis</div>
+          <div class="mistake-wrong">H₂ : O₂ = 1 : 2 collected in electrolysis</div>
+          <div class="mistake-right">✅ H₂ : O₂ = 2 : 1 (by volume). H₂ at cathode (−) is DOUBLE. From equation: 2H₂O → 2H₂ + O₂.</div>
+        </div>
+      </div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 10: Saying "Lead" is oxidised in 2PbO + C → 2Pb + CO₂</div>
+          <div class="mistake-wrong">Pb is oxidised because it appears as a product</div>
+          <div class="mistake-right">✅ PbO LOSES oxygen → PbO (lead oxide) is REDUCED. C GAINS oxygen → C is OXIDISED. Focus on oxygen gain/loss, not product appearance.</div>
+        </div>
+      </div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 11: Not writing the condition above the arrow</div>
+          <div class="mistake-wrong">CaCO₃ → CaO + CO₂ (missing heat)</div>
+          <div class="mistake-right">✅ CaCO₃ →<sup>Heat</sup> CaO + CO₂ — Always mention energy source above the arrow for decomposition reactions.</div>
+        </div>
+      </div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 12: Treating double displacement as redox</div>
+          <div class="mistake-wrong">BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl is a redox reaction</div>
+          <div class="mistake-right">✅ No change in oxidation state in double displacement. Ions simply exchange partners. Redox requires actual gain/loss of oxygen, hydrogen, or electrons.</div>
+        </div>
+      </div>
+
+      <div class="mistake-item">
+        <div class="mistake-icon">❌</div>
+        <div>
+          <div class="mistake-label">Mistake 13: Writing (s) for BaBr₂ in displacement</div>
+          <div class="mistake-wrong">2KBr(aq) + BaI₂(aq) → 2KI(aq) + BaBr₂(s)</div>
+          <div class="mistake-right">✅ BaBr₂ is soluble in water → write BaBr₂<strong>(aq)</strong>, not (s). Only insoluble products get (s) and ↓ symbol.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p>📚 Study Smart · Score High · Help a Friend!</p>
+      <p class="brand"><a href="https://m2learninghub.com" target="_blank" style="color:var(--ink-blue); text-decoration:none;">🌐 m2learninghub.com</a></p>
+      <p style="font-size:0.95rem; color:#aaa; margin-top:4px;">Class 10 Science · Chapter 1 · Chemical Reactions &amp; Equations · Reprint 2026-27</p>
+      <p style="margin-top:10px;">
+        <a href="https://wa.me/918882565496" style="font-family:'Nunito', sans-serif; font-size:1.1rem; color:#25D366; text-decoration:none; font-weight:700;">💬 Doubt? WhatsApp us: +91 88825 65496</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // Spiral rings
+  const spiral = document.getElementById('spiral');
+  for(let i = 0; i < 45; i++) {
+    const ring = document.createElement('div');
+    ring.className = 'spiral-ring';
+    spiral.appendChild(ring);
+  }
+
+  // Reveal answers
+  function reveal(btn) {
+    const ans = btn.nextElementSibling;
+    if(ans.style.display === 'block') {
+      ans.style.display = 'none';
+      btn.textContent = 'Show Answer 👀';
+    } else {
+      ans.style.display = 'block';
+      btn.textContent = 'Hide Answer 🙈';
+    }
+    updateProgress();
+  }
+
+  // Progress tracker
+  function updateProgress() {
+    const total = document.querySelectorAll('.reveal-btn').length;
+    const opened = document.querySelectorAll('.answer-reveal[style*="block"]').length;
+    const pct = Math.round((opened / total) * 100);
+    document.getElementById('prog-pct').textContent = pct + '%';
+    document.getElementById('progress-fill').style.width = pct + '%';
+  }
+
+  // Scroll progress
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPct = Math.round((scrollTop / docH) * 100);
+    // Blend with revealed answers
+    const total = document.querySelectorAll('.reveal-btn').length;
+    const opened = document.querySelectorAll('.answer-reveal[style*="block"]').length;
+    const revealPct = Math.round((opened / total) * 100);
+    const combined = Math.round((scrollPct * 0.6 + revealPct * 0.4));
+    document.getElementById('prog-pct').textContent = combined + '%';
+    document.getElementById('progress-fill').style.width = combined + '%';
+  });
+
+  // Animate progress bar on load
+  setTimeout(() => {
+    document.getElementById('progress-fill').style.width = '2%';
+  }, 600);
+</script>
+</body>
+</html>
