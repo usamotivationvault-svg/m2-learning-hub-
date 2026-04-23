@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Override to simple font */
+  </style>
 
   <style>
     :root {
@@ -35,8 +38,8 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Caveat', cursive;
-      font-size: 1.15rem;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 1.32rem;
       background: #e8e4dc;
       background-image: 
         radial-gradient(ellipse at 20% 50%, rgba(200,180,150,0.15) 0%, transparent 60%),
@@ -72,7 +75,7 @@
     .site-link:hover { color: var(--red-ink); border-color: var(--red-ink); }
     .nav-pills { display: flex; gap: 5px; list-style: none; flex-wrap: wrap; }
     .nav-pills a {
-      font-family: 'Caveat', cursive;
+      font-family: 'Segoe UI', Arial, sans-serif;
       color: var(--ink-soft);
       text-decoration: none;
       font-size: 1.05rem;
@@ -137,7 +140,7 @@
       display: block;
     }
     .section-title {
-      font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+      font-size: clamp(2rem, 4vw, 2.9rem);
       color: var(--red-ink);
       font-weight: 700;
       margin-bottom: 4px;
@@ -166,6 +169,31 @@
       border-bottom: 3px double var(--ruled);
       position: relative;
     }
+    .chapter-title-banner {
+      text-align: center;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 2.5px dashed var(--blue-ink);
+    }
+    .chapter-title-banner .chapter-label {
+      font-size: 1rem;
+      color: var(--blue-ink);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .chapter-title-banner h1.chapter-main-title {
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      color: var(--red-ink);
+      font-weight: 800;
+      line-height: 1.1;
+      margin: 0;
+    }
+    .chapter-title-banner h1.chapter-main-title span {
+      color: var(--blue-ink);
+    }
     .hero-chapter-tag {
       display: inline-block;
       font-size: 0.98rem;
@@ -177,7 +205,7 @@
       transform: rotate(-0.4deg);
     }
     .hero h1 {
-      font-size: clamp(2.3rem, 5.5vw, 3.8rem);
+      font-size: clamp(2.8rem, 6vw, 4.4rem);
       color: var(--red-ink);
       line-height: 1.15;
       margin-bottom: 8px;
@@ -192,7 +220,7 @@
     }
     .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
     .btn {
-      font-family: 'Caveat', cursive;
+      font-family: 'Segoe UI', Arial, sans-serif;
       font-size: 1rem;
       font-weight: 700;
       padding: 7px 20px;
@@ -280,7 +308,7 @@
       letter-spacing: 1.5px;
       padding: 1px 9px;
       border-radius: 2px;
-      font-family: 'Caveat', cursive;
+      font-family: 'Segoe UI', Arial, sans-serif;
     }
     .formula-box h4 { color: var(--blue-ink); margin-bottom: 7px; font-size: 1.18rem; }
     .formula-eq {
@@ -400,7 +428,7 @@
       background: var(--blue-ink); color: #fff;
       padding: 10px 14px; text-align: left;
       font-size: 1.02rem;
-      font-family: 'Caveat', cursive;
+      font-family: 'Segoe UI', Arial, sans-serif;
     }
     .hw-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--ink-soft); }
     .hw-table tr:nth-child(even) td { background: #f6f4ee; }
@@ -777,15 +805,15 @@
       text-align: center;
       padding: 46px 24px;
     }
-    .wa-section h2 { font-family: 'Caveat', cursive; font-size: 1.9rem; margin-bottom: 9px; }
-    .wa-section p { font-size: 1.02rem; opacity: 0.85; margin-bottom: 22px; font-family: 'Caveat', cursive; }
+    .wa-section h2 { font-family: 'Segoe UI', Arial, sans-serif; font-size: 1.9rem; margin-bottom: 9px; }
+    .wa-section p { font-size: 1.02rem; opacity: 0.85; margin-bottom: 22px; font-family: 'Segoe UI', Arial, sans-serif; }
     .wa-btns { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
     .wa-btn {
       display: inline-flex; align-items: center; gap: 7px;
       background: #16a34a; color: #fff;
       padding: 11px 24px; border-radius: 3px;
       text-decoration: none; font-weight: 700; font-size: 0.98rem;
-      font-family: 'Caveat', cursive;
+      font-family: 'Segoe UI', Arial, sans-serif;
       border: 2px solid #15803d;
     }
     .wa-btn-outline {
@@ -794,7 +822,7 @@
       border: 2px solid rgba(255,255,255,0.45);
       padding: 11px 24px; border-radius: 3px;
       text-decoration: none; font-weight: 600; font-size: 0.98rem;
-      font-family: 'Caveat', cursive;
+      font-family: 'Segoe UI', Arial, sans-serif;
     }
 
     /* ─── FOOTER ─── */
@@ -803,7 +831,7 @@
       color: rgba(255,255,255,0.55);
       text-align: center;
       padding: 30px 20px;
-      font-family: 'Caveat', cursive;
+      font-family: 'Segoe UI', Arial, sans-serif;
       font-size: 1rem;
     }
     footer strong { color: #fde68a; }
@@ -827,7 +855,7 @@
       background: var(--ink); color: #fff;
       font-size: 0.82rem; padding: 4px 11px;
       border-radius: 16px; font-weight: 600; white-space: nowrap;
-      font-family: 'Caveat', cursive;
+      font-family: 'Segoe UI', Arial, sans-serif;
     }
 
     /* ─── SCROLL ANIMATION ─── */
@@ -871,6 +899,11 @@
 
 <!-- ── HERO ── -->
 <div class="hero" id="top">
+  <!-- Centered Chapter Name Banner -->
+  <div class="chapter-title-banner">
+    <span class="chapter-label">📖 CBSE Class 10 Mathematics · Chapter 1</span>
+    <h1 class="chapter-main-title">Real Numbers <span>✏️</span></h1>
+  </div>
   <div class="hero-sticky">📚 Chapter 1<br/>Class 10 Maths<br/>Board Exam 2027</div>
   <div class="hero-chapter-tag">📖 CBSE Class 10 · Chapter 1</div>
   <h1>Real Numbers ✏️<br/><span>Score Full Marks!</span></h1>
