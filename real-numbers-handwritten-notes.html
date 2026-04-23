@@ -1,0 +1,2453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Numbers Class 10 Maths | Complete Notes, NCERT Solutions, PYQs | Manish Mishra Sir</title>
+  <meta name="description" content="Complete Class 10 Maths Chapter 1 Real Numbers – NCERT Solutions, Important Questions, PYQs 2024, MCQs, Case Studies, Formulas & Exam Tips by Manish Mishra Sir." />
+  <meta name="keywords" content="Real Numbers Class 10, CBSE Class 10 Maths, Real Numbers NCERT Solutions, HCF LCM, Euclid Division Algorithm, Irrational Numbers, Class 10 Board Exam 2027, Real Numbers PYQs, Manish Mishra Sir" />
+  <meta name="author" content="Manish Mishra Sir" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --ink: #1a1a2e;
+      --ink-soft: #3a3a5c;
+      --paper: #fffef8;
+      --ruled: #c8dff0;
+      --margin-line: #e8a0a0;
+      --cream: #fef6e4;
+      --red-ink: #c0392b;
+      --blue-ink: #2471a3;
+      --green-ink: #1e8449;
+      --pencil: #7a6a00;
+      --border: #d0d0d0;
+      --hl-yellow: #fff9c4;
+      --hl-blue: #e8f4fc;
+      --hl-green: #e8f5e9;
+      --hl-pink: #fce4ec;
+      --hl-orange: #fff3e0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Caveat', cursive;
+      font-size: 1.15rem;
+      background: #e8e4dc;
+      background-image: 
+        radial-gradient(ellipse at 20% 50%, rgba(200,180,150,0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(180,200,220,0.12) 0%, transparent 50%);
+      color: var(--ink);
+      line-height: 1.85;
+      overflow-x: hidden;
+    }
+
+    /* ─── TOP NAV BAR ─── */
+    .top-bar {
+      background: #fffef8;
+      border-bottom: 2.5px solid var(--ruled);
+      padding: 7px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    }
+    .top-left { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .site-link {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--blue-ink);
+      text-decoration: none;
+      border-bottom: 2px solid var(--blue-ink);
+      padding-bottom: 1px;
+      transition: all 0.2s;
+    }
+    .site-link:hover { color: var(--red-ink); border-color: var(--red-ink); }
+    .nav-pills { display: flex; gap: 5px; list-style: none; flex-wrap: wrap; }
+    .nav-pills a {
+      font-family: 'Caveat', cursive;
+      color: var(--ink-soft);
+      text-decoration: none;
+      font-size: 1.05rem;
+      padding: 3px 13px;
+      border-radius: 16px;
+      border: 1.5px solid var(--border);
+      background: var(--paper);
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .nav-pills a:hover { background: var(--red-ink); color: #fff; border-color: var(--red-ink); }
+    .author-tag {
+      font-size: 1.15rem;
+      color: var(--red-ink);
+      font-weight: 700;
+      white-space: nowrap;
+      font-style: italic;
+    }
+
+    /* ─── NOTEBOOK WRAPPER ─── */
+    .notebook {
+      max-width: 1040px;
+      margin: 24px auto;
+      background: var(--paper);
+      position: relative;
+      box-shadow: 3px 3px 18px rgba(0,0,0,0.13), -1px 0 6px rgba(0,0,0,0.04);
+      overflow: hidden;
+      border-radius: 2px;
+    }
+
+    /* Red margin line */
+    .notebook::before {
+      content: '';
+      position: absolute;
+      left: 68px;
+      top: 0; bottom: 0;
+      width: 2px;
+      background: var(--margin-line);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* ─── NOTEBOOK SECTION BASE ─── */
+    .nb-section {
+      background: var(--paper);
+      background-image: repeating-linear-gradient(
+        transparent, transparent 31px,
+        var(--ruled) 31px, var(--ruled) 32px
+      );
+      padding: 38px 30px 38px 90px;
+      border-bottom: 2px solid #e0d8cc;
+      position: relative;
+    }
+    .nb-section.alt { background-color: #fef9f0; }
+
+    .section-tag {
+      font-size: 0.92rem;
+      color: var(--pencil);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+      display: block;
+    }
+    .section-title {
+      font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+      color: var(--red-ink);
+      font-weight: 700;
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+    .section-sub {
+      color: var(--ink-soft);
+      font-size: 1.1rem;
+      margin-bottom: 24px;
+    }
+    .hw-rule {
+      border: none;
+      border-top: 2px dashed #b8cfe0;
+      width: 100px;
+      margin: 10px 0 24px;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      background: var(--paper);
+      background-image: repeating-linear-gradient(
+        transparent, transparent 31px,
+        var(--ruled) 31px, var(--ruled) 32px
+      );
+      padding: 44px 30px 44px 90px;
+      border-bottom: 3px double var(--ruled);
+      position: relative;
+    }
+    .hero-chapter-tag {
+      display: inline-block;
+      font-size: 0.98rem;
+      color: var(--blue-ink);
+      border: 1.5px dashed var(--blue-ink);
+      padding: 2px 14px;
+      border-radius: 3px;
+      margin-bottom: 12px;
+      transform: rotate(-0.4deg);
+    }
+    .hero h1 {
+      font-size: clamp(2.3rem, 5.5vw, 3.8rem);
+      color: var(--red-ink);
+      line-height: 1.15;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .hero h1 span { color: var(--blue-ink); }
+    .hero-sub {
+      font-size: 1.2rem;
+      color: var(--ink-soft);
+      max-width: 600px;
+      margin-bottom: 24px;
+    }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      font-family: 'Caveat', cursive;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 7px 20px;
+      border-radius: 3px;
+      text-decoration: none;
+      border: 2px solid;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s;
+    }
+    .btn-blue { color: var(--blue-ink); border-color: var(--blue-ink); background: var(--hl-blue); }
+    .btn-blue:hover { background: var(--blue-ink); color: #fff; }
+    .btn-green { color: var(--green-ink); border-color: var(--green-ink); background: var(--hl-green); }
+    .btn-green:hover { background: var(--green-ink); color: #fff; }
+
+    .hero-sticky {
+      position: absolute;
+      top: 22px; right: 30px;
+      background: #fef08a;
+      border: 1.5px solid #b8960a;
+      padding: 9px 14px;
+      border-radius: 2px;
+      font-size: 0.88rem;
+      color: #7a5a00;
+      transform: rotate(2.2deg);
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      max-width: 160px;
+      line-height: 1.55;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 28px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .stat-num { font-size: 2rem; font-weight: 700; color: var(--red-ink); }
+    .stat-lbl { font-size: 0.95rem; color: var(--ink-soft); }
+
+    /* ─── CARDS ─── */
+    .card {
+      background: var(--paper);
+      border: 1.5px solid var(--border);
+      border-radius: 3px;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+      box-shadow: 1px 1px 4px rgba(0,0,0,0.05);
+      position: relative;
+    }
+    .card.bl { border-left: 4px solid var(--blue-ink); }
+    .card.rl { border-left: 4px solid var(--red-ink); }
+    .card.gl { border-left: 4px solid var(--green-ink); }
+    .card.yl { border-left: 4px solid #ca8a04; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
+    .card-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+
+    /* ─── HOOK BOX ─── */
+    .hook-box {
+      background: var(--hl-yellow);
+      border: 1.5px dashed #b8960a;
+      border-radius: 3px;
+      padding: 22px 26px;
+      font-size: 1.15rem;
+      line-height: 1.9;
+    }
+    .hook-box h2 { font-size: 1.65rem; color: var(--red-ink); margin-bottom: 8px; }
+    .hl { background: #fde68a; padding: 1px 5px; border-radius: 2px; color: #7a4a00; font-weight: 700; }
+
+    /* ─── FORMULA BOX ─── */
+    .formula-box {
+      background: var(--hl-blue);
+      border: 2px solid var(--blue-ink);
+      border-radius: 3px;
+      padding: 18px 20px;
+      position: relative;
+      margin-bottom: 14px;
+    }
+    .formula-box::before {
+      content: 'Formula';
+      position: absolute;
+      top: -9px; left: 12px;
+      background: var(--blue-ink);
+      color: #fff;
+      font-size: 0.72rem;
+      letter-spacing: 1.5px;
+      padding: 1px 9px;
+      border-radius: 2px;
+      font-family: 'Caveat', cursive;
+    }
+    .formula-box h4 { color: var(--blue-ink); margin-bottom: 7px; font-size: 1.18rem; }
+    .formula-eq {
+      font-size: 1.2rem;
+      background: var(--paper);
+      padding: 7px 13px;
+      border-radius: 2px;
+      border: 1px solid #b0c8dc;
+      margin: 5px 0;
+      color: var(--ink);
+    }
+    .formula-eq .hl2 { color: var(--red-ink); font-weight: 700; }
+
+    /* ─── THEOREM BOX ─── */
+    .theorem-box {
+      border: 2px solid var(--green-ink);
+      border-radius: 3px;
+      padding: 16px 18px;
+      background: var(--hl-green);
+      position: relative;
+      margin-bottom: 14px;
+    }
+    .theorem-lbl {
+      position: absolute;
+      top: -9px; left: 12px;
+      background: var(--green-ink);
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 1px 10px;
+      border-radius: 2px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .theorem-box h4 { color: var(--green-ink); margin-bottom: 5px; font-size: 1.18rem; font-weight: 700; }
+    .theorem-box p { font-size: 1.08rem; color: var(--ink-soft); }
+
+    /* ─── IMPORTANT BOX ─── */
+    .imp-box {
+      background: var(--hl-pink);
+      border: 2px solid var(--red-ink);
+      border-radius: 3px;
+      padding: 16px 18px;
+      position: relative;
+      margin-bottom: 14px;
+    }
+    .imp-box::before {
+      content: '⚠️ Important';
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--red-ink);
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    /* ─── CONCEPT NOTEBOOK ─── */
+    .concept-nb {
+      background: var(--paper);
+      border: 1.5px solid #b0bec5;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.07);
+      margin-bottom: 22px;
+    }
+    .concept-nb-header {
+      background: var(--blue-ink);
+      padding: 9px 18px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .nb-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .concept-nb-header span { font-size: 1.1rem; color: #fff; }
+    .concept-nb-body {
+      padding: 22px 26px;
+      background-image: repeating-linear-gradient(transparent, transparent 31px, var(--ruled) 31px, var(--ruled) 32px);
+      font-size: 1.18rem;
+      line-height: 32px;
+      color: var(--blue-ink);
+    }
+    .concept-nb-body h3 { font-size: 1.45rem; color: var(--red-ink); margin: 14px 0 5px; font-weight: 700; }
+    .concept-nb-body .def {
+      background: #fff9c4;
+      border-left: 3px solid #f9a825;
+      padding: 5px 12px;
+      border-radius: 0 3px 3px 0;
+      margin: 5px 0;
+      font-size: 1.1rem;
+      color: var(--ink);
+    }
+    .concept-nb-body .eg { color: var(--green-ink); font-size: 1.08rem; }
+
+    /* ─── STEPS ─── */
+    .steps { list-style: none; }
+    .steps li {
+      display: flex; gap: 12px; align-items: flex-start;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--ruled);
+    }
+    .steps li:last-child { border-bottom: none; }
+    .step-num {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--blue-ink);
+      color: #fff;
+      font-weight: 800; font-size: 0.85rem;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-content { font-size: 1.08rem; color: var(--ink-soft); }
+    .step-content strong { color: var(--ink); display: block; }
+
+    /* ─── TABLES ─── */
+    .hw-table { width: 100%; border-collapse: collapse; font-size: 1.06rem; }
+    .hw-table th {
+      background: var(--blue-ink); color: #fff;
+      padding: 10px 14px; text-align: left;
+      font-size: 1.02rem;
+      font-family: 'Caveat', cursive;
+    }
+    .hw-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--ink-soft); }
+    .hw-table tr:nth-child(even) td { background: #f6f4ee; }
+    .hw-table tr:hover td { background: var(--hl-yellow); }
+
+    /* ─── ACCORDION — SOLUTIONS ─── */
+    .sol-item { margin-bottom: 10px; }
+    .sol-summary {
+      background: var(--hl-blue);
+      border: 1.5px solid var(--blue-ink);
+      border-radius: 3px;
+      padding: 13px 17px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--blue-ink);
+      display: flex; align-items: center; gap: 9px;
+      list-style: none;
+      transition: all 0.2s;
+      user-select: none;
+    }
+    .sol-summary::-webkit-details-marker { display: none; }
+    .sol-summary::after {
+      content: '▼';
+      margin-left: auto;
+      font-size: 0.82rem;
+      transition: transform 0.25s;
+      opacity: 0.7;
+    }
+    .sol-item[open] .sol-summary::after { transform: rotate(180deg); }
+    .sol-summary:hover { background: var(--blue-ink); color: #fff; }
+    .sol-item[open] .sol-summary { background: var(--blue-ink); color: #fff; border-radius: 3px 3px 0 0; }
+    .sol-body {
+      background: var(--paper);
+      border: 1.5px solid var(--blue-ink);
+      border-top: none;
+      border-radius: 0 0 3px 3px;
+      padding: 16px 20px;
+      font-size: 1.08rem;
+      color: var(--ink-soft);
+      line-height: 1.9;
+    }
+    .sol-step {
+      margin: 5px 0; padding: 8px 13px;
+      background: #eef5ff;
+      border-radius: 2px;
+      border-left: 3px solid var(--blue-ink);
+      font-size: 1.05rem;
+    }
+    .final-ans {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: var(--hl-green);
+      border: 1.5px solid var(--green-ink);
+      padding: 6px 14px; border-radius: 3px;
+      margin-top: 9px;
+      font-weight: 700; color: var(--green-ink);
+      font-size: 1.07rem;
+    }
+    .q-badge {
+      background: var(--red-ink); color: #fff;
+      font-size: 0.9rem; padding: 2px 10px;
+      border-radius: 2px; font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* ─── MCQ ACCORDION ─── */
+    .mcq-item { margin-bottom: 12px; }
+    .mcq-summary {
+      background: var(--hl-yellow);
+      border: 1.5px solid #b8960a;
+      border-radius: 3px;
+      padding: 13px 17px;
+      cursor: pointer;
+      font-size: 1.08rem;
+      color: #7a5000;
+      list-style: none;
+      user-select: none;
+      font-weight: 600;
+      display: flex; align-items: flex-start; gap: 8px;
+    }
+    .mcq-summary::-webkit-details-marker { display: none; }
+    .mcq-summary::after {
+      content: '▼';
+      margin-left: auto;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      transition: transform 0.25s;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .mcq-item[open] .mcq-summary::after { transform: rotate(180deg); }
+    .mcq-summary:hover { background: #fde68a; }
+    .mcq-item[open] .mcq-summary { background: #fde68a; border-radius: 3px 3px 0 0; }
+    .mcq-body {
+      background: var(--paper);
+      border: 1.5px solid #b8960a;
+      border-top: none;
+      border-radius: 0 0 3px 3px;
+      padding: 14px 17px;
+    }
+    .mcq-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 9px; }
+    .opt {
+      padding: 9px 13px; border-radius: 3px;
+      border: 1.5px solid var(--border);
+      font-size: 1.06rem; color: var(--ink-soft);
+    }
+    .opt.correct { background: var(--hl-green); border-color: var(--green-ink); color: var(--green-ink); font-weight: 700; }
+    .mcq-ans {
+      font-size: 1.06rem; color: var(--green-ink);
+      font-weight: 600;
+      padding: 8px 13px;
+      background: var(--hl-green);
+      border-radius: 3px;
+    }
+    .chip {
+      display: inline-block;
+      padding: 2px 8px; border-radius: 14px;
+      font-size: 0.82rem; font-weight: 700; margin-left: 4px;
+    }
+    .chip-red { background: var(--hl-pink); color: var(--red-ink); border: 1px solid var(--red-ink); }
+    .chip-blue { background: var(--hl-blue); color: var(--blue-ink); border: 1px solid var(--blue-ink); }
+
+    /* ─── PYQ ACCORDION ─── */
+    .pyq-item { margin-bottom: 10px; }
+    .pyq-summary {
+      background: var(--hl-pink);
+      border: 1.5px solid var(--red-ink);
+      border-radius: 3px;
+      padding: 13px 17px;
+      cursor: pointer;
+      font-size: 1.07rem;
+      color: var(--red-ink);
+      list-style: none;
+      user-select: none;
+      display: flex; gap: 7px; align-items: flex-start;
+    }
+    .pyq-summary::-webkit-details-marker { display: none; }
+    .pyq-summary::after {
+      content: '▼';
+      margin-left: auto;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      transition: transform 0.25s;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .pyq-item[open] .pyq-summary::after { transform: rotate(180deg); }
+    .pyq-summary:hover { background: #fecaca; }
+    .pyq-item[open] .pyq-summary { background: #fecaca; border-radius: 3px 3px 0 0; }
+    .pyq-body {
+      background: var(--paper);
+      border: 1.5px solid var(--red-ink);
+      border-top: none;
+      border-radius: 0 0 3px 3px;
+      padding: 13px 17px;
+      font-size: 1.07rem;
+      color: var(--green-ink);
+      font-weight: 600;
+    }
+    .pyq-tag { font-size: 0.82rem; font-weight: 700; padding: 2px 9px; border-radius: 14px; white-space: nowrap; }
+    .tag-yr { background: var(--red-ink); color: #fff; }
+    .tag-mk { background: #fde68a; color: #7a4a00; border: 1px solid #b8960a; }
+    .tag-tp { background: #c7d2fe; color: #3730a3; }
+    .pyq-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
+
+    /* ─── CASE STUDY ─── */
+    .case-box {
+      background: #eff6ff;
+      border: 2px solid var(--blue-ink);
+      border-radius: 3px;
+      padding: 22px 24px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .case-tag {
+      position: absolute;
+      top: -1px; right: -1px;
+      background: var(--blue-ink); color: #fff;
+      font-size: 0.68rem; font-weight: 800;
+      padding: 3px 12px;
+      border-radius: 0 3px 0 6px;
+      letter-spacing: 1.5px;
+    }
+    .case-box h3 { font-size: 1.35rem; color: var(--blue-ink); margin-bottom: 9px; }
+    .case-para { font-size: 1.08rem; color: var(--ink-soft); margin-bottom: 12px; line-height: 1.75; }
+    .case-q-item { margin-bottom: 8px; }
+    .case-q-summary {
+      background: var(--hl-blue);
+      border: 1.5px solid #90caf9;
+      border-radius: 3px;
+      padding: 9px 15px;
+      cursor: pointer;
+      font-size: 0.97rem;
+      color: var(--blue-ink);
+      list-style: none;
+      user-select: none;
+      display: flex; align-items: flex-start; gap: 6px;
+    }
+    .case-q-summary::-webkit-details-marker { display: none; }
+    .case-q-summary::after {
+      content: '▼';
+      margin-left: auto;
+      font-size: 0.7rem;
+      opacity: 0.6;
+      transition: transform 0.25s;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .case-q-item[open] .case-q-summary::after { transform: rotate(180deg); }
+    .case-q-summary:hover { background: #bbdefb; }
+    .case-q-item[open] .case-q-summary { background: #bbdefb; border-radius: 3px 3px 0 0; }
+    .case-q-body {
+      background: var(--paper);
+      border: 1.5px solid #90caf9;
+      border-top: none;
+      border-radius: 0 0 3px 3px;
+      padding: 9px 15px;
+      font-size: 0.97rem;
+      color: var(--green-ink);
+      font-weight: 600;
+    }
+
+    /* ─── REVISION GRID ─── */
+    .rev-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    .rev-item {
+      display: flex; gap: 11px; align-items: flex-start;
+      background: var(--paper);
+      border: 1.5px solid var(--border);
+      border-radius: 3px;
+      padding: 13px 15px;
+      font-size: 0.98rem;
+    }
+    .rev-icon {
+      width: 34px; height: 34px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.95rem; flex-shrink: 0;
+      border: 1.5px solid currentColor;
+    }
+    .rev-icon.red { color: var(--red-ink); background: var(--hl-pink); }
+    .rev-icon.blue { color: var(--blue-ink); background: var(--hl-blue); }
+    .rev-icon.green { color: var(--green-ink); background: var(--hl-green); }
+    .rev-icon.yellow { color: #92400e; background: var(--hl-yellow); }
+    .rev-title { font-weight: 700; font-size: 0.98rem; color: var(--ink); margin-bottom: 2px; }
+    .rev-desc { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.5; }
+
+    /* ─── NUMBER TREE ─── */
+    .num-tree {
+      background: var(--paper);
+      border: 1.5px solid var(--border);
+      border-radius: 3px;
+      padding: 22px;
+      overflow-x: auto;
+      margin-bottom: 22px;
+    }
+    .tree-svg { max-width: 100%; height: auto; }
+
+    /* ─── MISTAKE CARDS ─── */
+    .mistake-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+    .mistake-wrong {
+      padding: 13px 15px; border-radius: 3px;
+      font-size: 0.97rem; line-height: 1.7;
+      background: var(--hl-pink);
+      border: 1.5px solid var(--red-ink);
+    }
+    .mistake-right {
+      padding: 13px 15px; border-radius: 3px;
+      font-size: 0.97rem; line-height: 1.7;
+      background: var(--hl-green);
+      border: 1.5px solid var(--green-ink);
+    }
+    .mistake-lbl { font-size: 0.74rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
+    .wrong-lbl { color: var(--red-ink); }
+    .right-lbl { color: var(--green-ink); }
+
+    /* ─── STRATEGY CARDS ─── */
+    .strat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .strat-card {
+      padding: 18px; border-radius: 3px;
+      text-align: center;
+      border: 1.5px solid;
+    }
+    .strat-card.s1 { background: var(--hl-yellow); border-color: #b8960a; }
+    .strat-card.s2 { background: var(--hl-blue); border-color: var(--blue-ink); }
+    .strat-card.s3 { background: var(--hl-green); border-color: var(--green-ink); }
+    .strat-card.s4 { background: var(--hl-pink); border-color: var(--red-ink); }
+    .strat-icon { font-size: 1.9rem; margin-bottom: 9px; }
+    .strat-card h4 { font-size: 1.05rem; margin-bottom: 6px; }
+    .strat-card p { font-size: 0.92rem; color: var(--ink-soft); }
+
+    /* ─── FINAL REVISION CARDS ─── */
+    .finalrev-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
+    .finalrev-card {
+      background: #eef5ff;
+      border: 2px solid var(--blue-ink);
+      border-radius: 3px;
+      padding: 18px 20px;
+    }
+    .finalrev-card h4 {
+      color: var(--red-ink); font-size: 1.05rem;
+      margin-bottom: 9px;
+      border-bottom: 1px dashed var(--blue-ink);
+      padding-bottom: 7px;
+    }
+    .finalrev-card ul { list-style: none; }
+    .finalrev-card ul li {
+      padding: 4px 0;
+      font-size: 0.95rem;
+      color: var(--ink);
+      border-bottom: 1px dashed #d1d5db;
+      display: flex; gap: 7px;
+    }
+    .finalrev-card ul li::before { content: '→'; color: var(--red-ink); font-weight: 700; flex-shrink: 0; }
+
+    /* ─── CALLOUT ─── */
+    .callout {
+      border-radius: 3px;
+      padding: 13px 16px;
+      margin: 12px 0;
+      font-size: 0.98rem;
+      display: flex; gap: 9px; align-items: flex-start;
+    }
+    .callout-icon { font-size: 1rem; flex-shrink: 0; }
+    .callout-body { color: var(--ink-soft); line-height: 1.7; }
+    .callout-body strong { color: var(--ink); }
+    .callout.tip { background: var(--hl-yellow); border-left: 4px solid #b8960a; }
+    .callout.note { background: var(--hl-blue); border-left: 4px solid var(--blue-ink); }
+    .callout.warn { background: #fff7ed; border-left: 4px solid #ea580c; }
+    .callout.ok { background: var(--hl-green); border-left: 4px solid var(--green-ink); }
+
+    /* ─── PROGRESS BARS ─── */
+    .progress-section { margin-bottom: 20px; }
+    .progress-label { display: flex; justify-content: space-between; font-size: 0.97rem; font-weight: 600; margin-bottom: 4px; color: var(--ink); }
+    .progress-bar { height: 8px; background: #e5e7eb; border-radius: 8px; overflow: hidden; }
+    .progress-fill { height: 100%; border-radius: 8px; }
+
+    /* ─── AR ACCORDION ─── */
+    .ar-summary {
+      background: var(--hl-pink);
+      border: 1.5px solid var(--red-ink);
+      border-radius: 3px;
+      padding: 11px 16px;
+      cursor: pointer;
+      font-size: 0.97rem;
+      color: var(--red-ink);
+      list-style: none;
+      user-select: none;
+      display: flex; align-items: flex-start; gap: 7px;
+    }
+    .ar-summary::-webkit-details-marker { display: none; }
+    .ar-summary::after {
+      content: '▼';
+      margin-left: auto;
+      font-size: 0.72rem;
+      opacity: 0.7;
+      transition: transform 0.25s;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .mcq-item[open] .ar-summary::after { transform: rotate(180deg); }
+    .ar-summary:hover { background: #fecaca; }
+    .mcq-item[open] .ar-summary { background: #fecaca; border-radius: 3px 3px 0 0; }
+    .ar-body {
+      background: var(--paper);
+      border: 1.5px solid var(--red-ink);
+      border-top: none;
+      border-radius: 0 0 3px 3px;
+      padding: 13px 16px;
+    }
+
+    /* ─── WA SECTION ─── */
+    .wa-section {
+      background: #064e3b;
+      color: #fff;
+      text-align: center;
+      padding: 46px 24px;
+    }
+    .wa-section h2 { font-family: 'Caveat', cursive; font-size: 1.9rem; margin-bottom: 9px; }
+    .wa-section p { font-size: 1.02rem; opacity: 0.85; margin-bottom: 22px; font-family: 'Caveat', cursive; }
+    .wa-btns { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    .wa-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: #16a34a; color: #fff;
+      padding: 11px 24px; border-radius: 3px;
+      text-decoration: none; font-weight: 700; font-size: 0.98rem;
+      font-family: 'Caveat', cursive;
+      border: 2px solid #15803d;
+    }
+    .wa-btn-outline {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: transparent; color: #fff;
+      border: 2px solid rgba(255,255,255,0.45);
+      padding: 11px 24px; border-radius: 3px;
+      text-decoration: none; font-weight: 600; font-size: 0.98rem;
+      font-family: 'Caveat', cursive;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      padding: 30px 20px;
+      font-family: 'Caveat', cursive;
+      font-size: 1rem;
+    }
+    footer strong { color: #fde68a; }
+    footer a { color: rgba(255,255,255,0.45); text-decoration: none; }
+    footer a:hover { color: #fde68a; }
+
+    /* ─── FLOATING WA ─── */
+    .floating-wa {
+      position: fixed; bottom: 22px; right: 22px; z-index: 9999;
+      display: flex; flex-direction: column; align-items: flex-end; gap: 7px;
+    }
+    .float-wa-btn {
+      width: 52px; height: 52px;
+      background: #16a34a; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    }
+    .float-wa-btn svg { width: 26px; height: 26px; fill: #fff; }
+    .float-label {
+      background: var(--ink); color: #fff;
+      font-size: 0.82rem; padding: 4px 11px;
+      border-radius: 16px; font-weight: 600; white-space: nowrap;
+      font-family: 'Caveat', cursive;
+    }
+
+    /* ─── SCROLL ANIMATION ─── */
+    .fade-up { opacity: 0; transform: translateY(14px); transition: opacity 0.45s ease, transform 0.45s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── RESPONSIVE ─── */
+    @media(max-width: 768px) {
+      .notebook::before { left: 44px; }
+      .nb-section, .hero { padding-left: 60px; }
+      .top-bar { flex-wrap: wrap; gap: 7px; }
+      .nav-pills { display: none; }
+      .mcq-options { grid-template-columns: 1fr; }
+      .mistake-grid { grid-template-columns: 1fr; }
+      .hero-sticky { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── TOP BAR ── -->
+<div class="top-bar">
+  <div class="top-left">
+    <a href="https://m2learninghub.com/" class="site-link" target="_blank">m2learninghub.com</a>
+    <ul class="nav-pills">
+      <li><a href="#concepts">Concepts</a></li>
+      <li><a href="#formulas">Formulas</a></li>
+      <li><a href="#ncert">NCERT Sol.</a></li>
+      <li><a href="#mcq">MCQs</a></li>
+      <li><a href="#pyq">PYQs</a></li>
+      <li><a href="#pyq2024">🔥 2023–24 Papers</a></li>
+      <li><a href="#casestudy">Case Study</a></li>
+      <li><a href="#strategy">Strategy</a></li>
+    </ul>
+  </div>
+  <div class="author-tag">✍️ Manish Mishra, Sir</div>
+</div>
+
+<!-- ── NOTEBOOK WRAPPER ── -->
+<div class="notebook">
+
+<!-- ── HERO ── -->
+<div class="hero" id="top">
+  <div class="hero-sticky">📚 Chapter 1<br/>Class 10 Maths<br/>Board Exam 2027</div>
+  <div class="hero-chapter-tag">📖 CBSE Class 10 · Chapter 1</div>
+  <h1>Real Numbers ✏️<br/><span>Score Full Marks!</span></h1>
+  <p class="hero-sub">Complete NCERT Notes · Solved PYQs 2009–2024 · MCQs · Case Studies · Exam Strategy — Everything in One Place by Manish Mishra Sir!</p>
+  <div class="hero-btns">
+    <a href="#ncert" class="btn btn-blue">📖 NCERT Solutions</a>
+    <a href="https://wa.me/918107563723" class="btn btn-green" target="_blank">📲 Join WhatsApp Group</a>
+    <a href="https://m2learninghub.com/" class="btn btn-blue" target="_blank" style="border-style:dashed;">🌐 Visit Website</a>
+  </div>
+  <div class="hero-stats">
+    <div><div class="stat-num">43+</div><div class="stat-lbl">PYQs Solved</div></div>
+    <div><div class="stat-num">30+</div><div class="stat-lbl">MCQs + Answers</div></div>
+    <div><div class="stat-num">5</div><div class="stat-lbl">Case Studies</div></div>
+    <div><div class="stat-num">100%</div><div class="stat-lbl">NCERT Coverage</div></div>
+  </div>
+</div>
+
+<!-- ── HOOK INTRO ── -->
+<div class="nb-section" id="intro">
+  <div class="hook-box fade-up">
+    <h2>🔥 Why Real Numbers Can Make or Break Your Board Score</h2>
+    <p>Dear Student, Chapter 1 – <span class="hl">Real Numbers</span> is not just the first chapter of Class 10 — it is the <span class="hl">most predictable chapter</span> in CBSE Board Exams. Every single year, this chapter guarantees <strong>6–8 marks</strong> in various forms — MCQs, Short Answer, Long Answer, and Case Studies.</p>
+    <br/>
+    <p>The best part? All the questions follow <strong>only 4–5 core concepts</strong>: HCF &amp; LCM using prime factorisation, Euclid's Division Algorithm, proving irrationality, and checking decimal expansions. If you understand these properly, <span class="hl">full marks is 100% achievable</span>.</p>
+    <br/>
+    <p>This page by <strong>Manish Mishra Sir</strong> gives you the complete chapter ecosystem — concept notes, solved examples, NCERT solutions, PYQs from 2009–2024, and exam strategies. Let's begin! 🚀</p>
+  </div>
+
+  <div class="card" style="margin-top:22px;">
+    <h3 style="font-size:1.25rem;margin-bottom:16px;color:var(--blue-ink);">📊 Chapter Coverage Tracker</h3>
+    <div class="progress-section">
+      <div class="progress-label"><span>Number System &amp; Types</span><span>100%</span></div>
+      <div class="progress-bar"><div class="progress-fill" style="width:100%;background:linear-gradient(90deg,var(--green-ink),var(--blue-ink))"></div></div>
+    </div>
+    <div class="progress-section">
+      <div class="progress-label"><span>Fundamental Theorem of Arithmetic</span><span>100%</span></div>
+      <div class="progress-bar"><div class="progress-fill" style="width:100%;background:linear-gradient(90deg,var(--red-ink),#f97316)"></div></div>
+    </div>
+    <div class="progress-section">
+      <div class="progress-label"><span>HCF &amp; LCM (Prime Factorisation)</span><span>100%</span></div>
+      <div class="progress-bar"><div class="progress-fill" style="width:100%;background:linear-gradient(90deg,#7c3aed,#6d28d9)"></div></div>
+    </div>
+    <div class="progress-section">
+      <div class="progress-label"><span>Euclid's Division Algorithm</span><span>100%</span></div>
+      <div class="progress-bar"><div class="progress-fill" style="width:100%;background:linear-gradient(90deg,var(--blue-ink),#0284c7)"></div></div>
+    </div>
+    <div class="progress-section">
+      <div class="progress-label"><span>Irrational Numbers &amp; Proofs</span><span>100%</span></div>
+      <div class="progress-bar"><div class="progress-fill" style="width:100%;background:linear-gradient(90deg,#ca8a04,#d97706)"></div></div>
+    </div>
+    <div class="progress-section">
+      <div class="progress-label"><span>Decimal Expansions</span><span>100%</span></div>
+      <div class="progress-bar"><div class="progress-fill" style="width:100%;background:linear-gradient(90deg,var(--green-ink),#059669)"></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── QUICK REVISION ── -->
+<div class="nb-section alt" id="revision">
+  <span class="section-tag">⚡ Quick Revision</span>
+  <h2 class="section-title">Exam-Ready Summary</h2>
+  <hr class="hw-rule"/>
+  <div class="rev-grid">
+    <div class="rev-item fade-up">
+      <div class="rev-icon red">🔢</div>
+      <div><div class="rev-title">Real Numbers (R)</div><div class="rev-desc">Collection of all rational + irrational numbers. R = Q ∪ Irrational</div></div>
+    </div>
+    <div class="rev-item fade-up">
+      <div class="rev-icon blue">📐</div>
+      <div><div class="rev-title">Fundamental Theorem of Arithmetic</div><div class="rev-desc">Every composite number = unique product of primes (order may vary)</div></div>
+    </div>
+    <div class="rev-item fade-up">
+      <div class="rev-icon green">🔄</div>
+      <div><div class="rev-title">HCF × LCM = a × b</div><div class="rev-desc">For any TWO positive integers a and b only. Not for three.</div></div>
+    </div>
+    <div class="rev-item fade-up">
+      <div class="rev-icon yellow">🧮</div>
+      <div><div class="rev-title">Euclid's Division Lemma</div><div class="rev-desc">a = bq + r, where 0 ≤ r &lt; b. Used to find HCF step-by-step.</div></div>
+    </div>
+    <div class="rev-item fade-up">
+      <div class="rev-icon red">✓/✗</div>
+      <div><div class="rev-title">Terminating Decimal</div><div class="rev-desc">Fraction p/q terminates iff q = 2ᵐ × 5ⁿ (m, n are whole numbers)</div></div>
+    </div>
+    <div class="rev-item fade-up">
+      <div class="rev-icon blue">π</div>
+      <div><div class="rev-title">Irrational Numbers</div><div class="rev-desc">Non-terminating, non-repeating decimals. √2, √3, √5, π, e</div></div>
+    </div>
+    <div class="rev-item fade-up">
+      <div class="rev-icon green">0️⃣</div>
+      <div><div class="rev-title">Number of Zeros in N</div><div class="rev-desc">= Minimum(power of 2, power of 5) in prime factorisation of N</div></div>
+    </div>
+    <div class="rev-item fade-up">
+      <div class="rev-icon yellow">1️⃣</div>
+      <div><div class="rev-title">Key Facts</div><div class="rev-desc">1 is neither prime nor composite. 2 is the only even prime number.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── NUMBER SYSTEM & CONCEPTS ── -->
+<div class="nb-section" id="concepts">
+  <span class="section-tag">📖 Concept Notes</span>
+  <h2 class="section-title">Types of Numbers — Complete Breakdown</h2>
+  <hr class="hw-rule"/>
+
+  <div class="num-tree fade-up">
+    <svg class="tree-svg" viewBox="0 0 860 420" xmlns="http://www.w3.org/2000/svg" font-family="Caveat,cursive">
+      <rect x="330" y="10" width="200" height="46" rx="4" fill="#c0392b"/>
+      <text x="430" y="39" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Real Numbers (R)</text>
+      <line x1="430" y1="56" x2="220" y2="120" stroke="#b0bec5" stroke-width="2"/>
+      <line x1="430" y1="56" x2="640" y2="120" stroke="#b0bec5" stroke-width="2"/>
+      <rect x="100" y="120" width="240" height="46" rx="4" fill="#2471a3"/>
+      <text x="220" y="149" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Rational Numbers (Q)</text>
+      <rect x="520" y="120" width="240" height="46" rx="4" fill="#1e8449"/>
+      <text x="640" y="149" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Irrational Numbers</text>
+      <text x="640" y="195" text-anchor="middle" font-size="11" fill="#555">√2, √3, π, e, 1.010010001…</text>
+      <line x1="220" y1="166" x2="130" y2="230" stroke="#b0bec5" stroke-width="2"/>
+      <line x1="220" y1="166" x2="310" y2="230" stroke="#b0bec5" stroke-width="2"/>
+      <rect x="40" y="230" width="180" height="46" rx="4" fill="#ca8a04"/>
+      <text x="130" y="259" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Integers (Z)</text>
+      <rect x="240" y="230" width="140" height="46" rx="4" fill="#d97706"/>
+      <text x="310" y="253" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Fractions</text>
+      <text x="310" y="268" text-anchor="middle" font-size="10" fill="#fef9c3">3/4, -1.32, 0.333…</text>
+      <line x1="130" y1="276" x2="80" y2="340" stroke="#b0bec5" stroke-width="2"/>
+      <line x1="130" y1="276" x2="180" y2="340" stroke="#b0bec5" stroke-width="2"/>
+      <rect x="20" y="340" width="120" height="46" rx="4" fill="#7c3aed"/>
+      <text x="80" y="359" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Whole Numbers</text>
+      <text x="80" y="376" text-anchor="middle" font-size="10" fill="#e9d5ff">0, 1, 2, 3…</text>
+      <rect x="148" y="340" width="120" height="46" rx="4" fill="#b45309"/>
+      <text x="208" y="359" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Negative Int.</text>
+      <text x="208" y="376" text-anchor="middle" font-size="10" fill="#fde68a">…–3, –2, –1</text>
+      <line x1="80" y1="386" x2="80" y2="398" stroke="#b0bec5" stroke-width="2"/>
+      <text x="80" y="414" text-anchor="middle" font-size="10" fill="#888">⊃ Natural Numbers (1,2,3…)</text>
+      <rect x="680" y="260" width="168" height="130" rx="4" fill="#fffef8" stroke="#b0bec5" stroke-width="1.5"/>
+      <text x="764" y="282" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a2e">Key Facts</text>
+      <text x="694" y="302" font-size="10" fill="#555">• 1 = neither prime nor composite</text>
+      <text x="694" y="320" font-size="10" fill="#555">• 2 = only even prime</text>
+      <text x="694" y="338" font-size="10" fill="#555">• N ⊂ W ⊂ Z ⊂ Q ⊂ R</text>
+      <text x="694" y="356" font-size="10" fill="#555">• Q ∩ Irrational = φ</text>
+      <text x="694" y="374" font-size="10" fill="#555">• Q ∪ Irrational = R</text>
+    </svg>
+  </div>
+
+  <!-- CONCEPT NOTEBOOK NOTES -->
+  <div class="concept-nb fade-up">
+    <div class="concept-nb-header">
+      <div class="nb-dot" style="background:#ff5f57"></div>
+      <div class="nb-dot" style="background:#ffbd2e"></div>
+      <div class="nb-dot" style="background:#28c840"></div>
+      <span>📝 Chapter Notes — Real Numbers</span>
+    </div>
+    <div class="concept-nb-body">
+      <h3>1. Fundamental Theorem of Arithmetic (FTA)</h3>
+      <div class="def">Every composite number can be expressed as a UNIQUE product of prime numbers (ignoring order).</div>
+      <span class="eg">✏️ Example: 12600 = 2³ × 3² × 5² × 7</span><br/><br/>
+
+      <h3>2. HCF using Prime Factorisation</h3>
+      <div class="def">HCF = Product of COMMON prime factors with LOWEST power</div>
+      <span class="eg">✏️ HCF(1296, 2520): 1296 = 2⁴×3⁴, 2520 = 2³×3²×5×7 → HCF = 2³×3² = 72</span><br/><br/>
+
+      <h3>3. LCM using Prime Factorisation</h3>
+      <div class="def">LCM = Product of ALL prime factors with HIGHEST power</div>
+      <span class="eg">✏️ LCM(1296, 2520) = 2⁴×3⁴×5×7 = 45360</span><br/><br/>
+
+      <h3>4. Golden Relation: HCF × LCM = a × b</h3>
+      <div class="def">Valid ONLY for TWO numbers. For three numbers (a,b,c): HCF × LCM ≠ a×b×c</div>
+      <br/>
+
+      <h3>5. Number of Zeros</h3>
+      <div class="def">Zeros in N = Minimum (power of 2, power of 5) in prime factorisation</div>
+      <span class="eg">✏️ N = 2³×3×5⁴×13×19 → Zeros = Min(3,4) = 3</span><br/><br/>
+
+      <h3>6. Irrational Numbers — Proof Method</h3>
+      <div class="def">Assume rational → a/b form → contradiction → hence irrational ✓</div>
+      <span class="eg">✏️ Key: √2, √3, √5, √p (p prime) are always irrational</span><br/>
+      <span class="eg">✏️ Sum of rational + irrational = ALWAYS irrational</span><br/>
+      <span class="eg">✏️ Product of non-zero rational × irrational = ALWAYS irrational</span><br/><br/>
+
+      <h3>7. Terminating vs Non-Terminating</h3>
+      <div class="def">p/q TERMINATES ⟺ q = 2ᵐ × 5ⁿ (after simplification, q has ONLY 2s and 5s)</div>
+      <div class="def">p/q NON-TERMINATING REPEATING ⟺ q has prime factors other than 2 or 5</div>
+      <span class="eg">✏️ 13/3125 = 13/5⁵ → TERMINATES &nbsp;&nbsp; 1/7 → NON-TERMINATING REPEATING</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── FORMULAS ── -->
+<div class="nb-section alt" id="formulas">
+  <span class="section-tag">⚖️ Formulas &amp; Theorems</span>
+  <h2 class="section-title">All Important Formulas at a Glance</h2>
+  <hr class="hw-rule"/>
+
+  <div class="card-grid">
+    <div class="formula-box fade-up">
+      <h4>HCF &amp; LCM Relation</h4>
+      <div class="formula-eq">HCF(a,b) × LCM(a,b) = <span class="hl2">a × b</span></div>
+      <div class="formula-eq">LCM(a,b) = <span class="hl2">a × b / HCF(a,b)</span></div>
+      <small style="color:var(--ink-soft);font-size:0.85rem;">⚠️ Only for TWO numbers</small>
+    </div>
+    <div class="formula-box fade-up">
+      <h4>Number of Zeros</h4>
+      <div class="formula-eq">Zeros = <span class="hl2">min(power of 2, power of 5)</span></div>
+      <div class="formula-eq">in prime factorisation of N</div>
+    </div>
+    <div class="formula-box fade-up">
+      <h4>Euclid's Division Lemma</h4>
+      <div class="formula-eq">a = <span class="hl2">b</span>q + <span class="hl2">r</span></div>
+      <div class="formula-eq">where <span class="hl2">0 ≤ r &lt; b</span></div>
+      <small style="color:var(--ink-soft);font-size:0.85rem;">a=dividend, b=divisor, q=quotient, r=remainder</small>
+    </div>
+    <div class="formula-box fade-up">
+      <h4>Terminating Decimal</h4>
+      <div class="formula-eq">p/q terminates iff</div>
+      <div class="formula-eq">q = <span class="hl2">2ᵐ × 5ⁿ</span> (m,n ≥ 0)</div>
+    </div>
+    <div class="formula-box fade-up">
+      <h4>Largest Number Dividing a,b,c leaving remainders x,y,z</h4>
+      <div class="formula-eq">= HCF(<span class="hl2">a–x</span>, <span class="hl2">b–y</span>, <span class="hl2">c–z</span>)</div>
+    </div>
+    <div class="formula-box fade-up">
+      <h4>Smallest Number Divided by a,b,c leaving same remainder r</h4>
+      <div class="formula-eq">= LCM(a,b,c) + <span class="hl2">r</span></div>
+    </div>
+  </div>
+
+  <div style="margin-top:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;">
+    <div class="theorem-box fade-up" style="margin-top:12px;">
+      <div class="theorem-lbl">Theorem 1 — FTA</div>
+      <h4>Fundamental Theorem of Arithmetic</h4>
+      <p>Every composite number can be expressed as a product of primes, and this factorisation is <strong>unique</strong>, apart from the order in which the prime factors occur.</p>
+    </div>
+    <div class="theorem-box fade-up" style="margin-top:12px;">
+      <div class="theorem-lbl">Theorem 2</div>
+      <h4>Prime Divisibility Theorem</h4>
+      <p>Let p be a prime number. If p divides a², then <strong>p divides a</strong>, where a is a positive integer. This is the KEY to irrationality proofs!</p>
+    </div>
+    <div class="theorem-box fade-up" style="margin-top:12px;">
+      <div class="theorem-lbl">Theorem 3 — Euclid</div>
+      <h4>Euclid's Division Lemma</h4>
+      <p>Given two positive integers a and b, there exist unique integers q and r satisfying <strong>a = bq + r, 0 ≤ r &lt; b</strong>.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:22px;">
+    <h3 style="font-size:1.25rem;margin-bottom:14px;color:var(--blue-ink);">📊 Number Type Classification Table</h3>
+    <div style="overflow-x:auto;">
+      <table class="hw-table">
+        <thead>
+          <tr><th>Number Type</th><th>Definition</th><th>Examples</th><th>Decimal Expansion</th><th>Board Weightage</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Natural (N)</strong></td><td>Counting numbers</td><td>1, 2, 3, 4...</td><td>Terminating</td><td>Low</td></tr>
+          <tr><td><strong>Whole (W)</strong></td><td>N + zero</td><td>0, 1, 2, 3...</td><td>Terminating</td><td>Low</td></tr>
+          <tr><td><strong>Integers (Z)</strong></td><td>W + negatives</td><td>...-2, -1, 0, 1, 2...</td><td>Terminating</td><td>Low</td></tr>
+          <tr><td><strong>Rational (Q)</strong></td><td>p/q, q≠0, p,q∈Z</td><td>3/4, 0.75, -1.32, 0.333...</td><td>Terminating OR Non-T. Repeating</td><td>⭐⭐⭐ HIGH</td></tr>
+          <tr><td><strong>Irrational</strong></td><td>Not expressible as p/q</td><td>√2, √3, π, e</td><td>Non-terminating Non-repeating</td><td>⭐⭐⭐⭐ VERY HIGH</td></tr>
+          <tr><td><strong>Real (R)</strong></td><td>Q ∪ Irrational</td><td>All above + more</td><td>Any type</td><td>⭐⭐ MEDIUM</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ── NCERT SOLUTIONS ── -->
+<div class="nb-section" id="ncert">
+  <span class="section-tag">📖 NCERT Solutions</span>
+  <h2 class="section-title">Complete Exercise Solutions</h2>
+  <p class="section-sub">All questions solved step-by-step — click to reveal solutions!</p>
+  <hr class="hw-rule"/>
+
+  <div class="callout note">
+    <span class="callout-icon">📌</span>
+    <div class="callout-body"><strong>NCERT Exercise 1.1</strong> (Euclid's Algorithm) is excluded from the current NCERT syllabus for competitive exams but still included for competitive-level preparation. <strong>Exercise 1.2</strong> (FTA, HCF, LCM) and <strong>Exercise 1.3</strong> (Irrationality proofs) are the most important for CBSE Boards.</div>
+  </div>
+
+  <br/>
+  <h3 style="font-size:1.25rem;margin-bottom:14px;color:var(--blue-ink);">Exercise 1.2 — Fundamental Theorem of Arithmetic</h3>
+
+  <details class="sol-item fade-up">
+    <summary class="sol-summary">
+      <span class="q-badge">Q1</span>
+      <span>Express each number as a product of its prime factors</span>
+    </summary>
+    <div class="sol-body">
+      <p style="font-weight:700;margin-bottom:9px;">Express 140, 156, 3825, 5005, 7429 as a product of prime factors.</p>
+      <div class="sol-step">(a) 140 = 2 × 2 × 5 × 7 = <strong>2² × 5 × 7</strong></div>
+      <div class="sol-step">(b) 156 = 2 × 2 × 3 × 13 = <strong>2² × 3 × 13</strong></div>
+      <div class="sol-step">(c) 3825 = 3 × 3 × 5 × 5 × 17 = <strong>3² × 5² × 17</strong></div>
+      <div class="sol-step">(d) 5005 = 5 × 7 × 11 × 13 = <strong>5 × 7 × 11 × 13</strong></div>
+      <div class="sol-step">(e) 7429 = 17 × 19 × 23 = <strong>17 × 19 × 23</strong></div>
+    </div>
+  </details>
+
+  <details class="sol-item fade-up">
+    <summary class="sol-summary">
+      <span class="q-badge">Q2</span>
+      <span>Find LCM and HCF and verify LCM × HCF = Product</span>
+    </summary>
+    <div class="sol-body">
+      <p style="font-weight:700;margin-bottom:9px;">(a) 26 and 91 &nbsp;|&nbsp; (b) 510 and 92 &nbsp;|&nbsp; (c) 336 and 54</p>
+      <strong style="color:var(--blue-ink);">(a) 26 and 91</strong>
+      <div class="sol-step">26 = 2 × 13 &nbsp;|&nbsp; 91 = 7 × 13</div>
+      <div class="sol-step">HCF(26, 91) = 13 &nbsp;|&nbsp; LCM(26, 91) = 2 × 7 × 13 = 182</div>
+      <div class="sol-step">Verification: HCF × LCM = 13 × 182 = 2366 = 26 × 91 = 2366 ✓</div>
+      <br/>
+      <strong style="color:var(--blue-ink);">(b) 510 and 92</strong>
+      <div class="sol-step">510 = 2 × 3 × 5 × 17 &nbsp;|&nbsp; 92 = 2² × 23</div>
+      <div class="sol-step">HCF = 2 &nbsp;|&nbsp; LCM = 2² × 3 × 5 × 17 × 23 = 23460</div>
+      <div class="sol-step">Verification: 2 × 23460 = 46920 = 510 × 92 = 46920 ✓</div>
+      <br/>
+      <strong style="color:var(--blue-ink);">(c) 336 and 54</strong>
+      <div class="sol-step">336 = 2⁴ × 3 × 7 &nbsp;|&nbsp; 54 = 2 × 3³</div>
+      <div class="sol-step">HCF = 2 × 3 = 6 &nbsp;|&nbsp; LCM = 2⁴ × 3³ × 7 = 3024</div>
+      <div class="sol-step">Verification: 6 × 3024 = 18144 = 336 × 54 = 18144 ✓</div>
+      <span class="final-ans">✅ All verified!</span>
+    </div>
+  </details>
+
+  <details class="sol-item fade-up">
+    <summary class="sol-summary">
+      <span class="q-badge">Q4</span>
+      <span>Given HCF(306, 657) = 9, find LCM(306, 657)</span>
+    </summary>
+    <div class="sol-body">
+      <div class="sol-step">Using: HCF × LCM = a × b</div>
+      <div class="sol-step">LCM = (306 × 657) / HCF = (306 × 657) / 9</div>
+      <div class="sol-step">LCM = 201042 / 9 = <strong>22338</strong></div>
+      <span class="final-ans">✅ LCM(306, 657) = 22338</span>
+    </div>
+  </details>
+
+  <details class="sol-item fade-up">
+    <summary class="sol-summary">
+      <span class="q-badge">Q5</span>
+      <span>Check whether 6ⁿ can end with digit 0 for any natural number n</span>
+    </summary>
+    <div class="sol-body">
+      <div class="sol-step">6ⁿ = (2 × 3)ⁿ = 2ⁿ × 3ⁿ</div>
+      <div class="sol-step">For a number to end with 0, it must be divisible by 10 = 2 × 5</div>
+      <div class="sol-step">Prime factorisation of 6ⁿ contains 2 and 3, but NOT 5</div>
+      <div class="sol-step">Since 5 is not a factor of 6ⁿ, it cannot be divisible by 10</div>
+      <span class="final-ans">✅ 6ⁿ can NEVER end with digit 0</span>
+    </div>
+  </details>
+
+  <details class="sol-item fade-up">
+    <summary class="sol-summary">
+      <span class="q-badge">Q6</span>
+      <span>Explain why 7 × 11 × 13 + 13 is composite</span>
+    </summary>
+    <div class="sol-body">
+      <div class="sol-step">7 × 11 × 13 + 13 = 13 × (7 × 11 + 1) = 13 × (77 + 1) = 13 × 78</div>
+      <div class="sol-step">= 13 × 2 × 39 = 13 × 2 × 3 × 13 = 2 × 3 × 13²</div>
+      <div class="sol-step">Since it can be expressed as a product of primes with more than one prime factor, it is composite.</div>
+      <span class="final-ans">✅ Composite number ✓</span>
+    </div>
+  </details>
+
+  <br/>
+  <h3 style="font-size:1.25rem;margin-bottom:14px;color:var(--red-ink);">Exercise 1.3 — Irrational Numbers</h3>
+
+  <details class="sol-item fade-up">
+    <summary class="sol-summary">
+      <span class="q-badge">Q1</span>
+      <span>Prove that √5 is irrational</span>
+    </summary>
+    <div class="sol-body">
+      <div class="sol-step">Assume √5 is rational. Let √5 = a/b where a, b are co-prime integers (b ≠ 0)</div>
+      <div class="sol-step">Squaring: 5 = a²/b² → a² = 5b²</div>
+      <div class="sol-step">∴ 5 divides a² → 5 divides a → Let a = 5c</div>
+      <div class="sol-step">Substituting: (5c)² = 5b² → 25c² = 5b² → b² = 5c²</div>
+      <div class="sol-step">∴ 5 divides b² → 5 divides b</div>
+      <div class="sol-step">But now 5 divides both a and b — CONTRADICTION (a and b are co-prime)!</div>
+      <span class="final-ans">✅ ∴ √5 is irrational</span>
+    </div>
+  </details>
+
+  <details class="sol-item fade-up">
+    <summary class="sol-summary">
+      <span class="q-badge">Q2</span>
+      <span>Prove that 3 + 2√5 is irrational</span>
+    </summary>
+    <div class="sol-body">
+      <div class="sol-step">Assume 3 + 2√5 is rational. Let 3 + 2√5 = a/b (a, b integers, b ≠ 0)</div>
+      <div class="sol-step">→ 2√5 = a/b – 3 = (a – 3b)/b</div>
+      <div class="sol-step">→ √5 = (a – 3b)/(2b)</div>
+      <div class="sol-step">Since a, b are integers, (a – 3b)/(2b) is rational → √5 is rational</div>
+      <div class="sol-step">But √5 is irrational — CONTRADICTION!</div>
+      <span class="final-ans">✅ ∴ 3 + 2√5 is irrational</span>
+    </div>
+  </details>
+
+  <details class="sol-item fade-up">
+    <summary class="sol-summary">
+      <span class="q-badge">Q3a</span>
+      <span>Prove 1/√2 is irrational</span>
+    </summary>
+    <div class="sol-body">
+      <div class="sol-step">Assume 1/√2 = a/b → √2 = b/a → √2 is rational</div>
+      <div class="sol-step">But √2 is irrational — CONTRADICTION!</div>
+      <span class="final-ans">✅ ∴ 1/√2 is irrational</span>
+    </div>
+  </details>
+
+  <br/>
+  <h3 style="font-size:1.25rem;margin-bottom:14px;color:var(--green-ink);">Decimal Expansion Questions</h3>
+
+  <details class="sol-item fade-up">
+    <summary class="sol-summary">
+      <span class="q-badge">Q1</span>
+      <span>Without actual division, state whether 13/3125 is terminating or non-terminating</span>
+    </summary>
+    <div class="sol-body">
+      <div class="sol-step">3125 = 5⁵</div>
+      <div class="sol-step">Since denominator = 5⁵ = 2⁰ × 5⁵ (only factors of 2 and 5)</div>
+      <span class="final-ans">✅ TERMINATING decimal</span>
+    </div>
+  </details>
+
+  <details class="sol-item fade-up">
+    <summary class="sol-summary">
+      <span class="q-badge">Q2</span>
+      <span>State whether 17/8 terminates or not, and find the decimal expansion</span>
+    </summary>
+    <div class="sol-body">
+      <div class="sol-step">8 = 2³ = 2³ × 5⁰ → denominator has only 2s → TERMINATING</div>
+      <div class="sol-step">17/8 = 17/(2³) = (17 × 5³)/(2³ × 5³) = 2125/1000</div>
+      <span class="final-ans">✅ 17/8 = 2.125 (Terminating)</span>
+    </div>
+  </details>
+</div>
+
+<!-- ── IMPORTANT QUESTIONS ── -->
+<div class="nb-section alt" id="important">
+  <span class="section-tag">🎯 Important Questions</span>
+  <h2 class="section-title">Must-Do Questions for Board Exam</h2>
+  <hr class="hw-rule"/>
+
+  <div class="card-grid">
+    <div class="card bl fade-up">
+      <h4 style="color:var(--blue-ink);margin-bottom:10px;">⚡ 1-Mark Questions</h4>
+      <ol style="color:var(--ink-soft);font-size:0.97rem;line-height:2;padding-left:16px;">
+        <li>What is the HCF of two consecutive even numbers?</li>
+        <li>The LCM of two numbers is 2400. Can their HCF be 500?</li>
+        <li>Write the prime factorisation of 144.</li>
+        <li>For which natural number n does 6ⁿ end with digit 0?</li>
+        <li>If a = 2³ × 3, b = 2 × 3 × 5, LCM = 2³ × 3² × 5, find the third number.</li>
+        <li>Total number of factors of a prime number is?</li>
+        <li>Is √0.4 rational or irrational?</li>
+      </ol>
+    </div>
+    <div class="card rl fade-up">
+      <h4 style="color:var(--red-ink);margin-bottom:10px;">📝 2-Mark Questions</h4>
+      <ol style="color:var(--ink-soft);font-size:0.97rem;line-height:2;padding-left:16px;">
+        <li>Find HCF and LCM of 404 and 96.</li>
+        <li>Show that 5 × 11 × 17 + 3 × 11 is composite.</li>
+        <li>Two numbers are in ratio 4:5 and HCF is 11. Find LCM.</li>
+        <li>Can (15)ⁿ end with digit 0? Give reason.</li>
+        <li>Find the smallest number divisible by both 644 and 462.</li>
+        <li>HCF of 48, 80 and 144 is 16. Find minimum rooms needed.</li>
+        <li>Find a rational number between √2 and √3.</li>
+      </ol>
+    </div>
+    <div class="card gl fade-up">
+      <h4 style="color:var(--green-ink);margin-bottom:10px;">🔥 3/5-Mark Questions (Long Answer)</h4>
+      <ol style="color:var(--ink-soft);font-size:0.97rem;line-height:2;padding-left:16px;">
+        <li>Prove that √3 is irrational. [CBSE 2023, 2024]</li>
+        <li>Prove that √5 is irrational. [CBSE 2024]</li>
+        <li>Prove that (2–3√5) is irrational.</li>
+        <li>Prove that (5 + 3√2) is irrational, given √2 is irrational.</li>
+        <li>Prove that (2+√3)/5 is irrational. [CBSE 2024]</li>
+        <li>Find LCM and HCF of 404 and 96 and verify HCF × LCM = product.</li>
+        <li>Three alarm clocks ring at 9, 12 and 15 min intervals. When will they toll together next?</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="imp-box fade-up" style="margin-top:20px;">
+    <p>These HOTS Questions appear every year: <strong>(i)</strong> Show that p·q·r + q is composite for distinct primes p, q, r. <strong>(ii)</strong> If a+√b = c+√d prove a=c and b=d, or b,d are squares of rationals. <strong>(iii)</strong> Prove √7+√11 is irrational.</p>
+  </div>
+</div>
+
+<!-- ── MCQs ── -->
+<div class="nb-section" id="mcq">
+  <span class="section-tag">🧠 MCQs + Assertion-Reason</span>
+  <h2 class="section-title">Board-Level MCQs with Full Answers</h2>
+  <hr class="hw-rule"/>
+
+  <details class="mcq-item fade-up">
+    <summary class="mcq-summary">1. If p = 18a²b⁴ and q = 20a³b², then LCM(p, q) is: <span class="chip chip-red">CBSE 2024</span></summary>
+    <div class="mcq-body">
+      <div class="mcq-options">
+        <div class="opt">2a²b²</div>
+        <div class="opt">180a²b²</div>
+        <div class="opt">12a²b²</div>
+        <div class="opt correct">✓ 180a³b⁴</div>
+      </div>
+      <div class="mcq-ans">Answer: (D) 180a³b⁴ | LCM uses HIGHEST power of each prime factor.</div>
+    </div>
+  </details>
+
+  <details class="mcq-item fade-up">
+    <summary class="mcq-summary">2. A pair of irrational numbers whose product is rational: <span class="chip chip-red">CBSE 2024</span></summary>
+    <div class="mcq-body">
+      <div class="mcq-options">
+        <div class="opt">(√16, √4)</div>
+        <div class="opt">(√5, √2)</div>
+        <div class="opt correct">✓ (√3, √27)</div>
+        <div class="opt">(√36, √2)</div>
+      </div>
+      <div class="mcq-ans">Answer: (C) √3 × √27 = √81 = 9 (rational). Note: √16 and √4 are not irrational (they equal 4 and 2).</div>
+    </div>
+  </details>
+
+  <details class="mcq-item fade-up">
+    <summary class="mcq-summary">3. The LCM of three numbers 28, 44, 132 is: <span class="chip chip-red">CBSE 2024</span></summary>
+    <div class="mcq-body">
+      <div class="mcq-options">
+        <div class="opt">258</div>
+        <div class="opt">231</div>
+        <div class="opt">462</div>
+        <div class="opt correct">✓ 924</div>
+      </div>
+      <div class="mcq-ans">Answer: (D) 924 | 28=2²×7, 44=2²×11, 132=2²×3×11 → LCM=2²×3×7×11=924</div>
+    </div>
+  </details>
+
+  <details class="mcq-item fade-up">
+    <summary class="mcq-summary">4. Ratio of HCF to LCM of least composite and least prime number: <span class="chip chip-red">CBSE 2023</span></summary>
+    <div class="mcq-body">
+      <div class="mcq-options">
+        <div class="opt correct">✓ 1:2</div>
+        <div class="opt">2:1</div>
+        <div class="opt">1:1</div>
+        <div class="opt">1:3</div>
+      </div>
+      <div class="mcq-ans">Answer: (A) 1:2 | Least composite = 4, Least prime = 2 → HCF(2,4)=2, LCM(2,4)=4 → Ratio = 2:4 = 1:2</div>
+    </div>
+  </details>
+
+  <details class="mcq-item fade-up">
+    <summary class="mcq-summary">5. Which cannot be the unit digit of 8ⁿ (n is natural)? <span class="chip chip-blue">2024 Pattern</span></summary>
+    <div class="mcq-body">
+      <div class="mcq-options">
+        <div class="opt">4</div>
+        <div class="opt">2</div>
+        <div class="opt correct">✓ 0</div>
+        <div class="opt">6</div>
+      </div>
+      <div class="mcq-ans">Answer: (C) 0 | Powers of 8 cycle: 8→4→2→6 (period 4). 0 never appears.</div>
+    </div>
+  </details>
+
+  <details class="mcq-item fade-up">
+    <summary class="mcq-summary">6. If (–1)ⁿ + (–1)⁸ = 0, then n is: <span class="chip chip-red">CBSE 2024</span></summary>
+    <div class="mcq-body">
+      <div class="mcq-options">
+        <div class="opt">any positive integer</div>
+        <div class="opt">any negative integer</div>
+        <div class="opt correct">✓ any odd number</div>
+        <div class="opt">any even number</div>
+      </div>
+      <div class="mcq-ans">Answer: (C) | (–1)⁸ = 1, so (–1)ⁿ = –1 → n must be odd.</div>
+    </div>
+  </details>
+
+  <details class="mcq-item fade-up">
+    <summary class="mcq-summary">7. (HCF × LCM) for 30 and 70 is: <span class="chip chip-red">CBSE 2023</span></summary>
+    <div class="mcq-body">
+      <div class="mcq-options">
+        <div class="opt correct">✓ 2100</div>
+        <div class="opt">21</div>
+        <div class="opt">210</div>
+        <div class="opt">70</div>
+      </div>
+      <div class="mcq-ans">Answer: (A) 2100 | HCF × LCM = a × b = 30 × 70 = 2100</div>
+    </div>
+  </details>
+
+  <h3 style="font-size:1.25rem;margin:26px 0 14px;color:var(--red-ink);">Assertion-Reason Questions</h3>
+
+  <details class="mcq-item fade-up">
+    <summary class="ar-summary">
+      A-R: HCF of two primes p and q is 1 and LCM is p+q — Assertion True or False? <span class="chip chip-red">CBSE 2024</span>
+    </summary>
+    <div class="ar-body">
+      <p style="margin-bottom:9px;font-size:0.98rem;"><strong>Assertion (A):</strong> For any two prime numbers p and q, their HCF is 1 and LCM is p + q.<br/>
+      <strong>Reason (R):</strong> For any two natural numbers, HCF × LCM = product of numbers.</p>
+      <div class="mcq-options" style="grid-template-columns:1fr;">
+        <div class="opt">Both A and R true; R explains A</div>
+        <div class="opt">Both true; R doesn't explain A</div>
+        <div class="opt">A true; R false</div>
+        <div class="opt correct">✓ A false; R true</div>
+      </div>
+      <div class="mcq-ans">LCM of two primes p and q = p×q (NOT p+q). So Assertion is FALSE. Reason is a standard correct theorem.</div>
+    </div>
+  </details>
+
+  <details class="mcq-item fade-up">
+    <summary class="ar-summary">
+      A-R: If HCF of two numbers is 16 and product is 3072, then LCM is 162?
+    </summary>
+    <div class="ar-body">
+      <p style="margin-bottom:9px;font-size:0.98rem;"><strong>Assertion (A):</strong> If HCF of two numbers is 16 and their product is 3072, then their LCM is 162.<br/>
+      <strong>Reason (R):</strong> If p, q are two positive integers, then HCF(p,q) × LCM(p,q) = p × q.</p>
+      <div class="mcq-options" style="grid-template-columns:1fr;">
+        <div class="opt">Both A and R true; R explains A</div>
+        <div class="opt">Both true; R doesn't explain A</div>
+        <div class="opt">A true; R false</div>
+        <div class="opt correct">✓ A false; R true</div>
+      </div>
+      <div class="mcq-ans">LCM = 3072/16 = 192 ≠ 162. So Assertion is FALSE. The reason/formula is correct.</div>
+    </div>
+  </details>
+</div>
+
+<!-- ── PYQs ── -->
+<div class="nb-section alt" id="pyq">
+  <span class="section-tag">📈 PYQs</span>
+  <h2 class="section-title">Previous Year Questions (2021–2024)</h2>
+  <p class="section-sub">CBSE Board exam questions — most likely to repeat! Click question to see answer.</p>
+  <hr class="hw-rule"/>
+
+  <h4 style="color:var(--red-ink);margin-bottom:12px;font-size:1.12rem;">MCQ Type PYQs</h4>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        If a = 2² × 3ˣ, b = 2² × 3 × 5, c = 2² × 3 × 7 and LCM(a, b, c) = 3780, then x equals?
+      </span>
+    </summary>
+    <div class="pyq-body">🌟 Answer: x = 3 (since 3780 = 2² × 3³ × 5 × 7, highest power of 3 is 3)</div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        The greatest number which divides 281 and 1249, leaving remainder 5 and 7 respectively, is?
+      </span>
+    </summary>
+    <div class="pyq-body">🌟 Answer: 138 | HCF(281–5, 1249–7) = HCF(276, 1242) = 138</div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2023</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        The number (5 – 3√5 + √5) is: (a) integer (b) rational (c) irrational (d) whole number
+      </span>
+    </summary>
+    <div class="pyq-body">🌟 Answer: (c) Irrational | = 5 – 2√5, which is rational + irrational = irrational</div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2021</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        Three alarm clocks ring at intervals of 20 min, 25 min and 30 min. If first beep at 12 noon, when will they beep again?
+      </span>
+    </summary>
+    <div class="pyq-body">🌟 Answer: 5:00 PM | LCM(20,25,30) = 300 minutes = 5 hours → 12:00 + 5:00 = 5:00 PM</div>
+  </details>
+
+  <h4 style="color:var(--red-ink);margin:22px 0 12px;font-size:1.12rem;">Short Answer PYQs (2-3 Marks)</h4>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">2 Marks</span><span class="pyq-tag tag-tp">SA</span></div>
+        In a teachers' workshop, number of teachers teaching French, Hindi and English are 48, 80 and 144 respectively. Find minimum rooms required if each room has same subject teachers.
+      </span>
+    </summary>
+    <div class="pyq-body">🌟 Answer: HCF(48,80,144) = 16. Total = 48+80+144 = 272. Rooms = 272/16 = 17</div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">2 Marks</span><span class="pyq-tag tag-tp">SA</span></div>
+        Can (15)ⁿ, n being natural number, end with digit 0? Give reason.
+      </span>
+    </summary>
+    <div class="pyq-body">🌟 Answer: No. 15 = 3 × 5, so 15ⁿ = 3ⁿ × 5ⁿ. No factor of 2, so not divisible by 10. Cannot end with 0.</div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2023</span><span class="pyq-tag tag-mk">2 Marks</span><span class="pyq-tag tag-tp">SA</span></div>
+        Two numbers are in ratio 2:3 and their LCM is 180. What is their HCF?
+      </span>
+    </summary>
+    <div class="pyq-body">🌟 Answer: Let numbers = 2k, 3k. LCM = 6k = 180 → k = 30. HCF = k = 30.</div>
+  </details>
+
+  <h4 style="color:var(--red-ink);margin:22px 0 12px;font-size:1.12rem;">Long Answer PYQs (5 Marks)</h4>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">5 Marks</span><span class="pyq-tag tag-tp">LA</span></div>
+        Prove that 5 – 2√3 is irrational. It is given that √3 is irrational.
+      </span>
+    </summary>
+    <div class="pyq-body">🌟 Method: Assume rational = a/b → √3 = (5b–a)/(2b) → rational → contradicts √3 irrational ✓</div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">5 Marks</span><span class="pyq-tag tag-tp">LA</span></div>
+        Three bells toll at intervals of 9, 12 and 15 minutes. If they start together, after what time will they next toll together?
+      </span>
+    </summary>
+    <div class="pyq-body">🌟 Answer: LCM(9,12,15) = 180 minutes = 3 hours</div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">5 Marks</span><span class="pyq-tag tag-tp">LA</span></div>
+        Show that number 5 × 11 × 17 + 3 × 11 is composite.
+      </span>
+    </summary>
+    <div class="pyq-body">🌟 Answer: = 11(5×17 + 3) = 11 × 88 = 11 × 8 × 11 = 11² × 8. Has factors other than 1 and itself → composite ✓</div>
+  </details>
+</div>
+
+<!-- ── 2023–24 BOARD PYQs (NEW) ── -->
+<div class="nb-section" id="pyq2024">
+  <span class="section-tag">🔥 2023–24 CBSE Board Papers</span>
+  <h2 class="section-title">Complete 2023–24 PYQs with Solutions</h2>
+  <p class="section-sub">All 17 questions extracted from official CBSE 2023–24 board papers across 6 question paper codes. Click to reveal full step-by-step solution!</p>
+  <hr class="hw-rule"/>
+
+  <div style="background:var(--hl-yellow);border:2px dashed #b8960a;border-radius:4px;padding:14px 20px;margin-bottom:22px;font-size:1.1rem;">
+    ⭐ <strong>These are the actual CBSE 2024 board exam questions</strong> — exactly what came in the exam. Master these and you are ready for 2027 Boards!
+  </div>
+
+  <!-- Paper 1: QP Code 30(B) -->
+  <h3 style="font-size:1.3rem;color:var(--blue-ink);margin:18px 0 10px;padding:6px 14px;background:var(--hl-blue);border-left:4px solid var(--blue-ink);border-radius:0 3px 3px 0;">📄 Paper: Q.P. Code 30(B) — Maths Standard (Visually Impaired)</h3>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        The HCF and the LCM of 14, 21 and 77 respectively are:
+        (A) 7, 77 &nbsp; (B) 14, 462 &nbsp; (C) 7, 462 &nbsp; (D) 21, 77
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        <strong style="color:var(--blue-ink);">Prime Factorisations:</strong><br/>
+        14 = 2 × 7 &nbsp;|&nbsp; 21 = 3 × 7 &nbsp;|&nbsp; 77 = 7 × 11<br/><br/>
+        <strong style="color:var(--blue-ink);">HCF</strong> = only common prime factor = <strong>7</strong><br/>
+        <strong style="color:var(--blue-ink);">LCM</strong> = highest powers of all primes = 2 × 3 × 7 × 11 = <strong>462</strong>
+      </div>
+      <div class="final-ans">✅ Answer: (C) 7, 462</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">2 Marks</span><span class="pyq-tag tag-tp">SA</span></div>
+        Find HCF and LCM of 35 and 55 and verify your answer.
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        35 = 5 × 7 &nbsp;&nbsp;|&nbsp;&nbsp; 55 = 5 × 11<br/><br/>
+        <strong style="color:var(--blue-ink);">HCF(35, 55)</strong> = 5<br/>
+        <strong style="color:var(--blue-ink);">LCM(35, 55)</strong> = 5 × 7 × 11 = 385<br/><br/>
+        <strong style="color:var(--green-ink);">✔ Verification:</strong> HCF × LCM = 5 × 385 = 1925 &nbsp;|&nbsp; 35 × 55 = 1925 ✓
+      </div>
+      <div class="final-ans">✅ HCF = 5, LCM = 385. Verified ✓</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">5 Marks</span><span class="pyq-tag tag-tp">LA</span></div>
+        Prove that √5 is an irrational number. [Q.P. Code 30(B)]
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;line-height:1.9;">
+        <strong>Step 1:</strong> Assume √5 is rational. Then √5 = a/b, where a, b are coprime integers and b ≠ 0.<br/>
+        <strong>Step 2:</strong> Squaring both sides: 5 = a²/b² → a² = 5b²<br/>
+        <strong>Step 3:</strong> So a² is divisible by 5 → a is also divisible by 5. Let a = 5c.<br/>
+        <strong>Step 4:</strong> Substituting: (5c)² = 5b² → 25c² = 5b² → b² = 5c²<br/>
+        <strong>Step 5:</strong> So b² is divisible by 5 → b is also divisible by 5.<br/>
+        <strong>Step 6:</strong> Both a and b are divisible by 5 — this contradicts that a and b are coprime!<br/>
+        <strong>Conclusion:</strong> Our assumption is wrong.
+      </div>
+      <div class="final-ans">✅ Hence, √5 is irrational. [Write "Hence Proved" in board exam]</div>
+    </div>
+  </details>
+
+  <!-- Paper 2: QP Code 30/1/1 -->
+  <h3 style="font-size:1.3rem;color:var(--blue-ink);margin:24px 0 10px;padding:6px 14px;background:var(--hl-blue);border-left:4px solid var(--blue-ink);border-radius:0 3px 3px 0;">📄 Paper: Q.P. Code 30/1/1 — Mathematics Standard</h3>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        If HCF(98, 28) = m and LCM(98, 28) = n, then the value of n − 7m is:
+        (A) 0 &nbsp; (B) 28 &nbsp; (C) 98 &nbsp; (D) 198
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        98 = 2 × 7² &nbsp;|&nbsp; 28 = 2² × 7<br/><br/>
+        <strong>m = HCF(98, 28)</strong> = 2¹ × 7¹ = <strong>14</strong><br/>
+        <strong>n = LCM(98, 28)</strong> = 2² × 7² = 4 × 49 = <strong>196</strong><br/><br/>
+        n − 7m = 196 − 7(14) = 196 − 98 = <strong>98</strong>
+      </div>
+      <div class="final-ans">✅ Answer: (C) 98</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        If (−1)ⁿ + (−1)⁸ = 0, then n is:
+        (A) any positive integer &nbsp; (B) any negative integer &nbsp; (C) any odd number &nbsp; (D) any even number
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        (−1)⁸ = 1 (even power → positive)<br/>
+        So (−1)ⁿ + 1 = 0 → (−1)ⁿ = −1<br/>
+        This happens when n is <strong>odd</strong>.
+      </div>
+      <div class="final-ans">✅ Answer: (C) any odd number</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        Which of the following is a rational number between √3 and √5?
+        (A) 1.4142... &nbsp; (B) 2.326 &nbsp; (C) π &nbsp; (D) 1.857142
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        √3 ≈ 1.732 &nbsp;|&nbsp; √5 ≈ 2.236. We need a rational number between these.<br/>
+        (A) = √2 ≈ 1.414 — irrational AND outside range ✗<br/>
+        (B) = 2.326 — rational but > 2.236, outside range ✗<br/>
+        (C) = π ≈ 3.14 — irrational ✗<br/>
+        (D) = 1.857142 — terminating/repeating decimal = <strong>rational</strong>, lies within 1.732 to 2.236 ✓
+      </div>
+      <div class="final-ans">✅ Answer: (D) 1.857142</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">5 Marks</span><span class="pyq-tag tag-tp">LA</span></div>
+        Prove that 1/√5 is an irrational number. [Q.P. Code 30/1/1]
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;line-height:1.9;">
+        <strong>Step 1:</strong> Assume 1/√5 is rational. Then 1/√5 = a/b for coprime integers a, b (b ≠ 0).<br/>
+        <strong>Step 2:</strong> Rearranging: √5 = b/a<br/>
+        <strong>Step 3:</strong> Since a and b are integers, b/a is rational → √5 is rational.<br/>
+        <strong>Step 4:</strong> But this contradicts the well-known fact that √5 is irrational!
+      </div>
+      <div class="final-ans">✅ Hence, 1/√5 is irrational.</div>
+    </div>
+  </details>
+
+  <!-- Paper 3: QP Code 30/2/1 -->
+  <h3 style="font-size:1.3rem;color:var(--blue-ink);margin:24px 0 10px;padding:6px 14px;background:var(--hl-blue);border-left:4px solid var(--blue-ink);border-radius:0 3px 3px 0;">📄 Paper: Q.P. Code 30/2/1 — Mathematics Standard</h3>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        The least number which is a perfect square and is divisible by each of 16, 20 and 50, is:
+        (A) 1200 &nbsp; (B) 100 &nbsp; (C) 3600 &nbsp; (D) 2400
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        16 = 2⁴ &nbsp;|&nbsp; 20 = 2² × 5 &nbsp;|&nbsp; 50 = 2 × 5²<br/>
+        LCM = 2⁴ × 5² = 400. (This IS a perfect square = 20², but 400 is not in the options!)<br/>
+        Among given options, <strong>3600 = 60² = 2⁴ × 3² × 5²</strong> is a perfect square divisible by all three.
+        <br/><span style="color:var(--red-ink);font-weight:700;">[Note: Actual least = 400, but 3600 is the correct option from the given choices]</span>
+      </div>
+      <div class="final-ans">✅ Answer: (C) 3600</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        The sum of the exponents of prime factors in the prime factorisation of 4004 is:
+        (A) 5 &nbsp; (B) 4 &nbsp; (C) 3 &nbsp; (D) 2
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        4004 = 4 × 1001 = 2² × 7 × 11 × 13<br/>
+        Sum of exponents = 2 + 1 + 1 + 1 = <strong>5</strong>
+      </div>
+      <div class="final-ans">✅ Answer: (A) 5</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        The HCF of 40, 110 and 360 is:
+        (A) 40 &nbsp; (B) 110 &nbsp; (C) 360 &nbsp; (D) 10
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        40 = 2³ × 5 &nbsp;|&nbsp; 110 = 2 × 5 × 11 &nbsp;|&nbsp; 360 = 2³ × 3² × 5<br/>
+        Common factors: 2¹ × 5¹ = <strong>10</strong>
+      </div>
+      <div class="final-ans">✅ Answer: (D) 10</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">5 Marks</span><span class="pyq-tag tag-tp">LA</span></div>
+        Prove that √3 is an irrational number. [Q.P. Code 30/2/1]
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;line-height:1.9;">
+        <strong>Step 1:</strong> Assume √3 is rational. So √3 = a/b, where a, b are coprime integers and b ≠ 0.<br/>
+        <strong>Step 2:</strong> Squaring: a² = 3b²<br/>
+        <strong>Step 3:</strong> a² is divisible by 3 → a is divisible by 3. Let a = 3c.<br/>
+        <strong>Step 4:</strong> (3c)² = 3b² → 9c² = 3b² → b² = 3c²<br/>
+        <strong>Step 5:</strong> b² is divisible by 3 → b is divisible by 3.<br/>
+        <strong>Step 6:</strong> Both a and b are divisible by 3 — contradicts that a, b are coprime!
+      </div>
+      <div class="final-ans">✅ Hence, √3 is irrational. [Write "Hence Proved" ✓]</div>
+    </div>
+  </details>
+
+  <!-- Paper 4: QP Code 30/3/1 -->
+  <h3 style="font-size:1.3rem;color:var(--blue-ink);margin:24px 0 10px;padding:6px 14px;background:var(--hl-blue);border-left:4px solid var(--blue-ink);border-radius:0 3px 3px 0;">📄 Paper: Q.P. Code 30/3/1 — Mathematics Standard</h3>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        If x = LCM(4,6,8) and y = LCM(3,5,7) and p = LCM(x,y), which is true?
+        (A) p=35x &nbsp; (B) p=4y &nbsp; (C) p=8x &nbsp; (D) p=16y
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        x = LCM(4,6,8) = 24 &nbsp;|&nbsp; y = LCM(3,5,7) = 105<br/>
+        p = LCM(24, 105) = LCM(2³×3, 3×5×7) = 2³×3×5×7 = 840<br/>
+        Check: p/y = 840/105 = <strong>8</strong> → p = 8y ✗ &nbsp;|&nbsp; p/x = 840/24 = 35 → p = 35x ✓
+      </div>
+      <div class="final-ans">✅ Answer: (A) p = 35x</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">2 Marks</span><span class="pyq-tag tag-tp">SA</span></div>
+        (a) Find the smallest number which is divisible by both 644 and 462.
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        Smallest number divisible by both = LCM(644, 462)<br/>
+        644 = 2² × 7 × 23 &nbsp;|&nbsp; 462 = 2 × 3 × 7 × 11<br/>
+        LCM = 2² × 3 × 7 × 11 × 23 = 4 × 3 × 7 × 11 × 23 = <strong>21252</strong>
+      </div>
+      <div class="final-ans">✅ Smallest number = 21252</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">2 Marks</span><span class="pyq-tag tag-tp">SA</span></div>
+        (b) Two numbers are in the ratio 4:5 and their HCF is 11. Find the LCM.
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        Let the numbers be 4k and 5k.<br/>
+        Since 4 and 5 are coprime, HCF = k → k = 11<br/>
+        Numbers are 44 and 55.<br/>
+        LCM(44, 55) = (44 × 55) / HCF = 2420 / 11 = <strong>220</strong>
+      </div>
+      <div class="final-ans">✅ LCM = 220</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">3 Marks</span><span class="pyq-tag tag-tp">SA</span></div>
+        Prove that (5√3 + 2/3) is an irrational number, given that √3 is irrational.
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;line-height:1.9;">
+        <strong>Assume</strong> (5√3 + 2/3) is rational = a/b for integers a, b.<br/>
+        5√3 = a/b − 2/3 = (3a − 2b)/(3b)<br/>
+        √3 = (3a − 2b)/(15b)<br/>
+        The right side is a ratio of integers → <strong>rational</strong>.<br/>
+        But this implies √3 is rational — <strong>contradicts</strong> the given!
+      </div>
+      <div class="final-ans">✅ Hence, (5√3 + 2/3) is irrational. ✓</div>
+    </div>
+  </details>
+
+  <!-- Paper 5: QP Code 30/4/1 -->
+  <h3 style="font-size:1.3rem;color:var(--blue-ink);margin:24px 0 10px;padding:6px 14px;background:var(--hl-blue);border-left:4px solid var(--blue-ink);border-radius:0 3px 3px 0;">📄 Paper: Q.P. Code 30/4/1 — Mathematics Standard</h3>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        If x = ab³ and y = a³b, where a and b are prime, then [HCF(x,y) − LCM(x,y)] equals:
+        (A) 1−a³b³ &nbsp; (B) ab(1−ab) &nbsp; (C) ab−a⁴b⁴ &nbsp; (D) ab(1−ab)(1+ab)
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        x = ab³ &nbsp;|&nbsp; y = a³b<br/>
+        HCF = a¹b¹ = ab &nbsp;|&nbsp; LCM = a³b³<br/>
+        HCF − LCM = ab − a³b³ = ab(1 − a²b²) = ab(1−ab)(1+ab)
+      </div>
+      <div class="final-ans">✅ Answer: (D) ab(1−ab)(1+ab)</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        (1+√3)² − (1−√3)² is:
+        (A) a positive rational &nbsp; (B) a negative integer &nbsp; (C) a positive irrational &nbsp; (D) a negative irrational
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        (1+√3)² = 1 + 2√3 + 3 = 4 + 2√3<br/>
+        (1−√3)² = 1 − 2√3 + 3 = 4 − 2√3<br/>
+        Difference = (4+2√3) − (4−2√3) = 4√3<br/>
+        4√3 is positive (√3 > 0) and irrational.
+      </div>
+      <div class="final-ans">✅ Answer: (C) a positive irrational number</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">3 Marks</span><span class="pyq-tag tag-tp">SA</span></div>
+        (A) Prove that √2 is an irrational number. [Q.P. Code 30/4/1]
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;line-height:1.9;">
+        <strong>Step 1:</strong> Assume √2 is rational. So √2 = a/b, where a, b are coprime integers and b ≠ 0.<br/>
+        <strong>Step 2:</strong> Squaring: 2 = a²/b² → a² = 2b²<br/>
+        <strong>Step 3:</strong> a² is even → a is even. Let a = 2c.<br/>
+        <strong>Step 4:</strong> (2c)² = 2b² → 4c² = 2b² → b² = 2c²<br/>
+        <strong>Step 5:</strong> b² is even → b is even.<br/>
+        <strong>Step 6:</strong> Both a and b are even — contradicts that a, b are coprime!
+      </div>
+      <div class="final-ans">✅ Hence, √2 is irrational. Hence Proved ✓</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">3 Marks</span><span class="pyq-tag tag-tp">SA</span></div>
+        (B) Let x = x²y³, q = xy⁴, r = x⁵y² (x, y distinct primes). Find HCF and LCM of p, q, r. Verify if HCF × LCM = p × q × r.
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        p = x²y³ &nbsp;|&nbsp; q = xy⁴ &nbsp;|&nbsp; r = x⁵y²<br/>
+        <strong>HCF</strong> = lowest powers = x¹y² = xy²<br/>
+        <strong>LCM</strong> = highest powers = x⁵y⁴<br/>
+        HCF × LCM = xy² × x⁵y⁴ = x⁶y⁶<br/>
+        p × q × r = x²y³ × xy⁴ × x⁵y² = x⁸y⁹<br/>
+        x⁶y⁶ ≠ x⁸y⁹ → <strong>HCF × LCM ≠ p × q × r</strong> (formula valid for 2 numbers only!)
+      </div>
+      <div class="final-ans">✅ HCF = xy², LCM = x⁵y⁴. HCF×LCM ≠ p×q×r (confirms: formula works for 2 numbers only)</div>
+    </div>
+  </details>
+
+  <!-- Paper 6: QP Code 30/5/1 -->
+  <h3 style="font-size:1.3rem;color:var(--blue-ink);margin:24px 0 10px;padding:6px 14px;background:var(--hl-blue);border-left:4px solid var(--blue-ink);border-radius:0 3px 3px 0;">📄 Paper: Q.P. Code 30/5/1 — Mathematics Standard</h3>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        (√3 + 2)² + (√3 − 2)² is a/an:
+        (A) positive rational &nbsp; (B) negative rational &nbsp; (C) positive irrational &nbsp; (D) negative irrational
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        (√3+2)² = 3 + 4√3 + 4 = 7 + 4√3<br/>
+        (√3−2)² = 3 − 4√3 + 4 = 7 − 4√3<br/>
+        Sum = 7 + 4√3 + 7 − 4√3 = <strong>14</strong> (irrational terms cancel!)
+      </div>
+      <div class="final-ans">✅ Answer: (A) positive rational number (= 14)</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        Let x = a²b³cⁿ and y = a³bᵐc². LCM of x and y is a³b⁴c³. Then m + n is:
+        (A) 10 &nbsp; (B) 7 &nbsp; (C) 6 &nbsp; (D) 5
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        LCM takes highest powers: For c: max(n, 2) = 3 → n = 3<br/>
+        For b: max(3, m) = 4 → m = 4<br/>
+        m + n = 4 + 3 = <strong>7</strong>
+      </div>
+      <div class="final-ans">✅ Answer: (B) m + n = 7</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        For any prime number p, if p divides a² (where a is real), then p also divides:
+        (A) a &nbsp; (B) a^(1/2) &nbsp; (C) a^(3/2) &nbsp; (D) a^(1/8)
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        This is a direct application of the theorem: If a prime p divides a², then p divides a.<br/>
+        This is the key theorem used in all irrationality proofs!
+      </div>
+      <div class="final-ans">✅ Answer: (A) a</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">3 Marks</span><span class="pyq-tag tag-tp">SA</span></div>
+        (b) State true/false and justify: (i) 2×3×5×7 + 7 is composite. (ii) 2×3×5×7 + 1 is composite.
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        <strong>(i)</strong> 2×3×5×7 + 7 = 7(2×3×5 + 1) = 7 × 31.<br/>
+        Has factors 7 and 31 (other than 1 and itself) → <strong>TRUE, it is composite.</strong><br/><br/>
+        <strong>(ii)</strong> 2×3×5×7 + 1 = 210 + 1 = 211.<br/>
+        211 is a <strong>prime number</strong> → <strong>FALSE, it is NOT composite.</strong>
+      </div>
+      <div class="final-ans">✅ (i) TRUE — composite &nbsp;|&nbsp; (ii) FALSE — 211 is prime</div>
+    </div>
+  </details>
+
+  <!-- Paper 7: QP Code 30/6/1 -->
+  <h3 style="font-size:1.3rem;color:var(--blue-ink);margin:24px 0 10px;padding:6px 14px;background:var(--hl-blue);border-left:4px solid var(--blue-ink);border-radius:0 3px 3px 0;">📄 Paper: Q.P. Code 30/6/1 — Mathematics Standard</h3>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        √0.4 is a/an: (A) natural number &nbsp; (B) integer &nbsp; (C) rational number &nbsp; (D) irrational number
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        √0.4 = √(4/10) = √(2/5) = √2/√5 = √10/5<br/>
+        √10 is irrational (10 is not a perfect square) → √10/5 is irrational.
+      </div>
+      <div class="final-ans">✅ Answer: (D) irrational number</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">MCQ</span></div>
+        Which of the following cannot be the unit digit of 8ⁿ (n is a natural number)?
+        (A) 4 &nbsp; (B) 2 &nbsp; (C) 0 &nbsp; (D) 6
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        Powers of 8 → unit digits follow the cycle: 8¹→8, 8²→4, 8³→2, 8⁴→6, 8⁵→8...<br/>
+        Cycle = {8, 4, 2, 6}. The digit <strong>0</strong> never appears.
+      </div>
+      <div class="final-ans">✅ Answer: (C) 0</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">1 Mark</span><span class="pyq-tag tag-tp">A/R</span></div>
+        Assertion (A): For any two prime numbers p and q, HCF is 1 and LCM is p+q.<br/>
+        Reason (R): For any two natural numbers, HCF × LCM = product of numbers.
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;">
+        <strong>Assertion (A):</strong> HCF of two distinct primes = 1 ✓. But LCM = p×q (NOT p+q) ✗ → <strong>A is FALSE</strong><br/>
+        <strong>Reason (R):</strong> HCF × LCM = product of numbers is a standard theorem → <strong>R is TRUE</strong>
+      </div>
+      <div class="final-ans">✅ Answer: (D) A is false but R is true.</div>
+    </div>
+  </details>
+
+  <details class="pyq-item fade-up">
+    <summary class="pyq-summary">
+      <span>
+        <div class="pyq-meta"><span class="pyq-tag tag-yr">2024</span><span class="pyq-tag tag-mk">5 Marks</span><span class="pyq-tag tag-tp">LA</span></div>
+        (b) Let p, q, r be distinct primes. Prove p·q·r + q is composite. Also give examples where p·q·r+1 is (i) composite (ii) prime.
+      </span>
+    </summary>
+    <div class="pyq-body">
+      <div style="color:var(--ink-soft);font-weight:400;font-size:1.05rem;line-height:1.9;">
+        <strong>Part 1 — Composite:</strong><br/>
+        p·q·r + q = q(p·r + 1)<br/>
+        Since q > 1 and (p·r + 1) > 1, the expression has factors other than 1 and itself → <strong>composite</strong> ✓<br/><br/>
+        <strong>Part 2 — Examples for p·q·r + 1:</strong><br/>
+        <strong>(i) Composite:</strong> Let p=3, q=5, r=7 → 3×5×7+1 = 106 = 2×53 (composite) ✓<br/>
+        <strong>(ii) Prime:</strong> Let p=2, q=3, r=5 → 2×3×5+1 = 31 (prime) ✓
+      </div>
+      <div class="final-ans">✅ Composite: 106 (example) | Prime: 31 (example)</div>
+    </div>
+  </details>
+
+  <div style="background:var(--hl-green);border:2px solid var(--green-ink);border-radius:4px;padding:16px 22px;margin-top:24px;font-size:1.1rem;">
+    <strong style="color:var(--green-ink);">🎯 Board Exam Insight (2027):</strong>
+    <ul style="margin-top:8px;line-height:2.1;color:var(--ink-soft);">
+      <li>Irrationality proofs (√2, √3, √5, 1/√5) appear <strong>every year</strong> — learn all templates!</li>
+      <li>A/R questions on HCF×LCM formula appear consistently.</li>
+      <li>LCM exponent problems (find m+n) are a new favourite.</li>
+      <li>Composite/prime check questions (p·q·r+1 type) are high value.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── CASE STUDY ── -->
+<div class="nb-section" id="casestudy">
+  <span class="section-tag">📦 Case Study Questions</span>
+  <h2 class="section-title">New CBSE Pattern Case Studies</h2>
+  <p class="section-sub">These 4-5 mark integrated questions are now guaranteed in CBSE Boards!</p>
+  <hr class="hw-rule"/>
+
+  <div class="case-box fade-up">
+    <div class="case-tag">CASE STUDY</div>
+    <h3>🏫 Case Study 1: Science Competition</h3>
+    <p class="case-para">In a science competition, 60 students from Class 8, 84 students from Class 9, and 108 students from Class 10 participated. The school wanted to divide them into groups with equal number of students from each class.</p>
+    <details class="case-q-item">
+      <summary class="case-q-summary">(i) Find the total number of participants.</summary>
+      <div class="case-q-body">✅ Answer: 60+84+108 = 252</div>
+    </details>
+    <details class="case-q-item">
+      <summary class="case-q-summary">(ii) Find the LCM of 60, 84 and 108.</summary>
+      <div class="case-q-body">✅ Answer: 60=2²×3×5, 84=2²×3×7, 108=2²×3³ → LCM = 2²×3³×5×7 = 3780</div>
+    </details>
+    <details class="case-q-item">
+      <summary class="case-q-summary">(iii) Find the minimum number of rooms required.</summary>
+      <div class="case-q-body">✅ Answer: HCF(60,84,108) = 12. Rooms = 252/12 = 21 rooms</div>
+    </details>
+  </div>
+
+  <div class="case-box fade-up">
+    <div class="case-tag">CASE STUDY</div>
+    <h3>🎂 Case Study 2: Khushi's Birthday Party</h3>
+    <p class="case-para">Khushi wants to organize her birthday party. Being health conscious, she decided to serve only fruits. She bought 36 apples and 60 bananas and decided to distribute fruits equally among all guests. She later decided to add 42 mangoes.</p>
+    <details class="case-q-item">
+      <summary class="case-q-summary">(i) How many guests can Khushi invite at the most?</summary>
+      <div class="case-q-body">✅ Answer: HCF(36,60) = 12. She can invite at most 12 guests.</div>
+    </details>
+    <details class="case-q-item">
+      <summary class="case-q-summary">(ii) How many apples and bananas will each guest get?</summary>
+      <div class="case-q-body">✅ Answer: 36/12 = 3 apples, 60/12 = 5 bananas each.</div>
+    </details>
+    <details class="case-q-item">
+      <summary class="case-q-summary">(iii) If mangoes are also added, how many guests at most?</summary>
+      <div class="case-q-body">✅ Answer: HCF(36,60,42) = 6. At most 6 guests.</div>
+    </details>
+  </div>
+
+  <div class="case-box fade-up">
+    <div class="case-tag">CASE STUDY</div>
+    <h3>📚 Case Study 3: Prime Number Game (CBSE 2024)</h3>
+    <p class="case-para">Ms. Mukta planned a prime number game. She announced the number 2 and asked first student to multiply by a prime, pass to second who multiplied by a prime, and so on. The last student got 173250.</p>
+    <p class="case-para">Prime factorisation: 173250 = 2 × 3 × 3 × 5 × 5 × 5 × 7 × 11 = 2 × 3² × 5³ × 7 × 11</p>
+    <details class="case-q-item">
+      <summary class="case-q-summary">(i) What is the least prime number used by students?</summary>
+      <div class="case-q-body">✅ Answer: 3 (since 2 was the starting number)</div>
+    </details>
+    <details class="case-q-item">
+      <summary class="case-q-summary">(ii)(a) How many students are in the class?</summary>
+      <div class="case-q-body">✅ Answer: 7 students (one for each prime factor after 2)</div>
+    </details>
+    <details class="case-q-item">
+      <summary class="case-q-summary">(ii)(b) What is the highest prime number used?</summary>
+      <div class="case-q-body">✅ Answer: 11</div>
+    </details>
+    <details class="case-q-item">
+      <summary class="case-q-summary">(iii) Which prime was used maximum times?</summary>
+      <div class="case-q-body">✅ Answer: 5 (used 3 times)</div>
+    </details>
+  </div>
+</div>
+
+<!-- ── COMMON MISTAKES ── -->
+<div class="nb-section alt" id="mistakes">
+  <span class="section-tag">⚠️ Common Mistakes</span>
+  <h2 class="section-title">Don't Lose Marks Over These!</h2>
+  <hr class="hw-rule"/>
+
+  <div class="mistake-grid fade-up">
+    <div class="mistake-wrong">
+      <div class="mistake-lbl wrong-lbl">❌ WRONG (Common Mistake)</div>
+      "HCF(a,b,c) × LCM(a,b,c) = a × b × c"<br/><br/>Students apply the product formula for THREE numbers — this is INCORRECT!
+    </div>
+    <div class="mistake-right">
+      <div class="mistake-lbl right-lbl">✅ CORRECT</div>
+      HCF × LCM = a × b only for <strong>TWO numbers</strong>.<br/><br/>For three numbers, calculate HCF and LCM separately using prime factorisation.
+    </div>
+  </div>
+
+  <div class="mistake-grid fade-up">
+    <div class="mistake-wrong">
+      <div class="mistake-lbl wrong-lbl">❌ WRONG</div>
+      "√16 is irrational because it's a square root"<br/><br/>Students assume ALL square roots are irrational.
+    </div>
+    <div class="mistake-right">
+      <div class="mistake-lbl right-lbl">✅ CORRECT</div>
+      √16 = 4, which is a natural number (rational).<br/><br/>√p is irrational <strong>only if p is a prime</strong> or a non-perfect-square integer.
+    </div>
+  </div>
+
+  <div class="mistake-grid fade-up">
+    <div class="mistake-wrong">
+      <div class="mistake-lbl wrong-lbl">❌ WRONG</div>
+      "LCM of two primes p and q = p + q"<br/><br/>Very common error in Assertion-Reason type MCQs!
+    </div>
+    <div class="mistake-right">
+      <div class="mistake-lbl right-lbl">✅ CORRECT</div>
+      LCM of two distinct primes p and q = <strong>p × q</strong><br/><br/>HCF of two distinct primes = always <strong>1</strong>
+    </div>
+  </div>
+
+  <div class="mistake-grid fade-up">
+    <div class="mistake-wrong">
+      <div class="mistake-lbl wrong-lbl">❌ WRONG</div>
+      In irrationality proofs, students skip writing "let a = 2c" step and jump directly to contradiction — loses marks!
+    </div>
+    <div class="mistake-right">
+      <div class="mistake-lbl right-lbl">✅ CORRECT</div>
+      Always show FULL STEPS: Assume rational → substitute a=pc → show p divides b → contradiction. Each step = marks!
+    </div>
+  </div>
+
+  <div class="mistake-grid fade-up">
+    <div class="mistake-wrong">
+      <div class="mistake-lbl wrong-lbl">❌ WRONG</div>
+      "Sum of two irrational numbers is always irrational"<br/><br/>Example: Students think √2 + (–√2) = irrational
+    </div>
+    <div class="mistake-right">
+      <div class="mistake-lbl right-lbl">✅ CORRECT</div>
+      √2 + (–√2) = 0 (rational!)<br/><br/>Sum of two irrationals <strong>may or may not be irrational</strong>. But rational + irrational = ALWAYS irrational.
+    </div>
+  </div>
+
+  <div class="callout warn fade-up" style="margin-top:18px;">
+    <span class="callout-icon">⚠️</span>
+    <div class="callout-body"><strong>Board Exam Trap:</strong> The question "HCF of two consecutive even numbers" = 2, NOT 4. Students often write 4, but consecutive even numbers like 4 and 6 have HCF = 2, not 4.</div>
+  </div>
+</div>
+
+<!-- ── EXAM STRATEGY ── -->
+<div class="nb-section" id="strategy">
+  <span class="section-tag">💡 Exam Strategy</span>
+  <h2 class="section-title">How to Score Full Marks in Real Numbers</h2>
+  <hr class="hw-rule"/>
+
+  <div class="strat-grid">
+    <div class="strat-card s1 fade-up">
+      <div class="strat-icon">⏱️</div>
+      <h4>Time Management</h4>
+      <p>MCQs: 30 sec each. 2-mark: 3–4 min. 5-mark proofs: 8–10 min. Total chapter time: 20–25 min max.</p>
+    </div>
+    <div class="strat-card s2 fade-up">
+      <div class="strat-icon">📋</div>
+      <h4>Answer Format</h4>
+      <p>Always write the formula first, then substitute values. Show verification for HCF × LCM questions. Write "Hence Proved" at end of irrationality proofs.</p>
+    </div>
+    <div class="strat-card s3 fade-up">
+      <div class="strat-icon">🎯</div>
+      <h4>High-Scoring Topics</h4>
+      <p>Irrationality proofs (5 marks), HCF/LCM word problems (3–5 marks), and case study (4 marks) together give 12–14 marks easily!</p>
+    </div>
+    <div class="strat-card s4 fade-up">
+      <div class="strat-icon">🔑</div>
+      <h4>Key Lines to Remember</h4>
+      <p>For every proof: "This contradicts our assumption that a and b are co-prime. Hence our assumption is wrong. Therefore..."</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:22px;">
+    <h3 style="font-size:1.25rem;margin-bottom:14px;color:var(--blue-ink);">📊 Marks Distribution — Real Numbers in CBSE Boards</h3>
+    <div style="overflow-x:auto;">
+      <table class="hw-table">
+        <thead>
+          <tr><th>Question Type</th><th>Marks</th><th>Expected Topics</th><th>Frequency</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MCQ (1 mark)</td><td>1 × 3 = 3</td><td>HCF/LCM, FTA, Decimal expansion</td><td>✅ Every year</td></tr>
+          <tr><td>Assertion-Reason (1 mark)</td><td>1</td><td>HCF×LCM formula, Properties</td><td>✅ Every year</td></tr>
+          <tr><td>Short Answer (2 marks)</td><td>2</td><td>HCF word problems, composite numbers</td><td>✅ Every year</td></tr>
+          <tr><td>Long Answer (3 marks)</td><td>3</td><td>Irrational number proof</td><td>✅ Every year</td></tr>
+          <tr><td>Case Study (4 marks)</td><td>4</td><td>HCF/LCM real-life applications</td><td>✅ Every year</td></tr>
+          <tr><td><strong>TOTAL</strong></td><td><strong>~13 Marks</strong></td><td colspan="2" style="color:var(--red-ink);font-weight:700;">This chapter alone = 13% of your board exam!</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ── FINAL REVISION ── -->
+<div class="nb-section alt" id="finalrev">
+  <span class="section-tag">🚀 Final Revision</span>
+  <h2 class="section-title">One-Page Quick Revision Sheet</h2>
+  <p class="section-sub">Everything you need to revise the night before your exam!</p>
+  <hr class="hw-rule"/>
+
+  <div class="finalrev-grid">
+    <div class="finalrev-card fade-up">
+      <h4>🔢 Number Hierarchy</h4>
+      <ul>
+        <li>N ⊂ W ⊂ Z ⊂ Q ⊂ R</li>
+        <li>Q ∪ Irrational = R</li>
+        <li>Q ∩ Irrational = φ (empty)</li>
+        <li>1 = neither prime nor composite</li>
+        <li>2 = only even prime number</li>
+        <li>4 = smallest composite number</li>
+      </ul>
+    </div>
+    <div class="finalrev-card fade-up">
+      <h4>⚙️ HCF &amp; LCM Rules</h4>
+      <ul>
+        <li>HCF: lowest powers of common factors</li>
+        <li>LCM: highest powers of all factors</li>
+        <li>HCF(a,b) × LCM(a,b) = a × b (TWO only!)</li>
+        <li>HCF of primes = 1</li>
+        <li>LCM of primes = their product</li>
+        <li>HCF always divides LCM</li>
+      </ul>
+    </div>
+    <div class="finalrev-card fade-up">
+      <h4>📐 Irrationality Proof Template</h4>
+      <ul>
+        <li>Step 1: Assume rational = a/b (co-prime)</li>
+        <li>Step 2: Square both sides</li>
+        <li>Step 3: Show p divides a²</li>
+        <li>Step 4: ∴ p divides a → a = pc</li>
+        <li>Step 5: Show p divides b</li>
+        <li>Step 6: Contradiction → irrational ✓</li>
+      </ul>
+    </div>
+    <div class="finalrev-card fade-up">
+      <h4>🔄 Decimal Expansions</h4>
+      <ul>
+        <li>Terminating ↔ q = 2ᵐ × 5ⁿ ONLY</li>
+        <li>Non-terminating repeating ↔ other prime factors in q</li>
+        <li>Irrational → non-terminating non-repeating</li>
+        <li>13/3125 terminates (3125 = 5⁵)</li>
+        <li>1/7 = 0.142857̄ (repeating)</li>
+        <li>All rational → terminating OR NT repeating</li>
+      </ul>
+    </div>
+    <div class="finalrev-card fade-up">
+      <h4>⚡ Speed Formulas</h4>
+      <ul>
+        <li>Largest ÷ (a,b,c) leaving r₁,r₂,r₃ = HCF(a–r₁, b–r₂, c–r₃)</li>
+        <li>Smallest ÷ (a,b,c) leaving same r = LCM(a,b,c)+r</li>
+        <li>Zeros in N = min(pow of 2, pow of 5)</li>
+        <li>Numbers up to A div by b = ⌊A/b⌋</li>
+        <li>Total factors of N=aᵏbˡcᵐ = (k+1)(l+1)(m+1)</li>
+      </ul>
+    </div>
+    <div class="finalrev-card fade-up">
+      <h4>🧠 Key Identities</h4>
+      <ul>
+        <li>√p irrational for all primes p</li>
+        <li>rational ± irrational = irrational</li>
+        <li>nonzero rational × irrational = irrational</li>
+        <li>irrational ± irrational = may be rational</li>
+        <li>irrational × irrational = may be rational</li>
+        <li>6ⁿ NEVER ends in 0 for any natural n</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div><!-- end notebook -->
+
+<!-- ── WHATSAPP CTA ── -->
+<div class="wa-section" id="contact">
+  <h2>📲 Still Have Doubts?</h2>
+  <p>Join Manish Mishra Sir's free WhatsApp group for daily doubt solving, MCQ practice, and exam tips. 10,000+ students already studying with us!</p>
+  <div class="wa-btns">
+    <a href="https://chat.whatsapp.com/HaQq0KPcWwJD0WPIC1BBd2" class="wa-btn" target="_blank">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Join Free WhatsApp Group
+    </a>
+    <a href="https://wa.me/918107563723?text=Hello%20Manish%20Sir,%20I%20need%20personal%20guidance%20for%20Class%2010%20Maths" class="wa-btn-outline" target="_blank">
+      💬 Get Personal Guidance
+    </a>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>Created by <strong>Manish Mishra Sir</strong> | Class 10 Maths | Chapter 1: Real Numbers</p>
+  <p style="margin-top:5px;">📞 <a href="https://wa.me/918107563723">+91 8107563723</a> &nbsp;|&nbsp; CBSE Board Exam 2027 Preparation</p>
+  <p style="margin-top:9px;"><a href="https://m2learninghub.com/" target="_blank" style="color:#fde68a;font-weight:700;">🌐 m2learninghub.com</a></p>
+  <p style="margin-top:9px;font-size:0.9rem;opacity:0.45;">Content is based on NCERT textbooks and CBSE Board Papers. For educational purposes only. © 2027 Manish Mishra Sir</p>
+</footer>
+
+<!-- ── FLOATING WA ── -->
+<div class="floating-wa">
+  <div class="float-label">Chat with Manish Sir 👋</div>
+  <a href="https://wa.me/918107563723?text=Hello%20Manish%20Sir,%20I%20have%20a%20doubt%20in%20Real%20Numbers" class="float-wa-btn" aria-label="WhatsApp" target="_blank">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+</div>
+
+<script>
+  // Scroll fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Floating WA tooltip auto-hide
+  setTimeout(() => {
+    const label = document.querySelector('.float-label');
+    if (label) label.style.display = 'none';
+  }, 5000);
+</script>
+
+</body>
+</html>
