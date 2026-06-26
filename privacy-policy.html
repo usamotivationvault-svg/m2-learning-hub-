@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – M² Learning Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #C85A00;
+      --orange-light: #F47B20;
+      --orange-pale: #FFF4EC;
+      --green: #1A9E3F;
+      --text-dark: #1A1A1A;
+      --text-mid: #444444;
+      --text-muted: #777777;
+      --border: #E8E0D8;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--text-dark);
+      line-height: 1.75;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--white);
+      border-bottom: 2px solid var(--orange-pale);
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    }
+    .logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--orange);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .logo span { color: var(--text-dark); }
+    .nav-btn {
+      background: var(--orange);
+      color: var(--white);
+      text-decoration: none;
+      padding: 9px 22px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .nav-btn:hover { background: var(--orange-light); }
+
+    /* HERO BANNER */
+    .page-hero {
+      background: var(--orange-pale);
+      border-bottom: 1px solid var(--border);
+      padding: 52px 40px 44px;
+      text-align: center;
+    }
+    .page-hero .badge {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--white);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 16px;
+    }
+    .page-hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--orange);
+      margin-bottom: 10px;
+    }
+    .page-hero p {
+      color: var(--text-mid);
+      font-size: 0.95rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .page-hero .updated {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 4px 12px;
+      border-radius: 50px;
+    }
+
+    /* CONTENT */
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 56px 32px 80px;
+    }
+
+    .section {
+      margin-bottom: 44px;
+    }
+
+    .section-number {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--orange-pale);
+    }
+
+    p { color: var(--text-mid); margin-bottom: 12px; font-size: 0.95rem; }
+
+    ul {
+      list-style: none;
+      margin: 10px 0 14px 0;
+      padding: 0;
+    }
+    ul li {
+      padding: 6px 0 6px 22px;
+      position: relative;
+      color: var(--text-mid);
+      font-size: 0.95rem;
+    }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 8px;
+      height: 8px;
+      background: var(--orange);
+      border-radius: 50%;
+    }
+
+    .highlight-box {
+      background: var(--orange-pale);
+      border-left: 4px solid var(--orange);
+      padding: 18px 22px;
+      border-radius: 0 8px 8px 0;
+      margin: 18px 0;
+    }
+    .highlight-box p { margin: 0; color: var(--text-dark); font-size: 0.93rem; }
+
+    /* CONTACT BOX */
+    .contact-box {
+      background: var(--text-dark);
+      color: var(--white);
+      border-radius: 16px;
+      padding: 32px 36px;
+      text-align: center;
+      margin-top: 56px;
+    }
+    .contact-box h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .contact-box p { color: #cccccc; margin-bottom: 20px; font-size: 0.9rem; }
+    .wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--green);
+      color: var(--white);
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: opacity 0.2s;
+    }
+    .wa-btn:hover { opacity: 0.88; }
+
+    /* FOOTER */
+    footer {
+      background: var(--orange-pale);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--orange); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 20px; }
+      .page-hero { padding: 36px 20px 30px; }
+      .page-hero h1 { font-size: 1.8rem; }
+      .content-wrap { padding: 36px 20px 60px; }
+      .contact-box { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://m2learninghub.com" class="logo">M² <span>Learning Hub</span></a>
+  <a href="https://m2learninghub.com" class="nav-btn">Back to Website</a>
+</nav>
+
+<div class="page-hero">
+  <div class="badge">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p>How we collect, use, and protect your personal information at M² Learning Hub.</p>
+  <span class="updated">Last updated: June 2026</span>
+</div>
+
+<div class="content-wrap">
+
+  <div class="highlight-box">
+    <p>Your privacy matters to us. M² Learning Hub is committed to keeping your personal data safe and using it only to provide you with a better learning experience.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">01</div>
+    <h2>Who We Are</h2>
+    <p>M² Learning Hub is a premium online tutoring platform founded by <strong>Manish Mishra</strong> (Mathematics Faculty) and <strong>Madhvi Rai</strong> (Chemistry Faculty). We provide personalised online tuition for students in Classes 6–12, covering all major boards including CBSE, ICSE, IB, GCSE, and State Boards, as well as competitive exam preparation for JEE and NEET.</p>
+    <p>We operate fully online across India and internationally.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">02</div>
+    <h2>Information We Collect</h2>
+    <p>When you interact with our website or services, we may collect the following information:</p>
+    <ul>
+      <li>Full name of the student and parent/guardian</li>
+      <li>WhatsApp number and contact details</li>
+      <li>Class, board, and academic goals of the student</li>
+      <li>Location (city/state) for scheduling and communication purposes</li>
+      <li>Payment information (processed securely through third-party gateways)</li>
+      <li>Feedback, queries, and messages submitted via our website or WhatsApp</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-number">03</div>
+    <h2>How We Use Your Information</h2>
+    <p>We use the information collected solely for the following purposes:</p>
+    <ul>
+      <li>To schedule and confirm free demo sessions</li>
+      <li>To enrol students into appropriate batches</li>
+      <li>To send class schedules, updates, and study material</li>
+      <li>To respond to queries and provide academic support</li>
+      <li>To process payments and issue receipts</li>
+      <li>To improve our teaching methods and platform experience</li>
+    </ul>
+    <p>We do <strong>not</strong> use your data for unsolicited marketing or sell it to any third party.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">04</div>
+    <h2>Data Sharing</h2>
+    <p>M² Learning Hub does not sell, trade, or rent your personal information. We may share data only in the following limited cases:</p>
+    <ul>
+      <li>With our faculty members (Manish Mishra & Madhvi Rai) for the purpose of teaching and student tracking</li>
+      <li>With payment gateway providers to process transactions securely</li>
+      <li>When required by law or a valid government/legal authority</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-number">05</div>
+    <h2>Data Storage & Security</h2>
+    <p>All data is stored securely. We take reasonable technical and organisational measures to protect your information from unauthorised access, loss, or misuse. Our communication primarily happens via WhatsApp, which uses end-to-end encryption.</p>
+    <p>We retain your information for as long as your enrolment is active, or as required by applicable law.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">06</div>
+    <h2>Cookies</h2>
+    <p>Our website may use basic cookies to improve your browsing experience and understand site traffic. These are standard analytics cookies and do not store personal information. You may disable cookies in your browser settings if you prefer.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">07</div>
+    <h2>Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Request access to the personal data we hold about you</li>
+      <li>Ask us to correct or update your information</li>
+      <li>Request deletion of your data (subject to legal obligations)</li>
+      <li>Withdraw consent for communications at any time</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us on WhatsApp.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">08</div>
+    <h2>Children's Privacy</h2>
+    <p>Our services are designed for students, many of whom may be minors. We collect student data only with the awareness and consent of a parent or guardian. We never knowingly collect personal data from children without parental involvement.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">09</div>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Any updates will be posted on this page with a revised date. We encourage you to review this policy periodically.</p>
+  </div>
+
+  <div class="contact-box">
+    <h3>Have a Privacy Question?</h3>
+    <p>Reach out to us directly on WhatsApp and we'll be happy to help.</p>
+    <a href="https://wa.me/918882565496" class="wa-btn" target="_blank">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp: +91 88825 65496
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 M² Learning Hub. All Rights Reserved. &nbsp;|&nbsp;
+    <a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
+    <a href="terms-and-conditions.html">Terms & Conditions</a> &nbsp;|&nbsp;
+    <a href="refund-policy.html">Refund Policy</a> &nbsp;|&nbsp;
+    <a href="about-us.html">About Us</a>
+  </p>
+</footer>
+
+</body>
+</html>
