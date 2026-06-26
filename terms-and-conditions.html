@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms & Conditions – M² Learning Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #C85A00;
+      --orange-light: #F47B20;
+      --orange-pale: #FFF4EC;
+      --green: #1A9E3F;
+      --text-dark: #1A1A1A;
+      --text-mid: #444444;
+      --text-muted: #777777;
+      --border: #E8E0D8;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--text-dark);
+      line-height: 1.75;
+    }
+
+    nav {
+      background: var(--white);
+      border-bottom: 2px solid var(--orange-pale);
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    }
+    .logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--orange);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .logo span { color: var(--text-dark); }
+    .nav-btn {
+      background: var(--orange);
+      color: var(--white);
+      text-decoration: none;
+      padding: 9px 22px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .nav-btn:hover { background: var(--orange-light); }
+
+    .page-hero {
+      background: var(--orange-pale);
+      border-bottom: 1px solid var(--border);
+      padding: 52px 40px 44px;
+      text-align: center;
+    }
+    .page-hero .badge {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--white);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 16px;
+    }
+    .page-hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--orange);
+      margin-bottom: 10px;
+    }
+    .page-hero p {
+      color: var(--text-mid);
+      font-size: 0.95rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .page-hero .updated {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 4px 12px;
+      border-radius: 50px;
+    }
+
+    /* LAYOUT */
+    .page-layout {
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 56px 32px 80px;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 52px;
+      align-items: start;
+    }
+
+    /* SIDEBAR TOC */
+    .toc {
+      position: sticky;
+      top: 88px;
+    }
+    .toc h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    .toc ul { list-style: none; padding: 0; }
+    .toc ul li { margin-bottom: 2px; }
+    .toc ul li a {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 7px 12px;
+      border-radius: 8px;
+      border-left: 3px solid transparent;
+      transition: all 0.15s;
+    }
+    .toc ul li a:hover {
+      background: var(--orange-pale);
+      border-left-color: var(--orange);
+      color: var(--orange);
+    }
+
+    /* CONTENT */
+    .content { min-width: 0; }
+
+    .section { margin-bottom: 44px; }
+    .section-number {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 6px;
+    }
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--orange-pale);
+    }
+    p { color: var(--text-mid); margin-bottom: 12px; font-size: 0.95rem; }
+    ul {
+      list-style: none;
+      margin: 10px 0 14px 0;
+      padding: 0;
+    }
+    ul li {
+      padding: 6px 0 6px 22px;
+      position: relative;
+      color: var(--text-mid);
+      font-size: 0.95rem;
+    }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 8px;
+      height: 8px;
+      background: var(--orange);
+      border-radius: 50%;
+    }
+
+    .warning-box {
+      background: #FFF8F0;
+      border: 1.5px solid #F0C090;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .warning-box p { color: #885500; font-size: 0.88rem; margin: 0; }
+
+    .contact-box {
+      background: var(--text-dark);
+      color: var(--white);
+      border-radius: 16px;
+      padding: 32px 36px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .contact-box h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .contact-box p { color: #cccccc; margin-bottom: 20px; font-size: 0.9rem; }
+    .wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--green);
+      color: var(--white);
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: opacity 0.2s;
+    }
+    .wa-btn:hover { opacity: 0.88; }
+
+    footer {
+      background: var(--orange-pale);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--orange); text-decoration: none; }
+
+    @media (max-width: 720px) {
+      nav { padding: 0 20px; }
+      .page-hero { padding: 36px 20px 30px; }
+      .page-hero h1 { font-size: 1.8rem; }
+      .page-layout { grid-template-columns: 1fr; padding: 30px 20px 60px; gap: 0; }
+      .toc { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://m2learninghub.com" class="logo">M² <span>Learning Hub</span></a>
+  <a href="https://m2learninghub.com" class="nav-btn">Back to Website</a>
+</nav>
+
+<div class="page-hero">
+  <div class="badge">Legal</div>
+  <h1>Terms & Conditions</h1>
+  <p>Please read these terms carefully before enrolling with M² Learning Hub.</p>
+  <span class="updated">Last updated: June 2026</span>
+</div>
+
+<div class="page-layout">
+
+  <aside class="toc">
+    <h4>Contents</h4>
+    <ul>
+      <li><a href="#acceptance">Acceptance of Terms</a></li>
+      <li><a href="#services">Our Services</a></li>
+      <li><a href="#enrollment">Enrollment</a></li>
+      <li><a href="#conduct">Student Conduct</a></li>
+      <li><a href="#payment">Payment</a></li>
+      <li><a href="#schedule">Scheduling</a></li>
+      <li><a href="#material">Study Material</a></li>
+      <li><a href="#ip">Intellectual Property</a></li>
+      <li><a href="#liability">Limitation of Liability</a></li>
+      <li><a href="#changes">Changes to Terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </aside>
+
+  <div class="content">
+
+    <div class="section" id="acceptance">
+      <div class="section-number">01</div>
+      <h2>Acceptance of Terms</h2>
+      <p>By accessing our website at <a href="https://m2learninghub.com" style="color:var(--orange);">m2learninghub.com</a>, booking a demo, or enrolling in any course offered by M² Learning Hub, you ("the student" or "parent/guardian") agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not proceed with enrollment.</p>
+      <p>These terms constitute a legal agreement between you and M² Learning Hub, co-founded by Manish Mishra and Madhvi Rai.</p>
+    </div>
+
+    <div class="section" id="services">
+      <div class="section-number">02</div>
+      <h2>Our Services</h2>
+      <p>M² Learning Hub provides online tuition services for the following:</p>
+      <ul>
+        <li>Mathematics and Science for students in Classes 6 to 12</li>
+        <li>Competitive exam preparation for JEE (Mains & Advanced) and NEET</li>
+        <li>All major boards: CBSE, ICSE, IB, GCSE, and State Boards</li>
+        <li>Live online sessions conducted in small batches</li>
+        <li>Doubt-clearing sessions, study material, and performance tracking</li>
+      </ul>
+      <p>All services are delivered entirely online. No in-person classes are offered.</p>
+    </div>
+
+    <div class="section" id="enrollment">
+      <div class="section-number">03</div>
+      <h2>Enrollment & Eligibility</h2>
+      <p>Enrollment is open to all students in Classes 6–12 and those preparing for JEE and NEET. Students below 18 years of age must have parental or guardian consent at the time of enrollment.</p>
+      <ul>
+        <li>A free demo class may be booked before enrollment</li>
+        <li>Enrollment is confirmed only upon receipt of course fees</li>
+        <li>M² Learning Hub reserves the right to decline enrollment at its discretion</li>
+        <li>Batch allocation is subject to availability and schedule compatibility</li>
+      </ul>
+    </div>
+
+    <div class="section" id="conduct">
+      <div class="section-number">04</div>
+      <h2>Student Conduct</h2>
+      <p>Students are expected to maintain respectful and disciplined conduct during all online sessions. The following are strictly prohibited:</p>
+      <ul>
+        <li>Recording of live sessions without prior written consent from M² Learning Hub</li>
+        <li>Sharing, distributing, or uploading class content or study material to any third party</li>
+        <li>Disruptive, abusive, or disrespectful behaviour toward faculty or fellow students</li>
+        <li>Sharing login credentials or allowing unauthorised access to sessions</li>
+      </ul>
+      <div class="warning-box">
+        <p>⚠️ Violation of conduct policies may result in immediate removal from the batch without a refund.</p>
+      </div>
+    </div>
+
+    <div class="section" id="payment">
+      <div class="section-number">05</div>
+      <h2>Payment Terms</h2>
+      <p>All fees must be paid in full prior to the commencement of a course or batch unless otherwise agreed in writing.</p>
+      <ul>
+        <li>Course fees are quoted at the time of enrollment and are subject to change for new batches</li>
+        <li>Payments are accepted via UPI, bank transfer, or other methods communicated via WhatsApp</li>
+        <li>Receipts will be issued upon successful payment</li>
+        <li>Fees paid are non-transferable to another student</li>
+      </ul>
+      <p>For fee queries, please contact us via WhatsApp at +91 88825 65496.</p>
+    </div>
+
+    <div class="section" id="schedule">
+      <div class="section-number">06</div>
+      <h2>Scheduling & Attendance</h2>
+      <ul>
+        <li>Class schedules are communicated via WhatsApp at the time of enrollment</li>
+        <li>M² Learning Hub reserves the right to reschedule classes due to faculty unavailability, technical issues, or holidays — with prior notice wherever possible</li>
+        <li>Students are responsible for attending sessions punctually</li>
+        <li>Missed classes by the student are not compensated unless due to a verified emergency</li>
+        <li>Recordings (if provided) are for the enrolled student's personal use only</li>
+      </ul>
+    </div>
+
+    <div class="section" id="material">
+      <div class="section-number">07</div>
+      <h2>Study Material</h2>
+      <p>All notes, practice sheets, question banks, and other materials provided by M² Learning Hub are for the exclusive use of the enrolled student. Students may not:</p>
+      <ul>
+        <li>Share materials on social media, messaging groups, or any public platform</li>
+        <li>Sell or distribute materials to other students or institutions</li>
+        <li>Reproduce materials for commercial purposes</li>
+      </ul>
+    </div>
+
+    <div class="section" id="ip">
+      <div class="section-number">08</div>
+      <h2>Intellectual Property</h2>
+      <p>All content on the M² Learning Hub website, including but not limited to text, graphics, course content, study material, teaching methodologies, and session recordings, is the intellectual property of M² Learning Hub. Unauthorised use, reproduction, or distribution is strictly prohibited and may result in legal action.</p>
+    </div>
+
+    <div class="section" id="liability">
+      <div class="section-number">09</div>
+      <h2>Limitation of Liability</h2>
+      <p>M² Learning Hub makes every effort to deliver high-quality education. However, we do not guarantee specific academic outcomes, marks, or results in board examinations or competitive entrance tests. Academic success depends on multiple factors including the student's own effort and consistency.</p>
+      <p>M² Learning Hub shall not be liable for any technical disruptions, internet connectivity issues on the student's end, or circumstances beyond our reasonable control.</p>
+    </div>
+
+    <div class="section" id="changes">
+      <div class="section-number">10</div>
+      <h2>Changes to These Terms</h2>
+      <p>M² Learning Hub reserves the right to update or modify these Terms and Conditions at any time. Changes will be posted on this page with a revised date. Continued use of our services after any changes constitutes acceptance of the updated terms.</p>
+    </div>
+
+    <div class="section" id="contact">
+      <div class="section-number">11</div>
+      <h2>Governing Law</h2>
+      <p>These Terms and Conditions are governed by the laws of India. Any disputes arising from these terms shall be subject to the jurisdiction of courts in Delhi, India.</p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Questions About These Terms?</h3>
+      <p>Reach out to us on WhatsApp and we'll clarify anything you need.</p>
+      <a href="https://wa.me/918882565496" class="wa-btn" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp: +91 88825 65496
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 M² Learning Hub. All Rights Reserved. &nbsp;|&nbsp;
+    <a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
+    <a href="terms-and-conditions.html">Terms & Conditions</a> &nbsp;|&nbsp;
+    <a href="refund-policy.html">Refund Policy</a> &nbsp;|&nbsp;
+    <a href="about-us.html">About Us</a>
+  </p>
+</footer>
+
+</body>
+</html>
