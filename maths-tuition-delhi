@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Maths Tuition in Delhi | M² Learning Hub</title>
+<meta name="description" content="Premium online Maths &amp; Science tuition for Delhi students — CBSE &amp; ICSE, Classes 6–12, JEE/NEET support. 1:1 and small-batch live classes. Book a free demo.">
+<link rel="canonical" href="https://m2learninghub.com/delhi/maths-tuition/">
+<meta name="robots" content="index,follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Online Maths Tuition in Delhi | M² Learning Hub">
+<meta property="og:description" content="Premium online Maths &amp; Science tuition for Delhi students — CBSE &amp; ICSE, Classes 6–12, JEE/NEET support. Book a free demo with M² Learning Hub.">
+<meta property="og:url" content="https://m2learninghub.com/delhi/maths-tuition/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="M² Learning Hub">
+<meta property="og:image" content="/assets/images/delhi-maths-tuition-og.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy:#0B1E3C;
+    --royal:#2451C4;
+    --teal:#0E7A73;
+    --amber:#F2A93B;
+    --bg:#F6F9FF;
+    --card:#FFFFFF;
+    --text:#16213E;
+    --text-soft:#4B5876;
+    --line:#DCE4F5;
+    --radius-lg:20px;
+    --radius-md:14px;
+    --radius-sm:9px;
+    --shadow:0 12px 32px -18px rgba(11,30,60,0.28);
+    --shadow-sm:0 6px 16px -10px rgba(11,30,60,0.22);
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Manrope',system-ui,sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces',Georgia,serif;
+    font-weight:600;
+    color:var(--navy);
+    line-height:1.18;
+    margin:0;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.72rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--teal);
+    font-weight:600;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  section{padding:88px 0;}
+  @media (max-width:720px){ section{padding:56px 0;} }
+  .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+  a:focus-visible, button:focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:4px;}
+
+  /* ===== HEADER ===== */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(246,249,255,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--maxw);margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;color:var(--navy);text-decoration:none;}
+  .brand-mark{
+    width:36px;height:36px;border-radius:10px;
+    background:linear-gradient(135deg,var(--royal),var(--teal));
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:0.95rem;
+  }
+  nav.links{display:flex;gap:28px;font-size:0.95rem;font-weight:600;}
+  nav.links a{text-decoration:none;color:var(--text-soft);transition:color .15s;}
+  nav.links a:hover{color:var(--royal);}
+  .nav-cta{display:flex;gap:10px;align-items:center;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 22px;border-radius:100px;
+    font-weight:700;font-size:0.95rem;text-decoration:none;
+    border:2px solid transparent;cursor:pointer;transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-primary{background:var(--navy);color:#fff;box-shadow:var(--shadow-sm);}
+  .btn-primary:hover{box-shadow:var(--shadow);}
+  .btn-whatsapp{background:#25D366;color:var(--navy);}
+  .btn-outline{border-color:var(--line);background:#fff;color:var(--navy);}
+  .btn-sm{padding:9px 16px;font-size:0.85rem;}
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+  .menu-toggle svg{width:26px;height:26px;color:var(--navy);}
+
+  @media (max-width:880px){
+    nav.links{display:none;}
+    nav.links.is-open{
+      display:flex;flex-direction:column;position:absolute;
+      top:64px;left:0;right:0;background:#fff;padding:18px 24px;
+      border-bottom:1px solid var(--line);
+    }
+    .nav-cta .btn-outline{display:none;}
+    .menu-toggle{display:block;}
+  }
+
+  /* ===== BREADCRUMB ===== */
+  .breadcrumb{font-size:0.85rem;color:var(--text-soft);padding-top:18px;}
+  .breadcrumb a{text-decoration:none;color:var(--royal);}
+  .breadcrumb span{margin:0 6px;color:#9AA7C7;}
+
+  /* ===== HERO ===== */
+  .hero{padding-top:40px;padding-bottom:64px;position:relative;overflow:hidden;}
+  .hero-grid{
+    display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;align-items:center;
+  }
+  @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;} }
+  .hero h1{font-size:clamp(2.1rem,4.4vw,3.15rem);margin:14px 0 18px;}
+  .hero .lede{font-size:1.13rem;color:var(--text-soft);max-width:52ch;margin-bottom:28px;}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:26px;}
+  .trust-row{display:flex;flex-wrap:wrap;gap:22px;font-size:0.88rem;color:var(--text-soft);}
+  .trust-row li{list-style:none;display:flex;align-items:center;gap:8px;}
+  .trust-row{list-style:none;padding:0;margin:0;}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--teal);flex:none;}
+
+  /* Signature visual: worked-solution / graph paper card */
+  .hero-visual{position:relative;}
+  .solution-card{
+    background:var(--card);
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow);
+    padding:28px 26px 24px;
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size:24px 24px;
+    background-position:-1px -1px;
+    position:relative;
+  }
+  .solution-card::before{
+    content:"";position:absolute;inset:0;border-radius:var(--radius-lg);
+    background:linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.08));
+    pointer-events:none;
+  }
+  .sc-label{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:var(--text-soft);letter-spacing:0.05em;margin-bottom:14px;position:relative;}
+  .sc-line{font-family:'Fraunces',serif;font-size:1.35rem;color:var(--navy);position:relative;margin:10px 0;}
+  .sc-line.strike{color:#9AA7C7;text-decoration:line-through;text-decoration-color:#C7D2EE;}
+  .sc-annot{
+    display:inline-flex;align-items:center;gap:6px;
+    font-family:'IBM Plex Mono',monospace;font-size:0.74rem;color:var(--teal);
+    background:rgba(18,149,142,0.08);border:1px solid rgba(18,149,142,0.25);
+    padding:4px 10px;border-radius:100px;margin-top:4px;position:relative;
+  }
+  .sc-check{
+    position:absolute;right:22px;bottom:22px;
+    width:52px;height:52px;border-radius:50%;
+    background:var(--amber);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 18px -6px rgba(242,169,59,0.6);
+  }
+  .sc-check svg{width:26px;height:26px;}
+
+  /* ===== SECTION HEADERS ===== */
+  .section-head{max-width:640px;margin-bottom:42px;}
+  .section-head h2{font-size:clamp(1.6rem,3vw,2.15rem);margin-top:10px;}
+  .section-head p{color:var(--text-soft);margin-top:12px;font-size:1.02rem;}
+  .center{margin-left:auto;margin-right:auto;text-align:center;}
+
+  /* ===== WHY / TRUST CARDS ===== */
+  .why-bg{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  @media (max-width:880px){ .card-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .card-grid{grid-template-columns:1fr;} }
+  .why-card{
+    background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);
+    padding:26px 22px;transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .why-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm);}
+  .why-icon{
+    width:44px;height:44px;border-radius:12px;
+    background:linear-gradient(135deg,var(--royal),var(--teal));
+    display:flex;align-items:center;justify-content:center;color:#fff;margin-bottom:16px;
+  }
+  .why-icon svg{width:22px;height:22px;}
+  .why-card h3{font-size:1.08rem;margin-bottom:8px;}
+  .why-card p{color:var(--text-soft);font-size:0.94rem;margin:0;}
+
+  /* ===== SERVICES (Maths / Science) ===== */
+  .service-row{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+  @media (max-width:880px){ .service-row{grid-template-columns:1fr;} }
+  .service-block{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-sm);}
+  .service-block h3{font-size:1.4rem;margin-bottom:14px;}
+  .service-block ul{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:12px;}
+  .service-block li{display:flex;gap:10px;font-size:0.96rem;color:var(--text-soft);}
+  .service-block li svg{flex:none;width:18px;height:18px;color:var(--teal);margin-top:2px;}
+  .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.03em;background:rgba(36,81,196,0.08);color:var(--royal);border:1px solid rgba(36,81,196,0.18);padding:4px 10px;border-radius:100px;}
+
+  /* ===== CLASSES / BOARDS TABLE-ISH ===== */
+  .band{background:linear-gradient(180deg,#0B1E3C,#122A52);color:#fff;}
+  .band .section-head h2{color:#fff;}
+  .band .section-head p{color:#B9C6E8;}
+  .stage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  @media (max-width:880px){ .stage-grid{grid-template-columns:1fr;} }
+  .stage-card{
+    background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);
+    border-radius:var(--radius-md);padding:24px;
+  }
+  .stage-card .eyebrow{color:var(--amber);}
+  .stage-card h3{color:#fff;font-size:1.15rem;margin:8px 0 10px;}
+  .stage-card p{color:#C7D3EE;font-size:0.92rem;margin:0;}
+  .board-pills{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px;}
+  .board-pill{
+    background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);
+    color:#fff;font-weight:700;padding:10px 20px;border-radius:100px;font-size:0.92rem;
+  }
+
+  /* ===== FORMATS ===== */
+  .format-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  @media (max-width:880px){ .format-grid{grid-template-columns:1fr;} }
+  .format-card{
+    background:var(--card);border-radius:var(--radius-lg);padding:30px 26px;
+    border:1px solid var(--line);position:relative;box-shadow:var(--shadow-sm);
+  }
+  .format-card.featured{border:2px solid var(--amber);}
+  .featured-badge{
+    position:absolute;top:-13px;left:26px;background:var(--amber);color:#fff;
+    font-family:'IBM Plex Mono',monospace;font-size:0.68rem;font-weight:600;
+    padding:5px 12px;border-radius:100px;letter-spacing:0.04em;
+  }
+  .format-ratio{font-family:'Fraunces',serif;font-size:2.1rem;color:var(--royal);margin-bottom:6px;}
+  .format-card h3{font-size:1.12rem;margin-bottom:10px;}
+  .format-card p{color:var(--text-soft);font-size:0.93rem;}
+
+  /* ===== FACULTY ===== */
+  .faculty-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;}
+  @media (max-width:760px){ .faculty-grid{grid-template-columns:1fr;} }
+  .faculty-card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);
+    padding:28px;display:flex;gap:20px;box-shadow:var(--shadow-sm);
+  }
+  .faculty-avatar{
+    width:64px;height:64px;border-radius:16px;flex:none;
+    background:linear-gradient(135deg,var(--royal),var(--teal));
+    color:#fff;display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif;font-size:1.4rem;font-weight:700;
+  }
+  .faculty-card h3{font-size:1.12rem;margin-bottom:2px;}
+  .faculty-role{color:var(--teal);font-weight:700;font-size:0.85rem;margin-bottom:10px;}
+  .faculty-card p{color:var(--text-soft);font-size:0.92rem;margin:0 0 12px;}
+  .faculty-card .btn-sm{font-size:0.8rem;}
+  .faculty-note{font-size:0.85rem;color:var(--text-soft);margin-top:20px;}
+
+  /* ===== HOW IT WORKS ===== */
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;counter-reset:step;}
+  @media (max-width:980px){ .steps{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:560px){ .steps{grid-template-columns:1fr;} }
+  .step-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-md);padding:22px 18px;}
+  .step-num{
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:0.85rem;color:#fff;
+    background:var(--navy);width:30px;height:30px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+  }
+  .step-card h3{font-size:0.98rem;margin-bottom:6px;}
+  .step-card p{font-size:0.86rem;color:var(--text-soft);margin:0;}
+
+  /* ===== AREAS SERVED ===== */
+  .areas-wrap{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);
+    padding:36px;box-shadow:var(--shadow-sm);
+  }
+  .locality-chip-row{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 22px;}
+  .locality-chip{
+    background:var(--bg);border:1px solid var(--line);color:var(--navy);
+    font-weight:600;font-size:0.9rem;padding:9px 16px;border-radius:100px;
+  }
+  .online-note{
+    display:flex;gap:12px;align-items:flex-start;
+    background:rgba(18,149,142,0.06);border:1px solid rgba(18,149,142,0.22);
+    border-radius:var(--radius-md);padding:16px 18px;font-size:0.92rem;color:var(--text-soft);
+  }
+  .online-note svg{flex:none;width:20px;height:20px;color:var(--teal);margin-top:1px;}
+
+  /* ===== PARENT CONCERNS ===== */
+  .concern-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  @media (max-width:760px){ .concern-grid{grid-template-columns:1fr;} }
+  .concern-item{
+    display:flex;gap:14px;background:var(--card);border:1px solid var(--line);
+    border-radius:var(--radius-md);padding:20px;
+  }
+  .concern-mark{
+    font-family:'Fraunces',serif;color:var(--amber);font-size:1.3rem;flex:none;line-height:1;
+  }
+  .concern-item p{margin:0;color:var(--text-soft);font-size:0.94rem;}
+  .concern-item strong{color:var(--navy);display:block;margin-bottom:3px;font-size:0.98rem;}
+
+  /* ===== FAQ ===== */
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    padding:20px 4px;display:flex;justify-content:space-between;align-items:center;gap:16px;
+    font-family:'Fraunces',serif;font-size:1.05rem;color:var(--navy);font-weight:600;
+  }
+  .faq-q svg{flex:none;width:20px;height:20px;color:var(--royal);transition:transform .2s;}
+  .faq-item[open] .faq-q svg{transform:rotate(45deg);}
+  .faq-a{padding:0 4px 20px;color:var(--text-soft);font-size:0.96rem;max-width:70ch;}
+  details.faq-item{padding:0;}
+  details > summary{list-style:none;}
+  details > summary::-webkit-details-marker{display:none;}
+
+  /* ===== FINAL CTA ===== */
+  .final-cta{
+    background:linear-gradient(135deg,var(--navy),var(--royal));
+    border-radius:28px;padding:56px 40px;text-align:center;color:#fff;
+    position:relative;overflow:hidden;
+  }
+  .final-cta::after{
+    content:"";position:absolute;width:340px;height:340px;border-radius:50%;
+    background:radial-gradient(circle,rgba(242,169,59,0.35),transparent 70%);
+    top:-140px;right:-100px;
+  }
+  .final-cta h2{color:#fff;font-size:clamp(1.6rem,3.2vw,2.1rem);position:relative;}
+  .final-cta p{color:#D8E1F6;max-width:56ch;margin:14px auto 28px;position:relative;}
+  .final-cta .hero-ctas{justify-content:center;position:relative;}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--navy);color:#B9C6E8;padding:48px 0 28px;font-size:0.9rem;}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bottom:28px;}
+  @media (max-width:760px){ .footer-grid{grid-template-columns:1fr;} }
+  footer h4{color:#fff;font-size:0.85rem;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:14px;font-family:'IBM Plex Mono',monospace;}
+  footer ul{list-style:none;padding:0;margin:0;display:grid;gap:9px;}
+  footer a{text-decoration:none;color:#B9C6E8;}
+  footer a:hover{color:#fff;}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.12);padding-top:20px;font-size:0.82rem;color:#8FA0C9;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;}
+
+  .sticky-wa{
+    position:fixed;bottom:20px;right:20px;z-index:60;
+    width:58px;height:58px;border-radius:50%;background:#25D366;color:var(--navy);
+    display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px -8px rgba(0,0,0,0.4);
+    text-decoration:none;
+  }
+  .sticky-wa svg{width:28px;height:28px;}
+  @media (max-width:600px){ .sticky-wa{width:52px;height:52px;bottom:16px;right:16px;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">M²</span>
+      M² Learning Hub
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="#maths-delhi">Maths Tuition</a>
+      <a href="#science-delhi">Science Tuition</a>
+      <a href="#formats">Formats</a>
+      <a href="#faculty">Faculty</a>
+      <a href="#areas">Areas We Serve</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://m2learninghub.com/" class="btn btn-outline btn-sm">Main Website</a>
+      <a href="https://wa.me/918107563723?text=Hi%20M%C2%B2%20Learning%20Hub%2C%20I%20am%20interested%20in%20online%20Maths%20tuition%20in%20Delhi." class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" id="menuToggle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="breadcrumb">
+        <a href="https://m2learninghub.com/">Home</a><span>→</span>
+        <a href="https://m2learninghub.com/">Online Tuition</a><span>→</span>
+        Delhi <span>→</span> Maths Tuition
+      </p>
+      <div class="hero-grid" style="margin-top:26px;">
+        <div>
+          <p class="eyebrow">Online Maths &amp; Science Tuition · Delhi NCR</p>
+          <h1>Online Maths &amp; Science Tuition in Delhi</h1>
+          <p class="lede">Live 1:1 and small-batch online classes for Delhi students in Classes 6–12 — built around concept clarity, structured practice, and steady exam preparation for CBSE, ICSE, JEE and NEET.</p>
+          <div class="hero-ctas">
+            <a href="https://wa.me/918107563723?text=Hi%20M%C2%B2%20Learning%20Hub%2C%20I%20am%20interested%20in%20a%20free%20demo%20class%20for%20Maths%20tuition%20in%20Delhi." class="btn btn-primary" target="_blank" rel="noopener">Book a Free Demo</a>
+            <a href="https://wa.me/918107563723?text=Hi%20M%C2%B2%20Learning%20Hub%2C%20I%20have%20a%20question%20about%20online%20Maths%20tuition%20in%20Delhi." class="btn btn-whatsapp" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
+              WhatsApp Us
+            </a>
+          </div>
+          <ul class="trust-row">
+            <li><span class="dot"></span>Delhi students in Karol Bagh, Rohini, Dwarka &amp; more</li>
+            <li><span class="dot"></span>CBSE &amp; ICSE aligned</li>
+            <li><span class="dot"></span>1:1, 1:4 and 1:8 formats</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="solution-card">
+            <p class="sc-label">// worked example — quadratic factoring</p>
+            <p class="sc-line strike">x² + 5x + 6 = 0 → guess &amp; check</p>
+            <p class="sc-line">(x + 2)(x + 3) = 0</p>
+            <span class="sc-annot">✓ concept clarity, not memorised steps</span>
+            <div class="sc-check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY DELHI PARENTS CHOOSE M2 ============ -->
+  <section class="why-bg" id="why">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Why M² Learning Hub</p>
+        <h2>Why Delhi Parents Choose M² Learning Hub</h2>
+        <p>Delhi's academic environment is competitive — school pace is fast, and board plus competitive-exam pressure builds early. Our online format is designed to give every student the individual attention that's hard to get in a large classroom.</p>
+      </div>
+      <div class="card-grid">
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/></svg></div>
+          <h3>Concept-first teaching</h3>
+          <p>Every topic starts with the "why" before the "how," so students build genuine understanding rather than memorised steps.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <h3>Small, focused batches</h3>
+          <p>1:1, 1:4 and 1:8 formats keep group sizes small enough for every student to be seen and heard in each class.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16M4 15l4-4 4 4 6-6"/></svg></div>
+          <h3>Regular assessment</h3>
+          <p>Periodic tests and structured practice help track progress and flag weak topics early, rather than at exam time.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3>Live online, from home</h3>
+          <p>Students across Delhi attend live classes from home — no commute across the city, more time for practice and rest.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12h8M8 8h8M8 16h5"/><rect x="3" y="3" width="18" height="18" rx="3"/></svg></div>
+          <h3>CBSE &amp; ICSE aligned</h3>
+          <p>Teaching follows the student's own school syllabus and board pattern rather than a generic curriculum.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></div>
+          <h3>Open parent communication</h3>
+          <p>Parents can check in on their child's progress and topics covered directly with the faculty teaching them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MATHS + SCIENCE SERVICES ============ -->
+  <section id="maths-delhi">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Our Core Programs</p>
+        <h2>Online Maths Tuition in Delhi</h2>
+        <p>Structured, syllabus-aligned Maths tuition for Delhi students — from building number-sense in middle school to exam-ready problem solving in Classes 10–12.</p>
+      </div>
+      <div class="service-block">
+        <p class="eyebrow" style="color:var(--royal);">Maths</p>
+        <h3>What Maths tuition covers</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Concept clarity on every chapter, taught step by step</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Coverage mapped to the student's school syllabus</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Guided problem-solving practice, not just answer-checking</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Dedicated doubt-solving in every session</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Periodic assessments to track topic-wise progress</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">CLASS 9–10 MATHS</span>
+          <span class="tag">JEE MATHS FOUNDATION</span>
+          <span class="tag">CBSE &amp; ICSE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-bg" id="science-delhi">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Our Core Programs</p>
+        <h2>Online Science Tuition in Delhi</h2>
+        <p>Physics, Chemistry and Biology tuition for Delhi students, built around clear explanations and exam-pattern practice for school boards and NEET preparation.</p>
+      </div>
+      <div class="service-block">
+        <p class="eyebrow" style="color:var(--teal);">Science</p>
+        <h3>What Science tuition covers</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Physics, Chemistry and Biology concepts explained clearly</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Diagram-based learning where the subject calls for it</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Numerical problem-solving practice for Physics &amp; Chemistry</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Application-based questions, in line with current board patterns</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Structured revision before school and board exams</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">CLASS 9–10 SCIENCE</span>
+          <span class="tag">NEET FOUNDATION</span>
+          <span class="tag">CBSE &amp; ICSE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLASSES + BOARDS ============ -->
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" style="color:var(--amber);">Classes We Cover</p>
+        <h2>Classes 6 to 12, Delhi Curriculum-Aligned</h2>
+        <p>Teaching is paced to each stage of school — from building foundations to board-exam and competitive-exam readiness.</p>
+      </div>
+      <div class="stage-grid">
+        <div class="stage-card">
+          <p class="eyebrow">Classes 6–8</p>
+          <h3>Building the foundation</h3>
+          <p>Strengthening core Maths and Science fundamentals so later, harder chapters feel manageable rather than overwhelming.</p>
+        </div>
+        <div class="stage-card">
+          <p class="eyebrow">Classes 9–10</p>
+          <h3>Board-exam readiness</h3>
+          <p>Full syllabus coverage for Class 9 and Class 10 Maths &amp; Science, with structured revision ahead of board exams.</p>
+        </div>
+        <div class="stage-card">
+          <p class="eyebrow">Classes 11–12</p>
+          <h3>Board + competitive exam support</h3>
+          <p>Deeper problem-solving for Maths and Science, with additional support for students preparing for JEE or NEET.</p>
+        </div>
+      </div>
+      <div class="board-pills">
+        <span class="board-pill">CBSE</span>
+        <span class="board-pill">ICSE</span>
+        <span class="board-pill">JEE Preparation</span>
+        <span class="board-pill">NEET Preparation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FORMATS ============ -->
+  <section id="formats">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Choose Your Learning Format</p>
+        <h2>1:1, 1:4 or 1:8 — Whichever Fits Your Child</h2>
+        <p>All three formats follow the same concept-first teaching approach. The difference is batch size and the pace of individual attention.</p>
+      </div>
+      <div class="format-grid">
+        <div class="format-card">
+          <p class="format-ratio">1:1</p>
+          <h3>Personalised Tuition</h3>
+          <p>One-to-one sessions built entirely around one student's pace, gaps and school syllabus. Best for students who need focused, individual support.</p>
+        </div>
+        <div class="format-card featured">
+          <span class="featured-badge">MOST CHOSEN</span>
+          <p class="format-ratio">1:4</p>
+          <h3>Small Batch (1:4)</h3>
+          <p>A small group of up to 4 students, keeping the personal attention of 1:1 while allowing peer discussion during problem-solving.</p>
+        </div>
+        <div class="format-card">
+          <p class="format-ratio">1:8</p>
+          <h3>Small Batch (1:8)</h3>
+          <p>A slightly larger, still-small group of up to 8 students — a structured classroom feel with room for individual doubt-solving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FACULTY ============ -->
+  <section class="why-bg" id="faculty">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Meet Our Faculty</p>
+        <h2>Learn Directly From Our Core Faculty</h2>
+        <p>Delhi students are taught by M² Learning Hub's own faculty and co-founders — not outsourced tutors.</p>
+      </div>
+      <div class="faculty-grid">
+        <div class="faculty-card">
+          <div class="faculty-avatar" aria-hidden="true">MM</div>
+          <div>
+            <h3>Manish Mishra</h3>
+            <p class="faculty-role">Mathematics Faculty &amp; Co-Founder</p>
+            <p>Leads Maths teaching at M² Learning Hub, focused on building concept clarity before speed and technique.</p>
+            <a href="https://wa.me/918107563723?text=Hi%20Manish%20Sir%2C%20I%20am%20interested%20in%20Maths%20tuition%20in%20Delhi." class="btn btn-outline btn-sm" target="_blank" rel="noopener">Message on WhatsApp</a>
+          </div>
+        </div>
+        <div class="faculty-card">
+          <div class="faculty-avatar" aria-hidden="true">MR</div>
+          <div>
+            <h3>Madhvi Rai</h3>
+            <p class="faculty-role">Science Faculty &amp; Co-Founder</p>
+            <p>Leads Science teaching at M² Learning Hub, with an emphasis on clear explanations and application-based practice.</p>
+            <a href="https://wa.me/918882565496?text=Hi%20Madhvi%20Ma'am%2C%20I%20am%20interested%20in%20Science%20tuition%20in%20Delhi." class="btn btn-outline btn-sm" target="_blank" rel="noopener">Message on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <p class="faculty-note">Full faculty qualifications and additional teacher profiles will be added here as they are verified and supplied.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="how-it-works">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">How Online Classes Work</p>
+        <h2>Getting Started Is Simple</h2>
+      </div>
+      <div class="steps">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Contact us</h3>
+          <p>Reach out via WhatsApp or the main website to tell us about your child's class and needs.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Discuss needs</h3>
+          <p>We understand the student's current level, school board and subjects they need help with.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Free demo class</h3>
+          <p>Attend a demo session to experience the teaching style before committing.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h3>Choose a format</h3>
+          <p>Pick 1:1, 1:4 or 1:8 based on what suits your child's learning style and budget.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">5</div>
+          <h3>Begin classes</h3>
+          <p>Start structured, live online learning with regular assessments and doubt support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AREAS WE SERVE ============ -->
+  <section class="why-bg" id="areas">
+    <div class="wrap">
+      <div class="areas-wrap">
+        <p class="eyebrow">Areas We Serve in Delhi</p>
+        <h2 style="margin-top:10px;font-size:1.6rem;">Serving Students Across Delhi, Online</h2>
+        <p style="color:var(--text-soft);margin-top:10px;">M² Learning Hub does not operate a physical centre in Delhi. Every class is conducted live online, so students from any part of the city can join with a stable internet connection.</p>
+        <div class="locality-chip-row">
+          <span class="locality-chip">Karol Bagh</span>
+          <span class="locality-chip">Rohini</span>
+          <span class="locality-chip">Dwarka</span>
+          <span class="locality-chip">Pitampura</span>
+          <span class="locality-chip">South Extension</span>
+          <span class="locality-chip">Greater Kailash</span>
+          <span class="locality-chip">and other parts of Delhi NCR</span>
+        </div>
+        <div class="online-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Students can attend live online classes from home anywhere in Delhi — there is no need to travel to a coaching centre.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARENT CONCERNS ============ -->
+  <section id="concerns">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">We Understand</p>
+        <h2>Common Concerns Delhi Parents Share With Us</h2>
+      </div>
+      <div class="concern-grid">
+        <div class="concern-item">
+          <span class="concern-mark">"</span>
+          <p><strong>Weak Maths fundamentals</strong>Gaps from earlier classes make current chapters harder to follow — we start by closing those gaps first.</p>
+        </div>
+        <div class="concern-item">
+          <span class="concern-mark">"</span>
+          <p><strong>Science feels abstract</strong>Concepts in Physics and Chemistry can feel disconnected from real understanding without enough one-on-one explanation.</p>
+        </div>
+        <div class="concern-item">
+          <span class="concern-mark">"</span>
+          <p><strong>Not enough individual attention</strong>Large school classrooms make it hard for every child to ask questions or get doubts cleared in the moment.</p>
+        </div>
+        <div class="concern-item">
+          <span class="concern-mark">"</span>
+          <p><strong>Falling behind syllabus</strong>Once a student falls behind, catching up on their own becomes increasingly difficult without structured support.</p>
+        </div>
+        <div class="concern-item">
+          <span class="concern-mark">"</span>
+          <p><strong>Board and entrance exam pressure</strong>Class 10 boards and JEE/NEET preparation can feel overwhelming without a clear, paced study plan.</p>
+        </div>
+        <div class="concern-item">
+          <span class="concern-mark">"</span>
+          <p><strong>Inconsistent practice</strong>Without regular problem-solving practice and feedback, students often revisit the same mistakes repeatedly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="why-bg" id="faq">
+    <div class="wrap" style="max-width:820px;">
+      <div class="section-head center" style="margin-left:auto;margin-right:auto;">
+        <p class="eyebrow">Frequently Asked Questions</p>
+        <h2>Common Questions From Delhi Parents &amp; Students</h2>
+      </div>
+
+      <details class="faq-item">
+        <summary class="faq-q">Does M² Learning Hub provide online Maths tuition in Delhi?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+        <p class="faq-a">Yes. M² Learning Hub offers live online Maths tuition for students across Delhi, covering Classes 6 to 12 in 1:1, 1:4 and 1:8 formats.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Do you teach CBSE and ICSE students in Delhi?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+        <p class="faq-a">Yes, teaching is aligned to both CBSE and ICSE syllabi, following the student's own school curriculum.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Do you provide Class 10 Maths and Science tuition?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+        <p class="faq-a">Yes, Class 10 Maths and Science tuition is available, with structured coverage of the full syllabus and revision ahead of board exams.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Is 1:1 personalised tuition available?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+        <p class="faq-a">Yes, 1:1 personalised tuition is one of our core learning formats, alongside 1:4 and 1:8 small batches.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Do you offer support for JEE and NEET preparation?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+        <p class="faq-a">Yes, we support Maths preparation for JEE aspirants and Science preparation for NEET aspirants, alongside regular school coursework.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Does M² Learning Hub have a physical centre in Delhi?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+        <p class="faq-a">No. M² Learning Hub does not have a physical centre in Delhi. All classes are conducted live online, and students can join from anywhere in the city.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">How does the online class work?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+        <p class="faq-a">Classes are conducted live over video call, with the faculty teaching concepts, solving problems on-screen, and clearing doubts in real time.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">How can parents track their child's progress?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+        <p class="faq-a">Parents can check in directly with the faculty teaching their child to understand topics covered, performance in assessments, and areas that need more focus.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Which classes and subjects are available?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+        <p class="faq-a">We currently teach Maths and Science (Physics, Chemistry, Biology) for Classes 6 to 12, along with JEE Maths and NEET Science support.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">How can I book a free demo class in Delhi?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+        <p class="faq-a">Message us on WhatsApp or visit the main M² Learning Hub website to share your child's class and requirements, and we'll schedule a free demo session.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section>
+    <div class="wrap">
+      <div class="final-cta">
+        <p class="eyebrow" style="color:var(--amber);">Start Today</p>
+        <h2>Give Your Child Concept Clarity, One Class at a Time</h2>
+        <p>Book a free demo class and see how M² Learning Hub's online Maths &amp; Science tuition works for your child in Delhi.</p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/918107563723?text=Hi%20M%C2%B2%20Learning%20Hub%2C%20I%20am%20interested%20in%20a%20free%20demo%20class%20for%20Maths%20tuition%20in%20Delhi." class="btn btn-primary" style="background:#fff;color:var(--navy);" target="_blank" rel="noopener">Book a Free Demo</a>
+          <a href="https://wa.me/918107563723?text=Hi%20M%C2%B2%20Learning%20Hub%2C%20I%20have%20a%20question%20about%20online%20tuition%20in%20Delhi." class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="https://m2learninghub.com/" class="brand" style="color:#fff;">
+          <span class="brand-mark" aria-hidden="true">M²</span>
+          M² Learning Hub
+        </a>
+        <p style="margin-top:14px;max-width:36ch;color:#B9C6E8;">Online Maths &amp; Science tuition with concept clarity, personalised attention and structured practice — for CBSE, ICSE, JEE and NEET students.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="https://m2learninghub.com/">Home</a></li>
+          <li><a href="#maths-delhi">Maths Tuition</a></li>
+          <li><a href="#science-delhi">Science Tuition</a></li>
+          <li><a href="#formats">Learning Formats</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="https://wa.me/918107563723" target="_blank" rel="noopener">WhatsApp: +91 81075 63723</a></li>
+          <li><a href="https://m2learninghub.com/">m2learninghub.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 M² Learning Hub. All rights reserved.</span>
+      <span>Online tuition for Delhi NCR students</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/918107563723?text=Hi%20M%C2%B2%20Learning%20Hub%2C%20I%20am%20interested%20in%20online%20Maths%20tuition%20in%20Delhi." class="sticky-wa" target="_blank" rel="noopener" aria-label="Chat with M² Learning Hub on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
+</a>
+
+<script>
+  (function(){
+    var toggle = document.getElementById('menuToggle');
+    var linksBar = document.querySelector('nav.links');
+    toggle.addEventListener('click', function(){
+      var isOpen = linksBar.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    linksBar.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', function(){
+        linksBar.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+    window.addEventListener('resize', function(){
+      if (window.innerWidth > 880) {
+        linksBar.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "M² Learning Hub",
+      "url": "https://m2learninghub.com/",
+      "description": "Online Maths and Science tuition platform offering 1:1 and small-batch classes for CBSE, ICSE, JEE and NEET students.",
+      "sameAs": ["https://m2learninghub.com/"]
+    },
+    {
+      "@type": "WebSite",
+      "name": "M² Learning Hub",
+      "url": "https://m2learninghub.com/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://m2learninghub.com/"},
+        {"@type":"ListItem","position":2,"name":"Online Tuition","item":"https://m2learninghub.com/"},
+        {"@type":"ListItem","position":3,"name":"Delhi","item":"https://m2learninghub.com/delhi/maths-tuition/"},
+        {"@type":"ListItem","position":4,"name":"Maths Tuition","item":"https://m2learninghub.com/delhi/maths-tuition/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Does M² Learning Hub provide online Maths tuition in Delhi?","acceptedAnswer":{"@type":"Answer","text":"Yes. M² Learning Hub offers live online Maths tuition for students across Delhi, covering Classes 6 to 12 in 1:1, 1:4 and 1:8 formats."}},
+        {"@type":"Question","name":"Do you teach CBSE and ICSE students in Delhi?","acceptedAnswer":{"@type":"Answer","text":"Yes, teaching is aligned to both CBSE and ICSE syllabi, following the student's own school curriculum."}},
+        {"@type":"Question","name":"Do you provide Class 10 Maths and Science tuition?","acceptedAnswer":{"@type":"Answer","text":"Yes, Class 10 Maths and Science tuition is available, with structured coverage of the full syllabus and revision ahead of board exams."}},
+        {"@type":"Question","name":"Is 1:1 personalised tuition available?","acceptedAnswer":{"@type":"Answer","text":"Yes, 1:1 personalised tuition is one of our core learning formats, alongside 1:4 and 1:8 small batches."}},
+        {"@type":"Question","name":"Do you offer support for JEE and NEET preparation?","acceptedAnswer":{"@type":"Answer","text":"Yes, we support Maths preparation for JEE aspirants and Science preparation for NEET aspirants, alongside regular school coursework."}},
+        {"@type":"Question","name":"Does M² Learning Hub have a physical centre in Delhi?","acceptedAnswer":{"@type":"Answer","text":"No. M² Learning Hub does not have a physical centre in Delhi. All classes are conducted live online, and students can join from anywhere in the city."}},
+        {"@type":"Question","name":"How does the online class work?","acceptedAnswer":{"@type":"Answer","text":"Classes are conducted live over video call, with the faculty teaching concepts, solving problems on-screen, and clearing doubts in real time."}},
+        {"@type":"Question","name":"How can parents track their child's progress?","acceptedAnswer":{"@type":"Answer","text":"Parents can check in directly with the faculty teaching their child to understand topics covered, performance in assessments, and areas that need more focus."}},
+        {"@type":"Question","name":"Which classes and subjects are available?","acceptedAnswer":{"@type":"Answer","text":"We currently teach Maths and Science (Physics, Chemistry, Biology) for Classes 6 to 12, along with JEE Maths and NEET Science support."}},
+        {"@type":"Question","name":"How can I book a free demo class in Delhi?","acceptedAnswer":{"@type":"Answer","text":"Message us on WhatsApp or visit the main M² Learning Hub website to share your child's class and requirements, and we'll schedule a free demo session."}}
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
