@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Science Tuition in Delhi | M² Learning Hub</title>
+<meta name="description" content="Live online Physics, Chemistry & Biology tuition for Delhi students — CBSE & ICSE, Classes 6–12, NEET foundation support. 1:1 and small-batch classes. Book a free demo.">
+<link rel="canonical" href="https://m2learninghub.com/delhi/science-tuition/">
+<meta name="robots" content="index,follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Online Science Tuition in Delhi | M² Learning Hub">
+<meta property="og:description" content="Live online Physics, Chemistry & Biology tuition for Delhi students — CBSE & ICSE, Classes 6–12, NEET foundation support. Book a free demo with M² Learning Hub.">
+<meta property="og:url" content="https://m2learninghub.com/delhi/science-tuition/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="M² Learning Hub">
+<meta property="og:image" content="/assets/images/delhi-science-tuition-og.webp">
+
+<style>
+  :root{
+    --navy:#0b2545;
+    --royal:#1e4fa3;
+    --cyan:#12b3b3;
+    --amber:#f5a623;
+    --bg:#f4f9fc;
+    --bg-card:#ffffff;
+    --text:#122036;
+    --text-soft:#3d4d63;
+    --border:#e1ecf5;
+    --shadow: 0 10px 30px rgba(11,37,69,0.08);
+    --radius: 18px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .container{max-width:1160px;margin:0 auto;padding:0 20px;}
+  .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+
+  /* Skip link */
+  .skip-link{position:absolute;left:-999px;top:0;background:var(--navy);color:#fff;padding:10px 16px;border-radius:0 0 8px 0;z-index:100;}
+  .skip-link:focus{left:0;}
+
+  /* Header */
+  header.site-header{
+    background:linear-gradient(90deg,var(--navy),#123a70);
+    color:#fff;
+    position:sticky;top:0;z-index:50;
+    box-shadow:0 2px 12px rgba(0,0,0,0.12);
+  }
+  .header-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem;letter-spacing:.2px;}
+  .brand .mark{
+    width:34px;height:34px;border-radius:9px;
+    background:linear-gradient(135deg,var(--cyan),var(--royal));
+    display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:#fff;
+  }
+  nav.main-nav{display:flex;gap:18px;flex-wrap:wrap;}
+  nav.main-nav a{font-size:.92rem;opacity:.9;padding:6px 2px;border-bottom:2px solid transparent;}
+  nav.main-nav a:hover,nav.main-nav a:focus{opacity:1;border-color:var(--cyan);}
+  .header-ctas{display:flex;gap:10px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:10px 18px;border-radius:999px;font-weight:600;font-size:.9rem;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn-primary{background:var(--amber);color:var(--navy);}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(245,166,35,.4);}
+  .btn-ghost{border:1.5px solid rgba(255,255,255,.5);color:#fff;}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);}
+  .btn-outline-dark{border:1.5px solid var(--royal);color:var(--royal);}
+  .btn-outline-dark:hover{background:var(--royal);color:#fff;}
+
+  /* Breadcrumb */
+  .breadcrumb{background:#eef5fb;font-size:.85rem;color:var(--text-soft);padding:10px 0;}
+  .breadcrumb a{color:var(--royal);}
+  .breadcrumb a:hover{text-decoration:underline;}
+
+  /* Hero */
+  .hero{
+    background:
+      radial-gradient(circle at 85% 15%, rgba(18,179,179,.16), transparent 55%),
+      radial-gradient(circle at 10% 90%, rgba(245,166,35,.12), transparent 45%),
+      linear-gradient(180deg,#f4f9fc,#eaf3fb);
+    padding:56px 0 64px;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;}
+  .eyebrow{
+    display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--royal);background:#e4edfa;padding:6px 14px;border-radius:999px;margin-bottom:16px;
+  }
+  h1{font-size:2.35rem;line-height:1.18;margin:0 0 16px;color:var(--navy);}
+  .hero p.lede{font-size:1.08rem;color:var(--text-soft);max-width:56ch;margin:0 0 26px;}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px;}
+  .btn-lg{padding:13px 24px;font-size:.98rem;}
+  ul.trust-bullets{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:.92rem;color:var(--text-soft);}
+  ul.trust-bullets li{display:flex;gap:8px;align-items:flex-start;}
+  ul.trust-bullets li::before{content:"✓";color:var(--cyan);font-weight:800;}
+
+  .hero-visual{
+    background:var(--navy);color:#dff3f3;border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);
+    font-family:'Courier New',monospace;font-size:.86rem;
+  }
+  .hero-visual .tag{color:#7fd8d8;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:10px;display:block;}
+  .hero-visual .line{margin:6px 0;}
+  .hero-visual .ok{color:var(--amber);}
+
+  /* Section shells */
+  section{padding:64px 0;}
+  .section-alt{background:#fff;}
+  .section-head{max-width:680px;margin:0 auto 40px;text-align:center;}
+  .section-eyebrow{color:var(--cyan);font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
+  h2{font-size:1.8rem;color:var(--navy);margin:0 0 12px;}
+  .section-head p{color:var(--text-soft);margin:0;}
+
+  /* Card grids */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .card{
+    background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:26px;box-shadow:var(--shadow);
+  }
+  .card h3{margin:0 0 10px;color:var(--navy);font-size:1.08rem;}
+  .card p{margin:0;color:var(--text-soft);font-size:.94rem;}
+  .icon-chip{
+    width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--cyan),var(--royal));color:#fff;font-weight:800;margin-bottom:14px;font-size:1.05rem;
+  }
+
+  /* Subject deep-dive cards */
+  .subject-card{
+    background:var(--bg-card);border-radius:var(--radius);border:1px solid var(--border);
+    padding:30px;box-shadow:var(--shadow);
+  }
+  .subject-card .subject-tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+    padding:4px 12px;border-radius:999px;margin-bottom:14px;
+  }
+  .tag-physics{background:#e6f0ff;color:var(--royal);}
+  .tag-chem{background:#e5f9f6;color:#0d8f83;}
+  .tag-bio{background:#fff3e0;color:#b5720e;}
+  .subject-card h3{font-size:1.25rem;color:var(--navy);margin:0 0 10px;}
+  .subject-card ul{margin:14px 0 0;padding-left:20px;color:var(--text-soft);font-size:.93rem;}
+  .subject-card li{margin-bottom:8px;}
+  .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+  .pill{background:#eef5fb;color:var(--royal);font-size:.78rem;font-weight:600;padding:5px 12px;border-radius:999px;}
+
+  /* Classes */
+  .class-card{position:relative;}
+  .class-badge{
+    position:absolute;top:-14px;left:24px;background:var(--amber);color:var(--navy);
+    font-weight:800;font-size:.78rem;padding:5px 12px;border-radius:999px;box-shadow:0 4px 10px rgba(245,166,35,.4);
+  }
+
+  /* Formats */
+  .format-card{position:relative;border:2px solid var(--border);}
+  .format-card.featured{border-color:var(--cyan);}
+  .format-badge{
+    position:absolute;top:-14px;right:20px;background:var(--cyan);color:#fff;font-size:.72rem;font-weight:800;
+    padding:5px 12px;border-radius:999px;letter-spacing:.03em;
+  }
+  .format-num{
+    font-size:1.5rem;font-weight:800;color:var(--royal);margin-bottom:8px;
+  }
+
+  /* Faculty */
+  .faculty-card{display:flex;gap:18px;align-items:flex-start;}
+  .avatar{
+    width:64px;height:64px;border-radius:50%;flex:none;
+    background:linear-gradient(135deg,var(--royal),var(--cyan));color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.15rem;
+  }
+  .faculty-card h3{margin:0 0 2px;}
+  .faculty-role{color:var(--cyan);font-weight:700;font-size:.85rem;margin-bottom:8px;display:block;}
+  .faculty-note{
+    text-align:center;color:var(--text-soft);font-size:.9rem;margin-top:26px;font-style:italic;
+  }
+
+  /* How it works */
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
+  .step{text-align:center;}
+  .step-num{
+    width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;
+    display:flex;align-items:center;justify-content:center;margin:0 auto 12px;
+  }
+  .step h3{font-size:.98rem;margin:0 0 6px;}
+  .step p{font-size:.86rem;color:var(--text-soft);margin:0;}
+
+  /* Areas */
+  .areas-box{
+    background:var(--bg-card);border-radius:var(--radius);border:1px solid var(--border);
+    padding:30px;box-shadow:var(--shadow);
+  }
+  .locality-tags{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0;}
+  .locality-tags span{background:#eef5fb;color:var(--royal);padding:7px 14px;border-radius:10px;font-size:.9rem;font-weight:600;}
+  .note-box{
+    background:#fff8ea;border:1px solid #f3dfa8;border-radius:12px;padding:16px 18px;font-size:.92rem;color:#6b4d0e;margin-top:16px;
+  }
+
+  /* Concerns */
+  .concern-card{position:relative;padding-left:30px;}
+  .concern-card::before{
+    content:"\201C";position:absolute;left:26px;top:16px;font-size:2rem;color:var(--cyan);opacity:.35;font-family:Georgia,serif;
+  }
+  .concern-card h3{font-size:1rem;}
+
+  /* FAQ */
+  details.faq-item{
+    background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:18px 22px;margin-bottom:12px;
+  }
+  details.faq-item summary{
+    cursor:pointer;font-weight:700;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:12px;
+  }
+  details.faq-item summary::-webkit-details-marker{display:none;}
+  details.faq-item summary::after{content:"+";color:var(--cyan);font-size:1.3rem;font-weight:800;}
+  details.faq-item[open] summary::after{content:"–";}
+  details.faq-item p{margin:12px 0 0;color:var(--text-soft);}
+
+  /* Final CTA */
+  .final-cta{
+    background:linear-gradient(120deg,var(--navy),#123a70 60%,#0d5f5f);
+    color:#fff;border-radius:24px;padding:52px 40px;text-align:center;
+  }
+  .final-cta h2{color:#fff;}
+  .final-cta p{color:#d8e6f2;max-width:56ch;margin:0 auto 26px;}
+
+  /* Footer */
+  footer{background:var(--navy);color:#cfe0f0;padding:48px 0 24px;font-size:.9rem;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:32px;}
+  footer h4{color:#fff;font-size:.95rem;margin:0 0 14px;}
+  footer ul{list-style:none;margin:0;padding:0;}
+  footer li{margin-bottom:8px;}
+  footer a:hover{color:var(--cyan);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:.82rem;color:#93a9c2;}
+
+  @media (max-width:900px){
+    .hero-grid,.grid-3,.grid-2,.steps,.footer-grid{grid-template-columns:1fr;}
+    .steps{grid-template-columns:repeat(2,1fr);}
+    h1{font-size:1.85rem;}
+    nav.main-nav{display:none;}
+  }
+  @media (max-width:520px){
+    .steps{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="#top" id="top">
+      <span class="mark">M²</span> M² Learning Hub
+    </a>
+    <nav class="main-nav" aria-label="Section navigation">
+      <a href="#physics-chemistry-biology">Physics · Chemistry · Biology</a>
+      <a href="#classes">Classes</a>
+      <a href="#formats">Formats</a>
+      <a href="#faculty">Faculty</a>
+      <a href="#areas">Areas We Serve</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-ctas">
+      <a class="btn btn-ghost" href="https://m2learninghub.com/">Main Website</a>
+      <a class="btn btn-primary" href="https://wa.me/918882565496?text=Hi%20M%C2%B2%20Learning%20Hub%2C%20I%20am%20interested%20in%20online%20Science%20tuition%20in%20Delhi.">WhatsApp Us</a>
+    </div>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container">
+    <a href="https://m2learninghub.com/">Home</a> →
+    <a href="https://m2learninghub.com/">Online Tuition</a> →
+    <a href="https://m2learninghub.com/delhi/">Delhi</a> →
+    Science Tuition
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Physics · Chemistry · Biology · Delhi NCR</span>
+        <h1>Online Science Tuition in Delhi</h1>
+        <p class="lede">Live 1:1 and small-batch online Science classes for Delhi students in Classes 6–12 — clear explanations, diagram-based learning and structured numerical practice across Physics, Chemistry and Biology, aligned to CBSE and ICSE.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-lg" href="https://wa.me/918882565496?text=Hi%20M%C2%B2%20Learning%20Hub%2C%20I%20am%20interested%20in%20a%20free%20demo%20class%20for%20Science%20tuition%20in%20Delhi.">Book a Free Demo</a>
+          <a class="btn btn-outline-dark btn-lg" href="https://wa.me/918882565496?text=Hi%20M%C2%B2%20Learning%20Hub%2C%20I%20have%20a%20question%20about%20online%20Science%20tuition%20in%20Delhi.">WhatsApp Us</a>
+        </div>
+        <ul class="trust-bullets">
+          <li>Physics, Chemistry & Biology — taught as distinct disciplines, not one generic subject</li>
+          <li>CBSE & ICSE aligned, Classes 6–12</li>
+          <li>1:1, 1:4 and 1:8 formats, with a clear path into NEET foundation</li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <span class="tag">Why does a ball fall faster than a feather in air?</span>
+        <div class="line">Air resistance ≠ gravity</div>
+        <div class="line">Drop both in vacuum →</div>
+        <div class="line ok">✓ Both hit the ground together</div>
+        <div class="line" style="margin-top:14px;color:#7fd8d8;">— concept before formula, every time</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Why Science Is Different</span>
+        <h2>Science Needs More Than Memorising Definitions</h2>
+        <p>Physics, Chemistry and Biology each ask something different of a student — formula-based reasoning, structured chemical logic, and observation-based recall. Delhi's fast school pace often leaves little room to build any of these properly, which is where focused, one-on-one explanation makes the difference.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="icon-chip">1</div>
+          <h3>Concepts before formulas</h3>
+          <p>Every Physics and Chemistry topic starts with the underlying idea, so formulas make sense rather than needing to be memorised.</p>
+        </div>
+        <div class="card">
+          <div class="icon-chip">2</div>
+          <h3>Diagram-based learning</h3>
+          <p>Biology and Chemistry topics that rely on diagrams — cell structure, human systems, reactions — are taught visually, not just described in words.</p>
+        </div>
+        <div class="card">
+          <div class="icon-chip">3</div>
+          <h3>Numerical practice, guided</h3>
+          <p>Physics and Chemistry numericals are practised step by step in every session, with doubts resolved as they come up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="physics-chemistry-biology">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Our Core Programs</span>
+        <h2>Physics, Chemistry & Biology in Delhi</h2>
+        <p>From Class 6–8 general science to subject-specific teaching in Classes 9–12, each subject is taught according to what it actually demands from a student.</p>
+      </div>
+      <div class="grid-3">
+        <div class="subject-card">
+          <span class="subject-tag tag-physics">Physics</span>
+          <h3>Online Physics Tuition</h3>
+          <p style="color:var(--text-soft);font-size:.93rem;">Mechanics, electricity, optics and modern physics, taught with an emphasis on the "why" behind each formula before problem-solving speed.</p>
+          <ul>
+            <li>Concept-first teaching of laws and formulas</li>
+            <li>Numerical problem-solving practice every session</li>
+            <li>Diagram and ray-diagram based topics explained visually</li>
+            <li>Application-based questions in line with current board patterns</li>
+          </ul>
+          <div class="pill-row"><span class="pill">CBSE & ICSE</span><span class="pill">Class 9–12</span></div>
+        </div>
+        <div class="subject-card">
+          <span class="subject-tag tag-chem">Chemistry</span>
+          <h3>Online Chemistry Tuition</h3>
+          <p style="color:var(--text-soft);font-size:.93rem;">Physical, organic and inorganic chemistry, connecting chemical logic and reactions to the reasoning behind them rather than rote reaction lists.</p>
+          <ul>
+            <li>Reaction mechanisms explained with underlying logic</li>
+            <li>Numerical practice for physical chemistry topics</li>
+            <li>Periodic trends and structure taught with visual aids</li>
+            <li>Regular revision of reactions and equations</li>
+          </ul>
+          <div class="pill-row"><span class="pill">CBSE & ICSE</span><span class="pill">Class 9–12</span></div>
+        </div>
+        <div class="subject-card">
+          <span class="subject-tag tag-bio">Biology</span>
+          <h3>Online Biology Tuition</h3>
+          <p style="color:var(--text-soft);font-size:.93rem;">Human physiology, genetics, ecology and plant biology, taught with diagram-based explanation and structured revision for recall-heavy topics.</p>
+          <ul>
+            <li>Diagram-led teaching for structures and processes</li>
+            <li>Application-based questions on physiology and genetics</li>
+            <li>Structured revision cycles ahead of exams</li>
+            <li>NEET-aligned depth for Class 11–12 students</li>
+          </ul>
+          <div class="pill-row"><span class="pill">CBSE & ICSE</span><span class="pill">Class 9–12</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="classes" class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Classes We Cover</span>
+        <h2>Classes 6 to 12, Delhi Curriculum-Aligned</h2>
+        <p>Science teaching shifts in structure as students move up — from a single combined subject to three distinct disciplines.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card class-card">
+          <span class="class-badge">Classes 6–8</span>
+          <h3 style="margin-top:14px;">General Science foundation</h3>
+          <p>Building core scientific thinking and observation skills across Physics, Chemistry and Biology topics as one combined subject, the way school syllabi introduce them.</p>
+        </div>
+        <div class="card class-card">
+          <span class="class-badge">Classes 9–10</span>
+          <h3 style="margin-top:14px;">Combined Science, board-ready</h3>
+          <p>Full syllabus coverage of Physics, Chemistry and Biology as per the Class 9 and Class 10 board pattern, with structured revision ahead of exams.</p>
+        </div>
+        <div class="card class-card">
+          <span class="class-badge">Classes 11–12</span>
+          <h3 style="margin-top:14px;">Subject-specific + NEET support</h3>
+          <p>Physics, Chemistry and Biology taught as separate, deeper subjects, with additional support for students preparing for NEET.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="formats">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Choose Your Learning Format</span>
+        <h2>1:1, 1:4 or 1:8 — Whichever Fits Your Child</h2>
+        <p>All three formats follow the same concept-first approach to Science. The difference is batch size and pace of individual attention.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card format-card featured">
+          <span class="format-badge">Most Chosen</span>
+          <div class="format-num">1:1</div>
+          <h3>Personalised Tuition</h3>
+          <p>One-to-one Science sessions built around one student's pace, gaps and school syllabus — ideal for students who find Physics or Chemistry numericals particularly challenging.</p>
+        </div>
+        <div class="card format-card">
+          <div class="format-num">1:4</div>
+          <h3>Small Batch (1:4)</h3>
+          <p>A small group of up to 4 students, keeping individual attention while allowing peer discussion during problem-solving and diagram-based topics.</p>
+        </div>
+        <div class="card format-card">
+          <div class="format-num">1:8</div>
+          <h3>Small Batch (1:8)</h3>
+          <p>A slightly larger, still-small group of up to 8 students — a structured classroom feel with room for individual doubt-solving in Science.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faculty" class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Meet Our Faculty</span>
+        <h2>Learn Directly From Our Core Faculty</h2>
+        <p>Delhi students are taught Science by M² Learning Hub's own faculty and co-founder — not outsourced tutors.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card faculty-card">
+          <div class="avatar">MR</div>
+          <div>
+            <h3>Madhvi Rai</h3>
+            <span class="faculty-role">Science Faculty & Co-Founder</span>
+            <p>Leads Science teaching at M² Learning Hub, with an emphasis on clear explanations and application-based practice across Physics, Chemistry and Biology.</p>
+            <div style="margin-top:14px;">
+              <a class="btn btn-outline-dark" href="https://wa.me/918882565496?text=Hi%20Madhvi%20Ma'am%2C%20I%20am%20interested%20in%20Science%20tuition%20in%20Delhi.">Message on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="card faculty-card">
+          <div class="avatar">MM</div>
+          <div>
+            <h3>Manish Mishra</h3>
+            <span class="faculty-role">Mathematics Faculty & Co-Founder</span>
+            <p>Leads Maths teaching at M² Learning Hub. Many Science students also join our <a href="https://m2learninghub.com/delhi/maths-tuition/" style="color:var(--royal);text-decoration:underline;">Maths tuition in Delhi</a> for combined subject support.</p>
+            <div style="margin-top:14px;">
+              <a class="btn btn-outline-dark" href="https://wa.me/918107563723?text=Hi%20Manish%20Sir%2C%20I%20am%20interested%20in%20Maths%20tuition%20in%20Delhi.">Message on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="faculty-note">Full faculty qualifications and additional teacher profiles will be added here as they are verified and supplied.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">How Online Classes Work</span>
+        <h2>Getting Started Is Simple</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Contact us</h3>
+          <p>Reach out via WhatsApp to tell us about your child's class and Science needs.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Discuss needs</h3>
+          <p>We understand the student's current level, board and which Science subjects need the most support.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Free demo class</h3>
+          <p>Attend a demo session to experience the teaching style before committing.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Choose a format</h3>
+          <p>Pick 1:1, 1:4 or 1:8 based on what suits your child's learning style.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <h3>Begin classes</h3>
+          <p>Start structured, live online Science learning with regular assessments and doubt support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas" class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Areas We Serve in Delhi</span>
+        <h2>Serving Science Students Across Delhi, Online</h2>
+      </div>
+      <div class="areas-box">
+        <p>M² Learning Hub does not operate a physical centre in Delhi. Every Science class is conducted live online, so students from any part of the city can join with a stable internet connection.</p>
+        <div class="locality-tags">
+          <span>Karol Bagh</span><span>Rohini</span><span>Dwarka</span><span>Pitampura</span>
+          <span>South Extension</span><span>Greater Kailash</span><span>Vasant Kunj</span>
+          <span>and other parts of Delhi NCR</span>
+        </div>
+        <div class="note-box">Students can attend live online Science classes from home anywhere in Delhi — there is no need to travel to a coaching centre.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">We Understand</span>
+        <h2>Common Science Concerns Delhi Parents Share With Us</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card concern-card">
+          <h3>Physics & Chemistry feel abstract</h3>
+          <p>Formulas and reactions can feel disconnected from real understanding without enough one-on-one explanation of the underlying concept.</p>
+        </div>
+        <div class="card concern-card">
+          <h3>Biology becomes rote memorisation</h3>
+          <p>Diagrams and processes are often memorised rather than understood, which makes recall unreliable under exam pressure.</p>
+        </div>
+        <div class="card concern-card">
+          <h3>Numericals are a recurring struggle</h3>
+          <p>Physics and Chemistry numerical problems need repeated, guided practice — something large school classrooms rarely have time for.</p>
+        </div>
+        <div class="card concern-card">
+          <h3>Combined Science becomes three subjects overnight</h3>
+          <p>The jump from Class 10 combined Science to separate Physics, Chemistry and Biology in Class 11 can be sudden without structured support.</p>
+        </div>
+        <div class="card concern-card">
+          <h3>Board and NEET pressure overlap</h3>
+          <p>Class 11–12 students juggling board exams and NEET preparation need a paced plan rather than last-minute cramming.</p>
+        </div>
+        <div class="card concern-card">
+          <h3>Inconsistent revision</h3>
+          <p>Without regular structured revision, Science topics learned earlier in the year are often forgotten by exam time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Frequently Asked Questions</span>
+        <h2>Common Questions From Delhi Parents & Students</h2>
+      </div>
+
+      <details class="faq-item">
+        <summary>Does M² Learning Hub provide online Science tuition in Delhi?</summary>
+        <p>Yes. M² Learning Hub offers live online Science tuition for students across Delhi, covering Physics, Chemistry and Biology for Classes 6 to 12 in 1:1, 1:4 and 1:8 formats.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is Science taught as one subject or separately as Physics, Chemistry and Biology?</summary>
+        <p>For Classes 6–10, Science is taught as a combined subject following the school's own General Science / Combined Science syllabus. From Class 11 onward, Physics, Chemistry and Biology are taught as separate, deeper subjects.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you teach CBSE and ICSE Science students in Delhi?</summary>
+        <p>Yes, Science teaching is aligned to both CBSE and ICSE syllabi, following the student's own school curriculum and board exam pattern.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you provide Class 10 Science tuition specifically?</summary>
+        <p>Yes, Class 10 Science tuition covers Physics, Chemistry and Biology with full syllabus coverage and structured revision ahead of board exams.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is diagram-based teaching included for Biology and Chemistry?</summary>
+        <p>Yes, topics that depend on diagrams — such as human physiology, cell structure and chemical structures — are taught visually rather than only described in words.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you support NEET preparation alongside school Science?</summary>
+        <p>Yes, we support Physics, Chemistry and Biology preparation for NEET aspirants, building on the same concept-first teaching approach used for regular school coursework.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is 1:1 personalised Science tuition available?</summary>
+        <p>Yes, 1:1 personalised tuition is one of our core learning formats for Science, alongside 1:4 and 1:8 small batches.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does M² Learning Hub have a physical Science coaching centre in Delhi?</summary>
+        <p>No. M² Learning Hub does not have a physical centre in Delhi. All Science classes are conducted live online, and students can join from anywhere in the city.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How are numerical problems in Physics and Chemistry practised?</summary>
+        <p>Numerical problems are solved step by step during live sessions, with the faculty working through the method on-screen and clearing doubts as they come up.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How can parents track their child's progress in Science?</summary>
+        <p>Parents can check in directly with the faculty teaching their child to understand topics covered, performance in assessments, and areas that need more focus.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How can I book a free Science demo class in Delhi?</summary>
+        <p>Message us on WhatsApp or visit the main M² Learning Hub website to share your child's class, board and Science subjects they need help with, and we'll schedule a free demo session.</p>
+      </details>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="final-cta">
+        <h2>Give Your Child Clarity in Physics, Chemistry & Biology</h2>
+        <p>Book a free demo class and see how M² Learning Hub's online Science tuition works for your child in Delhi.</p>
+        <div class="cta-row" style="justify-content:center;">
+          <a class="btn btn-primary btn-lg" href="https://wa.me/918882565496?text=Hi%20M%C2%B2%20Learning%20Hub%2C%20I%20am%20interested%20in%20a%20free%20demo%20class%20for%20Science%20tuition%20in%20Delhi.">Book a Free Demo</a>
+          <a class="btn btn-ghost btn-lg" href="https://wa.me/918882565496?text=Hi%20M%C2%B2%20Learning%20Hub%2C%20I%20have%20a%20question%20about%20online%20Science%20tuition%20in%20Delhi.">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="https://m2learninghub.com/" style="color:#fff;">
+          <span class="mark">M²</span> M² Learning Hub
+        </a>
+        <p style="margin-top:14px;color:#a9c0d6;">Online Maths & Science tuition with concept clarity, personalised attention and structured practice — for CBSE, ICSE, JEE and NEET students.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="https://m2learninghub.com/">Home</a></li>
+          <li><a href="https://m2learninghub.com/delhi/maths-tuition/">Maths Tuition in Delhi</a></li>
+          <li><a href="#physics-chemistry-biology">Science Tuition in Delhi</a></li>
+          <li><a href="#formats">Learning Formats</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="https://wa.me/918882565496">WhatsApp (Science): +91 88825 65496</a></li>
+          <li><a href="https://wa.me/918107563723">WhatsApp (Maths): +91 81075 63723</a></li>
+          <li><a href="https://m2learninghub.com/">m2learninghub.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 M² Learning Hub. All rights reserved. Online Science tuition for Delhi NCR students.
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "M² Learning Hub",
+      "url": "https://m2learninghub.com/",
+      "sameAs": "https://m2learninghub.com/"
+    },
+    {
+      "@type": "WebSite",
+      "name": "M² Learning Hub",
+      "url": "https://m2learninghub.com/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://m2learninghub.com/"},
+        {"@type":"ListItem","position":2,"name":"Online Tuition","item":"https://m2learninghub.com/"},
+        {"@type":"ListItem","position":3,"name":"Delhi","item":"https://m2learninghub.com/delhi/"},
+        {"@type":"ListItem","position":4,"name":"Science Tuition","item":"https://m2learninghub.com/delhi/science-tuition/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Does M² Learning Hub provide online Science tuition in Delhi?","acceptedAnswer":{"@type":"Answer","text":"Yes. M² Learning Hub offers live online Science tuition for students across Delhi, covering Physics, Chemistry and Biology for Classes 6 to 12 in 1:1, 1:4 and 1:8 formats."}},
+        {"@type":"Question","name":"Is Science taught as one subject or separately as Physics, Chemistry and Biology?","acceptedAnswer":{"@type":"Answer","text":"For Classes 6–10, Science is taught as a combined subject following the school's own syllabus. From Class 11 onward, Physics, Chemistry and Biology are taught as separate, deeper subjects."}},
+        {"@type":"Question","name":"Do you teach CBSE and ICSE Science students in Delhi?","acceptedAnswer":{"@type":"Answer","text":"Yes, Science teaching is aligned to both CBSE and ICSE syllabi, following the student's own school curriculum and board exam pattern."}},
+        {"@type":"Question","name":"Do you provide Class 10 Science tuition specifically?","acceptedAnswer":{"@type":"Answer","text":"Yes, Class 10 Science tuition covers Physics, Chemistry and Biology with full syllabus coverage and structured revision ahead of board exams."}},
+        {"@type":"Question","name":"Is diagram-based teaching included for Biology and Chemistry?","acceptedAnswer":{"@type":"Answer","text":"Yes, topics that depend on diagrams, such as human physiology, cell structure and chemical structures, are taught visually rather than only described in words."}},
+        {"@type":"Question","name":"Do you support NEET preparation alongside school Science?","acceptedAnswer":{"@type":"Answer","text":"Yes, we support Physics, Chemistry and Biology preparation for NEET aspirants, building on the same concept-first teaching approach used for regular school coursework."}},
+        {"@type":"Question","name":"Is 1:1 personalised Science tuition available?","acceptedAnswer":{"@type":"Answer","text":"Yes, 1:1 personalised tuition is one of our core learning formats for Science, alongside 1:4 and 1:8 small batches."}},
+        {"@type":"Question","name":"Does M² Learning Hub have a physical Science coaching centre in Delhi?","acceptedAnswer":{"@type":"Answer","text":"No. M² Learning Hub does not have a physical centre in Delhi. All Science classes are conducted live online, and students can join from anywhere in the city."}},
+        {"@type":"Question","name":"How are numerical problems in Physics and Chemistry practised?","acceptedAnswer":{"@type":"Answer","text":"Numerical problems are solved step by step during live sessions, with the faculty working through the method on-screen and clearing doubts as they come up."}},
+        {"@type":"Question","name":"How can parents track their child's progress in Science?","acceptedAnswer":{"@type":"Answer","text":"Parents can check in directly with the faculty teaching their child to understand topics covered, performance in assessments, and areas that need more focus."}},
+        {"@type":"Question","name":"How can I book a free Science demo class in Delhi?","acceptedAnswer":{"@type":"Answer","text":"Message us on WhatsApp or visit the main M² Learning Hub website to share your child's class, board and Science subjects they need help with, and we'll schedule a free demo session."}}
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
